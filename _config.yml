@@ -1,19 +1,19 @@
 # Site settings
-title:       Misagh's Blog
-email:       misagh.moayyed@gmail.com
-author:      Misagh Moayyed
-description: "Misagh's blog"
+title:       Apereo Foundation Blog
+email:       info@apereo.org
+author:      Apereo Foundation
+description: "This is a blog managed and edited by the Apereo Foundation members. It is typically used to post project updates, announce news, etc."
 baseurl:     ""
 url:         "http://pixyll.com"
 date_format: "%b %-d, %Y"
-url:         "http://mmoayyed.github.io"
+url:         "https://apereo.github.io"
 
 # Google services
 google_verification:
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
-google_analytics: UA-83384532-1
-google_tag_manager: GTM-MZG9L7
+google_analytics:
+google_tag_manager:
 # Bing services
 bing_verification:
 
@@ -34,7 +34,7 @@ fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname: mmoayyed-github-io
+disqus_shortname:
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
@@ -43,14 +43,14 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username: mmoayyed
-bitbucket_username: mmoayyed
-stackoverflow_id: misagh-moayyed
-twitter_username: misagh84
-skype_username: misagh.moayyed
+github_username: apereo
+bitbucket_username:
+stackoverflow_id:
+twitter_username: ApereoOrg
+skype_username:
 steam_nickname:
-google_plus_id: misagh.moayyed
-linkedin_username: mmoayyed
+google_plus_id:
+linkedin_username:
 angellist_username:
 medium_id:
 bitcoin_url:
