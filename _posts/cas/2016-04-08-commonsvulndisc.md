@@ -2,7 +2,6 @@
 layout:     post
 title:      CAS Vulnerability Disclosure
 summary:    Disclosure of issue with the Apache Commons Collections
-categories: cas
 ---
 
 # Remember

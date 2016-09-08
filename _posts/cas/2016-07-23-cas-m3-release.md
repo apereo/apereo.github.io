@@ -2,8 +2,6 @@
 layout:     post
 title:      CAS 5 M3 Released
 summary:    ...in which I present an overview of CAS 5 M3 release.
-date:       2016-07-23 12:32:18
-categories: cas
 ---
 
 Based on the [CAS project release schedule](https://github.com/apereo/cas/milestones), today we are execited to announce the 3rd milestone release in the CAS 5 series. There are a [few significant enhancements](https://github.com/apereo/cas/releases/tag/v5.0.0.M3) packed into this release that are worthy to publicize. So here it goes.
