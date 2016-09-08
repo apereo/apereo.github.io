@@ -2,8 +2,6 @@
 layout:     post
 title:      CAS EOL Policy Proposal
 summary:    In which I attempt to provide an overview of the new CAS EOL policy.
-date:       2016-08-08 12:32:18
-categories: cas
 ---
 
 The CAS project management committee has been reviewing a proposal on CAS release policies, maintenance and lifetime. In particular, this proposal attempts to provide answers to the following questions:
