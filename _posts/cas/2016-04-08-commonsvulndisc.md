@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      CAS Vulnerability Disclosure
-summary:    CAS vulnerability disclosure describing an issue with the Apache Commons Collections library usage.
+summary:    Disclosure of issue with the Apache Commons Collections
 categories: cas
 ---
 
