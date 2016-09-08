@@ -3,7 +3,6 @@ layout:     post
 title:      Defining a Product Vision
 summary:    This is my take on how to evolve a product/project vision, and lessons I have learned.
 date:       2016-08-24 12:32:18
-categories: blog
 ---
 
 A long long while ago, I was having a conversation with a good colleague of mine, discussing how to evolve the roadmap of an open-source project to define a vision and how to handle user expectations to an extent so developers could meet and deliver them.
