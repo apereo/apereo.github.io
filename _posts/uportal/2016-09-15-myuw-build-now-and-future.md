@@ -6,9 +6,10 @@ summary:    A look into what MyUW does now for builds and what it hopes that the
 
 During the most recent uPortal development meeting we were discussing how uPortal building and deployment currently works and ought to work. It came up that other campuses are checking out the project on each server, building the ear, and shipping it to Tomcat. UW does not take that approach and we thought it may be helpful to articulate what we do to maybe help steer the next generation uPortal project (aka uPortal 5).
 
-# The Now
+## The Now
 
 There are many pieces of technology that the UW uses. Here are the components and some other definitions that will be used in this technical document:
+
 + CI : Continuous integration
 + [Jenkins](https://jenkins.io/) : A platform to build and deliver projects
 + [Maven Repository](https://www.jfrog.com/artifactory/) : A storage application to place and retrieve built Java artifacts
@@ -34,19 +35,19 @@ After the ear build runs with the test ear, we then can deliver it to test. We h
 + Water test the node to make sure tomcat started correctly
 + Then trigger that instance back into the cluster, and rinse/repeat for other nodes
 
-# Looking ahead to where we would like to go
+## Looking ahead to where we would like to go
 
-We like our current setup but we would like to improve on a few things. First we would love to stop having to fork uPortal to get our own skin and configuration (using the alternative angularjs-portal front end). If we could do a Docker overlay process that could be nice.
+We like our current setup but we would like to improve on a few things. Here is our wish list. First we would love to stop having to fork uPortal to get our own skin and configuration (using the alternative angularjs-portal front end). If we could do a Docker overlay process that could be nice.
 
 We would also like to have it possible to ship the content of the webapp directory instead of depending on a volume mount from the host. In order to accomplish that we need to get rid of the hard coded passwords in the configuration files. We are looking toward using [VaultProject](https://www.vaultproject.io/) for that. This would have the sided bonus of removing the complexity of maven overlays. During startup vault could go fetch the configuration for that given environment.
 
 It could also be interesting to be able to download a docker artifact containing a configured uPortal from docker hub. The only downside is we would like to be able to control the versions of Java and Tomcat. However, if we updated this often we could be alright with relieving that control.
 
-A single Docker container running a big JVM can be painful to scale. We would like to look into splitting out our webapps into many docker containers so we can scale only the things that need scaling. A great example of that is the wave of students who need to get to our campus course guide (which is currently a portlet). If we wanted to increase the bandwidth of that one portlet, we would need to stand up another 6GB JVM. We are migrating that application to a normal webapp so this is possible. It will still have a MyUW presence, but just through widgets and links. It will have the added bonus to look like it is part of the MyUW experience using shared components from [uw-frame](https://github.com/UW-Madison-DoIT/uw-frame). 
+A single Docker container running a big JVM can be painful to scale. We would like to look into splitting out our webapps into many docker containers so we can scale only the things that need scaling. A great example of that is the wave of students who need to get to our campus course guide (which is currently a portlet). If we wanted to increase the bandwidth of that one portlet, we would need to stand up another 6GB JVM. We are migrating that application to a normal webapp so this is possible. It will still have a MyUW presence, but just through widgets and links. It will have the added bonus to look like it is part of the MyUW experience using shared angular components from [uw-frame](https://github.com/UW-Madison-DoIT/uw-frame).
 
 We are also looking toward running on AWS, but this is in the very early stages.
 
-# More Resources
+## More Resources
 + [Github overlay sample project](https://github.com/orgs/UW-MultiEnvironment-Build/dashboard)
 
 [Tim Levett](https://twitter.com/timtim192)
