@@ -10,7 +10,7 @@ Here is a slightly better-than-Wikipedia picture of the bridge:
 
 ![veresk_bridge_3](https://cloud.githubusercontent.com/assets/1205228/18591877/b70c9152-7c49-11e6-9f97-f3b576b7b9fd.jpg)
 
-I am going to tell you about the part that my mom told to me when I was a kid and it's a story that likely most Iranians-by-origin know as well, though its authenticity is still somewhat questionable.
+I am going to tell you about the part that my mom told me when I was a kid and it's a story that likely most Iranians-by-origin know as well, though its authenticity is still somewhat questionable.
 
 The story goes that as the chief engineer, Mr. Walter Aigner, finished the architecture work and once the bridge construction was fully ready to be "tested", he called upon Reza Shah (the head monarch of Iran at the time) to come visit the beauty in all its glory. He did also request that Reza Shah must have the honor of boarding the very first train ever to cross the bridge and cut the metaphorical ribbon with wheels on burning coal.
 
