@@ -6,7 +6,7 @@ summary:    Soapbox alert; I ramble on about software architecture, taking notes
 
 I suspect you have never had a chance to visit the Veresk Bridge. That's cool. Neither have I. But humor me please and take a peek at it [here](https://en.wikipedia.org/wiki/Veresk_Bridge).
 
-Here is a slightly better-than-Wikiedpa picture of the bridge:
+Here is a slightly better-than-Wikipedia picture of the bridge:
 
 ![veresk_bridge_3](https://cloud.githubusercontent.com/assets/1205228/18591877/b70c9152-7c49-11e6-9f97-f3b576b7b9fd.jpg)
 
