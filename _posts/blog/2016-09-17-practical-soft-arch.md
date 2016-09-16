@@ -14,7 +14,7 @@ I am going to tell you about the part that my mom told me when I was a kid and i
 
 The story goes that as the chief engineer, Mr. Walter Aigner, finished the architecture work and once the bridge construction was fully ready to be "tested", he called upon Reza Shah (the head monarch of Iran at the time) to come visit the beauty in all its glory. He did also request that Reza Shah must have the honor of boarding the very first train ever to cross the bridge and cut the metaphorical ribbon with wheels on burning coal.
 
-The bridge was a very big deal at the time; a symbol of magnificence, pride and glory for the nation. The opportunity for the common folk to see their Shah up close and witness him take part in the community to “ride the train along with his countrymen” was going both advantageous to the administration and a note of joy and amusement for the people.
+The bridge was a very big deal at the time; a symbol of magnificence, pride and glory for the nation. The opportunity for the common folk to see their Shah up close and witness him take part in the community to “ride the train along with his countrymen” was going to be both advantageous to the administration and a note of joy and amusement for the people.
 
 So of course, he obliged. I also suspect that Reza Shah was not a big fan of testing things in production either. But he did ask that Mr. Aigner along with the rest of his family stand *underneath the bridge* and watch as he, aboard the train, crossed over. Remember; this was a first test. A smoke test that could have literally ended in smokes.
 
