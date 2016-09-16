@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About me
+title: About Apereo
 permalink: /about/
 tags: about
 ---
 
-The [Apereo Foundation](https://www.apereo.org) is a vibrant and value-driven organization. Apereo has a noteworthy history celebrating two strong organizations, the Sakai Foundation and Jasig. Most significantly, our incubation process - reshaped after considerable community consultation - is about to graduate its first software communities. The process is providing benefits for both projects, in terms of structured support in their early stages, and adopters, in terms of clarity around the steps young projects have taken to guarantee Intellectual Property Rights, and build a sustaining community.
+Formed in 2012, the [Apereo Foundation](https://www.apereo.org) is a vibrant and value-driven organization. Apereo has a noteworthy history celebrating two strong organizations, the Sakai Foundation and Jasig. Apereo is a community built around openness, inclusivity, collaboration and innovation. The mission of Apereo is to help educational organizations “collaborate to foster, develop, and sustain open technologies and innovation to support learning, teaching, and research." Apereo is still 100% open.
