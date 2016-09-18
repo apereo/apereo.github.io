@@ -29,7 +29,7 @@ Of course, let’s clarify that I:
 -	Have nothing against bridges, trains or crossing over things.
 -	Am not advocating for any sort of monarchy.
 -	Am not advocating for any kind of violence and hostility during software design.
--	Advocating that you should gather your folks and sprawl out underneath the data center as you press the power button on your Pentium II.
+-	Am not advocating that you should gather your folks and sprawl out underneath the data center as you press the power button on your Pentium II.
 - Seriously shall question your sanity if you go to production with Pentium IIs.
 
 All I am saying is, you should be held accountable. That’s all.
