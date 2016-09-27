@@ -36,7 +36,7 @@ If you find something that you deem worth someone else's time to fix for you, be
 
 Bugs are an opportunity for collaboration. They allow you to engage with the community and start a conversation. It's a two-way street. After all, that's why you're involved in open-source, right?
 
-### Marketing
+### Advertise
 
 Bug reports are the perfect opportunity for marketing. It’s free data! You get to learn which entities and companies from which industry sectors use the software. And how. The more you get involved, the more advertising and marketing is going to flood your way and that might radically change the way you think about the original platform requirements.
 
