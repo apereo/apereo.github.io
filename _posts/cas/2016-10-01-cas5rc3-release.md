@@ -34,7 +34,7 @@ Some adjustments have been made to the way admin user interfaces are protected v
 
 # JWT AuthN
 
-Thanks to Pac4J, A number of fixes have gone to ensure JWTs can successfully be validated based on customizable encryption and signing algorithms, which can now be specified for a given CAS service definition. Additional checks are also in place to report on the validity of the JWT itself and its required fields.
+Thanks to Pac4J, a number of fixes have gone in to ensure JWTs can successfully be validated based on customizable encryption and signing algorithms, which can now be specified for a given CAS service definition. Additional checks are also in place to report on the validity of the JWT itself and its required fields such as the `sub`.
 
 # Dependency Upgrades
 
@@ -51,14 +51,16 @@ We have taken a pass at the core CAS dependencies to ensure we are running on th
 
 # What's Next?
 
-Short of a few more last rounds to ensure everything is tested as much as possible. The release schedule will likely be adjusted to note the correct final release date, and when all is said and done, there will be a few planning sessions to discuss the project roadmap for the next upcoming release.
+Short of a few more last rounds to ensure everything is tested as much as possible, we should be gearing up for the official GA release shortly. The release schedule will likely be adjusted to note the correct final release date, and when all is said and done, there will be planning sessions to discuss the project roadmap for the next upcoming release.
 
-There is plenty of work left to do!
+Yes, there is plenty of more work left to do!
 
 # How can you help?
 
-Do NOT wait for the final GA release to begin your deployment. If you do discover a problem after the GA is out, it may be a while for you to receive the next upgrade with the fix in place. Now is the best time to start trying out the release candidates and report back findings. The software is only as stable and bug-free as it is reported back community members!
+Do NOT wait for the final GA release to begin your deployment. If you do discover a problem after the GA is out, it may be a while for you to receive the next upgrade with the fix in place. Now is the best time to start trying out the release candidates and report back findings. The software is only as stable and bug-free as it is reported back to the community.
 
+
+So:
 
 - Start your early [CAS 5 deployment](https://github.com/apereo/cas-overlay-template/tree/5.0) today. Try out features and [share feedback](https://apereo.github.io/cas/Mailing-Lists.html).
 - Better yet, [contribute patches](https://apereo.github.io/cas/developer/Contributor-Guidelines.html).
