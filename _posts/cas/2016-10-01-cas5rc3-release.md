@@ -4,9 +4,9 @@ title:      CAS 5 RC3 Released
 summary:    ...in which I present an overview of CAS 5 RC3 release.
 ---
 
-We are excited to announce the 3rd release candidate in the CAS 5 series. There are a [few significant enhancements](https://github.com/apereo/cas/releases/tag/v5.0.0.RC3) packed into this release that are worthy to publicize. So here it goes.
+We are excited to announce the 3rd release candidate in the CAS 5 series. There are a [few  items](https://github.com/apereo/cas/releases/tag/v5.0.0.RC3) packed into this release that are worthy to publicize. So here it goes.
 
-Before we get started, it should be pointed out that [such milestone releases of CAS 5 are available to adopters to try](https://github.com/apereo/cas-overlay-template/tree/5.0). Deployers are more than welcome to try out the milestone releases and share feedback.
+Before we get started, it should be pointed out that [releases of CAS 5 are available to adopters to try](https://github.com/apereo/cas-overlay-template/tree/5.0). Deployers are more than welcome to try out the milestone releases and share feedback.
 
 The current in-development documentation of CAS 5 is also [available here](https://apereo.github.io/cas/development/index.html).
 
@@ -57,10 +57,14 @@ There is plenty of work left to do!
 
 # How can you help?
 
+Do NOT wait for the final GA release to begin your deployment. If you do discover a problem after the GA is out, it may be a while for you to receive the next upgrade with the fix in place. Now is the best time to start trying out the release candidates and report back findings. The software is only as stable and bug-free as it is reported back community members!
+
+
 - Start your early [CAS 5 deployment](https://github.com/apereo/cas-overlay-template/tree/5.0) today. Try out features and [share feedback](https://apereo.github.io/cas/Mailing-Lists.html).
 - Better yet, [contribute patches](https://apereo.github.io/cas/developer/Contributor-Guidelines.html).
 - Review and suggest documentation improvements.
 - Review the release schedule and make sure you report your desired feature requests on the project's issue tracker.
+
 
 # Das Ende
 
