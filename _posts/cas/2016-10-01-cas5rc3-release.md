@@ -30,7 +30,7 @@ Summary of fixes are:
 
 # Admin UIs
 
-Some adjustments have been made to the way admin user interfaces are protected via CAS itself. A few additional screens have also been worked into interface to display the CAS audit log as well as a list of trusted devices registered for MFA bypass.
+Some adjustments have been made to the way admin user interfaces are protected via CAS itself. A few additional screens have also been worked into the interface to display the CAS audit log as well as a list of trusted devices/browsers registered for MFA bypass.
 
 # JWT AuthN
 
