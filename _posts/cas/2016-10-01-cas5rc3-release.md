@@ -32,6 +32,14 @@ Summary of fixes are:
 
 Some adjustments have been made to the way admin user interfaces are protected via CAS itself. A few additional screens have also been worked into the interface to display the CAS audit log as well as a list of trusted devices/browsers registered for MFA bypass.
 
+# CAS Attributes
+
+Additional validation checks are now in place to ensure CAS attributes are properly formatted, encoded and named in the final validation response. For instance, CAS is now able to detect the proper syntax if it's configured to release an attribute that is `system:people:admins:something`. 
+
+# Groovy-based Attributes
+
+When it comes to mapping attributes conditionally at release time, CAS is now able to correctly and more accurately support groovy-based attribute definitions, whether inline or as a full standalone groovy script file.
+
 # JWT AuthN
 
 Thanks to Pac4J, a number of fixes have gone in to ensure JWTs can successfully be validated based on customizable encryption and signing algorithms, which can now be specified for a given CAS service definition. Additional checks are also in place to report on the validity of the JWT itself and its required fields such as the `sub`.
@@ -45,6 +53,7 @@ We have taken a pass at the core CAS dependencies to ensure we are running on th
 - Spring Cloud
 - Thymeleaf
 - Pac4J
+- Tomcat
 - Hazelcast
 
 ...and plenty more.
