@@ -121,7 +121,7 @@ kramdown:
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     4
+paginate:     8
 start_line: 1
 sass:
   compressed: true
