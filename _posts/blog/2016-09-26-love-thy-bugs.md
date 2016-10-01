@@ -47,7 +47,7 @@ Bug reports are fun; you learn how people are actually using the software in way
 
 ### Be nice
 
-This is perhaps **the most important bit of all**. Do NOT ever create an atmosphere where the user community feels like they are being treated as buffoons with severe visual impairments who are dispossessed of the ability to read your perfect documentation and walkthroughs. As far as you should be concerned, [albeit a tad too extreme perhaps], if someone can’t figure out how to use the solution in reasonable time, then the bug is on you. Resists the urge to call out folks on their “stupid mistakes” and don’t be inclined to respond to every single “foolish” post. Eat something sweet. The feeling will pass, I promise you.
+This is perhaps **the most important bit of all**. Do NOT ever create an atmosphere where the user community feels like they are being treated as buffoons with severe visual impairments who are dispossessed of the ability to read your perfect documentation and walkthroughs. As far as you should be concerned, [albeit a tad too extreme perhaps], if someone can’t figure out how to use the solution in reasonable time, then the bug is on you. Resist the urge to call out folks on their “stupid mistakes” and don’t be inclined to respond to every single “foolish” post. Eat something sweet. The feeling will pass, I promise you.
 
 Be nice. Welcome bug reports with open arms.
 
