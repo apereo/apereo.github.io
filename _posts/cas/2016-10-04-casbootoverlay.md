@@ -22,7 +22,7 @@ Today, adopters are given 3 choices to deploy an overlay:
 
 1. Run the CAS web application as an executable WAR via a `java -jar <cas-war-file>` type of command.
 2. Deploy the `<cas-war-file>` into an external container of choice, such as Apache Tomcat.
-3. [**NEW**] Run the CAS web application as an execute WAR via the Spring Boot's Maven/Gradle plugin.
+3. [**NEW**] Run the CAS web application as an executable WAR via the Spring Boot's Maven/Gradle plugin.
 
 The 3rd option is similar to the native `java -jar ...` command with the main difference that the Spring Boot plugin is able to recognize the presence of Spring Boot's `devtools` that is shipped with CAS by default and allows for ad-hoc live monitoring of CAS resources.
 
