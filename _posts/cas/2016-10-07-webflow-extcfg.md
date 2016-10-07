@@ -108,7 +108,7 @@ Today:
 - Changes are all scoped to one technology, that is Java.
 - You have the full power of Java to dynamically augment the Spring Webflow as you see fit.
 - Your changes are all self-contained.
-- Unlike XML, your changes are now part of the CAS APIs. If you upgrade and something breaks, you will be notified immediately.
+- Unlike XML, your changes are now part of the CAS APIs. If you upgrade and something breaks, you will be notified immediately at build time.
 
 That's all.
 
