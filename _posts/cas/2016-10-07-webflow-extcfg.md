@@ -97,7 +97,7 @@ CAS itself handles Spring Webflow changes related to its first-class features by
 
 # Accidents Happen
 
-What if you had two `WebflowConfigurer` who all decided to inject actions and state into the same Spring Webflow areas? What if multiple `WebflowConfigurer`s decided to set themselves up as starting points of the CAS webflow?
+What if you had two `WebflowConfigurer`s who all decide to inject actions and state into the same Spring Webflow areas? What if multiple `WebflowConfigurer`s competing to set themselves up as starting points of the CAS webflow?
 
 Indeed, these are questions you ought to be thinking about as a *developer*.
 
