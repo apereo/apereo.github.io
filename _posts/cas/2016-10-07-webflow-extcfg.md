@@ -46,7 +46,7 @@ Wait. I may have missed a few steps. The recipe did also include:
 5. Learn CAS APIs
 6. Learn CAS Spring Webflow
 
-What is also inconsistent with this strategy is that a perhaps-simple change spanned across multiple unfamiliar barriers. Even if you learned and mastered all the underlying technologies, you still need to touch Java, Spring XML and Spring Webflow XML configuration to get something to work.
+What is also inconsistent with this strategy is that a perhaps-simple change spanned across multiple unfamiliar barriers. Even if you learned and mastered all the underlying technologies, you still needed to touch Java, Spring XML and Spring Webflow XML configuration to get something to work.
 
 Is that verbosity the same thing as flexibility?
 
