@@ -95,7 +95,7 @@ When CAS comes up, it scans the context to find `@Configuration` classes and the
 
 CAS itself handles Spring Webflow changes related to its first-class features by default automatically. That strategy equally applies, should you need to write your own configurers if you absolutely need to.
 
-# Accidents Happen
+## Accidents Happen
 
 What if you had two `WebflowConfigurer`s who all decide to inject actions and state into the same Spring Webflow areas? What if multiple `WebflowConfigurer`s competing to set themselves up as starting points of the CAS webflow?
 
