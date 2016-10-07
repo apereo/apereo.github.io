@@ -95,12 +95,18 @@ When CAS comes up, it scans the context to find `@Configuration` classes and the
 
 CAS itself handles Spring Webflow changes related to its first-class features by default automatically. That strategy equally applies, should you need to write your own configurers if you absolutely need to.
 
+# Accidents Happen
+
+What if you had two `WebflowConfigurer` who all decided to inject actions and state into the same Spring Webflow areas? What if multiple `WebflowConfigurer`s decided to set themselves up as starting points of the CAS webflow?
+
+Indeed, these are questions you ought to be thinking about as a *developer*.
+
 # Summary
 
 Today:
 
 - Changes are all scoped to one technology, that is Java.
-- You have the full power Java to dynamically augment the Spring Webflow as you see fit.
+- You have the full power of Java to dynamically augment the Spring Webflow as you see fit.
 - Your changes are all self-contained.
 - Unlike XML, your changes are now part of the CAS APIs. If you upgrade and something breaks, you will be notified immediately.
 
