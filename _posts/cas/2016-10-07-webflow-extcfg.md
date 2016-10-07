@@ -95,6 +95,8 @@ When CAS comes up, it scans the context to find `@Configuration` classes and the
 
 CAS itself handles Spring Webflow changes related to its first-class features by default automatically. That strategy equally applies, should you need to write your own configurers if you absolutely need to.
 
+# Summary
+
 Today:
 
 - Changes are all scoped to one technology, that is Java.
