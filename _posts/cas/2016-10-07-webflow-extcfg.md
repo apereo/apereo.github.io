@@ -1,18 +1,18 @@
 ---
 layout:     post
-title:      Extending CAS v5 Webflows
-summary:    Learn and master extending CAS 5's Spring Webflow definitions.
+title:      Extending CAS 5 Webflows
+summary:    Learn and master extending CAS 5 Spring Webflow definitions.
 ---
 
 Unlike previous versions, CAS 5 attempts to automate all required Spring Webflow changes on a per-module basis. This aligns well with the new `IDD` (Intention-Driven Development) model where all one should have to do is, declare the appropriate module in the build script...and viola. CAS will take care of the rest.
 
-You may ask: Wait! What's really happening? How can it accomplish everything that we had to apply manually before? Why am I being asked to do less work? What exactly do the CAS internals look like? Did machines finally taking over? Most importantly, Turkey's [tombili](http://ind.pn/2dsJ0iV) died?!
+You may ask: Wait! What's really happening? How can it accomplish everything that we had to apply manually before? Why am I being asked to do less work? What exactly do the CAS internals look like? Did machines finally take over? Most importantly, Turkey's [tombili](http://ind.pn/2dsJ0iV) died?!
 
 Some answers follow.
 
 # Hakuna Matata
 
-Stop worrying. Stop coding. You are no longer required to become a Spring Webflow ninja or Java champion overnight to apply a myriad of XML configuration snippets here and there to get something to work. That's all taken care of you. Sit back and relax.
+Stop worrying. Stop coding. You are no longer required to become a Spring Webflow ninja or Java champion overnight to apply a myriad of XML configuration snippets here and there to get something to work. That's all taken care of for you. Sit back and relax.
 
 More importantly, avoid making ad-hoc changes to the Webflow as much as possible. Consider how the change you have in mind might be more suitable as a direct contribution to CAS itself so you can just take advantage of its configuration; NOT its maintenance.
 
@@ -89,9 +89,13 @@ public class SomethingConfiguration {
 }
 ```
 
-When CAS comes up, it scans the context to find `@Configuration` classes and then will invoke each and every `WebflowConfigurer` to execute changes. This is the same strategy you should follow as well to write your own configurers when/if needed.
+When CAS comes up, it scans the context to find `@Configuration` classes and then will invoke each and every `WebflowConfigurer` to execute changes.
 
-Before you had to cross multiple barriers to make a change. Today:
+# What About You?
+
+CAS itself handles Spring Webflow changes related to its first-class features by default automatically. That strategy equally applies, should you need to write your own configurers if you absolutely need to.
+
+Today:
 
 - Changes are all scoped to one technology, that is Java.
 - You have the full power Java to dynamically augment the Spring Webflow as you see fit.
