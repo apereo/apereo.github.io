@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      HOWTO: Extending CAS v5 Webflows
+title:      Extending CAS v5 Webflows
 summary:    Learn and master extending CAS 5's Spring Webflow definitions.
 ---
 
