@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Activating MFA in CAS 5
-summary:    Learn and master custom MFA triggers in CAS 5
+summary:    Learn and master custom MFA triggers in CAS 5.
 ---
 
 Perhaps one of the more attractive features of [CAS 5](https://apereo.github.io/cas/development) is the ability to support [multifactor authentication](https://apereo.github.io/cas/development/installation/Configuring-Multifactor-Authentication.html)
