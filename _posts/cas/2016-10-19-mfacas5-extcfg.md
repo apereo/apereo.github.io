@@ -100,7 +100,7 @@ public class SomethingConfiguration {
 }
 ```
 
-We simply register our trigger as a Spring `@Bean` and simply add it to the
+We simply register our trigger as a Spring `@Bean` and add it to the
 chain of event resolvers that kick into action as part of CAS authentication machinery.
 
 # So...
