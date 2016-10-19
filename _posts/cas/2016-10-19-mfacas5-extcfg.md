@@ -100,11 +100,16 @@ public class SomethingConfiguration {
 }
 ```
 
+We simply register our trigger as a Spring `@Bean` and simply add it to the
+chain of event resolvers that kick into action as part of CAS authentication machinery.
+
+# So...
+
 Note that:
 
 - You are really not doing anything *custom*. All CAS triggers behave in the same exact way when
 they attempt to resolve the next event.
-- The API is completely oblivious to multifactor authentication; all it cares about is finding the next event in the chain in a very generic way. Our custom implementation of course makes the next event be concerned about MFA but in theory we could have resolved the next event to be `hello-world` and CAS would not have cared, as long the next event is available and registered in CAS webflows.
+- The API is completely oblivious to multifactor authentication; all it cares about is finding the next event in the chain in a very generic way. Our custom implementation of course makes the next event be concerned about MFA but in theory we could have resolved the next event to be `hello-world` and CAS would not have cared.
 
 Happy Coding!
 
