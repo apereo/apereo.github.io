@@ -36,7 +36,7 @@ These are modules that ship with CAS by default and thou shall mark them with a 
 
 # Create MFA Triggers
 
-You should create an event resolver that houses and implements your special requirements for MFA. A typical example might be: "Activate MFA provider `mfa-duo` if the request client IP address matches the pattern `123.+`."
+You should create an event resolver that houses and implements your special requirements for MFA. A typical example might be: *Activate MFA provider `mfa-duo` if the request client IP address matches the pattern `123.+`*
 
 ```java
 package org.apereo.cas.custom.mfa;
