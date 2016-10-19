@@ -13,12 +13,13 @@ Here is what you can do.
 # Audience
 
 This post is intended for java developers with a basic-to-medium familiarity with Spring, Spring Boot and Spring Webflow.
-This is **NOT** a tutorial to be used verbatim via copy/paste. It is instead a recipe for developers to build and extend CAS
+This is **NOT** a tutorial to be used verbatim via copy/paste. It is instead a recipe for developers to extend CAS
 based on specialized requirements.
 
 # Stop Coding
 
-> Hearken to the reed flute, how it complains, lamenting its banishment from its home: “Ever since they tore me from my osier bed, my plaintive notes have moved men and women to tears. I burst my breast, striving to give vent to sighs, and to express the pangs of my yearning for my home. He who abides far away from his home is ever longing for the day he shall return. [The Reed Flute's Song, Rumi, 1207-1273]
+> Hearken to the reed flute, how it complains, lamenting its banishment from its home: “Ever since they tore me from my osier bed, my plaintive notes have moved men and women to tears. I burst my breast, striving to give vent to sighs, and to express the pangs of my yearning for my home. He who abides far away from his home is ever longing for the day he shall return. 
+> [The Reed Flute's Song, Rumi, 1207-1273]
 
 Before diving into code, I **MUST** emphasize that developing custom extensions/addons, while certainly keeewl and exciting, would eventually lead to long-term maintenance/upgrade burdens. Consider direct contributions to the project if/when feasible and solve the problem where it needs solving.
 
