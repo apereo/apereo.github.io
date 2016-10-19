@@ -74,7 +74,7 @@ Note that you have full access to the resolved CAS authentication, the principal
 
 # Register MFA Triggers
 
-Your trigger then needs to be registered. We do this via CAS's native auto-configuration strategy, which scans the application context
+Your trigger then needs to be registered. We do this via CAS' native auto-configuration strategy, which scans the application context
 for relevant annotations inside `org.apereo.cas` sub-packages. If you change package names, you **MUST** account for the custom context scan too.
 
 ```java
