@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      CAS Vulnerability Disclosure
-summary:    Disclosure of security issue with the CAS administrative endpoints
+summary:    Disclosure of a security issue with the CAS administrative endpoints exposure.
 ---
 
 # Overview
