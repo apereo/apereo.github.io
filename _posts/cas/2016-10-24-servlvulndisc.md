@@ -40,14 +40,14 @@ The patch simply ensures that the exposed endpoints honor the CAS access rules,
 and otherwise block attempts. When you have applied the patch, please double check all endpoints
 and ensure access is appropriately controlled.
 
-# Timeline
+## Timeline
 
 The issue was originally reported to the CAS application security team
 on September 27, 2016. Upon confirmation, CAS was patched on September 28, 2016
 and released. The original release
 announcement is [available here](https://groups.google.com/a/apereo.org/d/msg/cas-announce/Xt-quYhBV7w/oCpvF0caCAAJ).
 
-## CAS 4.2.x
+## Procedure
 
 Modify your CAS overlay to point to version `4.2.6`. A snippet of a `pom.xml` for a CAS overlay follows:
 
@@ -74,6 +74,11 @@ Double check your `cas.properties` file for the following setting:
 ```
 
 Make sure the correct IP pattern is authorized to access admin pages.
+
+## Alternatives
+
+If you are unable to apply the patch, it's then best to ensure the outlined
+endpoints are blocked completely via load balancers, proxies, firewalls, etc.
 
 # Support
 
