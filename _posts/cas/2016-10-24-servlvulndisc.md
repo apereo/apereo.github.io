@@ -6,7 +6,7 @@ summary:    Disclosure of a security issue with the CAS administrative endpoints
 
 # Overview
 
-This is the public version of an Apereo CAS project vulnerability disclosure, describing an issue in CAS
+This is the public version of an [Apereo CAS project vulnerability disclosure](https://groups.google.com/a/apereo.org/d/msg/cas-announce/Xt-quYhBV7w/oCpvF0caCAAJ), describing an issue in CAS
 where an adversary may be able to bypass certain administrative endpoints, in spite of
 CAS access rule in place. The following administrative endpoints are exposed
 and vulnerable to this attack:
@@ -87,5 +87,5 @@ please contact `security@apereo.org` or `cas-appsec-public@apereo.org`.
 
 # Resources
 
-* [Original Announcement](https://blogs.apache.org/foundation/entry/apache_commons_statement_to_widespread)
+* [Original Announcement](https://groups.google.com/a/apereo.org/d/msg/cas-announce/Xt-quYhBV7w/oCpvF0caCAAJ)
 * [CAS Security Vulnerability Response Model](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html)
