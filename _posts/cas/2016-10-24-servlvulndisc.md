@@ -6,7 +6,7 @@ summary:    Disclosure of a security issue with the CAS administrative endpoints
 
 # Overview
 
-This is the public version of an [Apereo CAS project vulnerability disclosure](https://groups.google.com/a/apereo.org/d/msg/cas-announce/Xt-quYhBV7w/oCpvF0caCAAJ), describing an issue in CAS
+This is the public version of an [Apereo CAS project vulnerability disclosure](https://groups.google.com/a/apereo.org/d/msg/cas-announce/Xt-quYhBV7w/oCpvF0caCAAJatom ), describing an issue in CAS
 where an adversary may be able to bypass certain administrative endpoints, in spite of
 CAS access rule in place. The following administrative endpoints are exposed
 and vulnerable to this attack:
@@ -17,8 +17,6 @@ and vulnerable to this attack:
 - `/statistics/healthcheck`
 - `statistics/ssosessions` and all sub endpoints
 
-The nature of the vulnerability is such that an adversary is able to bypass CAS security rules
-to get to the above endpoints.
 
 # Affected Deployments
 
