@@ -15,7 +15,7 @@ and vulnerable to this attack:
 - `/statistics/threads`
 - `/statistics/metrics`
 - `/statistics/healthcheck`
-- `statistics/ssosessions` and all sub endpoints
+- `/statistics/ssosessions` and all sub endpoints
 
 
 # Affected Deployments
