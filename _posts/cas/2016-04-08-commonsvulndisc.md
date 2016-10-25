@@ -206,6 +206,33 @@ webflow.encryption.key=ABC
 webflow.signing.key=XYZ
 ```
 
+### XML Configuration
+
+If you have manually overridden the `cas-servlet.xml` file, you will need to make sure the following blocks are present
+in the configuration:
+
+```xml
+
+Note that the Person Directory project requires the following configuration in CAS overlays:
+
+```xml
+
+Note that the Person Directory project requires the following configuration in CAS overlays:
+
+```xml
+<bean id="loginFlowStateTranscoder" class="org.jasig.spring.webflow.plugin.EncryptedTranscoder"
+        c:cipherBean-ref="loginFlowCipherBean" />
+
+<bean id="loginFlowCipherBean" class="org.jasig.cas.web.flow.CasWebflowCipherBean"
+    c:cipherExecutor-ref="webflowCipherExecutor" />
+
+<bean id="webflowCipherExecutor" class="org.jasig.cas.util.BinaryCipherExecutor"
+    c:encryptionSecretKey="${webflow.encryption.key:}"
+    c:signingSecretKey="${webflow.signing.key:}"/>
+```
+
+Re-adjust the beans accordingly, and remove the built-in keystore.
+
 ### Finally
 Rebuild and redeploy your CAS overlay.
 
