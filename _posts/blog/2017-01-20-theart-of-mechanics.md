@@ -8,7 +8,6 @@ date:       2017-01-20
 A guy walks into an auto shop, calls over a mechanic and says:
 
 - Hey there! I have been trying to use my car for the past 3 days. It doesn't work. Drives very badly. I remember taking it to a car wash and then a friend drove it around for a while. After that, it stopped working. Can you help?
-
 - Sure. Do you have your car with you?
 - I am afraid I don't.
 - No problem. Do you know the model and the year of the car?
