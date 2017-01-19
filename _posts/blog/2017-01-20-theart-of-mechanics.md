@@ -5,6 +5,8 @@ summary:    A true story inspired by real events. Seriously. Bryan Cranston has 
 date:       2017-01-20
 ---
 
+> *A true story inspired by real events. Seriously. Bryan Cranston has been approached for the role of the "Guy".*
+
 A guy walks into an auto shop, calls over a mechanic and says:
 
 - Hey there! I have been trying to use my car for the past 3 days. It doesn't work. Drives very badly. I remember taking it to a car wash and then a friend drove it around for a while. After that, it stopped working. Can you help?
