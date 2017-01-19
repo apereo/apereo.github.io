@@ -15,7 +15,7 @@ A guy walks into an auto shop, calls over a mechanic and says:
 - OK. What symptoms does it show?
 - I guess it just makes this weird noise when I honk the horn.
 - When was the last time you took it to the shop? Any previous diagnostics, issues, history of failures?
-- It was a while ago. My son asked me to get it checked out years ago. I suppose He worries too much. Do you think his worrying might have anything to do with the car sluggish performance? 
+- It was a while ago. My son asked me to get it checked out years ago. I suppose he worries too much. Do you think his worrying might have anything to do with the car sluggish performance? 
 - No.
 - OK. Well, I really appreciate any suggestions you might have. What are your thoughts?
 - My thoughts?
