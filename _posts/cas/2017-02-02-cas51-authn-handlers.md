@@ -6,14 +6,12 @@ summary:    Learn and master writing custom authentication handlers/schemes in C
 
 While [authentication support](https://apereo.github.io/cas/development/installation/Configuring-Authentication-Components.html)
 in CAS for a variety of systems is somewhat comprehensive and complex, a common deployment use case 
-is the task of designing an custom authentication strategy. This post describes the necessary steps needed to design
+is the task of designing custom authentication schemes. This post describes the necessary steps needed to design
 and register a custom authentication strategy (i.e. `AuthenticationHandler`) in CAS `5.1.x`. 
 
 ## Audience
 
-This post is intended for java developers with a basic-to-medium familiarity with Spring, Spring Boot and Spring Webflow.
-This is **NOT** a tutorial to be used verbatim via copy/paste. It is instead a recipe for developers to extend CAS
-based on specialized requirements.
+This post is intended for java developers with a basic-to-medium familiarity with Spring, Spring Boot and Spring Webflow. This is **NOT** a tutorial to be used verbatim via copy/paste. It is instead a recipe for developers to extend CAS based on specialized requirements.
 
 ## Design Authentication Handlers
 
@@ -24,10 +22,11 @@ With the assumption that the type of credentials used here deal with the traditi
 ```java
 public class MyAuthenticationHandler extends AbstractUsernamePasswordAuthenticationHandler {
     ...
-    protected HandlerResult authenticateUsernamePasswordInternal(final UsernamePasswordCredential transformedCredential,
+    protected HandlerResult authenticateUsernamePasswordInternal(final UsernamePasswordCredential credential,
                                                                  final String originalPassword) {
         if (everythingLooksGood()) {
-            return createHandlerResult(transformedCredential, this.principalFactory.createPrincipal(username), null);
+            return createHandlerResult(credential, 
+                    this.principalFactory.createPrincipal(username), null);
         }
     }
     ...
@@ -96,7 +95,7 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.example.cas.M
 
 ### Review
 
-At runtime, CAS will auto-detect all components and beans that advertise themselves as `AuthenticationEventExecutionPlanConfigurer`s. Each detected `AuthenticationEventExecutionPlanConfigurer` is then involved to register its own authentication execution plan. The result of this operation at the end will produce
+At runtime, CAS will try to automatically detect all components and beans that advertise themselves as `AuthenticationEventExecutionPlanConfigurer`s. Each detected `AuthenticationEventExecutionPlanConfigurer` is then invoked to register its own authentication execution plan. The result of this operation at the end will produce
 a ready-made collection of authentication handlers that are ready to be invoked by CAS in the given order defined, if any.
 
 ## What's Next?
