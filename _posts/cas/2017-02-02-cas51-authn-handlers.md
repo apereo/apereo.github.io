@@ -58,11 +58,12 @@ and understand how to dynamically modify the application context.
 So let's design our own `@Configuration` class:
 
 ```java
-package com.exampe.cas;
+package com.example.cas;
 
 @Configuration("MyAuthenticationEventExecutionPlanConfiguration")
 @EnableConfigurationProperties(CasConfigurationProperties.class)
-public class MyAuthenticationEventExecutionPlanConfiguration implements AuthenticationEventExecutionPlanConfigurer {
+public class MyAuthenticationEventExecutionPlanConfiguration 
+                    implements AuthenticationEventExecutionPlanConfigurer {
     @Autowired
     private CasConfigurationProperties casProperties;
 
