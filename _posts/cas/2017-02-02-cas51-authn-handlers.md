@@ -17,7 +17,7 @@ This post is intended for java developers with a basic-to-medium familiarity wit
 
 First step is to define the skeleton for the authentication handler itself. This is the core principal component whose job is to declare support for a given type of credential only to then attempt validate it and produce a successful result. The core parent component from which all handlers extend is the `AuthenticationHandler` interface.
 
-With the assumption that the type of credentials used here deal with the traditional username and password, noteed by the infamous `UsernamePasswordCredential` below, a more appropriate skeleton to define for a custom authentication handler may seem like the following:
+With the assumption that the type of credentials used here deal with the traditional username and password, noted by the infamous `UsernamePasswordCredential` below, a more appropriate skeleton to define for a custom authentication handler may seem like the following:
 
 ```java
 public class MyAuthenticationHandler extends AbstractUsernamePasswordAuthenticationHandler {
