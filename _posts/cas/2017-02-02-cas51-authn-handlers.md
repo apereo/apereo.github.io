@@ -82,7 +82,7 @@ public class MyAuthenticationEventExecutionPlanConfiguration
         /*
             Configure the handler by invoking various setter methods.
             Note that you also have full access to the collection of resolved CAS settings.
-            Note that each authentication handler may optioinally qualify for an 'order` 
+            Note that each authentication handler may optionally qualify for an 'order` 
             as well as a unique name.
         */
         return h;
