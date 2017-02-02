@@ -36,6 +36,7 @@ public class MyAuthenticationHandler extends AbstractUsernamePasswordAuthenticat
             return createHandlerResult(credential, 
                     this.principalFactory.createPrincipal(username), null);
         }
+        throw new FailedLoginException("Sorry, you are simply a big huge failure!");
     }
     ...
 }
