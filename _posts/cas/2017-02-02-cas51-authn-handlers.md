@@ -99,7 +99,7 @@ public class MyAuthenticationEventExecutionPlanConfiguration
 
 ## Step 3: Register Configuration
 
-Now that we have properly created and registered our handler with the CAS authentication machinery, we just need to ensure that CAS is able to pick up our special configuration. To do so, create a `src/main/resource/META-INF/spring.factories` file and reference the configuration class in it as such:
+Now that we have properly created and registered our handler with the CAS authentication machinery, we just need to ensure that CAS is able to pick up our special configuration. To do so, create a `src/main/resources/META-INF/spring.factories` file and reference the configuration class in it as such:
 
 ```properties
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.example.cas.MyAuthenticationEventExecutionPlanConfiguration
