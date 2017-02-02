@@ -61,7 +61,7 @@ itself, such as `AccountDisabledException`.
 
 Once the handler is designed, it needs to be registered with CAS and put into the authenication engine.
 This is done via the magic of `@Configuration` classes that are picked up automatically at runtime, per your approval,
-and understand how to dynamically modify the application context.
+whose job is to understand how to dynamically modify the application context.
 
 
 So let's design our own `@Configuration` class:
