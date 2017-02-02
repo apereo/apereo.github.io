@@ -13,7 +13,15 @@ and register a custom authentication strategy (i.e. `AuthenticationHandler`) in 
 
 This post is intended for java developers with a basic-to-medium familiarity with Spring, Spring Boot and Spring Webflow. This is **NOT** a tutorial to be used verbatim via copy/paste. It is instead a recipe for developers to extend CAS based on specialized requirements.
 
-## Design Authentication Handlers
+## Steps
+
+The overall tasks may be categorized as such:
+
+1. Design the authentication handler
+2. Register the authentication handler with the CAS authentication engine.
+3. Tell CAS to recognize the registration record and authentication configuration.
+
+## Step 1: Design Authentication Handlers
 
 First step is to define the skeleton for the authentication handler itself. This is the core principal component whose job is to declare support for a given type of credential only to then attempt validate it and produce a successful result. The core parent component from which all handlers extend is the `AuthenticationHandler` interface.
 
@@ -48,7 +56,7 @@ itself, such as `AccountDisabledException`.
 
 - Various other components such as `PrincipalNameTransformer`s, `PasswordEncoder`s and such may also be injected into our handler if need be, though these are skipped for now in this post for simplicity.
 
-## Register Authentication Handlers
+## Step 2: Register Authentication Handlers
 
 Once the handler is designed, it needs to be registered with CAS and put into the authenication engine.
 This is done via the magic of `@Configuration` classes that are picked up automatically at runtime, per your approval,
@@ -88,11 +96,17 @@ public class MyAuthenticationEventExecutionPlanConfiguration
 }
 ```
 
+## Step 3: Register Configuration
+
 Now that we have properly created and registered our handler with the CAS authentication machinery, we just need to ensure that CAS is able to pick up our special configuration. To do so, create a `src/main/resource/META-INF/spring.factories` file and reference the configuration class in it as such:
 
 ```properties
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.example.cas.MyAuthenticationEventExecutionPlanConfiguration
 ```
+
+Note that the configuration registration is not of CAS doing. It's a mechanism provided to CAS via [Spring Boot](http://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-developing-auto-configuration.html)
+and it's an efficient way to pick up and register components into the runtime application context without the additional overhead of component-scanning and such.
+
 
 ### Review
 
