@@ -28,7 +28,6 @@ I don't know about you, dear reader, but I posit that there is virtually nothing
 
 Some things, however, are improbable [1]. 
 
-Let me know if you disagree :)
 
 [Misagh Moayyed](https://twitter.com/misagh84)
 
