@@ -6,7 +6,7 @@ summary:    Musings on the definition of Possibility and strategies one may use 
 
 If you are a member of an open source community and have been developing, designing and maintaining open source code for some time, it is very likely that from time to time you may encounter requests, comments and questions such as this:
 
->We are starting with our deployment of [insert-name]. One of our major requirements is that once the user logs into the application, a request via our own very special protocol is submitted to his/her automobile to schedule a job with the vehicle's IOT system to start up the A/C in 8 hours. When the user finishes work in a typical 8-hour work day, he/she can very comfortably get back into the car that is prepped with an exact and very personalized degree of temperature for all seasons. We'd also like the timespan to be configurable.
+>We are starting with our deployment of [insert-name]. One of our major requirements is that once the user logs into the application, a request via our own very special protocol is submitted to his/her automobile to schedule a job with the vehicle's IOT system to start up the A/C in 8 hours. When the user finishes work in a typical 8-hour work day, he/she can very comfortably get back into the car that is prepped with an exact and very personalized degree of temperature for all seasons. We'd also like the timespan to be configurable. Oh, we also use Active Directory.
 
 So far, very cool. Exciting, rather. I wonder if we could also automatically submit an order to Pizza Hut to deliver a large Hawaiian pizza to the user’s residence. That would be sweet. 
 
