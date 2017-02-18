@@ -50,7 +50,7 @@ There are some internal technical and architectural advantages to this approach.
 
 ## Challenges
 
-This process is rather difficult to get right, because just like any other decent translator, you do have to learn and speak both languages just-in-time. The plugin module needs to be designed generically and with a reasonable degree of abstraction such that it can dynamically insert itself into the right core areas of CAS without getting too entangled the internal architecture.
+This process is rather difficult to get right, because just like any other decent translator, you do have to learn and speak both languages just-in-time. The plugin module needs to be designed generically and with a reasonable degree of abstraction such that it can dynamically insert itself into the right core areas of CAS without getting too entangled in the internal architecture.
 
 # Your Road to Fame
 
