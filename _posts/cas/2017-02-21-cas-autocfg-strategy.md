@@ -10,7 +10,7 @@ How does this all work?
 
 # Java-based Configuration
 
-Given CAS' adoption of [Spring Boot](https://github.com/spring-projects/spring-boot), most if not all of the old XML configuration is transformed into `@Configuration` components. These are classes declared by each relevant module that are automatically picked up at runtime whose job is declare and configure beans and register them into the application context. Another way of thinking about it is, components that are decorated with `@Configuration` are loose equivalents of old XML configuration files that are highly organized where `<bean>` tags are translated to java methods tagged with `@Bean` and configured dynamically.
+Given CAS' adoption of [Spring Boot](https://github.com/spring-projects/spring-boot), most if not all of the old XML configuration is transformed into `@Configuration` components. These are classes declared by each relevant module that are automatically picked up at runtime whose job is to declare and configure beans and register them into the application context. Another way of thinking about it is, components that are decorated with `@Configuration` are loose equivalents of old XML configuration files that are highly organized where `<bean>` tags are translated to java methods tagged with `@Bean` and configured dynamically.
 
 Sidestepping irrelevant details, here is an example:
 
@@ -42,7 +42,7 @@ would roughly translate into the following:
         <!-- Add monitors to the list as needed dynamically. -->
       </list>
     </property>
-  </bean>
+</bean>
 ```
 
 # `@Configuration` Registration
@@ -71,7 +71,7 @@ spring.autoconfigure.exclude=org.apereo.cas.config.CasCoreMonitorConfiguration
 
 # Overrides and `@Conditional`
 
-What if you needed to override the definition of that `healthCheckMonitor` bean to add/remove monitors? Or perhaps entirely remove and disable it? This is where `@Conditional` components come to aid. Most component/bean definitions in CAS are registered with some form of `@Conditional` tags that indicates to the bootstrapping process to ignore them, if *a bean definition with the same id* is already defined. This means you can create your own configuration class, register it and the design a `@Bean` definition only to have the context utilize yours rather than what ships with CAS by default:
+What if you needed to override the definition of that `healthCheckMonitor` bean to add/remove monitors? Or perhaps entirely remove and disable it? This is where `@Conditional` components come to aid. Most component/bean definitions in CAS are registered with some form of `@Conditional` tag that indicates to the bootstrapping process to ignore them, if *a bean definition with the same id* is already defined. This means you can create your own configuration class, register it and the design a `@Bean` definition only to have the context utilize yours rather than what ships with CAS by default:
 
 ```java
 package org.custom.mine.config;
@@ -90,6 +90,7 @@ public class MyOwnMonitorConfiguration {
 }
 ```
 
+Make sure your component is registered:
 
 ```properties
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
