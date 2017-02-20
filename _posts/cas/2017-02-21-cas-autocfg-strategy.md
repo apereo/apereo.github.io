@@ -164,7 +164,7 @@ It's also evident that producing good documentation is very much a time-consumin
 
 The XML configuration was right in front of you, right? All you had to do was to change an element here and a property there and you were done. It’s quite true that the old model provides easier flexibility though perhaps at the cost of complexity as the platform grows larger.
 
-It should be noticed that the ability to configure the CAS application context via XML is not removed*. There still exists a `deployerConfigContext.xml` that may be of assistance for truly special and customized needs and requirements. However, most everything is translated into auto-configuration modules with a specific set of externalized properties and settings that control behavior.
+It should be noticed that the ability to configure the CAS application context via XML is *not removed*. There still exists a `deployerConfigContext.xml` that may be of assistance for truly special and customized needs and requirements. However, most everything is translated into auto-configuration modules with a specific set of externalized properties and settings that control behavior.
 
 So what do you do if you wanted to code an extension, or plug in a component/setting to modify behavior? The following options come to mind:
 
