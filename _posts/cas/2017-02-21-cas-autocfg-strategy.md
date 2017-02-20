@@ -123,7 +123,7 @@ Java-based configuration components are the exact opposite. They are *source cod
 Think of it this way; if you are designing the electrical system of a building:
 
 - Would you prefer the wiring system stop you from making potentially fatal mistakes as you attempt to connect the cables and wires together?
-- Or would have you prefer to do the whole thing in one go, turn on the lights, have the entire building blow up only to (possibly, maybe) succeed later after a few more iterations?
+- Or would you prefer to do the whole thing in one go, turn on the lights, have the entire building blow up only to (possibly, maybe) succeed later after a few more iterations?
 
 ### Automated
 
