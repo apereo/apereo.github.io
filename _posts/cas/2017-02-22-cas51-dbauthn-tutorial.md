@@ -156,7 +156,7 @@ Good job! Lets get some attributes now.
 
 # Attributes
 
-Because the `USERATTRS` follows something of a *multi-row* setup, we want to make sure CAS [can understand]((https://apereo.github.io/cas/development/integration/Attribute-Resolution.html#person-directory)) the specific of this schema model. Today, CAS is unable to retrieve attributes as part of authentication directly so we need to set up a separate attribute repository instance that CAS will contact once the user is fully authenticated. In our case, the attribute repository is the same database instance. So the configuration may look something like this:
+Because the `USERATTRS` follows something of a *multi-row* setup, we want to make sure CAS [can understand]((https://apereo.github.io/cas/development/integration/Attribute-Resolution.html#person-directory)) the specifics of this schema model. Today, CAS is unable to retrieve attributes as part of authentication directly so we need to set up a separate attribute repository instance that CAS will contact once the user is fully authenticated. In our case, the attribute repository is the same database instance. So the configuration may look something like this:
 
 ```properties
 cas.authn.attributeRepository.jdbc[0].singleRow=false
@@ -205,6 +205,6 @@ Which shows that CAS has been able to understand the schema and map columns to a
 
 # So...
 
-I hope this brief tutorial was of some assistance to you. Remember that the point here is not enumerate best practices and such. It's just to show the possibilities. It's important that you start off simple and make changes one step at a time. Once you have a functional environment, you can gradually and slowly add customizations to move files, tables and queries around.
+I hope this brief tutorial was of some assistance to you. Remember that the point here is not to enumerate best practices and such. It's just to show the possibilities. It's important that you start off simple and make changes one step at a time. Once you have a functional environment, you can gradually and slowly add customizations to move files, tables and queries around.
 
 [Misagh Moayyed](https://twitter.com/misagh84)
