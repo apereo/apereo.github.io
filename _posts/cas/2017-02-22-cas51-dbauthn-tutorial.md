@@ -6,7 +6,7 @@ summary:    Learn how to configure database authentication in CAS 5
 
 # Overview
 
-This is a short and sweet tutorial on how to configure CAS to authenticat against a database and then resolve/release attributes.
+This is a short and sweet tutorial on how to configure CAS to authenticate against a database and then resolve/release attributes.
 Most of the material is based on the [available documentation](https://apereo.github.io/cas/development/installation/Database-Authentication.html).
 
 This tutorial specifically focuses on:
