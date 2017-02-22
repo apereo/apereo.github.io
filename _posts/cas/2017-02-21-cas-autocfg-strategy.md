@@ -4,6 +4,8 @@ title:      Intro To CAS Auto Configuration Strategy
 summary:    A short and painless introduction into how CAS uses Spring Boot to tickle the runtime conditionally.
 ---
 
+> The post specifically applies to CAS 5.1.x which, as of this writing today, is still in development.
+
 If you scan the recent literature on [CAS configuration model and strategy](https://apereo.github.io/cas/development/installation/Configuration-Management.html#auto-configuration-strategy), you would notice that there is a great amount of emphasis on letting CAS modules dynamically alter the application context at runtime to activate features, massage webflow definitions and move settings around without asking for a whole lot of manual input.
 
 How does this all work?
