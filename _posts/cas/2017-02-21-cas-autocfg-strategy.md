@@ -65,7 +65,7 @@ The above done in XML form would roughly translate into the following:
 <import resource="monitors-configuration.xml"/>
 ```
 
-Note that the you can use the same exact technique in CAS overlays to register your own configuration components, or remove/disable CAS' auto-configuration strategy. For instance, if you prefer to not let CAS bootstrap its monitoring configuration automatically, you can remove it from the registration process in the `spring.factories`:
+Note that the you can use the same exact technique in CAS overlays to register your own configuration components, or remove/disable CAS' auto-configuration strategy. For instance, if you prefer to not let CAS bootstrap its monitoring configuration automatically, you can remove it from the registration process in the `application.properties` file:
 
 ```properties
 spring.autoconfigure.exclude=org.apereo.cas.config.CasCoreMonitorConfiguration
