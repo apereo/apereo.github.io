@@ -51,9 +51,9 @@ Sigh. This is my least favorite thing to jot down. Here's how it goes:
 2. Others are waiting for you and *others* to test features before it's to become GA.
 3. Tail-recursion back to #1.
 
-Something eventually breaks that cycle; it's usually the release schedule. Most development communities find themselves saying *"We have tested what we could. Nobody else has reported anything. This is good-enough"*.
+Something eventually breaks that cycle; it's usually the release schedule. Most development communities find themselves saying *"We have tested what we could. Nobody else has reported anything. It's been 6 months. This is good-enough"*.
 
-Do not put yourself in situations where you have face the question of the falling tree not having any witnesses. Your time is better spent elsewhere on other things...like testing!
+Do not put yourself in situations where you have to face the question of the falling tree not having any witnesses. Your time is better spent elsewhere on other things...like testing!
 
 # OK. What Now? 
 
