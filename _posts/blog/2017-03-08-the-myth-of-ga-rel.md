@@ -18,7 +18,6 @@ A GA release typically follows after one or more *release candidates*. The relea
 
 # To GA or Not to GA
 
-[![](http://img.youtube.com/vi/SwSle66O5sU/0.jpg)](https://www.youtube.com/watch?v=SwSle66O5sU "Is it safe?")
 
 There are a number of risky assumptions made about GA releases that typically end up affecting the overall [production] deployment schedule in negative ways. Here is what I have learned.
 
