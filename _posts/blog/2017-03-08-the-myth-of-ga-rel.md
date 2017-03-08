@@ -21,7 +21,7 @@ A GA release typically follows after one or more *release candidates*. The relea
 
 There are a number of risky assumptions made about GA releases that typically end up affecting the overall [production] deployment schedule in negative ways. Here is what I have learned.
 
-### No Magic
+## No Magic
 
 Some deployments tend to consider a GA release as "This is good to go". This statement may be true in larger communities (and not even then) with many active participants, testers and enthusiasts who get involved and step forward to test features, troubleshoot and diagnose issues, provide feedback and patches. After all, that's how one develops confidence for a release, right? *"This was tested by 20 people and in the end they were all found with a smile on their face."* 
 
@@ -29,7 +29,7 @@ If your community and your membership does not filter through those parameters a
 
 A GA tag is just tag. That's all....Yes, it's just a tag. It holds no magical powers. Really.
 
-### Love Thyself
+## Love Thyself
 
 I might be stating the obvious here...
 
@@ -43,7 +43,7 @@ Are you willing to trust your plans with the (possible, if any) test results of 
 
 In my experience, it's much more effective to take direct control of the situation beforehand. Community members and testers test and spend time on features they care about. That may not necessarily include yours.
 
-### Another Left Turn
+## Another Left Turn
 
 Sigh. This is my least favorite thing to jot down. Here's how it goes:
 
