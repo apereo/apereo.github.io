@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      CAS 5 SAML2 Delegated AuthN Tutorial
-summary:    Learn how to delegate authentication requests to external SAML2 identity providers
+summary:    Learn how to delegate authentication requests to external SAML2 identity providers.
 ---
 
 # Overview
