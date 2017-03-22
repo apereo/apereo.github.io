@@ -43,9 +43,11 @@ https://sso.example.org/cas/login?client_name=SAML2Client
 ```
 
 The configuration would look something like the following image:
+
 ![image](https://cloud.githubusercontent.com/assets/1205228/24192129/9d0f828c-0f0b-11e7-8cec-698be1b31cee.png)
 
 Finally you need to assign people/users SAML2 Identity Provider application to allow for authentication:
+
 ![image](https://cloud.githubusercontent.com/assets/1205228/24192186/c09b0ad2-0f0b-11e7-9e6a-12752de7c125.png)
 
 Okta is then able to provide you with a metadata for this instance, which you can then use to plug back into the above settings.
