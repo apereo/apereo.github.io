@@ -19,7 +19,14 @@ tags: [about, search]
 <div id="tipue_search_content"></div>
 
 <script>
+
 $(document).ready(function() {
+
+  const element = document.querySelector('form');
+  element.addEventListener('submit', event => {
+    event.preventDefault();
+  });
+
   $('#tipue_search_input').tipuesearch();
 });
 </script>
