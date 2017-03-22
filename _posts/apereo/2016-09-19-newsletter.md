@@ -2,6 +2,7 @@
 layout:     post
 title:      September 2016 Apereo Newsletter
 summary:    Lightly formatted re-publication of newsletter.
+tags:       [Apereo]
 ---
 
 This newsletter, dated September 15th, was [published](https://groups.google.com/a/apereo.org/forum/#!topic/announcements/y1c-AErU0co) to [the Apereo Announcements Google Group](https://groups.google.com/a/apereo.org/forum/#!forum/announcements).
