@@ -2,6 +2,7 @@
 layout:     post
 title:      Extending CAS 5 Webflows
 summary:    Learn and master extending CAS 5 Spring Webflow definitions.
+tags:       [CAS]
 ---
 
 Unlike previous versions, CAS 5 attempts to automate all required Spring Webflow changes on a per-module basis. This aligns well with the new `IDD` (Intention-Driven Development) model where all one should have to do is, declare the appropriate module in the build script...and viola. CAS will take care of the rest.

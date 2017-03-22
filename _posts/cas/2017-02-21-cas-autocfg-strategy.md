@@ -2,6 +2,7 @@
 layout:     post
 title:      Intro To CAS Auto Configuration Strategy
 summary:    A short and painless introduction into how CAS uses Spring Boot to tickle the runtime conditionally.
+tags:       [CAS]
 ---
 
 > The post specifically applies to CAS 5.1.x which, as of this writing today, is still in development.

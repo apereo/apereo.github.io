@@ -2,6 +2,7 @@
 layout:     post
 title:      Design CAS-Enabled Custom Protocols 
 summary:    Learn how to design and mass-promote your very own custom authentication protocol, get rich quickly, stay healthy indefinitely and reach a new state of enlightenment in a few very easy steps. 
+tags:       [CAS]
 ---
 
 ![](https://cloud.githubusercontent.com/assets/1205228/23062372/c06e1e1a-f51a-11e6-8e5a-60692af7728c.jpg)

@@ -1,7 +1,8 @@
 ---
 layout:     post
 title:      Bootiful CAS 5 Overlay
-summary:    A quick tutorial on running a CAS Overlay with Spring Boot
+summary:    A quick tutorial on running a CAS Overlay with Spring Boot.
+tags:       [CAS]
 ---
 
 # Overview

@@ -2,6 +2,7 @@
 layout:     post
 title:      Design Authentication Handlers in CAS 5.1.x
 summary:    Learn and master writing custom authentication handlers/schemes in CAS 5.1.x
+tags:       [CAS]
 ---
 
 While [authentication support](https://apereo.github.io/cas/development/installation/Configuring-Authentication-Components.html)

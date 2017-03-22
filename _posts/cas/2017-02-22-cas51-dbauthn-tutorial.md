@@ -1,7 +1,8 @@
 ---
 layout:     post
 title:      CAS 5 Database Authentication Tutorial
-summary:    Learn how to configure database authentication in CAS 5
+summary:    Learn how to configure database authentication in CAS 5.
+tags:       [CAS]
 ---
 
 # Overview

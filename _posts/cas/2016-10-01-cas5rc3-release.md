@@ -2,6 +2,7 @@
 layout:     post
 title:      CAS 5 RC3 Released
 summary:    ...in which I present an overview of CAS 5 RC3 release.
+tags:       [CAS]
 ---
 
 We are excited to announce the 3rd release candidate in the CAS 5 series. There are a [few  items](https://github.com/apereo/cas/releases/tag/v5.0.0.RC3) packed into this release that are worthy to publicize. So here it goes.
