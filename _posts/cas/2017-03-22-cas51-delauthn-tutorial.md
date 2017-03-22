@@ -33,7 +33,7 @@ cas.authn.pac4j.saml[0].identityProviderMetadataPath=https://dev-12345.oktaprevi
 
 Note that the above settings are indexed, which means that if you needed to, you could delegate authentication to more than one identity provider. Also remember that metadata, keystores and such are only created if they are absent from the specified locations. You can certainly hand-massage them if needed, and CAS will let them be as they are without complaints.
 
-# Okta
+# Configure Okta
 
 Follow the documentation [described here](http://developer.okta.com/standards/SAML/setting_up_a_saml_application_in_okta)
 to create a developer account and add a new application as SAML2 IdP. At a minimum, you need to provide Okta with the SSO (ACS) url and entity id of the service provider, that being CAS in this case. You do have the entity id above and the ACS url takes on the following form:
