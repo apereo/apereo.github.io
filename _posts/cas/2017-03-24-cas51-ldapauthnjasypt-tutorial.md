@@ -124,7 +124,7 @@ So now that I have encrypted value in the `OUTPUT` section, I am going to slight
 
 ```properties
 ...
-cas.authn.ldap[0].bindCredential={cifer}mqWuN+/U7oofNhdSVNcEgmVcwGmxiOaS
+cas.authn.ldap[0].bindCredential={cipher}mqWuN+/U7oofNhdSVNcEgmVcwGmxiOaS
 ...
 ```
 
