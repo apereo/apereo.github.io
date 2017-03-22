@@ -4,7 +4,6 @@ email:       info@apereo.org
 author:      Apereo Foundation
 description: "This is a blog managed and edited by the Apereo Foundation members. It is typically used to post project updates, announce news, etc."
 baseurl:     "https://apereo.github.io"
-url:         "http://pixyll.com"
 date_format: "%b %-d, %Y"
 url:         "https://apereo.github.io"
 
