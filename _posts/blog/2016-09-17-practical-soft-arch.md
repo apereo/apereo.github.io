@@ -2,6 +2,7 @@
 layout:     post
 title:      Veresk Software Architecture
 summary:    Soapbox alert; I ramble on about software architecture, taking notes from historical monarchs.
+tags:       [Blog]
 ---
 
 I suspect you have never had a chance to visit the Veresk Bridge. That's cool. Neither have I. But humor me please and take a peek at it [here](https://en.wikipedia.org/wiki/Veresk_Bridge).

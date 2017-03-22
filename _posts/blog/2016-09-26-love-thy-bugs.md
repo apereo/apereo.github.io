@@ -2,6 +2,7 @@
 layout:     post
 title:      Singing "I Love Bug Reports"
 summary:    A personal, painfully obvious recipe for handling bug reports in open source.
+tags:       [Blog]
 ---
 
 Having been involved in the open-source space for some time, I have noticed that various communities and software engineers react differently to bug reports and issue submissions. Some tend to discuss issues and shortcomings of the software *in private* as developers may consider those defects cause for embarrassment and failure! Some tend to disregard issues and close the conversation loop immediately, routing the user to other *appropriate* channels and reemphasizing a *this is not a bug* mentality without any sort of user education or guidance. Some welcome bug reports in all shapes and sizes and consider those an acknowledgement and positive feedback even when/if the underlying reported problem turns out to be moot.

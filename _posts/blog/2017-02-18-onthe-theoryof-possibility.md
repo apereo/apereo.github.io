@@ -2,6 +2,7 @@
 layout:     post
 title:      On The Theory of Possibility
 summary:    Musings on the definition of Possibility and strategies one may use to empower friends, family and colleagues in open source. 
+tags:       [Blog]
 ---
 
 If you are a member of an open source community and have been developing, designing and maintaining open source code for some time, it is very likely that from time to time you may encounter requests, comments and questions such as this:

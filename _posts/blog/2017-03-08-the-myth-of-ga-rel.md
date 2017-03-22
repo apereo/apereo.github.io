@@ -2,6 +2,7 @@
 layout:     post
 title:      Busting the Myth - GA Release
 summary:    Musings on the trustworthiness of a general availability (GA) release and its production-readiness calibre in open source. 
+tags:       [Blog]
 ---
 
 If you are a member of an open source community, currently waiting for something to be *officially* tagged as a GA release so you can begin planning your production deployments and schedule, this post is for you.

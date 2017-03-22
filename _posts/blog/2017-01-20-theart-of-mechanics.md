@@ -2,7 +2,7 @@
 layout:     post
 title:      Guy walks into an Auto Shop
 summary:    A true story inspired by real events. Seriously. Bryan Cranston has been approached for the role of the "Guy".
-date:       2017-01-20
+tags:       [Blog]
 ---
 
 > *A true story inspired by real events. Seriously. Bryan Cranston has been approached for the role of the "Guy".*

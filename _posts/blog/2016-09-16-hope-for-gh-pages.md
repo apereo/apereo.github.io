@@ -2,6 +2,7 @@
 layout:     post
 title:      Hope for GitHub Pages
 summary:    GitHub Pages could be a win for Apereo beyond blogging.
+tags:       [Blog]
 ---
 
 # Short version
