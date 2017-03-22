@@ -2,6 +2,7 @@
 layout:     post
 title:      uPortal 2016-11-14 Webproxy Portlet caching vulnerability
 summary:    Webproxy Portlet v2 is bugged; upgrade.
+tags:       [uPortal]
 ---
 
 This is a **public disclosure of a security vulnerability**, near the tail end of applying [the uPortal Security Incident Response Plan](https://docs.google.com/document/d/1s-xvqbeHS_EjU6EKlv8ftXgQ-R56CU0tAjuQE3SSH4s/edit) to [this issue](https://issues.jasig.org/browse/WPP-101).

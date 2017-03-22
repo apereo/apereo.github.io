@@ -2,6 +2,7 @@
 layout:     post
 title:      MyUW (University of Wisconsin) Build Process
 summary:    A look into what MyUW does now for builds and what it hopes that the future looks like.
+tags:       [uPortal]
 ---
 
 During the most recent uPortal development meeting we were discussing how uPortal building and deployment currently works and ought to work. It came up that other campuses are checking out the project on each server, building the ear, and shipping it to Tomcat. UW does not take that approach and we thought it may be helpful to articulate what we do to maybe help steer the next generation uPortal project (aka uPortal 5).

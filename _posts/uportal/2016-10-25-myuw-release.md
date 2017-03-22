@@ -2,6 +2,7 @@
 layout:     post
 title:      MyUW 2016-10-25 release
 summary:    A modest MyUW release
+tags:       [uPortal]
 ---
 
 Today MyUW promoted a new release to production. This post highlights some aspects of this.
