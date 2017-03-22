@@ -37,7 +37,7 @@ Note that the above settings are indexed, which means that if you needed to, you
 # Configure Okta
 
 Follow the documentation [described here](http://developer.okta.com/standards/SAML/setting_up_a_saml_application_in_okta)
-to create a developer account and add a new application as SAML2 IdP. At a minimum, you need to provide Okta with the SSO (ACS) url and entity id of the service provider, that being CAS in this case. You do have the entity id above and the ACS url takes on the following form:
+to create a developer account and add a new application as a SAML2 IdP. At a minimum, you need to provide Okta with the SSO (ACS) url and entity id of the service provider, that being CAS in this case. You do have the entity id above and the ACS url takes on the following form:
 
 ```bash
 https://sso.example.org/cas/login?client_name=SAML2Client
@@ -47,7 +47,7 @@ The configuration would look something like the following image:
 
 ![image](https://cloud.githubusercontent.com/assets/1205228/24192129/9d0f828c-0f0b-11e7-8cec-698be1b31cee.png)
 
-Finally you need to assign people/users SAML2 Identity Provider application to allow for authentication:
+Finally you need to assign people/users to the SAML2 Identity Provider application to allow for authentication:
 
 ![image](https://cloud.githubusercontent.com/assets/1205228/24192186/c09b0ad2-0f0b-11e7-9e6a-12752de7c125.png)
 
