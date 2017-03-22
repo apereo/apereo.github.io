@@ -4,9 +4,7 @@ title:      CAS 5 SAML2 Delegated AuthN Tutorial
 summary:    Learn how to delegate authentication requests to external SAML2 identity providers.
 ---
 
-# Overview
-
-This is a short and sweet tutorial on how to configure CAS to authenticate against a database and then resolve/release attributes.
+This is a short and sweet tutorial on how to configure CAS to delegate authentication to an external SAML2 identity provider.
 Most of the material is based on the [available documentation](https://apereo.github.io/cas/development/integration/Delegate-Authentication.html).
 
 This tutorial specifically focuses on:
