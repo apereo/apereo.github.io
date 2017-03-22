@@ -57,8 +57,8 @@ Okta is then able to provide you with a metadata for this instance, which you ca
 When you deploy CAS, your default logs (though you could certainly turn on `DEBUG` to observe a lot more) would indicate something along the following lines:
 
 ```bash
-2017-03-22 13:33:59,147 INFO [org.apereo.cas.support.pac4j.config.support.authentication.Pac4jAuthenticationEventExecutionPlanConfiguration] - <Located and prepared [1] delegated authentication clients>
-2017-03-22 13:33:59,182 INFO [org.apereo.cas.support.pac4j.config.support.authentication.Pac4jAuthenticationEventExecutionPlanConfiguration] - <Registering delegated authentication clients...>
+2017-03-22 13:33:59,147 INFO [o.a.c.s.p.c.s.a.Pac4jAuthenticationEventExecutionPlanConfiguration] - <Located and prepared [1] delegated authentication clients>
+2017-03-22 13:33:59,182 INFO [o.a.c.s.p.c.s.a.Pac4jAuthenticationEventExecutionPlanConfiguration] - <Registering delegated authentication clients...>
 ```
 
 ...and when you get to the login page, you will see the following:
