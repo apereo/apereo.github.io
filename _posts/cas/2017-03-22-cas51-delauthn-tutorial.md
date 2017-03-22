@@ -62,6 +62,7 @@ When you deploy CAS, your default logs (though you could certainly turn on `DEBU
 ```
 
 ...and when you get to the login page, you will see the following:
+
 ![image](https://cloud.githubusercontent.com/assets/1205228/24192477/c4bb918a-0f0c-11e7-94b9-ac2187588b9c.png)
 
 The same strategy simply applies to all other forms of delegated authentication, such as social identity providers or other CAS servers.
