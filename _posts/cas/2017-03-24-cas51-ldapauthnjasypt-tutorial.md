@@ -74,7 +74,7 @@ Great. Next, pull up CAS in your browser and log in with `jsmith` and `password`
 You may have noted that the LDAP `bindCredential` is put into the `cas.properties` file in plain-text. As the next steps:
 
 - We will first encrypt the `bindCredential` value via Jasypt and put it into CAS.
-- We will instruct CAS to decrypt the message at runtime invisibly and resume as usual.
+- We will instruct CAS to decrypt the setting at runtime invisibly and resume as usual.
 
 Note that there is nothing stopping you from encrypting any other setting!
 
