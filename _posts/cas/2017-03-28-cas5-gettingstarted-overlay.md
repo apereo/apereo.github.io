@@ -190,6 +190,17 @@ You can see that the build attempts to download, clean, compile and package all 
 
 I am going to skip over the configuartion of `/etc/cas/config` and all that it deals with. If you need the reference, you may always [use this guide](https://apereo.github.io/cas/5.0.x/installation/Configuration-Management.html) to study various aspects of CAS configuration.
 
+Suffice it to say that, quite simply, CAS deployment expects *the main* configuration files to be found under `/etc/cas/config/cas.properties`. This is a key-value store tha is able to dictate and alter behavior of the running CAS software.
+As an example, you might encouter something like:
+
+```properties
+cas.server.name=https://cas.example.org:8443
+cas.server.prefix=https://cas.example.org:8443/cas
+logging.config=file:/etc/cas/config/log4j2.xml
+```
+
+...which at a minimum, the above settings identify the CAS server's url and prefix and instruct the running server to locate the logging configuration at the specified location. The overlay by default ships with a `log4j2.xml` that you can use to customize logging locations, levels, etc. Note that the presense of all that is contained inside `/etc/cas/config/` is optional. CAS will continue to fall back onto defaults if the directory and the files within are not found.
+
 # Overlay Customization
 
 If I `cd` into the `target/cas` directory, I can see an *exploded* version of the `cas.war` file. This is the directory that contains the results of the overlay process. Since I have not actually customized and overlaid anything yet, all configuration files simply match their default and are packaged as such. So as an example, let's change something.
@@ -241,5 +252,7 @@ If I look at `target/cas/WEB-INF/classes/messages.properties` after the build, I
 </div>
 
 # Deploy
+
+
 
 [Misagh Moayyed](https://twitter.com/misagh84)
