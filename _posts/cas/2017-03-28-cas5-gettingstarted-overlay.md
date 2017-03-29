@@ -22,7 +22,7 @@ Overlays are a strategy to combat repetitive code and/or resources. Rather than 
 
 The concept of the WAR Overlay is NOT a CAS invention. It's specifically an Apache Maven eature and of course there are techniques and plugins available to apply the same concept to Gradle-based builds as well.
 
-You are free to choose between Maven or Gradle. For this tutorial I opted into the [Maven WAR ovelay](https://github.com/apereo/cas-overlay-template).
+You are free to choose between Maven or Gradle. For this tutorial I opted into the [Maven WAR overlay](https://github.com/apereo/cas-overlay-template).
 
 Once you have forked and cloned the repository locally, you're ready to begin.
 
