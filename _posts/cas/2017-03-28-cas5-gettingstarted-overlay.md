@@ -201,11 +201,18 @@ logging.config=file:/etc/cas/config/log4j2.xml
 
 ...which at a minimum, the above settings identify the CAS server's url and prefix and instruct the running server to locate the logging configuration at the specified location. The overlay by default ships with a `log4j2.xml` that you can use to customize logging locations, levels, etc. Note that the presense of all that is contained inside `/etc/cas/config/` is optional. CAS will continue to fall back onto defaults if the directory and the files within are not found.
 
+It is **VERY IMPORTANT** that you contain and commit the entire overlay directory (save the obvious exclusions such as the `target` directory) into some sort of source control system, such as `git`. Treat your deployment just like any other project with tags, released and functional baselines.
+
 # Overlay Customization
 
 If I `cd` into the `target/cas` directory, I can see an *exploded* version of the `cas.war` file. This is the directory that contains the results of the overlay process. Since I have not actually customized and overlaid anything yet, all configuration files simply match their default and are packaged as such. So as an example, let's change something.
 
 Digging further down, I notice there exists a `/target/cas/WEB-INF/classes/messages.properties` file, which is [the default message bundle](https://apereo.github.io/cas/5.0.x/installation/User-Interface-Customization-Localization.html). I decide that I am going to change the text associated with `screen.welcome.instructions`.
+
+<div class="alert alert-warning">
+  <strong>Remember</strong><br/>Do NOT ever make changes in the <code>target</code> directory. The changesets will be cleaned out and set back to defaults every time you do a build. Follow the overlay process to avoid surprises.
+</div>
+
 
 First, I will need to move the file to my project directory so that Apache Maven during the overlay process can use that instead of what is provided by default.
 
@@ -253,6 +260,10 @@ If I look at `target/cas/WEB-INF/classes/messages.properties` after the build, I
 
 # Deploy
 
+You have a number of options when it comes to deploying the final `cas.war` file. [This post](https://apereo.github.io/2016/10/04/casbootoverlay/) should help.
 
+# So...
+
+I hope this brief tutorial was of some assistance to you. It's important that you start off simple and make changes one step at a time. Once you have a functional environment, you can gradually and slowly add customizations to move files around.
 
 [Misagh Moayyed](https://twitter.com/misagh84)
