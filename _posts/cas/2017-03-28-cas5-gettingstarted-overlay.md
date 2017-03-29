@@ -20,9 +20,7 @@ Furthermore, this tutorial assumes that you are running CAS in its `standalone` 
 
 Overlays are a strategy to combat repetitive code and/or resources. Rather than downloading the CAS codebase and building it from source, overlays allow you to download a pre-built vanilla CAS web application server provided by the project itself, override/insert specific behavior into it and then merge it all back together to produce the final (web application) artifact. You can find a lot more about how overlays work [here](https://apereo.github.io/cas/5.0.x/installation/Maven-Overlay-Installation.html).
 
-<div class="alert alert-info">
-  <strong>Note</strong><br/>The concept of the WAR Overlay is NOT a CAS invention. It's specifically an <a href="https://maven.apache.org/plugins/maven-war-plugin/overlays.html">Apache Maven</a> feature and of course there are techniques and plugins available to apply the same concept to Gradle-based builds as well.
-</div>
+The concept of the WAR Overlay is NOT a CAS invention. It's specifically an Apache Maven eature and of course there are techniques and plugins available to apply the same concept to Gradle-based builds as well.
 
 You are free to choose between Maven or Gradle. For this tutorial I opted into the [Maven WAR ovelay](https://github.com/apereo/cas-overlay-template).
 
