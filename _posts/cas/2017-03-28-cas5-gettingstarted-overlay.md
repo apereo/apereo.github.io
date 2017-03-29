@@ -100,7 +100,7 @@ cd cas-overlay-template
 mvnw clean
 ```
 
-...which may be a problem because, how are you supposed to know what commands/goals can be passed to the build? You can [study them](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html) for sure, but the project provides you with a shell script that wraps itself around the Maven wrapper and provides an easy facade for you remember commands and their use. This is the `build.sh` file, which you can run as such:
+...which may be a problem because, how are you supposed to know what commands/goals can be passed to the build? You can [study them](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html) for sure, but the project provides you with a shell script that wraps itself around the Maven wrapper and provides an easy facade for you to remember commands and their use. This is the `build.sh` file, which you can run as such:
 
 ```bash
 cd cas-overlay-template
@@ -188,7 +188,8 @@ You can see that the build attempts to download, clean, compile and package all 
 
 I am going to skip over the configuartion of `/etc/cas/config` and all that it deals with. If you need the reference, you may always [use this guide](https://apereo.github.io/cas/5.0.x/installation/Configuration-Management.html) to study various aspects of CAS configuration.
 
-Suffice it to say that, quite simply, CAS deployment expects *the main* configuration files to be found under `/etc/cas/config/cas.properties`. This is a key-value store tha is able to dictate and alter behavior of the running CAS software.
+Suffice it to say that, quite simply, CAS deployment expects *the main* configuration file to be found under `/etc/cas/config/cas.properties`. This is a key-value store that is able to dictate and alter behavior of the running CAS software.
+
 As an example, you might encouter something like:
 
 ```properties
@@ -197,9 +198,11 @@ cas.server.prefix=https://cas.example.org:8443/cas
 logging.config=file:/etc/cas/config/log4j2.xml
 ```
 
-...which at a minimum, the above settings identify the CAS server's url and prefix and instruct the running server to locate the logging configuration at the specified location. The overlay by default ships with a `log4j2.xml` that you can use to customize logging locations, levels, etc. Note that the presense of all that is contained inside `/etc/cas/config/` is optional. CAS will continue to fall back onto defaults if the directory and the files within are not found.
+...which at a minimum, identifies the CAS server's url and prefix and instructs the running server to locate the logging configuration at `file:/etc/cas/config/log4j2.xml`. The overlay by default ships with a `log4j2.xml` that you can use to customize logging locations, levels, etc. Note that the presense of all that is contained inside `/etc/cas/config/` is optional. CAS will continue to fall back onto defaults if the directory and the files within are not found.
 
-It is **VERY IMPORTANT** that you contain and commit the entire overlay directory (save the obvious exclusions such as the `target` directory) into some sort of source control system, such as `git`. Treat your deployment just like any other project with tags, released and functional baselines.
+## Keep Track
+
+It is **VERY IMPORTANT** that you contain and commit the entire overlay directory (save the obvious exclusions such as the `target` directory) into some sort of source control system, such as `git`. Treat your deployment just like any other project with tags, releases and functional baselines.
 
 # Overlay Customization
 
@@ -238,12 +241,12 @@ Then I'll package things up as usual.
 ...
 [INFO] --- maven-war-plugin:2.6:war (default-war) @ cas-overlay ---
 [INFO] Packaging webapp
-[INFO] Assembling webapp [cas-overlay] in [/Users/Misagh/Workspace/GitWorkspace/cas-overlay-template/target/cas]
+[INFO] Assembling webapp [cas-overlay] in [/cas-overlay-template/target/cas]
 [info] Copying manifest...
 [INFO] Processing war project
 [INFO] Processing overlay [ id org.apereo.cas:cas-server-webapp]
 [INFO] Webapp assembled in [1005 msecs]
-[INFO] Building war: /Users/Misagh/Workspace/GitWorkspace/cas-overlay-template/target/cas.war
+[INFO] Building war: /cas-overlay-template/target/cas.war
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 ...
@@ -253,7 +256,7 @@ Then I'll package things up as usual.
 If I look at `target/cas/WEB-INF/classes/messages.properties` after the build, I should see that the overlay process has picked and overlaid onto the default *my version* of the file.
 
 <div class="alert alert-info">
-  <strong>Remember</strong><br/>Only overlay and modify files you actually need, and try to use externalized resources and configuration as much as possible. Just because you CAN override something in the default package, it doesn't mean that you can or should.
+  <strong>Remember</strong><br/>Only overlay and modify files you actually need, and try to use externalized resources and configuration as much as possible. Just because you CAN override something in the default package, it doesn't mean that you should.
 </div>
 
 # Deploy
