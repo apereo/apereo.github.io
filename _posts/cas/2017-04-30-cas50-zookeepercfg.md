@@ -6,7 +6,7 @@ tags:       [CAS]
 ---
 
 <div class="alert alert-info">
-  <strong>Contributed Content</strong><br/>Giovanni Morelli (<code>giannimorell at gmail.com</code>) was kind enough to share this guide.
+  <strong>Contributed Content</strong><br/>Giovanni Morelli (Email: <kbd>giannimorell at gmail.com</kbd>, Github: <kbd>@GiovanniMorelli</kbd>) was kind enough to share this guide.
 </div>
 
 I have created a `cas-server-core-configuration-cloud-zookeeper` module for CAS `5.0.4` based on `cas-server-core-configuration-cloud-mongo`
