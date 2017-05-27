@@ -2,7 +2,7 @@
 layout:     post
 title:      Easier CLA submission
 summary:    A new online form supplements prior ways of submitting contributor license agreements.
-tags:       [Apereo, licensing]
+tags:       [Apereo, Licensing]
 ---
 
 Now it is easier to submit a contributor licensing agreement (CLA) to Apereo, with online forms, one for each type of agreement, linked from [the licensing page][1].
