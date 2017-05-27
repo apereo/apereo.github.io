@@ -9,11 +9,11 @@ This is a brief overview that explains how to *shibbolize* the Apereo CAS server
 
 # But...Why?
 
-This is a very elaborate setup, yes. The goal originally was to let CAS simply and directly delegate authentication requests to the SAML2 identity provider. [This can very easily be done](https://apereo.github.io/2017/03/22/cas51-delauthn-tutorial/), *except* that in this particular case the SAML2 identity provider only supported a very specific and rather complicated variation of the SAML2 protocol, whose support is absent in CAS today. Convincing the identity provider to provide support for the more-mainstream *SAML2 WebSSO Browser Profile* let to a path riddled with uncertainties. After further analysis, we came to the conclusion that implementing built-in support for the IdP-supported SAML2 profile variation in CAS is unnecessarily complicated, needlessly expensive and possibly soon-to-be obsolete.
+This is a very elaborate setup, yes. The goal originally was to let CAS simply and directly delegate authentication requests to the SAML2 identity provider. [This can very easily be done](https://apereo.github.io/2017/03/22/cas51-delauthn-tutorial/), *except* that in this particular case the SAML2 identity provider only supported a very specific and rather complicated variation of the SAML2 protocol, whose support is absent in CAS today. Convincing the identity provider to provide support for the more-mainstream *SAML2 WebSSO Browser Profile* led to a path riddled with uncertainties. After further analysis, we came to the conclusion that implementing built-in support for the IdP-supported SAML2 profile variation in CAS is unnecessarily complicated, needlessly expensive and possibly soon-to-be obsolete.
 
 Of course, [it is certainly possible to do](https://apereo.github.io/2017/02/18/onthe-theoryof-possibility/). If you have to ask: all you need is love, coffee and access to decent hair conditioning products. 
 
-So the path to least resistance turned out to be a deployment with a few additional components with a clear separation of boundaries. Thanks to Docker and outstanding help from colleagues, we managed to get this working. 
+So the path to least resistance turned out to be a deployment with a few additional components and with a clear separation of boundaries. Thanks to Docker and outstanding help from colleagues, we managed to get this working. 
 
 Read on.
 
