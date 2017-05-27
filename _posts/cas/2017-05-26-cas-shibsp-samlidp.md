@@ -5,7 +5,7 @@ summary:    Learn about a rather fancy Apereo CAS server deployment, sitting beh
 tags:       [CAS]
 ---
 
-This is a brief tutorial on how to *shibbolize* the Apereo CAS server; that is to let the CAS server be *protected* by an instance of the [Shibboleth Service Provider](https://shibboleth.net/products/service-provider.html), where the SP is then tasked to delegate authentication requests to a remote SAML2 identity provider. The entire SAML2 interaction is kept between the SP and the IdP while CAS on the return trip eventually picks up the user profile from the SP in form of special headers, etc.
+This is a brief overview that explains how to *shibbolize* the Apereo CAS server; that is to let the CAS server be *protected* by an instance of the [Shibboleth Service Provider](https://shibboleth.net/products/service-provider.html), where the SP is then tasked to delegate authentication requests to a remote SAML2 identity provider. The entire SAML2 interaction is kept between the SP and the IdP while CAS on the return trip eventually picks up the user profile from the SP in form of special headers, etc.
 
 # But...Why?
 
