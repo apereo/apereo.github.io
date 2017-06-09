@@ -28,7 +28,7 @@ Some deployments tend to consider a GA release as "This is good to go". This sta
 
 If your community and your membership does not filter through those parameters and yet you're planning your production rollouts and schedules based on the availability of that release, I promise, you have set yourself up for surprises. Of course, some tend to assume that confidence in a given release somehow stems from the deep chasms of the Misty Mountains. While an avid hiker myself and having not visited the place for certain, I find that claim to be suspicious.
 
-A GA tag is just tag. That's all....Yes, it's just a tag. It holds no magical powers. Really.
+A GA tag is just a tag. That's all....Yes, it's just a tag. It holds no magical powers. Really.
 
 ## Love Thyself
 
