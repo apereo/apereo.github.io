@@ -132,7 +132,7 @@ The 4th trial showed the nodes were capable of sustaining a ~600 authentication 
 
 ![5](https://user-images.githubusercontent.com/1205228/26984978-8439edbe-4d0f-11e7-992d-8a80eca2a276.png)
 
-This trial was useful in establishing the mean rate of 291 events per minute given a swarm of 25 locusts.  This test and test 6 are notably shorter in duration than the other tests, as it is assumed at this points the nodes can sustain the loads indefinitely.
+This trial was useful in establishing the mean rate of 291 events per minute given a swarm of 25 locusts.  This test and test 6 are notably shorter in duration than the other tests, as it is assumed at this point the nodes can sustain the loads indefinitely.
 
 ## Trial 6
 
