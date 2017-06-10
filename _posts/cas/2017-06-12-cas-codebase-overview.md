@@ -5,8 +5,6 @@ summary:    An overview of the CAS codebase organization and layout in which I a
 tags:       [CAS]
 ---
 
-# Overview
-
 Over the past couple of weeks, I have received a lot of positive feedback on CAS codebase organization and management. This blog post attempts to provide an overview of the current codebase status and offers to explain the supporting rationale and the decisions made to cleanup, break down and decompose the monolithic structure of the CAS project whose latest release as of today is [available here](https://github.com/apereo/cas/releases/tag/v5.1.0).
 
 # The 1000-Foot View
