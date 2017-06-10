@@ -76,7 +76,7 @@ As the codebase is broken apart, it will slowly become apparent that certain mod
 
 ## When Enough Is Enough
 
-In certain literatures, it is argued that managing one big thing is much easier, conceptually, than managing 100 small things. That's not entirely false. It, decomposition, requires not only skill and command but also capacity, availability and self-control. All good things are usually done in moderation; so do not overdo. The boundaries of where one module stops and another begins should be designed and apparent at reasonable granular levels and no more, where you decide what *reasonable* and *granular* means.
+In certain literatures, it is argued that managing one big thing is much easier, conceptually, than managing 100 small things. That's not entirely false. It, decomposition, requires not only skill and command but also capacity, availability and self-control. All good things are usually done in moderation; so do not overdo. The boundaries of where one module stops and another begins should be designed and apparent at reasonable granular levels and no more, where you decide what *reasonable* and *granular* mean.
 
 ## Talk Is Cheap; Show Me The Code
 
