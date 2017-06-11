@@ -13,7 +13,7 @@ If you were to clone [the CAS project on Github](https://github.com/apereo/cas/)
 
 ```bash
 > cd cas-server
-> ls -1 | wc -l
+> gradlew projects | wc -l
 221
 ```
 
