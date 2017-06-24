@@ -17,7 +17,7 @@ How's that situation convered in the most recent CAS 5 release line?
 
 # Solution
 
-The trick is to ensure that the component responsible for validating tickets and producing the final payload is using the *correct* versions of the view/response which matches that of CAS protocol `v3`. The most bullet-proof way of applying thiis change is with CAS 5's auto-configuration strategy described below.
+The trick is to ensure that the component responsible for validating tickets and producing the final payload is using the *correct* versions of the view/response which match that of CAS protocol `v3`. The most bullet-proof way of applying this change is with CAS 5's auto-configuration strategy described below.
 
 ## CAS 5.0.x
 
