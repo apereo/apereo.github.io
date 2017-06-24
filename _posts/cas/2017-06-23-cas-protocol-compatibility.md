@@ -11,17 +11,17 @@ In order to preserve protocol backward-compatibility, a new `/p3/serviceVaildate
 
 # Problem Statement
 
-There are cases where a certain number of today's CAS clients are perfectly able to consume attributes from CAS protocol `v2`. How? Because the support was an accepted *mod* made by most deployers and client developers. A deployer running some version of CAS `3.x` for instance had already applied the change to CAS for attribute release and had built clients or instructed vendors to build clients such that they all could consume attributes and enjoy coolness.
+There are cases where a certain number of today's CAS clients are perfectly able to consume attributes from CAS protocol `v2`. How? Because support for attributes was an accepted *mod* made by most deployers and client developers. A deployer running some version of CAS `3.x` for instance had already applied the change to CAS for attribute release and had built clients or instructed vendors to build clients such that they all could consume attributes and enjoy coolness.
 
 How's that situation convered in the most recent CAS 5 release line?
 
 # Solution
 
-The trick is to ensure that the component responsible for validating tickets and producing the final payload is using the *correct& versions of the view/response which matches that of CAS protocol `v3`. The most bullet-proof way of applying thiis change is with CAS 5's auto-configuration strategy described below.
+The trick is to ensure that the component responsible for validating tickets and producing the final payload is using the *correct* versions of the view/response which matches that of CAS protocol `v3`. The most bullet-proof way of applying thiis change is with CAS 5's auto-configuration strategy described below.
 
 ## CAS 5.0.x
 
-Design your own `@Configuration` class and have it simply match the following body. This component will be placed inside the CAS overlay under `/src/main/java/org/apereo/cas/config` and it must be housed inside the Java packaged `org.apereo.cas`. You may need to create the directory structure and you may also need to ensure relevant dependencies are under the `compile` scope so the configuration below can properly compile.
+Design your own `@Configuration` class and have it simply match the following body. This component will be placed inside the CAS overlay under `/src/main/java/org/apereo/cas/config` and it must be housed inside the Java package `org.apereo.cas`. You may need to create the directory structure and you may also need to ensure relevant dependencies are under the `compile` scope so the configuration below can properly compile.
 
 As you can see below, all we are doing is swapping out one set of views with another.
 
