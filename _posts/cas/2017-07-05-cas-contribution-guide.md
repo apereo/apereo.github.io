@@ -70,7 +70,7 @@ Next, if you simply list the remotes you should see:
 ```bash
 origin  git@github.com:apereo/cas.git (fetch)
 origin  git@github.com:apereo/cas.git (push)
-mmoayyed    git@github.com:mmoayyed/cas.git (fetch)
+mmoayyed        git@github.com:mmoayyed/cas.git (fetch)
 mmoayyed	git@github.com:mmoayyed/cas.git (push)
 ```
 
