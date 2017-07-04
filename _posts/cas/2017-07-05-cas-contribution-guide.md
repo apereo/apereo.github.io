@@ -1,0 +1,114 @@
+---
+layout:     post
+title:      Apereo CAS - Contribution Guidelines
+summary:    A quick hands-on guide for one to get started with contibuting to the development and prosperity of the Apereo CAS project. 
+tags:       [CAS]
+---
+
+Most if not all open-source projects [should] have a [contributor guide](https://apereo.github.io/cas/developer/Contributor-Guidelines.html), whose sole job is to explain the project policy and pace when it comes to accepting changes from the community. Indeed and among many other things, providing guidelines and documentation that teach one how to build, test and contribute patches of all sorts and colors is a pretty good sign of a healthy project and a vibrant community.
+
+This guide addresses two burning questions:
+
+1. What is the Apereo CAS project policy on accepting contributions?
+2. How may one, seriously and in a step-wise fashion, get started with contributions? 
+
+# What do I work on?
+ 
+Certain number of projects in open-source also try to advertise work items and tasks which they think might be [good candidates for contributions](https://github.com/spring-projects/spring-boot/issues?q=is%3Aopen+is%3Aissue+label%3A%22status%3A+ideal-for-contribution%22). This is generally and often *not* the Apereo CAS project policy. The policy is much simpler than that. 
+
+It goes something like this:
+
+> Everything is ideal for contributions.
+
+In other words, there is no *"we vs. you"*. There is no *"some folks can only fix certain issues and some can't"*. Of course, if you are a newcomer to the project and have just begun to understand the ins and outs of the [CAS project codebase](https://apereo.github.io/2017/06/12/cas-codebase-overview/), there may certainly be areas in which you might find more comfort to slowly get your feet wet. You're welcome to ask for suggestions. For the most part, the work item you wish to work should be something you find interesting, enjoyable with some degree of practicality.
+
+# What can I work on?
+
+All contributions are extremely welcomed with open arms regardless of shape, size and color. You may be interested in helping with fixing typos, writing documentation, authoring test cases, developing code, squashing bugs, etc. All is welcome. 
+
+[More contributions simply equal more confidence](https://apereo.github.io/2017/03/08/the-myth-of-ga-rel/).
+
+In other words, if you happen to come across a bothersome use case and/or something you consider a perfect candidate for improvement and attention, you are most definitely, aggressively and wholeheartedly encouraged to spend time and DNA to improve the quality of your Apereo CAS life. There is no point in silent suffering.
+
+If you find that contributing to the project is at the moment out of your reach, don't worry. There are resources, [here](https://www.coursera.org/) and [here](https://www.apereo.org/content/commercial-affiliates) that can provide training and support to get you started for the win.
+
+# Do I need an issue first?
+
+No. 
+
+If you have already identified an enhancement or a bug, it is STRONGLY recommended that you simply submit a pull request to address the case. There is no need for special ceremony to create separate issues. The pull request **IS** the issue and it will be tracked and tagged as such. 
+
+# How do I do this?
+
+There is the [contributor guide](https://apereo.github.io/cas/developer/Contributor-Guidelines.html), for sure. However, in this section we are going to practically take a look at the entire process from start to finish and see the patch all the way through. 
+
+In order to successfully finish this exercise you need:
+
+1. Git
+2. IntelliJ IDEA, eclipse or NetBeans
+3. [Java (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+## Fork the repository
+
+First thing you need to do is to [fork the CAS repository](https://help.github.com/articles/fork-a-repo/) under your own account. The CAS repository is hosted on Github and is available [here](https://github.com/apereo/cas).
+
+## Clone repositories
+
+```bash
+git clone git@github.com:apereo/cas.git
+cd cas
+git remote add mmoayyed git@github.com:mmoayyed/cas.git
+git checkout master
+```
+
+Next, if you simply list the remotes you should see:
+
+```bash
+origin	    git@github.com:apereo/cas.git (fetch)
+origin	    git@github.com:apereo/cas.git (push)
+mmoayyed	git@github.com:mmoayyed/cas.git (fetch)
+mmoayyed	git@github.com:mmoayyed/cas.git (push)
+```
+
+You want to isolate your changes inside individual topics branches, and never commit anything to the `master` branch. The workflow more or less is the following:
+
+1. Create topic branch.
+2. Make changes and test.
+3. Commit changes to branch.
+4. Go back to #2 until you are satisified.
+
+## Create branch
+
+To create a topic branch for the change, execute:
+
+```bash
+git checkout -b my-topic-branch-which-fixes-something
+```
+
+## Commit changes
+
+When you're ready to commit changes after having made changes, execute:
+
+```bash
+git add --all && git commit -am "This change fixes a problem"
+```
+
+Note that the `--all` flag adds *all* modified files in the project directory. If you wish to pick and choose, you can either individually add files via a `git add fileName` command one at a time or perhaps, it might be best to simplt opt for a GUI client such as [SourceTree](https://www.sourcetreeapp.com/) or [Git Extensions](https://github.com/gitextensions/gitextensions). 
+
+## Push changes
+
+Push your changes from the *local* branch to a *remote* branch of your own fork:
+
+```bash
+git push mmoayyed my-topic-branch-which-fixes-something
+```
+
+## Submit pull request
+
+Follow the [guide here](https://help.github.com/articles/about-pull-requests/) to create a pull request based on your branch to the CAS project. In this particular case, the *target* branch is the `master` branch because your own branch was created off of the `master` branch.
+
+# So...
+
+I hope this brief overview was of some assistance to you. If you happen to come across other ideas that would make all our CAS lives easier, by all means and without hesitation, [please get involved](https://apereo.github.io/cas/developer/Contributor-Guidelines.html).
+
+[Misagh Moayyed](https://twitter.com/misagh84)
