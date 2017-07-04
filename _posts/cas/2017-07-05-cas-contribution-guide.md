@@ -89,6 +89,7 @@ You want to isolate your changes inside individual topics branches and never com
 To create a topic branch for the change, execute:
 
 ```bash
+git status
 git checkout -b my-topic-branch-which-fixes-something
 ```
 
