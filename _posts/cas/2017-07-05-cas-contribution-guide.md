@@ -14,13 +14,13 @@ This guide addresses two burning questions:
 
 # What do I work on?
  
-Certain number of projects in open-source also try to advertise work items and tasks which they think might be [good candidates for contributions](https://github.com/spring-projects/spring-boot/issues?q=is%3Aopen+is%3Aissue+label%3A%22status%3A+ideal-for-contribution%22). This is generally and often *not* the Apereo CAS project policy. The policy is much simpler than that. 
+Certain number of projects in open-source try to advertise work items and tasks which they think might be [good candidates for contributions](https://github.com/spring-projects/spring-boot/issues?q=is%3Aopen+is%3Aissue+label%3A%22status%3A+ideal-for-contribution%22). This is generally and often *not* the Apereo CAS project policy. The policy is much simpler than that. 
 
 It goes something like this:
 
 > Everything is ideal for contributions.
 
-In other words, there is no *"we vs. you"*. There is no *"some folks can only fix certain issues and some can't"*. Of course, if you are a newcomer to the project and have just begun to understand the ins and outs of the [CAS project codebase](https://apereo.github.io/2017/06/12/cas-codebase-overview/), there may certainly be areas in which you might find more comfort to slowly get your feet wet. You're welcome to ask for suggestions. For the most part, the work item you wish to work should be something you find interesting, enjoyable with some degree of practicality.
+In other words, there is no *"we vs. you"*. There is no *"some folks can only fix certain issues and some can't"*. Of course, if you are a newcomer to the project and have just begun to understand the ins and outs of the [CAS project codebase](https://apereo.github.io/2017/06/12/cas-codebase-overview/), there may certainly be areas in which you might find more comfort to slowly get your feet wet. You're welcome to ask for suggestions. For the most part, the work item you wish to work on should be something you find interesting, enjoyable with some degree of practicality.
 
 # What can I work on?
 
@@ -64,18 +64,25 @@ git checkout master
 Next, if you simply list the remotes you should see:
 
 ```bash
-origin	    git@github.com:apereo/cas.git (fetch)
-origin	    git@github.com:apereo/cas.git (push)
-mmoayyed	git@github.com:mmoayyed/cas.git (fetch)
+origin  git@github.com:apereo/cas.git (fetch)
+origin  git@github.com:apereo/cas.git (push)
+mmoayyed    git@github.com:mmoayyed/cas.git (fetch)
 mmoayyed	git@github.com:mmoayyed/cas.git (push)
 ```
 
-You want to isolate your changes inside individual topics branches, and never commit anything to the `master` branch. The workflow more or less is the following:
+You want to isolate your changes inside individual topics branches and never commit anything to the `master` branch. The workflow more or less is the following:
 
 1. Create topic branch.
 2. Make changes and test.
 3. Commit changes to branch.
 4. Go back to #2 until you are satisified.
+
+<div class="alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Functional Build</strong><br/>You may want to ensure the codebase can be built locally from source. <a href="https://apereo.github.io/cas/developer/Build-Process.html">Follow this guide</a> to learn more.
+</div>
+
+
 
 ## Create branch
 
