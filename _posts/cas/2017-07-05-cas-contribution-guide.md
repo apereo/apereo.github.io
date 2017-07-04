@@ -38,6 +38,10 @@ No.
 
 If you have already identified an enhancement or a bug, it is STRONGLY recommended that you simply submit a pull request to address the case. There is no need for special ceremony to create separate issues. The pull request **IS** the issue and it will be tracked and tagged as such. 
 
+# Is it worth it?
+
+The CAS project generally operates based on its own [maintenance policy](https://apereo.github.io/cas/developer/Maintenance-Policy.html). Before making changes, you want to cross check the CAS deployment you have today and ensure it is still and to what extent considered viable and maintained by the project.
+
 # How do I do this?
 
 There is the [contributor guide](https://apereo.github.io/cas/developer/Contributor-Guidelines.html), for sure. However, in this section we are going to practically take a look at the entire process from start to finish and see the patch all the way through. 
@@ -81,8 +85,6 @@ You want to isolate your changes inside individual topics branches and never com
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   <strong>Functional Build</strong><br/>You may want to ensure the codebase can be built locally from source. <a href="https://apereo.github.io/cas/developer/Build-Process.html">Follow this guide</a> to learn more.
 </div>
-
-
 
 ## Create branch
 
