@@ -81,6 +81,8 @@ First thing you need to do is to [fork the CAS repository](https://help.github.c
 
 ## Clone repositories
 
+There are much faster ways of cloning the codebase, but let's keep it simple for now:
+
 ```bash
 git clone git@github.com:apereo/cas.git
 cd cas
