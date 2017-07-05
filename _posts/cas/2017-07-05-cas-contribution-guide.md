@@ -55,7 +55,7 @@ Very simply put:
 
 # How do I get on the roadmap?
 
-By simply delivering the change and having it get merged into the codebase relevant branches. There is no predefined roadmap for the project. The roadmap is what you intend to work. Work items get completed based on community's availability, interest, time and money.
+By simply delivering the change and having it get merged into the codebase relevant branches. There is no predefined roadmap for the project. The roadmap is what you intend to work on. Work items get completed based on community's availability, interest, time and money.
 
 # What if the change is too big?
 
