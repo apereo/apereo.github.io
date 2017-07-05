@@ -50,8 +50,20 @@ Very simply put:
 
 <div class="alert alert-success">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Notepad Works</strong><br/>Try not to use the issue tracker as a backlog for items that need fixes from others. Any good task management software will do instead. 
+  <strong>Notepad Works</strong><br/>Try not to use the issue tracker as a backlog for items that need fixes from others. Any good task management software on your laptop will do instead. 
 </div> 
+
+# How do I know who's working on what?
+
+- Follow the *WIP Pattern* and submit [early pull requests](https://ben.straub.cc/2015/04/02/wip-pull-request/). This is in fact the recommended strategy from Github:
+
+> Pull Requests are a great way to start a conversation of a feature, so start one as soon as possible- even before you are finished with the code. Your team can comment on the feature as it evolves, instead of providing all their feedback at the very end.
+
+Or put another way:
+
+> You’re opening pull requests when you start work, not when you’re finished. 
+
+There is of course the alternative: [ask](https://apereo.github.io/cas/Mailing-Lists.html).
 
 # How do I get on the roadmap?
 
