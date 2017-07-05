@@ -82,6 +82,14 @@ Yes, absolutely. Provided the change fits the scope of the maintenance branch an
 
 By simply delivering the change and having it get merged into the codebase relevant branches. There is no predefined roadmap for the project. The roadmap is what you intend to work on. Work items get completed based on community's availability, interest, time and money.
 
+# Practically, how soon is that exactly?
+
+You can review the [release schedule](https://github.com/apereo/cas/milestones) from here. Note that the dates specified for each are somewhat tentative, and may be pushed around depending on need and severity. 
+
+As for general contributions, patches in form of pull requests are generally merged as fast as possible provided they are in *good health*. This means a given pull request must pass a series of automated checks that examine style, tests and such before it becomes eligible for a merge. If your proposed pull request does not yet have the green marking, worry not. Keep pushing to the branch that contains your change to auto-update the pull request and make life green again.
+
+If you find that the project is not moving forward at a pace you find reasonable, simply *ping* the pull request and gently remind someone to step forward and review the issue with you.
+
 # What if the change is too big?
 
 Start by reviewing the [release policy](https://apereo.github.io/cas/developer/Release-Policy.html). The change you have in mind should fit the scope of the release that is planned. If needed, [please discuss](https://apereo.github.io/cas/Mailing-Lists.html) the release schedule and policy with other community members to find alternative solutions and strategies for delivery.
