@@ -50,7 +50,7 @@ Very simply put:
 
 <div class="alert alert-success">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Notepad Works</strong><br/>Try not to use the issue tracker as a backlog for items that need fixes and attention. Any good task management software will do instead. 
+  <strong>Notepad Works</strong><br/>Try not to use the issue tracker as a backlog for items that need fixes from others. Any good task management software will do instead. 
 </div> 
 
 # How do I get on the roadmap?
