@@ -59,7 +59,7 @@ By simply delivering the change and having it get merged into the codebase relev
 
 # What if the change is too big?
 
-Start by reviewing the [release policy](https://apereo.github.io/cas/developer/Release-Policy.html). The change you have in mind probably and should fit the scope of the release that is planned. If needed, [please discuss](https://apereo.github.io/cas/Mailing-Lists.html) the release schedule and policy with other community members to find alternative solutions and strategies for delivery.
+Start by reviewing the [release policy](https://apereo.github.io/cas/developer/Release-Policy.html). The change you have in mind should fit the scope of the release that is planned. If needed, [please discuss](https://apereo.github.io/cas/Mailing-Lists.html) the release schedule and policy with other community members to find alternative solutions and strategies for delivery.
 
 # Is it worth it?
 
