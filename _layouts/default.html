@@ -37,7 +37,11 @@
   {% include footer.html %}
 	
   <script>
-	  anchors.add();
+	anchors.options = {
+	  placement: 'left',
+	  visible: 'always'
+	};
+	anchors.add();
   </script>
 	
 </body>
