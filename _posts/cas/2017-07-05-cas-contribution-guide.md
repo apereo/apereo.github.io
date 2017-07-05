@@ -5,7 +5,33 @@ summary:    A quick hands-on guide for one to get started with contibuting to th
 tags:       [CAS]
 ---
 
-Most if not all open-source projects [should] have a [contributor guide](https://apereo.github.io/cas/developer/Contributor-Guidelines.html), whose job is to explain the project policy and pace when it comes to accepting changes from the community. Indeed and among many other things, providing guidelines and documentation that teach one how to build, test and contribute patches of all sorts and colors is a pretty good sign of a healthy project and a vibrant community.
+Most if not all open-source projects [should] have a [contributor guide](https://apereo.github.io/cas/developer/Contributor-Guidelines.html), whose job is to explain the project policy and pace when it comes to accepting changes from the community. Indeed and among many other things, providing guidelines and documentation that teach one how to build, test and contribute patches of all sorts and colors is a pretty good sign of a healthy project and a vibrant community. 
+
+This is a guide for one to get started with contibuting to the development and prosperity of the Apereo CAS project. 
+
+<!-- TOC -->
+
+- [Overview](#overview)
+- [What do I work on?](#what-do-i-work-on)
+- [What can I work on?](#what-can-i-work-on)
+- [Do I need an issue first?](#do-i-need-an-issue-first)
+- [How do I report issues then?](#how-do-i-report-issues-then)
+- [How do I know who's working on what?](#how-do-i-know-whos-working-on-what)
+- [How do I get on the roadmap?](#how-do-i-get-on-the-roadmap)
+- [What if the change is too big?](#what-if-the-change-is-too-big)
+- [Is it worth it?](#is-it-worth-it)
+- [How do I do this?](#how-do-i-do-this)
+    - [Fork the repository](#fork-the-repository)
+    - [Clone repositories](#clone-repositories)
+    - [Create branch](#create-branch)
+    - [Commit changes](#commit-changes)
+    - [Push changes](#push-changes)
+    - [Submit pull request](#submit-pull-request)
+- [So...](#so)
+
+<!-- /TOC -->
+
+# Overview
 
 The overarching theme of this guide starts with the following questions:
 
