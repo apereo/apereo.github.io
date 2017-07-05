@@ -175,6 +175,10 @@ git push mmoayyed my-topic-branch-which-fixes-something
 
 Follow the [guide here](https://help.github.com/articles/about-pull-requests/) to create a pull request based on your branch to the CAS project. In this particular case, the *target* branch is the `master` branch because your own branch was created off of the `master` branch.
 
+# How fast can I consume the change?
+
+`SNAPSHOT` releases are published by the automatic [Travis CI process](https://travis-ci.org/apereo/cas/builds). As soon as a patch is merged, you want to track its build status and once it turns green, you should be good to update snapshots in your build script. Practically, this process can take up to 50 minutes or less.
+
 # So...
 
 I hope this brief overview was of some assistance to you. If you happen to come across other ideas that would make all our CAS lives easier, by all means and without hesitation, [please get involved](https://apereo.github.io/cas/developer/Contributor-Guidelines.html).
