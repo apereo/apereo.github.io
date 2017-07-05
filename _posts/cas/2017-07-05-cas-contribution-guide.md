@@ -7,11 +7,6 @@ tags:       [CAS]
 
 Most if not all open-source projects [should] have a [contributor guide](https://apereo.github.io/cas/developer/Contributor-Guidelines.html), whose job is to explain the project policy and pace when it comes to accepting changes from the community. Indeed and among many other things, providing guidelines and documentation that teach one how to build, test and contribute patches of all sorts and colors is a pretty good sign of a healthy project and a vibrant community. 
 
-This is a guide for one to get started with contibuting to the development and prosperity of the Apereo CAS project. 
-
-
-# Overview
-
 The overarching theme of this guide starts with the following questions:
 
 1. What is the Apereo CAS project policy on accepting contributions?
