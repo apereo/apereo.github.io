@@ -78,6 +78,14 @@ There is of course the alternative: [ask](https://apereo.github.io/cas/Mailing-L
 
 Yes, absolutely. Provided the change fits the scope of the maintenance branch and its tracking release and assuming the branch is still under care, you are more than welcome to move changes across the codebase various branches as much as needed to remove pain and improve.  
 
+# What if the change is too big?
+
+Start by reviewing the [release policy](https://apereo.github.io/cas/developer/Release-Policy.html). The change you have in mind should fit the scope of the release that is planned. If needed, [please discuss](https://apereo.github.io/cas/Mailing-Lists.html) the release schedule and policy with other community members to find alternative solutions and strategies for delivery.
+
+# Is it worth it?
+
+The CAS project generally operates based on its own [maintenance policy](https://apereo.github.io/cas/developer/Maintenance-Policy.html). Before making changes, you want to cross check the CAS deployment you have today and ensure it is still and to what extent considered viable and maintained by the project.
+
 # How do I get on the roadmap?
 
 By simply delivering the change and having it get merged into the codebase relevant branches. There is no predefined roadmap for the project. The roadmap is what you intend to work on. Work items get completed based on community's availability, interest, time and money.
@@ -89,14 +97,6 @@ You can review the [release schedule](https://github.com/apereo/cas/milestones) 
 As for general contributions, patches in form of pull requests are generally merged as fast as possible provided they are in *good health*. This means a given pull request must pass a series of automated checks that examine style, tests and such before it becomes eligible for a merge. If your proposed pull request does not yet have the green marking, worry not. Keep pushing to the branch that contains your change to auto-update the pull request and make life green again.
 
 If you find that the project is not moving forward at a pace you find reasonable, simply *ping* the pull request and gently remind someone to step forward and review the issue with you.
-
-# What if the change is too big?
-
-Start by reviewing the [release policy](https://apereo.github.io/cas/developer/Release-Policy.html). The change you have in mind should fit the scope of the release that is planned. If needed, [please discuss](https://apereo.github.io/cas/Mailing-Lists.html) the release schedule and policy with other community members to find alternative solutions and strategies for delivery.
-
-# Is it worth it?
-
-The CAS project generally operates based on its own [maintenance policy](https://apereo.github.io/cas/developer/Maintenance-Policy.html). Before making changes, you want to cross check the CAS deployment you have today and ensure it is still and to what extent considered viable and maintained by the project.
 
 # How do I do this?
 
