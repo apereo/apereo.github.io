@@ -108,5 +108,14 @@
       <script src="/assets/tipuesearch/tipuesearch_set.js"></script>
       <script src="/assets/tipuesearch/tipuesearch.min.js"></script>
     {% endif %}
-
+    
+    <script type="text/javascript">
+       document.addEventListener("DOMContentLoaded", function(event) {
+           anchors.options = {
+              placement: 'left',
+              visible: 'always'
+           };
+          anchors.add();
+       });
+    </script>
 </head>
