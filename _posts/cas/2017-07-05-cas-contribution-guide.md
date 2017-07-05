@@ -38,6 +38,29 @@ No.
 
 If you have already identified an enhancement or a bug, it is STRONGLY recommended that you simply submit a pull request to address the case. There is no need for special ceremony to create separate issues. The pull request **IS** the issue and it will be tracked and tagged as such. 
 
+# How do I report issues then?
+
+You are welcome to submit issues via the [project's issue tracker](https://github.com/apereo/cas/issues). Someone will review the report and will try to evaluate whether this is a geniune RFE or defect in which case the issue will be closed with a follow-up request for contributions and patches. 
+
+The issue tracker is only a simple communication tool to assess a given problematic case or enhancement request. It's not tracking anything, really. You are for the most part and at all costs encouraged to submit patches that fixed the reported issue, rather than waiting for someone to come along and fix it. As prescribed, there is no *"we vs. you"*.
+
+Very simply put:
+
+> You are the one you have been waiting for.
+
+<div class="alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Functional Build</strong><br/>Try not to use the issue tracker as a backlog for items that need fixes and attention. Any good task management software will do instead. 
+</div> 
+
+# How do I get on the roadmap?
+
+By simply delivering the change and having it get merged into the codebase relevant branches. There is no predefined roadmap for the project. The roadmap is what you intend to work. Work items get completed based on community member's availability, interest, time and money.
+
+# What if the change is too big?
+
+Start by reviewing the [release policy](https://apereo.github.io/cas/developer/Release-Policy.html). The change you have in mind probably and should fit the scope of the release that is planned. If needed, please discuss the release schedule and policy with other community members to find alternative solutions and strategies for delivery.
+
 # Is it worth it?
 
 The CAS project generally operates based on its own [maintenance policy](https://apereo.github.io/cas/developer/Maintenance-Policy.html). Before making changes, you want to cross check the CAS deployment you have today and ensure it is still and to what extent considered viable and maintained by the project.
