@@ -22,6 +22,8 @@ It goes something like this:
 
 In other words, there is no *"we vs. you"*. There is no *"some folks can only fix certain issues and some can't"*. Of course, if you are a newcomer to the project and have just begun to understand the ins and outs of the [CAS project codebase](https://apereo.github.io/2017/06/12/cas-codebase-overview/), there may certainly be areas in which you might find more comfort to slowly get your feet wet. You're welcome to [ask for suggestions](https://apereo.github.io/cas/Mailing-Lists.html). For the most part, the work item you wish to work on should be something you find interesting and enjoyable with some degree of practicality.
 
+Remember that you are deploying open-source software, which means you have automatically become a project/community member and a potential maintainer, whether you realize it or not. Staying in *consume-only* mode generally leads to poor results.
+
 # What can I work on?
 
 All contributions are extremely welcomed with open arms regardless of shape, size and color. You may be interested in helping with fixing typos, writing documentation, authoring test cases, developing code, squashing bugs, etc. All is welcome. 
@@ -31,6 +33,7 @@ All contributions are extremely welcomed with open arms regardless of shape, siz
 In other words, if you happen to come across a bothersome use case and/or something you consider a perfect candidate for improvement and attention, you are most definitely, aggressively and wholeheartedly encouraged to spend time and DNA to improve the quality of your Apereo CAS life. There is no point in silent suffering.
 
 If you find that contributing to the project is at the moment out of your reach, don't worry. There are resources, [here](https://www.coursera.org/) and [here](https://www.apereo.org/content/commercial-affiliates) that can provide training and support to get you started for the win.
+
 
 # Do I need an issue first?
 
