@@ -42,7 +42,7 @@ If you have already identified an enhancement or a bug, it is STRONGLY recommend
 
 You are welcome to submit issues via the [project's issue tracker](https://github.com/apereo/cas/issues). Someone will review the report and will try to evaluate whether this is a geniune RFE or defect in which case the issue will be closed with a follow-up request for contributions and patches. 
 
-The issue tracker is only a simple communication tool to assess a given problematic case or enhancement request. It's not tracking anything, really. You are for the most part and at all costs encouraged to submit patches that fixed the reported issue, rather than waiting for someone to come along and fix it. As prescribed, there is no *"we vs. you"*.
+The issue tracker is only a simple communication tool to assess a given problematic case or enhancement request. It's not tracking anything, really. You are for the most part and at all costs encouraged to submit patches that fix the reported issue and remove pain, rather than waiting for someone to come along and fix it. As prescribed, there is no *"we vs. you"*.
 
 Very simply put:
 
