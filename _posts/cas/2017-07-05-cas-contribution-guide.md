@@ -97,7 +97,7 @@ There is the [contributor guide](https://apereo.github.io/cas/developer/Contribu
 In order to successfully finish this exercise you need:
 
 1. [Git](https://git-scm.com/downloads)
-2. IntelliJ IDEA, eclipse or NetBeans
+2. [IntelliJ IDEA](https://www.jetbrains.com/idea/download/), eclipse or NetBeans (Depending on the change, `vim` may be perfectly fine too)
 3. [Java (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 ## Fork the repository
