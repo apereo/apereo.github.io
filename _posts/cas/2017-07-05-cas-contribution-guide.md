@@ -68,6 +68,10 @@ Or put another way:
 
 There is of course the alternative: [ask](https://apereo.github.io/cas/Mailing-Lists.html).
 
+# Can I backport a change to a maintenance branch?
+
+Yes, absolutely. Provided the change fits the scope of the maintenance branch and its tracking release and assuming the branch is still under care, you are more than welcome to move changes across the codebase various branches as much as needed to remove pain and improve.  
+
 # How do I get on the roadmap?
 
 By simply delivering the change and having it get merged into the codebase relevant branches. There is no predefined roadmap for the project. The roadmap is what you intend to work on. Work items get completed based on community's availability, interest, time and money.
