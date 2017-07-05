@@ -20,7 +20,7 @@ It goes something like this:
 
 > Everything is ideal for contributions.
 
-In other words, there is no *"we vs. you"*. There is no *"some folks can only fix certain issues and some can't"*. Of course, if you are a newcomer to the project and have just begun to understand the ins and outs of the [CAS project codebase](https://apereo.github.io/2017/06/12/cas-codebase-overview/), there may certainly be areas in which you might find more comfort to slowly get your feet wet. You're welcome to ask for suggestions. For the most part, the work item you wish to work on should be something you find interesting, enjoyable with some degree of practicality.
+In other words, there is no *"we vs. you"*. There is no *"some folks can only fix certain issues and some can't"*. Of course, if you are a newcomer to the project and have just begun to understand the ins and outs of the [CAS project codebase](https://apereo.github.io/2017/06/12/cas-codebase-overview/), there may certainly be areas in which you might find more comfort to slowly get your feet wet. You're welcome to [ask for suggestions](https://apereo.github.io/cas/Mailing-Lists.html). For the most part, the work item you wish to work on should be something you find interesting, enjoyable with some degree of practicality.
 
 # What can I work on?
 
@@ -59,7 +59,7 @@ By simply delivering the change and having it get merged into the codebase relev
 
 # What if the change is too big?
 
-Start by reviewing the [release policy](https://apereo.github.io/cas/developer/Release-Policy.html). The change you have in mind probably and should fit the scope of the release that is planned. If needed, please discuss the release schedule and policy with other community members to find alternative solutions and strategies for delivery.
+Start by reviewing the [release policy](https://apereo.github.io/cas/developer/Release-Policy.html). The change you have in mind probably and should fit the scope of the release that is planned. If needed, [please discuss](https://apereo.github.io/cas/Mailing-Lists.html) the release schedule and policy with other community members to find alternative solutions and strategies for delivery.
 
 # Is it worth it?
 
