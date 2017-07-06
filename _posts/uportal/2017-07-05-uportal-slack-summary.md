@@ -45,6 +45,8 @@ Summarizing the conversations in this anonymously, publicly accessible and Googl
 
 Arguably, all of the conversations held in the `#uportal` Slack channel this month could have been held via email on `uportal-dev@` or `uportal-user@` email lists additionally or instead. Some relevant email list threads are linked above.
 
+-[Andrew](https://apetro.ghost.io)
+
 [@uPortal]: https://twitter.com/uPortal
 [Accessibility group]: https://groups.google.com/a/apereo.org/forum/#!forum/accessibility
 [another uportal-dev@ thread on overlays directory renaming]: https://groups.google.com/a/apereo.org/d/topic/uportal-dev/uaeYARDVRZY/discussion
