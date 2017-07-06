@@ -41,17 +41,19 @@ Conversation highlights include:
 
 I have [concerns about the openness properties of Slack as implemented by Apereo][open@ 2017-06-15]. You can't access it or read its logs anonymously; it's not Google search indexed. Only the most recent ten thousand messages are available, so in practice this means logs are unavailable older than about a month back.
 
-Summarizing the conversations in this anonymously, publicly accessible and Google indexable context somewhat mitigates these problems.
+Summarizing the conversations in this anonymously, publicly accessible and Google indexable context somewhat mitigates these problems. But not necessarily other problems that make [email list communications preferable in open source projects].
 
 Arguably, all of the conversations held in the `#uportal` Slack channel this month could have been held via email on `uportal-dev@` or `uportal-user@` email lists additionally or instead. Some relevant email list threads are linked above.
 
 -[Andrew](https://apetro.ghost.io)
 
 [@uPortal]: https://twitter.com/uPortal
+[Accessibility across Apereo thread on uportal-user@]: https://groups.google.com/a/apereo.org/d/topic/uportal-user/KQbBMtUHHFY/discussion
 [Accessibility group]: https://groups.google.com/a/apereo.org/forum/#!forum/accessibility
 [another uportal-dev@ thread on overlays directory renaming]: https://groups.google.com/a/apereo.org/d/topic/uportal-dev/uaeYARDVRZY/discussion
 [browser support for Polymer]: https://www.polymer-project.org/2.0/docs/browsers
 [conversational UI example]: http://azumbrunnen.me/
+[email list communications preferable in open source projects]: https://dave.cheney.net/2017/04/11/why-slack-is-inappropriate-for-open-source-communications
 [gitinspector]: https://github.com/ejwa/gitinspector
 [i18next]: https://www.i18next.com/
 [jekyll-multiple-languages-plugin]: https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin
@@ -72,4 +74,3 @@ Arguably, all of the conversations held in the `#uportal` Slack channel this mon
 [uPortal-start PR 10]: https://github.com/Jasig/uPortal-start/pull/10
 [uPortal-start PR 6]: https://github.com/Jasig/uPortal-start/pull/6
 [uPortal-start PR 8]: https://github.com/Jasig/uPortal-start/pull/8
-[Accessibility across Apereo thread on uportal-user@]: https://groups.google.com/a/apereo.org/d/topic/uportal-user/KQbBMtUHHFY/discussion
