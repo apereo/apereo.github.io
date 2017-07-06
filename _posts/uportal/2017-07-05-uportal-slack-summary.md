@@ -53,7 +53,7 @@ Arguably, all of the conversations held in the `#uportal` Slack channel this mon
 [gitinspector]: https://github.com/ejwa/gitinspector
 [i18next]: https://www.i18next.com/
 [jekyll-multiple-languages-plugin]: https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin
-[myday cloud based portal]: https://www.collabco.co.uk/features/dashboards/
+[myday cloud-based portal]: https://www.collabco.co.uk/features/dashboards/
 [open@ 2017-06-15]: https://groups.google.com/a/apereo.org/d/msg/open/cbk9NLb43LQ/btRpD_09AwAJ
 [Portal?! uPortal! What is this Béchamel]: https://cousquer.github.io/apereo2017/
 [ReactJS portlet with i18n support]: https://github.com/bpowell/i18n-react-portlet
