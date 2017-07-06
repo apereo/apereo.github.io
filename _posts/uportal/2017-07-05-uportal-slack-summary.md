@@ -22,7 +22,7 @@ In June 2017, 11 people participated substantially in conversation in the [slack
 
 Conversation highlights include:
 
-+ Aaron Grant's [uportal_commit_stats] script and its findings about uPortal contributions. [gitinspector] might also be useful for uPortal-related Git history analysis.
++ Aaron Grant's [uportal_commit_stats] script and findings about uPortal contributions. [gitinspector] might also be useful for uPortal-related Git history analysis.
 + Internationalization of documentation stored in Git. What Symfony does in its [primary][symfony-docs] and [French-translation][symfony-docs-fr] documentation. (Separate repos.). Alternatively, the [jekyll-multiple-languages-plugin] . Example [ReactJS portlet with i18n support] based in [i18next].
 + Sharing resources from the Open Apereo 2017 conference, including [Portal?! uPortal! What is this Béchamel], [Speeding up uPortal with ReactJS], [two-hard-problems]. (Cf. [uportal-dev@ thread re conference artifacts].)
 + Encouraging interest in the new [Accessibility group]. (Cf. [Accessibility Across Apereo thread on uportal-user@])
@@ -39,7 +39,7 @@ Conversation highlights include:
 
 ## On Slack
 
-I have some [concerns about the openness properties of Slack as implemented by Apereo][open@ 2017-06-15]. You can't read its logs anonymously; you have to log in to access it and you can't come across its content via a Google search. Only the most recent ten thousand messages are available, so in practice this means logs are lost about a month back.
+I have [concerns about the openness properties of Slack as implemented by Apereo][open@ 2017-06-15]. You can't access it or read its logs anonymously; it's not Google search indexed. Only the most recent ten thousand messages are available, so in practice this means logs are unavailable older than about a month back.
 
 Summarizing the conversations in this anonymously, publicly accessible and Google indexable context somewhat mitigates these problems.
 
