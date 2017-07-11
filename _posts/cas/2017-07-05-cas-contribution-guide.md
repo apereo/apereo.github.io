@@ -40,6 +40,8 @@ In other words, if you happen to come across a bothersome use case and/or someth
 
 If you find that contributing to the project is at the moment out of your reach, don't worry. There are resources, [here](https://www.coursera.org/) and [here](https://www.apereo.org/content/commercial-affiliates) that can provide training and support to get you started for the win.
 
+All contribution must be via an [Apereo Individual Contributor License Agreement]. If your work is on behalf of a corporation, that corporation should also register an [Apereo Corporate Contributor License Agreement].
+
 
 # Do I need an issue first?
 
@@ -107,6 +109,14 @@ In order to successfully finish this exercise you need:
 1. [Git](https://git-scm.com/downloads)
 2. [IntelliJ IDEA](https://www.jetbrains.com/idea/download/), eclipse or NetBeans (Depending on the change, `vim` may be perfectly fine too)
 3. [Java (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+## File Contributor License Agreements
+
++ File an [Apereo Individual Contributor License Agreement].
++ Prevail upon corporations with a colorable interest in your work product to file an [Apereo Corporate Contributor License Agreement].
++ After some delay, your CLA submissions will be acknowledged and reflected in the [Apereo CLA signatory roster]. (This is a manual process.) 
+
+It is only after your CLA registrations actually appear in [the registry][Apereo CLA signatory roster] that it is appropriate to accept your contribution into the CAS product, so be sure to get started on this early.
 
 ## Fork the repository
 
@@ -186,3 +196,7 @@ This practically usually involves running the build with a `-U` or `--refresh-de
 I hope this brief overview was of some assistance to you. If you happen to come across other ideas that would make all our CAS lives easier, by all means and without hesitation, [please get involved](https://apereo.github.io/cas/developer/Contributor-Guidelines.html).
 
 [Misagh Moayyed](https://twitter.com/misagh84)
+
+[Apereo Individual Contributor License Agreement]: https://www.apereo.org/licensing/agreements/icla
+[Apereo Corporate Contributor License Agreement]: https://www.apereo.org/licensing/agreements/ccla
+[Apereo CLA signatory roster]: http://licensing.apereo.org/
