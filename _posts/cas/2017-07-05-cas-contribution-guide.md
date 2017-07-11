@@ -137,7 +137,7 @@ You want to isolate your changes inside individual topics branches and never com
 1. Create topic branch.
 2. Make changes and test.
 3. Commit changes to branch.
-4. Go back to #2 until you are satisified.
+4. Go back to #2 until you are satisfied.
 
 <div class="alert alert-success">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
