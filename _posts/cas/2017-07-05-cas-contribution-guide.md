@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Apereo CAS - Contribution Guidelines
-summary:    A quick hands-on guide for one to get started with contibuting to the development and prosperity of the Apereo CAS project. 
+summary:    A quick hands-on guide for one to get started with contributing to the development and prosperity of the Apereo CAS project. 
 tags:       [CAS]
 ---
 
