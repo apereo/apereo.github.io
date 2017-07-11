@@ -161,7 +161,7 @@ When you're ready to commit changes after having made changes, execute:
 git add --all && git commit -am "This change fixes a problem"
 ```
 
-Note that the `--all` flag adds *all* modified files in the project directory. If you wish to pick and choose, you can either individually add files via a `git add fileName` command one at a time or perhaps, it might be best to simplt opt for a GUI client such as [SourceTree](https://www.sourcetreeapp.com/) or [Git Extensions](https://github.com/gitextensions/gitextensions). 
+Note that the `--all` flag adds *all* modified files in the project directory. If you wish to pick and choose, you can either individually add files via a `git add fileName` command one at a time or perhaps, it might be best to simply opt for a GUI client such as [SourceTree](https://www.sourcetreeapp.com/) or [Git Extensions](https://github.com/gitextensions/gitextensions). 
 
 ## Push changes
 
