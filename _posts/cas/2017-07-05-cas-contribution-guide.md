@@ -1,11 +1,11 @@
 ---
 layout:     post
 title:      Apereo CAS - Contribution Guidelines
-summary:    A quick hands-on guide for one to get started with contibuting to the development and prosperity of the Apereo CAS project. 
+summary:    A quick hands-on guide for one to get started with contributing to the development and prosperity of the Apereo CAS project. 
 tags:       [CAS]
 ---
 
-Most if not all open-source projects [should] have a [contributor guide](https://apereo.github.io/cas/developer/Contributor-Guidelines.html), whose job is to explain the project policy and pace when it comes to accepting changes from the community. Indeed and among many other things, providing guidelines and documentation that teach one how to build, test and contribute patches of all sorts and colors is a pretty good sign of a healthy project and a vibrant community. 
+Most if not all open source projects [should] have a [contributor guide](https://apereo.github.io/cas/developer/Contributor-Guidelines.html), whose job is to explain the project policy and pace when it comes to accepting changes from the community. Indeed and among many other things, providing guidelines and documentation that teach one how to build, test and contribute patches of all sorts and colors is a pretty good sign of a healthy project and a vibrant community. 
 
 The overarching theme of this guide starts with the following questions:
 
@@ -14,7 +14,7 @@ The overarching theme of this guide starts with the following questions:
 
 # What do I work on?
  
-Certain number of projects in open-source try to advertise work items and tasks which they think might be [good candidates for contributions](https://github.com/spring-projects/spring-boot/issues?q=is%3Aopen+is%3Aissue+label%3A%22status%3A+ideal-for-contribution%22). This is generally and often *not* the Apereo CAS project policy. The policy is much simpler than that. 
+Certain number of projects in open source try to advertise work items and tasks which they think might be [good candidates for contributions](https://github.com/spring-projects/spring-boot/issues?q=is%3Aopen+is%3Aissue+label%3A%22status%3A+ideal-for-contribution%22). This is generally and often *not* the Apereo CAS project policy. The policy is much simpler than that. 
 
 It goes something like this:
 
@@ -28,7 +28,7 @@ In other words,
 
 Of course, if you are a newcomer to the project and have just begun to understand the ins and outs of the [CAS project codebase](https://apereo.github.io/2017/06/12/cas-codebase-overview/), there may certainly be areas in which you might find more comfort to slowly get your feet wet. You're welcome to [ask for suggestions](https://apereo.github.io/cas/Mailing-Lists.html). For the most part, the work item you wish to work on should be something you find interesting and enjoyable with some degree of practicality.
 
-Remember that you are deploying open-source software, which means you have automatically become a project/community member and a potential maintainer, whether you realize it or not. Staying in *consume-only* mode generally leads to poor results.
+Remember that you are deploying open source software, which means you have automatically become a project/community member and a potential maintainer, whether you realize it or not. Staying in *consume-only* mode generally leads to poor results.
 
 # What can I work on?
 
@@ -49,7 +49,7 @@ If you have already identified an enhancement or a bug, it is STRONGLY recommend
 
 # How do I report issues then?
 
-You are welcome to submit issues via the [project's issue tracker](https://github.com/apereo/cas/issues). Someone will review the report and will try to evaluate whether this is a geniune RFE or defect in which case the issue will be closed with a follow-up request for contributions and patches. 
+You are welcome to submit issues via the [project's issue tracker](https://github.com/apereo/cas/issues). Someone will review the report and will try to evaluate whether this is a genuine RFE or defect in which case the issue will be closed with a follow-up request for contributions and patches. 
 
 The issue tracker is only a simple communication tool to assess a given problematic case or enhancement request. It's not tracking anything, really. You are for the most part and at all costs encouraged to submit patches that fix the reported issue and remove pain, rather than waiting for someone to come along and fix it. As prescribed, there is no *"we vs. you"*.
 
@@ -137,7 +137,7 @@ You want to isolate your changes inside individual topics branches and never com
 1. Create topic branch.
 2. Make changes and test.
 3. Commit changes to branch.
-4. Go back to #2 until you are satisified.
+4. Go back to #2 until you are satisfied.
 
 <div class="alert alert-success">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -161,7 +161,7 @@ When you're ready to commit changes after having made changes, execute:
 git add --all && git commit -am "This change fixes a problem"
 ```
 
-Note that the `--all` flag adds *all* modified files in the project directory. If you wish to pick and choose, you can either individually add files via a `git add fileName` command one at a time or perhaps, it might be best to simplt opt for a GUI client such as [SourceTree](https://www.sourcetreeapp.com/) or [Git Extensions](https://github.com/gitextensions/gitextensions). 
+Note that the `--all` flag adds *all* modified files in the project directory. If you wish to pick and choose, you can either individually add files via a `git add fileName` command one at a time or perhaps, it might be best to simply opt for a GUI client such as [SourceTree](https://www.sourcetreeapp.com/) or [Git Extensions](https://github.com/gitextensions/gitextensions). 
 
 ## Push changes
 
