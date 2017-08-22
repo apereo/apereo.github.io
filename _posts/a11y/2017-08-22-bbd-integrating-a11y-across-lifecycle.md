@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Better by design 2017: Integrating accessibility across design and development lifecycle
+title:      "Better by design 2017: Integrating accessibility across design and development lifecycle"
 summary:    Notes from Karl Groves workshop on integrating a11y across design and development lifecycle at Better By Design 2017.
 tags:       [a11y]
 ---
