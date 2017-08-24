@@ -40,6 +40,8 @@ If you open up your terminal and run that command, you might see something like:
 
 Sweet! Next, I was able to modify the relevant configuration files and use `192.168.1.170` anywhere the dockerized Shibboleth SP needed to make a call to the outside world. While this works fine, I should note that it is absolutely a __temporary solution__ as hardcoding an IP address that might change later on obviously is a broken path but it did suffice my development needs at the time.
 
+# Post-credits Scene
+
 ...and oh, if you need to find a quick way to SSH into a running Docker container, put the following in your profile:
 
 ```bash
@@ -48,7 +50,7 @@ function dockerssh() {
 }
 ```
 
-...and then use as follows:
+Then use as follows:
 
 ```bash
 dockerssh [container-name]
