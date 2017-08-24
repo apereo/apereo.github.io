@@ -7,9 +7,9 @@ tags:       [Blog]
 
 If you are like me, you have probably come to the same conclusion that Docker does wonders with the automation of much of the needed  infrastructure while working on a particular development task. For example, I primarily keep myself busy in the realm of [Identity and Access Management (IAM)](https://www.unicon.net/solutions/identity-and-access-management) and there does not a day go by where I find myself in need of a running [SAML service provider](https://github.com/UniconLabs/spring-security-saml-java-sp), a CASified PHP application protected by [mod_auth_cas](https://github.com/apereo/mod_auth_cas) running inside Apache, or a full blown [Grouper deployment](https://github.com/Unicon/grouper-dockerized) for which I might be trying to add a changelog consumer, etc. 
 
-Docker can automate and (more importantly) isolate all of that *noise*, allowing me to focus on the task at hand. Today and while I have opted for both approaches given context and need, my preference is to keep the core platform/application I am working on outside the running Docker ecosystem while leaving all of the stuff-I-need-for-the-integration components inside. I find that this strategy allows for faster builds and more performant/natural debugging and diagnostics. However, one problem I run into often is: how do I connect the two separate environments? Or put another way, how do I let a component running in Docker needed to make a back-channel call to something outside running on the host?
+Docker can automate and (more importantly) isolate all of that *noise*, allowing me to focus on the task at hand. Today and while I have opted for both approaches given context and need, my preference is to keep the core platform/application I am working on outside the running Docker ecosystem while leaving all of the stuff-I-need-for-the-integration components inside. I find that this strategy allows for faster builds and more performant/natural debugging and diagnostics. However, one problem I run into often is: how do I connect the two separate environments? Or put another way, how do I let a component running in Docker make a back-channel call to something outside running on the host?
 
-This blog is about that problem.
+Being so far away from home can be challenging. This blog is about that problem.
 
 ## Problem
 
