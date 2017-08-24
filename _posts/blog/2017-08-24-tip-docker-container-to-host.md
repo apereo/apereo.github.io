@@ -15,9 +15,9 @@ Being so far away from home can be challenging. This blog is about that problem.
 
 My Docker setup usually is based on [this project](https://github.com/UniconLabs/dockerized-idp-testbed), which is the wonderful produce of my esteemed colleague, [@jtgasper3](https://github.com/jtgasper3). As the perfect IAM testbed, it is *composed* (catch the pun?) of an LDAP server, a Shibboleth SP, Apache httpd, a CASified PHP application, simpleSAMLphp, a Shibboleth IdP and possibly more. 
 
-I simply enable/disable components I need running in the package and viola! It takes care of the rest. I am not going to bore you with all the intricate details of how this is all organized Docker-wise, but thing that is perhaps relevant is that each running component is tagged with a `networks` configuration that simply [controls the application networking](https://docs.docker.com/compose/networking/) via custom networks each of which can be linked to a driver configuration (i.e. `bridge`, the default for the Docker engine). This might come in handy, should you decide to go fancier and beyond what I explain here for a solution.
+I simply enable/disable components I need running in the package and viola! It takes care of the rest. I am not going to bore you with all the intricate details of how this is all organized Docker-wise, but one thing that is perhaps relevant is that each running component is tagged with a `networks` configuration that simply [controls the application networking](https://docs.docker.com/compose/networking/) via custom networks where each can be linked to a driver configuration (i.e. `bridge`, the default for the Docker engine). This might come in handy, should you decide to go fancier and beyond what I explain here for a solution.
 
-Long story short the issue I bumped into had to do with the dockerized Shibboleth SP that seemed unable to make a query to my IdP running outside. If you think about it, this sort of makes sense. What runs inside does not necessarily know anything about what's on the outside. It might seem like everything is simply running on *the same machine*, but `localhost` for you is a very different and unknown to the Shibboleth SP container running in its own network.
+Long story short, the issue had to do with the dockerized Shibboleth SP unable to make a SOAP query to my IdP running outside. If you think about it, this sort of makes sense. What runs inside does not necessarily know anything about what's on the outside. It might seem like everything is simply running on *the same machine*, but `localhost` for you is very different unknown to the Shibboleth SP container running in its own network.
 
 I needed an inside man.
 
@@ -38,7 +38,7 @@ If you open up your terminal and run that command, you might see something like:
 192.168.1.170
 ```
 
-Sweet! Next, I was able to modify the relevant configuration files and use `192.168.1.170` anywhere I needed to make a call to the outside world. While this works fine, I should note that it is absolutely a temporary solution as hardcoding an IP address that might change later on obviously is a broken path but it did suffice my development needs at the time.
+Sweet! Next, I was able to modify the relevant configuration files and use `192.168.1.170` anywhere the dockerized Shibboleth SP needed to make a call to the outside world. While this works fine, I should note that it is absolutely a __temporary solution__ as hardcoding an IP address that might change later on obviously is a broken path but it did suffice my development needs at the time.
 
 ...and oh, if you need to find a quick way to SSH into a running Docker container, put the following in your profile:
 
