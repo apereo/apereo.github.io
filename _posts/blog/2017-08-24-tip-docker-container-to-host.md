@@ -17,7 +17,7 @@ My Docker setup usually is based on [this project](https://github.com/UniconLabs
 
 I simply enable/disable components I need running in the package and viola! It takes care of the rest. I am not going to bore you with all the intricate details of how this is all organized Docker-wise, but one thing that is perhaps relevant is that each running component is tagged with a `networks` configuration that simply [controls the application networking](https://docs.docker.com/compose/networking/) via custom networks where each can be linked to a driver configuration (i.e. `bridge`, the default for the Docker engine). This might come in handy, should you decide to go fancier and beyond what I explain here for a solution.
 
-Long story short, the issue had to do with the dockerized Shibboleth SP unable to make a SOAP query to my IdP running outside. If you think about it, this sort of makes sense. What runs inside does not necessarily know anything about what's on the outside. It might seem like everything is simply running on *the same machine*, but `localhost` for you is very different unknown to the Shibboleth SP container running in its own network.
+Long story short, the issue had to do with the dockerized Shibboleth SP unable to make a SOAP query to my IdP running outside. If you think about it, this sort of makes sense. What runs inside does not necessarily know anything about what's on the outside. It might seem like everything is simply running on *the same machine*, but `localhost` for you, an outsider, is a very different unknown to the Shibboleth SP container running in its own network.
 
 I needed an inside man.
 
