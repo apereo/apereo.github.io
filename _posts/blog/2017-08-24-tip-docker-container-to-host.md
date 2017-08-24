@@ -11,7 +11,7 @@ Docker can automate and (more importantly) isolate all of that *noise*, allowing
 
 Being so far away from home can be challenging. This blog is about that problem.
 
-## Problem
+## That Problem
 
 My Docker setup usually is based on [this project](https://github.com/UniconLabs/dockerized-idp-testbed), which is the wonderful produce of my esteemed colleague, [@jtgasper3](https://github.com/jtgasper3). As the perfect IAM testbed, it is *composed* (catch the pun?) of an LDAP server, a Shibboleth SP, Apache httpd, a CASified PHP application, simpleSAMLphp, a Shibboleth IdP and possibly more. 
 
@@ -21,7 +21,7 @@ Long story short the issue I bumped into had to do with the dockerized Shibbolet
 
 I needed an inside man.
 
-## Solution
+## One Solution
 
 I am convinced there are better solutions that muck around with native Docker networking configuration, bridging host and container. Indeed, one can set up [extra hosts](https://docs.docker.com/compose/compose-file/#extra_hosts), perhaps define a `host` [network mode](https://docs.docker.com/compose/compose-file/#network_mode) of some kind, etc. Who knows! That was a rabbit hole I didn't want to venture into and so I settled for the following simpler albeit temporary solution.
 
