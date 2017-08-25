@@ -25,6 +25,7 @@ In other words,
 - There is no *"We vs. You"*. 
 - There is no *"Some folks can only fix certain issues and some can't"*. 
 - There is no *"Person X made the change; so X must fix it too"* (aka code ownership)
+- Ther eis no *"I am user a user; you all are the developers"*.
 
 Of course, if you are a newcomer to the project and have just begun to understand the ins and outs of the [CAS project codebase](https://apereo.github.io/2017/06/12/cas-codebase-overview/), there may certainly be areas in which you might find more comfort to slowly get your feet wet. You're welcome to [ask for suggestions](https://apereo.github.io/cas/Mailing-Lists.html). For the most part, the work item you wish to work on should be something you find interesting and enjoyable with some degree of practicality.
 
@@ -40,12 +41,11 @@ In other words, if you happen to come across a bothersome use case and/or someth
 
 If you find that contributing to the project is at the moment out of your reach, don't worry. There are resources, [here](https://www.coursera.org/) and [here](https://www.apereo.org/content/commercial-affiliates) that can provide training and support to get you started for the win.
 
-
 # Do I need an issue first?
 
 No. 
 
-If you have already identified an enhancement or a bug, it is STRONGLY recommended that you simply submit a pull request to address the case. There is no need for special ceremony to create separate issues. The pull request **IS** the issue and it will be tracked and tagged as such. 
+If you have already identified an enhancement or a bug, it is STRONGLY recommended that you simply submit a pull request to address the case. There is no need for special ceremony to create separate issues. The pull request **IS** the issue and it will be tracked and tagged as such. Remember that this is open source software in an open and collaborative community. It's not "Some folks report issues and some folks fix problems" software.
 
 # How do I report issues then?
 
@@ -61,6 +61,14 @@ Very simply put:
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   <strong>Notepad Works</strong><br/>Try not to use the issue tracker as a backlog for items that need fixes from others. Any good task management software on your laptop will do instead. 
 </div> 
+
+# But, can't I just use the software?
+
+The distinction between user and developer is, for the most part, an imaginary one in open source. You are not a user. You are not a developer. *We* all are contributors. If you have already diagnosed a problem or have found a use case for an attractive improvement and feature, we strongly recommend you simply walk down the path of making that all a reality and *contribute* back. If you find yourself unable to do so, you will need to find and procure resources that can [teach you the how-to](https://www.coursera.org/) or [do it for you](https://www.apereo.org/content/commercial-affiliates). Reporting an issue and hoping/waiting for someone else to come along and provide a fix for you is never an acceptable strategy.
+
+> I am only one; but still I am one. I cannot do everything; but still I can do something; and because I cannot do everything, I will not refuse to do the something that I can do. - Edward Everett Hale
+
+If you insist on being treated like a user, you then need to revisit and realign expectations with [folks and resources]((https://www.apereo.org/content/commercial-affiliates) that can provide you with the treatment you need. All of the work that goes into the development of a rich comprehensive software platform is almost exclusively done on a voluntary basis. Therefor, you have expectations that resemble something of a commercial support agreement with clauses that include promises, garantees, SLAs and follow-ups, you simply need to level up with an entity that actually provides that sort of functionality.
 
 # How do I know who's working on what?
 

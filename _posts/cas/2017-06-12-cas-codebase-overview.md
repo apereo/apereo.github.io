@@ -51,7 +51,7 @@ Modules are super cheap and modest. Sometimes they only provide the necessary de
 
 Whatever it may be, the question ultimately for the deployer is:
 
-> I intend to do X with the software and there is a module that let's me.
+> I intend to do X with the software and there is a module that lets me.
 
 You want the feature? Drop the module in and it does stuff. You don't want the feature? Remove the module and it will stop doing that. 
 Is it perfect? Surely not, but it should be THAT simple.
