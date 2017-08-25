@@ -68,7 +68,7 @@ The distinction between user and developer is, for the most part, an imaginary o
 
 > I am only one; but still I am one. I cannot do everything; but still I can do something; and because I cannot do everything, I will not refuse to do the something that I can do. - Edward Everett Hale
 
-If you insist on being treated like a user, you then need to revisit and realign expectations with [folks and resources](https://www.apereo.org/content/commercial-affiliates) that can provide you with the treatment you need. All of the work that goes into the development of a rich comprehensive software platform is almost exclusively done on a voluntary basis. Therefor, you have expectations that resemble something of a commercial support agreement with clauses that include promises, garantees, SLAs and follow-ups, you simply need to level up with an entity that actually provides that sort of functionality.
+If you insist on being treated like a user, you then need to revisit and realign expectations with [folks and resources](https://www.apereo.org/content/commercial-affiliates) that can provide you with the treatment you need. All of the work that goes into the development of a rich comprehensive software platform is almost exclusively done on a voluntary basis. Therefor, if you have expectations that resemble something of a commercial support agreement with clauses that include promises, garantees, SLAs and follow-ups, you simply need to level up with an entity that actually provides that sort of functionality.
 
 # How do I know who's working on what?
 
