@@ -64,7 +64,7 @@ Very simply put:
 
 # But, can't I just use the software?
 
-The distinction between user and developer is, for the most part, an imaginary one in open source. You are not a user. You are not a developer. *We* all are contributors. If you have already diagnosed a problem or have found a use case for an attractive improvement and feature, we strongly recommend you simply walk down the path of making that all a reality and *contribute* back. If you find yourself unable to do so, you will need to find and procure resources that can [teach you the how-to](https://www.coursera.org/) or [do it for you](https://www.apereo.org/content/commercial-affiliates). Reporting an issue and hoping/waiting for someone else to come along and provide a fix for you is never an acceptable strategy.
+The distinction between user and developer is, for the most part, an imaginary one in open source. You are not a user. You are not a developer. *We* all are contributors. If you have already diagnosed a problem or have found a use case for an attractive improvement and feature, we strongly recommend you simply [walk down the path](https://github.com/apereo/cas/graphs/contributors) of making that all a reality and *contribute* back. If you find yourself unable to do so, you will need to find and procure resources that can [teach you the how-to](https://www.coursera.org/) or [do it for you](https://www.apereo.org/content/commercial-affiliates). Reporting an issue and hoping/waiting for someone else to come along and provide a fix for you is never an acceptable strategy.
 
 > I am only one; but still I am one. I cannot do everything; but still I can do something; and because I cannot do everything, I will not refuse to do the something that I can do. - Edward Everett Hale
 
