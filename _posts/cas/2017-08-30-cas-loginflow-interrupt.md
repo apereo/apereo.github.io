@@ -7,9 +7,14 @@ tags:       [CAS]
 
 > The fastest route to a 10X engineer is to give them 0.1X the distractions." - Eric Meyer
 
-While that is generally sensible advice, when it comes to CAS there are times where you wish to interrupt the CAS authentication flow and the present the end-user with notifications and annoucements. A common use case deals with presenting a bulletin board during the authentication flow to select users and then optionally require the audience to complete a certain task before CAS is able to honor the authentication request and establish a session. Examples of such messages tasks may include: _"The kitchen’s menu today features <a href="https://www.wikiwand.com/en/Khash_(dish)">Khash</a>. Click here to get directions."_ or _"The office of compliance and regulations has announced a new policy on using forks. Click to accept, or forever be doomed with spoons."_
+While that is generally sensible advice, when it comes to CAS there are times where you wish to interrupt the CAS authentication flow and the present the end-user with notifications and annoucements. A common use case deals with presenting a bulletin board during the authentication flow to select users and then optionally require the audience to complete a certain task before CAS is able to honor the authentication request and establish a session. Examples of such messages tasks may include: _"The kitchen’s menu today features <a href="https://www.wikiwand.com/en/Khash_(dish)">Khash</a>. Click here to get directions."_ or _"The office of compliance and regulations has announced a new policy on using forks. Click to accept, or forever be doomed with spoons"_.
 
 This is a tutorial on how to present such interruptions to your CAS audience, as a fairly recent feature in CAS `5.2.x` and beyond. To learn more about this behavior, please [see this guide](https://apereo.github.io/cas/development/installation/Webflow-Customization-Interrupt.html).
+
+<div class="alert alert-info">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>WATCH OUT!</strong><br/>As of this writing, CAS <code>5.2.x</code> is not officially released. See the <a href="https://github.com/apereo/cas/milestones">release schedule</a> for more info.
+</div>
 
 # Interrupt Source
 
