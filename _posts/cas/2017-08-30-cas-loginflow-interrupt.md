@@ -59,6 +59,6 @@ It's that simple.
 
 For more advanced and production-quality interruptions you likely need to write a Groovy script or design a REST endpoint that ties CAS with your own institutional messages and you most certainly should want to decorate the user interface much better.
 
-Given this is very new today, I am sure you will find plenty of opportunities to improve the functionality with additional more cowbell. [Please do](https://apereo.github.io/cas/developer/Contributor-Guidelines.html).
+Given this is very new today, I am sure you will find plenty of opportunities to improve the functionality with more cowbell. Laundry doesn't fold itself so [please do](https://apereo.github.io/cas/developer/Contributor-Guidelines.html).
 
 [Misagh Moayyed](https://twitter.com/misagh84)
