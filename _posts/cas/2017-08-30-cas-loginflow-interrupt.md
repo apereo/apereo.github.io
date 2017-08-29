@@ -44,7 +44,7 @@ Once you have defined the above setting and assuming your overlay is prepped wit
 }
 ```
 
-The above ruleset simply says: _Whenever <code>casuser</code> authenticates, present the `message` to the user with a number of `links`. So simply `interrupt` but make sure an SSO session is not established which would have the user present credentials again in subsequent attempts._
+The above ruleset simply says: _Whenever <code>casuser</code> authenticates, present the `message` to the user with a number of `links`. Make sure an SSO session is not established which would have the user present credentials again in subsequent attempts._
 
 # The Looks
 
