@@ -44,11 +44,11 @@ Once you have defined the above setting and assuming your overlay is prepped wit
 }
 ```
 
-The above ruleset simply says: _Whenever <code>casuser</code> authenticates, present the `message` to the user with a number of `links`. So simply `interrupt` but make sure an SSO session is not established which would have the user present credentials again in subsequent attempts.
+The above ruleset simply says: _Whenever <code>casuser</code> authenticates, present the `message` to the user with a number of `links`. So simply `interrupt` but make sure an SSO session is not established which would have the user present credentials again in subsequent attempts._
 
 # The Looks
 
-Once that is all in place, _casuser_ will see the following screen, after having authenticated successfully:
+Once that is all in place, `casuser` will see the following screen, after having authenticated successfully:
 
 ![image](https://user-images.githubusercontent.com/1205228/29816821-eb5a597a-8cca-11e7-8ee8-f5433b01f90d.png)
 
