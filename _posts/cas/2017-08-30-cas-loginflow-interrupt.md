@@ -52,8 +52,8 @@ Once that is all in place, `casuser` will see the following screen, after having
 
 ![image](https://user-images.githubusercontent.com/1205228/29816821-eb5a597a-8cca-11e7-8ee8-f5433b01f90d.png)
 
-It's that simple. Of course, for more advanced and production-quality interruptions you likely need to write a Groovy script or design a REST endpoint that ties CAS with your own institutional messages.
+It's that simple. Of course, for more advanced and production-quality interruptions you likely need to write a Groovy script or design a REST endpoint that ties CAS with your own institutional messages and you most certainly should want to decorate the user interface much better.
 
-Given this is so new, I am sure you will find plenty of opportunities to improve this functionality with additional bells and whistles. [Please do](https://apereo.github.io/cas/developer/Contributor-Guidelines.html).
+Given this is very new today, I am sure you will find plenty of opportunities to improve the functionality with additional more cowbell. [Please do](https://apereo.github.io/cas/developer/Contributor-Guidelines.html).
 
 [Misagh Moayyed](https://twitter.com/misagh84)
