@@ -43,7 +43,7 @@ The above ruleset simply says: _Whenever <code>casuser</code> authenticates, pre
 
 # The Looks
 
-Once that is all in place, _casuser_ will see the following screen after having authenticated successfully:
+Once that is all in place, _casuser_ will see the following screen, after having authenticated successfully:
 
 ![image](https://user-images.githubusercontent.com/1205228/29816821-eb5a597a-8cca-11e7-8ee8-f5433b01f90d.png)
 
