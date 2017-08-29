@@ -13,9 +13,9 @@ Being so far away from home can be challenging. This blog is about that problem.
 
 ## That Problem
 
-My Docker setup usually is based on [this project](https://github.com/UniconLabs/dockerized-idp-testbed), which is the wonderful produce of my esteemed colleague, [@jtgasper3](https://github.com/jtgasper3). As the perfect IAM testbed, it is *composed* (catch the pun?) of an LDAP server, a Shibboleth SP, Apache httpd, a CASified PHP application, simpleSAMLphp, a Shibboleth IdP and possibly more. 
+My docker setup usually is based on [this project](https://github.com/UniconLabs/dockerized-idp-testbed), which is the wonderful produce of my esteemed colleague, [@jtgasper3](https://github.com/jtgasper3). As the perfect IAM testbed, it is *composed* (catch the pun?) of an LDAP server, a Shibboleth SP, Apache httpd, a CASified PHP application, simpleSAMLphp, a Shibboleth IdP and possibly more. 
 
-I simply enable/disable components I need running in the package and viola! It takes care of the rest. I am not going to bore you with all the intricate details of how this is all organized Docker-wise, but one thing that is perhaps relevant is that each running component is tagged with a `networks` configuration that simply [controls the application networking](https://docs.docker.com/compose/networking/) via custom networks where each can be linked to a driver configuration (i.e. `bridge`, the default for the Docker engine). This might come in handy, should you decide to go fancier and beyond what I explain here for a solution.
+I simply enable/disable components I need running in the package and viola! It takes care of the rest. I am not going to bore you with all the intricate details of how this is all organized docker-wise, but one thing that is perhaps relevant is that each running component is tagged with a `networks` configuration that simply [controls the application networking](https://docs.docker.com/compose/networking/) via custom networks where each can be linked to a driver configuration (i.e. `bridge`, the default for the Docker engine). This might come in handy, should you decide to go fancier and beyond what I explain here for a solution.
 
 Long story short, the issue had to do with the dockerized Shibboleth SP unable to make a SOAP query to my IdP running outside. If you think about it, this sort of makes sense. What runs inside does not necessarily know anything about what's on the outside. It might seem like everything is simply running on *the same machine*, but `localhost` for you, an outsider, is a very different unknown to the Shibboleth SP container running in its own network.
 
@@ -23,7 +23,7 @@ I needed an inside man.
 
 ## One Solution
 
-I am convinced there are better solutions that muck around with native Docker networking configuration, bridging host and container. Indeed, one can set up [extra hosts](https://docs.docker.com/compose/compose-file/#extra_hosts), perhaps define a `host` [network mode](https://docs.docker.com/compose/compose-file/#network_mode) of some kind, etc. Who knows! That was a rabbit hole I didn't want to venture into and so I settled for the following simpler albeit temporary solution.
+I am convinced there are better solutions that muck around with native docker networking configuration, bridging host and container. Indeed, one can set up [extra hosts](https://docs.docker.com/compose/compose-file/#extra_hosts), perhaps define a `host` [network mode](https://docs.docker.com/compose/compose-file/#network_mode) of some kind, etc. Who knows! That was a rabbit hole I didn't want to venture into and so I settled for the following simpler albeit temporary solution.
 
 ```bash
 export DOCKERHOST=$(ifconfig | grep -E "([0-9]{1,3}\.){3}[0-9]{1,3}" | \
