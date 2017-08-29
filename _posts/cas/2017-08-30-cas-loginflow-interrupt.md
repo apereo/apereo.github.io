@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Interrupt Your CAS Authentication Flow With Class
+title:      Interrupt CAS With Class
 summary:    An overview of a recent CAS 5.2.x feature that allows one to interrupt the authentication flow with notifications and advertisements, dictating how CAS should treat the authenticated session with of course kindness and understanding.
 tags:       [CAS]
 ---
