@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Summer 2017 uPortal Roadmap Update
-summary:    Primarily summarizing the Open Apereo 2017b uPortal Roadmap BOF.
+summary:    Primarily summarizing the Open Apereo 2017 uPortal Roadmap BOF.
 tags:       [uPortal]
 ---
 
