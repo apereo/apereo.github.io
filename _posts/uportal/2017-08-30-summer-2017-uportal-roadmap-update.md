@@ -24,7 +24,7 @@ A work in progress, we are looking at shifting uPortal 5 documentation to github
 This will be a work in progress for some time. While uPortal Home has adopted this modern architecture, uPortal core is being refactored piecemeal. It is anticipated that developers will move towards more modularization as they work with specific parts of the codebase.
 
 # uPortal install - demo edition (fka QuickStart)
-This would be a modern version of the quick start we used to publish with uPortal releases. Someone interested in seeing uPortal in action would be able to download the demo edition and have it running locally within minutes. 
+This would be a modern version of the quick start we previously published with uPortal releases. Someone interested in seeing uPortal in action would be able to download the demo edition and have it running locally within minutes. 
 
 # uPortal install - front end developer edition
 While the demo edition is targeted for demonstration purposes only, this version of uPortal is an easy way for front end developers to stand up a uPortal server locally, turn it on, and start developing the front ends of applications. The only additional requirements would be downloading a JDK and git client and cloning the [uPortal-start][] repo.
