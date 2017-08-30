@@ -6,7 +6,7 @@ tags:       [uPortal]
 ---
 
 # Summary
-Almost two dozen conference attendees came to the uPortal Roadmap BOF at the Open Apereo 2017 conference. Prior to the conference, members of the community were invited to submit and comment on roadmap ideas in a shared google doc (https://goo.gl/wZ7VTC). 15 items were suggested but during the BOF we focused on which ones we anticipated someone would actually devote time and resources to. In the end, we anticipate making progress over the next year on the 8 items listed below.
+Almost two dozen conference attendees came to the uPortal Roadmap BOF at the Open Apereo 2017 conference. Prior to the conference, members of the community were invited to submit and comment on roadmap ideas in [a shared google doc](https://goo.gl/wZ7VTC). 15 items were suggested but during the BOF we focused on which ones we anticipated someone would actually devote time and resources to. In the end, we anticipate making progress over the next year on the 8 items listed below.
 
 # Release of uPortal 5
 This long awaited release includes a refactoring of the build system using a Gradle-based build in the uPortal-start repository. We are currently aiming for a mid-September release candidate and feature freeze followed by a GA release by the end of October.
