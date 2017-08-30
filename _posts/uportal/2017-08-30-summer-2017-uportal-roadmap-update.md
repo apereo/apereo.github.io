@@ -33,6 +33,7 @@ While the demo edition is targeted for demonstration purposes only, this version
 Developers in the uPortal community are doing interesting innovative work for local campuses that others could benefit from yet this work cannot be easily adopted. This roadmap item is an effort to lower the barriers to local work participating more directly in the greater uPortal ecosystem. The uPortal Steering Committee is close to issuing a draft of a process that, given certain assumptions, will make it easier for someone to share code without having to go through the full Apereo project incubation process. Everyone has some code to share. Borrowing from the Sirius Cybernetics Corporation, “Share and enjoy!”
 
 [Jim Helwig](mailto:jim.helwig@wisc.edu)
+uPortal Steering Committee Chair
 
 [uPortal-start]: https://github.com/Jasig/uPortal-start
 [uPortal documentation on github.io]: https://jasig.github.io/uPortal/
