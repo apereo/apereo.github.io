@@ -6,7 +6,7 @@ tags:       [CAS]
 ---
 
 <div class="alert alert-info">
-  <strong>Contributed Content</strong><br/>Travis Schmidt (<code>travis.schmidt [at] gmail.com</code>), an active member of the CAS community, was kind enough to share this analysis.
+  <strong>Contributed Content</strong><br/><a href="travis.schmidt@gmail.com">Travis Schmidt</a>, an active member of the CAS community, was kind enough to share this analysis.
 </div>
 
 # Problem
