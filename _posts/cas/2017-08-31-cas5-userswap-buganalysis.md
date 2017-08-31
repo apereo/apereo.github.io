@@ -45,7 +45,7 @@ We then tried to upgrade Tomcat to `8.5.x` from our current `8.0.x` version that
 
 ## Analyzing Customizations
 
-We have quite a few customizations that we make to the CAS application.  In order to rule out that we introduced the issue with our code, we created clean version of the CAS `5.1.x` branch with [Hazelcast](https://apereo.github.io/cas/5.1.x/installation/Hazelcast-Ticket-Registry.html, [LDAP](https://apereo.github.io/cas/5.1.x/installation/LDAP-Authentication.html) and [Duo Security](https://apereo.github.io/cas/5.1.x/installation/DuoSecurity-Authentication.html) modules compiled in.  The error still occurred with this version of CAS.
+We have quite a few customizations that we make to the CAS application.  In order to rule out that we introduced the issue with our code, we created clean version of the CAS `5.1.x` branch with [Hazelcast](https://apereo.github.io/cas/5.1.x/installation/Hazelcast-Ticket-Registry.html), [LDAP](https://apereo.github.io/cas/5.1.x/installation/LDAP-Authentication.html) and [Duo Security](https://apereo.github.io/cas/5.1.x/installation/DuoSecurity-Authentication.html) modules compiled in.  The error still occurred with this version of CAS.
 
 ## Analyzing the Network
 
