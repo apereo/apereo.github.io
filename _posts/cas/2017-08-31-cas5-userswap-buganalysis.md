@@ -49,7 +49,7 @@ We have quite a few customizations that we make to the CAS application.  In orde
 
 ## Analyzing the Network
 
-We next focused on the AJP proxy between Apache and Tomcat.  We reconfigured Tomcat to accept connections on 8443 and called it directly bypassing Apache.  This somewhat mitigated the issue.  After several runs this way we always saw swapping occur, but it always seemed to just swap the status page with a login or service validate call, but never saw the CAS protocol end points swap, or a user swap on validate.  
+We next focused on the AJP proxy between Apache and Tomcat.  We reconfigured Tomcat to accept connections on `8443` and called it directly bypassing Apache.  This somewhat mitigated the issue.  After several runs this way we always saw swapping occur, but it always seemed to just swap the status page with a login or service validate call, but never saw the CAS protocol endpoints swap, or a user swap on validate.  
 
 ## Viola!
 
