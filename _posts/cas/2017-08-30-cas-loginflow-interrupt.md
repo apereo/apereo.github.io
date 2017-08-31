@@ -5,7 +5,7 @@ summary:    An overview of a recent CAS 5.2.x feature that allows one to interru
 tags:       [CAS]
 ---
 
-> The fastest route to a 10X engineer is to give them 0.1X the distractions." - Eric Meyer
+> The fastest route to a 10X engineer is to give them 0.1X the distractions. - Eric Meyer
 
 While that is generally sensible advice, when it comes to CAS there are times where you wish to interrupt the CAS authentication flow and the present the end-user with notifications and annoucements. A common use case deals with presenting a message board during the authentication flow to select users and then optionally require the audience to complete a certain task before CAS is able to honor the authentication request and establish a session. Examples of such messages tasks may include: _"The kitchen’s menu today features <a href="https://www.wikiwand.com/en/Khash_(dish)">Khash</a>. Click here to get directions."_ or _"The office of compliance and regulations has announced a new policy on using forks. Click to accept, or forever be doomed with spoons"_.
 
