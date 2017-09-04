@@ -6,7 +6,7 @@ tags:       [CAS]
 ---
 
 <div class="alert alert-info">
-  <strong>Contributed Content</strong><br/><a href="travis.schmidt@gmail.com">Travis Schmidt</a>, an active member of the CAS community, was kind enough to share this analysis.
+  <strong>Contributed Content</strong><br/><a href="mailto:travis.schmidt@gmail.com">Travis Schmidt</a>, an active member of the CAS community, was kind enough to share this analysis.
 </div>
 
 # Problem
@@ -61,4 +61,4 @@ I [put together a patch]( https://github.com/apereo/cas/pull/2891) targeted at t
 
 To see the CAS release schedule, please [click here](https://github.com/apereo/cas/milestones).
 
-[Travis Schmidt](travis.schmidt@gmail.com)
+[Travis Schmidt](mailto:travis.schmidt@gmail.com)
