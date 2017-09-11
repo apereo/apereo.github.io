@@ -35,7 +35,7 @@ As much as you would try to avoid this, there will be requirements and integrati
 
 So you step into it. Deadlines begin to breath down your neck. Management continues to push for 5am Saturday production deployments to minimize downtime and risk. The inner-child in you continues to have reservations about the nature of the change, the rightness of it all pondering if there is a better path yet you keep reminding yourself to side-step doubt and consider the code and change a *temporary* solution that would surely be revisited, refactored and hopefully removed some day after production.
 
-Of course, that day rarely comes. What’s more alarming that over time, you continue this exercise again and again such that a year from now, the thing no longer resembles anything of its original nature.
+Of course, that day rarely comes. What’s more alarming is that over time, you continue this exercise again and again...and again such that a year from now, the thing no longer resembles anything of its original nature.
 
 # Potential Problems
 
