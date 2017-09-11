@@ -7,7 +7,7 @@ tags:       [Blog]
 
 As a fellow somewhat active in the technology space and that of open-source identity and access management, a reasonable portion of my time throughout the week is loaned to conference calls reviewing and discussing the viability of software upgrades and feature deployments. Much of this is spent on reviewing what already exists, analyzing any and all available documentation at luck’s behest and finally enumerating approaches to the ultimate upgrade goal. Take note that in the majority of these conversations, the underlying motivation first and foremost is to fall back to stock functionality and try-remove most if not all of the existing *local* customizations for which at one point significant time and investment was made. 
 
- “Why?“ That is an excellent question. This post intends to provide a local and customized answer.
+ "Why?" That is an excellent question. This post intends to provide a local and customized answer.
 
 # The Trap
 
@@ -17,7 +17,7 @@ Take a deep breath and pause when you get to this stage, for there be dragons he
 
 # Customizations
 
-Let’s get the obvious out of the way; not all customizations are “evil". In my experience, the opposite is usually far truer. In fact, most open-source projects likely have a documented set of guidelines where a certain batch of changes in particular areas of the system is recommended or even expected. In such scenarios, the *internals* of the deployment are treated very much like a black-box and the software is considered **more like a product rather than a platform**. Common examples include providing one’s  own strategy for authentication, content, user interface and logging where you are expected to make the system uniquely yours. So long as you stay within these boundaries, you will do perfectly fine. 
+Let’s get the obvious out of the way; not all customizations are "evil". In my experience, the opposite is usually far truer. In fact, most open-source projects likely have a documented set of guidelines where a certain batch of changes in particular areas of the system is recommended or even expected. In such scenarios, the *internals* of the deployment are treated very much like a black-box and the software is considered **more like a product rather than a platform**. Common examples include providing one’s  own strategy for authentication, content, user interface and logging where you are expected to make the system uniquely yours. So long as you stay within these boundaries, you will do perfectly fine. 
 
 It’s when you have to step out of bounds that things get more interesting.
 
@@ -60,13 +60,13 @@ Ask around. Chances are you will find similarities and opportunities for collabo
 
 ## Negotiate
 
-So it might turn out that you essentially need to start from *scratch*. Great. This is your moment in the spotlight to negotiate a contribution agreement with the community. Questions you should be asking might include *“Is anyone else interested in this functionality? Is anyone else interested to collaborate on this? Is the community interested in adopting this if and when we deliver?"*
+So it might turn out that you essentially need to start from *scratch*. Great. This is your moment in the spotlight to negotiate a contribution agreement with the community. Questions you should be asking might include *"Is anyone else interested in this functionality? Is anyone else interested to collaborate on this? Is the community interested in adopting this if and when we deliver?"*
 
 These are excellent questions.
 
 As I have repeatedly outlined, it most often does not matter what *this* is. Maybe you are working on a brand new capability absent in the current software stack…or maybe you’re adding a new variation to an existing feature, like the ability to use a relational database instead of a NoSQL database…or perhaps you want the system to dance for you based on the native and traditional customs of the end-user’s current region determined by the browser’s locale…who knows. 
 
-Ordinarily, [it’s all good]( https://apereo.github.io/2017/02/18/onthe-theoryof-possibility/). The worst that could happen is, *“No, sorry. Code this for you only"*. 
+Ordinarily, [it’s all good]( https://apereo.github.io/2017/02/18/onthe-theoryof-possibility/). The worst that could happen is, *"No, sorry. Code this for you only"*. 
 
 ## Execute
 
