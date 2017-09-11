@@ -23,7 +23,7 @@ It’s when you have to step out of bounds that things get more interesting.
 
 # Let There Be Change
 
-As much you would try to avoid this, there will be requirements and integrations whose implementation requires you to step out of bounds and write the code. These are the most common rationales I have learned:
+As much as you would try to avoid this, there will be requirements and integrations whose implementation requires you to step out of bounds and write the code. These are the most common rationales I have learned:
 
 -	Integration with home-grown legacy system/behavior.
 -	NIH syndrome.
