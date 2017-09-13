@@ -15,6 +15,6 @@ Because sometimes people wake up in the morning and ask themselves: "What shall 
 
 Yes. Yes. That happens, which is why projects need to explicitly state the obvious opposite.
 
-Seriously[?]
+Seriously[?],
 
 [Misagh Moayyed](https://twitter.com/misagh84)
