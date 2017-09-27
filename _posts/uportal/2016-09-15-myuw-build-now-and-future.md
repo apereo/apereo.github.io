@@ -9,6 +9,7 @@ During the most recent uPortal development meeting we were discussing how uPorta
 
 Edits: 
 + adjusted to reflect the new name `uPortal app framework` and new repository location for what was previously known as `uw-frame`
++ adjusted to reflect the new name `uPortal home` and new repository location for what was previously known as `AngularJS-portal`
 
 ## The Now
 
@@ -41,7 +42,7 @@ After the ear build runs with the test ear, we then can deliver it to test. We h
 
 ## Looking ahead to where we would like to go
 
-We like our current setup but we would like to improve on a few things. Here is our wish list. First we would love to stop having to fork uPortal to get our own skin and configuration (using the alternative angularjs-portal front end). If we could do a Docker overlay process that could be nice.
+We like our current setup but we would like to improve on a few things. Here is our wish list. First we would love to stop having to fork uPortal to get our own skin and configuration (using the alternative `uPortal home` front end). If we could do a Docker overlay process that could be nice.
 
 We would also like to have it possible to ship the content of the webapp directory instead of depending on a volume mount from the host. In order to accomplish that we need to get rid of the hard coded passwords in the configuration files. We are looking toward using [VaultProject](https://www.vaultproject.io/) for that. This would have the sided bonus of removing the complexity of maven overlays. During startup vault could go fetch the configuration for that given environment.
 
