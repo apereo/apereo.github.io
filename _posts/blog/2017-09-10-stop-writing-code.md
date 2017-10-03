@@ -48,7 +48,7 @@ Literally.
 
 # The Where
 
-Let me reemphasize that I think the majority of all changes are well intentioned, solve an underlying pain point and on the surface look reasonable and attractive. As a colleague, my personal and professional position is to just evaluate and yet never argue the Why with you, because after all I am just guest in your house and once I leave, you are responsible for the mortgage. So I might express concerns about the validity and soundness of the use case, but ultimately, it is always and forever will be your decision. 
+Let me reemphasize that I think the majority of all changes are well intentioned, solve an underlying pain point and on the surface look reasonable and attractive. As a colleague, my personal and professional position is to just evaluate and yet never argue the Why with you, because after all I am just a guest in your house and once I leave, you are responsible for the mortgage. So I might express concerns about the validity and soundness of the use case, but ultimately, it is always and forever will be your decision. 
 
 Now that we have gotten that out of the way, let’s figure out how we are going to implement the change together. Rather than firing up your workstation immediately to redefine HTTP, exchange passwords in plain-text, design your own message queue or REST-based content protocol and replace XML with JSON because *readability* or any other creative solutions, I recommend you take the following approach instead.
 
