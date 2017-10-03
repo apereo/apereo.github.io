@@ -72,7 +72,7 @@ Ordinarily, [it’s all good]( https://apereo.github.io/2017/02/18/onthe-theoryo
 
 Assuming positive reception and answers to the above questions, the task would then turn into one of contributing back and figuring out the quirks and the specifics as to make the intended behavior and feature generic and useful enough for the masses. Do not overdo. Do not pre-optimize. Remove institution-specific assumptions, write a bit of documentation and share. Do it all out in the open, from the start without fear. Others will step up to adopt, collaborate and improve the functionality over time, or else it’s perfect just as you intended it to be. 
 
-With time, it will either get better, or [the trainman]( http://matrix.wikia.com/wiki/The_Trainman) will take it back to the machine world.
+With time it will either get better, or [the trainman]( http://matrix.wikia.com/wiki/The_Trainman) will take it back to the machine world.
 
 ## WIP
 
