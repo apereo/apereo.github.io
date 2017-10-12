@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Apereo
+title: About Blog
 permalink: /about/
 tags: about
 ---
