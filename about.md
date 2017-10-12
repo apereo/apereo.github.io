@@ -5,9 +5,11 @@ permalink: /about/
 tags: about
 ---
 
+# About Apereo Foundation
+
 Formed in 2012, the [Apereo Foundation](https://www.apereo.org) is a vibrant and value-driven organization. Apereo has a noteworthy history celebrating two strong organizations, the Sakai Foundation and Jasig. Apereo is a community built around openness, inclusivity, collaboration and innovation. The mission of Apereo is to help educational organizations “collaborate to foster, develop, and sustain open technologies and innovation to support learning, teaching, and research." Apereo is still 100% open.
 
-# This Blog
+# About Blog
 
 This is a blog managed and edited by the Apereo Foundation participants. It is typically used to post project updates, announce news, etc.
 
