@@ -11,7 +11,7 @@ Apereo is 100% open.
 
 ### About Blog
 
-This is a blog managed and edited by the Apereo project participants. It is typically used to post project updates, announce news, etc.
+This is a blog managed and edited by the Apereo project participants and community members. It is typically used to post project updates, announce news, etc.
 
 ### Disclaimer
 
