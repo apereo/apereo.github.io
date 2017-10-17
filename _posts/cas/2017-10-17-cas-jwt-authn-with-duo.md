@@ -205,10 +205,14 @@ The overlay also needs to be equipped with [the relevant extension module](https
 You may generate the required secrets manually per the above link. In this example, I left them undefined in my properties which forces CAS to generate a few on its own and warn me about them when it starts up:
 
 ```bash
-... - <Secret key for encryption is not defined for [Token/JWT Tickets]; CAS will attempt to auto-generate the encryption key>
-... - <Generated encryption key [...] of size [256] for [Token/JWT Tickets]. The generated key MUST be added to CAS settings under setting [cas.authn.token.crypto.encryption.key].>
-... - <Secret key for signing is not defined for [Token/JWT Tickets]. CAS will attempt to auto-generate the signing key>
-... - <Generated signing key [...] of size [512] for [Token/JWT Tickets]. The generated key MUST be added to CAS settings under setting [cas.authn.token.crypto.signing.key].>
+... - <Secret key for encryption is not defined for [Token/JWT Tickets]; 
+    CAS will attempt to auto-generate the encryption key>
+... - <Generated encryption key [...] of size [256] for [Token/JWT Tickets]. 
+    The generated key MUST be added to CAS settings under setting [cas.authn.token.crypto.encryption.key].>
+... - <Secret key for signing is not defined for [Token/JWT Tickets]. 
+    CAS will attempt to auto-generate the signing key>
+... - <Generated signing key [...] of size [512] for [Token/JWT Tickets]. 
+    The generated key MUST be added to CAS settings under setting [cas.authn.token.crypto.signing.key].>
 ```
 
 Fine! Let's proceed.
@@ -252,7 +256,8 @@ Now, we are ready to start sending requests.
 Using `curl` again from a terminal, here is the authentication sequence:
 
 ```bash
-$ curl -i "https://mmoayyed.example.net/cas/login?service=https://www.example.org" --header "token:eyJjdHkiOiJKV1QiLCJ..." --header "Content-Type: application/cas"
+$ curl -i "https://mmoayyed.example.net/cas/login?service=https://www.example.org" 
+    --header "token:eyJjdHkiOiJKV1QiLCJ..." --header "Content-Type: application/cas"
 
 HTTP/1.1 302
 ...
