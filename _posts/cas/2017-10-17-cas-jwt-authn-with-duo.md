@@ -23,24 +23,6 @@ In this tutorial, I am going to briefly review various forms of JWT functionalit
 - JWTs with [Duo Security Multifactor Authentication](https://apereo.github.io/cas/development/installation/DuoSecurity-Authentication.html): Exploring an approach where a non-interactive authentication request may be routed to a multifactor authentication flow and back.
 - [JWTs as Service Tickets](https://apereo.github.io/cas/development/installation/Configure-ServiceTicket-JWT.html): Allowing CAS to transform service tickets issued for applications into JWTs.
 
-<!-- TOC -->
-
-- [Environment](#environment)
-- [JWT Authentication](#jwt-authentication)
-    - [Let There Be JWT](#let-there-be-jwt)
-    - [Configure Application](#configure-application)
-    - [Authenticate](#authenticate)
-- [Duo Security MFA With JWTs](#duo-security-mfa-with-jwts)
-    - [Configure Duo Security](#configure-duo-security)
-    - [Application MFA Trigger](#application-mfa-trigger)
-    - [Authenticate](#authenticate-1)
-- [JWT Service Tickets](#jwt-service-tickets)
-    - [Configure JWTs](#configure-jwts)
-    - [Configure Application](#configure-application-1)
-    - [Authenticate](#authenticate-2)
-- [Summary](#summary)
-
-<!-- /TOC -->
 
 # Environment
 
