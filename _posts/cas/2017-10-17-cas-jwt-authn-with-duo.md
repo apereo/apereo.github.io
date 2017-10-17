@@ -196,6 +196,10 @@ Things work exactly the same as before, except that this time your device regist
 
 All operations so far have issued a regular service ticket back to the application that must be validated in a subsequent trip so the application can retrieve the authenticated user profile. In a different variation, it's possible for the service ticket itself to [take on the form of a JWT](https://apereo.github.io/cas/development/installation/Configure-ServiceTicket-JWT.html). JWT-based service tickets are issued to applications based on the same semantics defined by the CAS Protocol. CAS having received an authentication request via its `/login endpoint` will conditionally issue back JWT service tickets to the application in form of a `ticket` parameter via the requested http method.
 
+<div class="alert alert-info">
+  <strong>Let's REST</strong><br/>In case you are using the CAS REST APIs, you should know that service tickets issued as part of REST API operations <a href="https://apereo.github.io/cas/development/protocol/REST-Protocol.html#jwt-service-tickets">may also be JWTs</a>.
+</div>
+
 ## Configure JWTs
 
 In order for CAS to transform service tickets into JWTs, essentially we need to execute the reverse of the above configuration steps. We will need to ensure CAS is provided with relevant keys to generate JWTs and these keys are in turn used by the application to unpack the *JWTness* of generated service ticket. 
