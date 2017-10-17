@@ -58,7 +58,8 @@ MY4Jpxr5VeZsJ...
 ==== Encryption Secret ====
 MZCjxBbDFq9cHPdy...
 
-Generating JWT for subject [Misagh] with signing key size [256], signing algorithm [HS256], encryption key size [48], encryption method [A192CBC-HS384] and encryption algorithm [dir]
+Generating JWT for subject [Misagh] with signing key size [256], signing algorithm [HS256], \
+    encryption key size [48], encryption method [A192CBC-HS384] and encryption algorithm [dir]
 
 ==== JWT ====
 eyJjdHkiOiJKV1QiLCJ...
@@ -66,7 +67,7 @@ eyJjdHkiOiJKV1QiLCJ...
 
 Hooray! We have a JWT.
 
-There are a variety of other parameters such as encryption methods and signing algorithms you can choose from to generate the JWT. For the purposes of this tutorial, let's keep things simple. Of course, you don't have to use the shell. Any valid and compliant JWT generator would do fine.
+There are a variety of other parameters such as encryption methods and signing algorithms you can choose from to generate the JWT. For the purposes of this tutorial, let's keep things simple. Of course, you don't have to use the CAS command-line shell. Any valid compliant JWT generator would do fine.
 
 <div class="alert alert-info">
   <strong>Don't Take Things Literally</strong><br/>I am abbreviating the secrets and the generated JWT above. Do NOT copy paste these into your environment and configuration, thinking they might do the trick.
@@ -74,7 +75,7 @@ There are a variety of other parameters such as encryption methods and signing a
 
 ## Configure Application
 
-CAS [needs to be taught](https://apereo.github.io/cas/development/installation/JWT-Authentication.html) the security properties of the JWT so it can unpack and validate it and produce the relevant authenticated session. For a given authentication request, CAS will try to find the matching record for the application in its registry that is capable of validating JWTs. If such a record is found and the request is in fact accompanied by JWT credentials, the credential is validated and the service ticket issued.
+CAS [needs to be taught](https://apereo.github.io/cas/development/installation/JWT-Authentication.html) the security properties of the JWT to unpack and validate it and produce the relevant authenticated session. For a given authentication request, CAS will try to find the matching record for the application in its registry that is capable of validating JWTs. If such a record is found and the request is in fact accompanied by JWT credentials, the credential is validated and the service ticket issued.
 
 My CAS overlay is already equipped with the [relevant configuration module](https://apereo.github.io/cas/development/installation/JWT-Authentication.html) and my application record using [the JSON service registry](https://apereo.github.io/cas/development/installation/JSON-Service-Management.html) looks something like this:
 
@@ -115,7 +116,7 @@ Location: https://www.example.org?ticket=ST-1-zmEt1zfAuHv9vG6DogfBeH5ylmc-mmoayy
 
 A few things to note:
 
-- The `-i` option allow curl to output the response headers where `Location` in the above case contains the redirect URL with the issued service ticket.
+- The `-i` option allows `curl` to output the response headers where `Location` in the above case contains the redirect URL with the issued service ticket.
 - The entire url in the `curl` command in encased in double-quoted. This is necessary for `curl` to ensure the query string is entirely passed along to CAS.
 
 Of course, I can pass the JWT as a request header too:
@@ -137,9 +138,13 @@ I want to be able to use my JWT to authenticate with CAS and get a service ticke
 
 [Duo Security integration support](https://apereo.github.io/cas/development/installation/DuoSecurity-Authentication.html) of CAS is able to also support non-browser based multifactor authentication requests. In order to trigger this behavior, applications (i.e. `curl`, REST APIs, etc.) need to specify a special `Content-Type` to signal to CAS that the request is submitted from a non-web based environment. The multifactor authentication request is submitted to Duo Security in `auto` mode which effectively may translate into an out-of-band factor (push or phone) recommended by Duo as the best for the user’s devices.
 
+<div class="alert alert-warning">
+  <strong>YMMV</strong><br/>If you are using a different kind of multifactor authentication provider, you will need to verify whether it's able to support such behaviors. YMMV.
+</div>
+
 ## Configure Duo Security
 
-My overlay needs to be prepped with the [relevant configuration module](https://apereo.github.io/cas/development/installation/DuoSecurity-Authentication.html) of course and settings that include integration keys, secret keys, etc.
+My overlay is prepped with the [relevant configuration module](https://apereo.github.io/cas/development/installation/DuoSecurity-Authentication.html) of course and settings that include integration keys, secret keys, etc.
 
 ## Application MFA Trigger
 
@@ -176,7 +181,8 @@ So my application record will take on the following form:
 Using `curl` again from a terminal, here is the authentication sequence:
 
 ```bash
-$ curl -i "https://mmoayyed.example.net/cas/login?service=https://www.example.org" --header "token:eyJjdHkiOiJKV1QiLCJ..." --header "Content-Type: application/cas"
+$ curl -i "https://mmoayyed.example.net/cas/login?service=https://www.example.org" \
+    --header "token:eyJjdHkiOiJKV1QiLCJ..." --header "Content-Type: application/cas"
 
 HTTP/1.1 302
 ...
@@ -184,7 +190,7 @@ Location: https://www.example.org?ticket=ST-1-gdfe1zfAuHv9vG6DogfBeH5ylmc-mmoayy
 ...
 ```
 
-Things should work exactly the same as before, except that this time your device registered with Duo Security will receive a `push` notification where your approval will authorize CAS to establish a session and generate a ticket.
+Things work exactly the same as before, except that this time your device registered with Duo Security will receive a  notification where your approval will authorize CAS to establish a session and generate a ticket.
 
 # JWT Service Tickets
 
@@ -192,9 +198,11 @@ All operations so far have issued a regular service ticket back to the applicati
 
 ## Configure JWTs
 
-In order for CAS to transform service tickets into JWTs, essentially we need to execute the reverse of the configuration steps. We will need to ensure CAS is provided with relevant keys to generate JWTs and these keys are in turn used by the application to unpacked the service ticket that is now a JWT. The overlay also needs to be equipped with [the relevant extension module](https://apereo.github.io/cas/development/installation/Configure-ServiceTicket-JWT.html) of course.
+In order for CAS to transform service tickets into JWTs, essentially we need to execute the reverse of the above configuration steps. We will need to ensure CAS is provided with relevant keys to generate JWTs and these keys are in turn used by the application to unpack the *JWTness* of generated service ticket. 
 
-You may generate the required secrets manually per the above link. In this example, I left them undefined in my properties which forced CAS to generate a few on its own and warn me about them:
+The overlay also needs to be equipped with [the relevant extension module](https://apereo.github.io/cas/development/installation/Configure-ServiceTicket-JWT.html) of course to allow for this functionality.
+
+You may generate the required secrets manually per the above link. In this example, I left them undefined in my properties which forces CAS to generate a few on its own and warn me about them when it starts up:
 
 ```bash
 ... - <Secret key for encryption is not defined for [Token/JWT Tickets]; CAS will attempt to auto-generate the encryption key>
@@ -207,7 +215,7 @@ Fine! Let's proceed.
 
 ## Configure Application
 
-JWTs as service tickets are issued on a per-application basis. This means once CAS finds a matchin record for the application in its registry, it will try to determine if the application requires JWTs as service tickets. So my application record will take on the following form:
+JWTs as service tickets are issued on a per-application basis. This means that once CAS finds a matching record for the application in its registry, it will try to determine if the application requires JWTs as service tickets. So my application record will take on the following form:
 
 ```json
 {
