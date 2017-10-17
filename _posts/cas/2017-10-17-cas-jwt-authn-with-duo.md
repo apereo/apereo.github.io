@@ -58,7 +58,7 @@ MY4Jpxr5VeZsJ...
 ==== Encryption Secret ====
 MZCjxBbDFq9cHPdy...
 
-Generating JWT for subject [Misagh] with signing key size [256], signing algorithm [HS256], \
+Generating JWT for subject [Misagh] with signing key size [256], signing algorithm [HS256],
     encryption key size [48], encryption method [A192CBC-HS384] and encryption algorithm [dir]
 
 ==== JWT ====
@@ -181,7 +181,7 @@ So my application record will take on the following form:
 Using `curl` again from a terminal, here is the authentication sequence:
 
 ```bash
-$ curl -i "https://mmoayyed.example.net/cas/login?service=https://www.example.org" \
+$ curl -i "https://mmoayyed.example.net/cas/login?service=https://www.example.org"
     --header "token:eyJjdHkiOiJKV1QiLCJ..." --header "Content-Type: application/cas"
 
 HTTP/1.1 302
