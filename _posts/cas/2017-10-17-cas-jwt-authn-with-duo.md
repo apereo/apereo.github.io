@@ -15,7 +15,7 @@ tags:       [CAS]
   <strong>Collaborate</strong><br/>The blog is managed and hosted on GitHub. If you wish to update the contents of this post or if you have found an inaccuracy and wish to make corrections, we recommend that you please submit a pull request to <a href="https://github.com/apereo/apereo.github.io">this repository</a>.
 </div>
 
-Apereo CAS has had built-in support [JWTs](https://jwt.io/) for some time now in a variety of different ways. Notions of JWT support really back to CAS `3.x` with the work [@epierce](https://github.com/epierce/cas-server-extension-token) did as an extension to enable token authentication support. Since then, support for JWTs has significantly improved and grown over the years and continues to get better with an emerging number of use cases whose chief concern is improving performance and removing round-trip calls, among other things.
+Apereo CAS has had built-in support for [JWTs](https://jwt.io/) for some time now in a variety of different ways. Notions of JWT support really date back to CAS `3.5.x` with the work [@epierce](https://github.com/epierce/cas-server-extension-token) did as a CAS extension to enable token authentication support. Since then, support for JWTs has significantly improved and grown over the years and continues to get better with an emerging number of use cases whose chief concern is improving performance and removing round-trip calls, among other things.
 
 In this tutorial, I am going to briefly review various forms of JWT functionality in CAS. Specifically, the following topics will be reviewed:
 
