@@ -139,7 +139,7 @@ I want to be able to use my JWT to authenticate with CAS and get a service ticke
 [Duo Security integration support](https://apereo.github.io/cas/development/installation/DuoSecurity-Authentication.html) of CAS is able to also support non-browser based multifactor authentication requests. In order to trigger this behavior, applications (i.e. `curl`, REST APIs, etc.) need to specify a special `Content-Type` to signal to CAS that the request is submitted from a non-web based environment. The multifactor authentication request is submitted to Duo Security in `auto` mode which effectively may translate into an out-of-band factor (push or phone) recommended by Duo as the best for the user’s devices.
 
 <div class="alert alert-warning">
-  <strong>YMMV</strong><br/>If you are using a different kind of multifactor authentication provider, you will need to verify whether it's able to support such behaviors. YMMV.
+  <strong>YMMV</strong><br/>If you are using a different kind of multifactor authentication provider, you will need to verify whether it's able to support such behaviors.
 </div>
 
 ## Configure Duo Security
