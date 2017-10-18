@@ -117,7 +117,7 @@ Location: https://www.example.org?ticket=ST-1-zmEt1zfAuHv9vG6DogfBeH5ylmc-mmoayy
 A few things to note:
 
 - The `-i` option allows `curl` to output the response headers where `Location` in the above case contains the redirect URL with the issued service ticket.
-- The entire url in the `curl` command in encased in double-quoted. This is necessary for `curl` to ensure the query string is entirely passed along to CAS.
+- The entire url in the `curl` command in encased in double-quotes. This is necessary for `curl` to ensure the query string is entirely passed along to CAS.
 
 Of course, I can pass the JWT as a request header too:
 
@@ -194,7 +194,7 @@ Things work exactly the same as before, except that this time your device regist
 
 # JWT Service Tickets
 
-All operations so far have issued a regular service ticket back to the application that must be validated in a subsequent trip so the application can retrieve the authenticated user profile. In a different variation, it's possible for the service ticket itself to [take on the form of a JWT](https://apereo.github.io/cas/development/installation/Configure-ServiceTicket-JWT.html). JWT-based service tickets are issued to applications based on the same semantics defined by the CAS Protocol. CAS having received an authentication request via its `/login endpoint` will conditionally issue back JWT service tickets to the application in form of a `ticket` parameter via the requested http method.
+All operations so far have issued a regular service ticket back to the application that must be validated in a subsequent trip so the application can retrieve the authenticated user profile. In a different variation, it's possible for the service ticket itself to [take on the form of a JWT](https://apereo.github.io/cas/development/installation/Configure-ServiceTicket-JWT.html). JWT-based service tickets are issued to applications based on the same semantics defined by the CAS Protocol. CAS having received an authentication request via its `/login` endpoint will conditionally issue back JWT service tickets to the application in form of a `ticket` parameter via the requested http method.
 
 <div class="alert alert-info">
   <strong>Let's REST</strong><br/>In case you are using the CAS REST APIs, you should know that service tickets issued as part of REST API operations <a href="https://apereo.github.io/cas/development/protocol/REST-Protocol.html#jwt-service-tickets">may also be JWTs</a>.
