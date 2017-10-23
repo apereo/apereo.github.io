@@ -52,9 +52,7 @@ While arguably, this is the simplest of all options and grants the most flexibil
 
 To further complicate the scenario, let’s suppose that tenant A uses a MySQL database for its account source and authentication while tenant B uses Active Directory. Our goal is to let tenant A users only use MySQL while tenant B users are limited to Active Directory and we want to do so based on the semantics of the credential passed. Simply put, if the credential id matches the syntax of `xyz@tenantA.org`, we would want CAS to use MySQL and if the credential matches `xyz@tenantB.org`, CAS would use Active Directory instead.
 
-I am of course assuming, rather obviously, that tenants support username/password authentication modes. Fancier forms of authentication are left out for brevity. 
-
-Let’s also assume that we know how to configure CAS to use MySQL and Active Directory as authentication sources. With that, the first question we might ask is: Can CAS be configured to use a specific authentication strategy based on the properties of the credential?
+I am of course assuming, rather obviously, that tenants support username/password authentication modes. Fancier forms of authentication are left out for brevity. Let’s also assume that we know how to configure CAS to use MySQL and Active Directory as authentication sources. With that, the first question we might ask is: Can CAS be configured to use a specific authentication strategy based on the properties of the credential?
 
 The answer is, yes.
 
