@@ -7,7 +7,7 @@ tags:       [CAS]
 
 <div class="alert alert-info">
   <strong>Contributed Content</strong><br/><a href="mailto:waldbiec@lafayette.edu">Carl Waldbieser</a>, an active member of the CAS community, was kind enough to share this analysis.
-</div></p>
+</div>
 
 Lafayette College has an active user base of XXX and regularly records 78 CAS authentication events/minute on average with peaks of 220 events/minute. In preparation of deploying CAS `5.1.x`, locust.io was used to put CAS under load and soak and stress tests. Results indicate that CAS `5.1.x` deployed with reasonable hardware in a multi-node deployment architecture using nginx+ and hazelcast. Deployment architecture, testing scenarios and results are detailed in the rest of this blogs post.
 
