@@ -64,9 +64,9 @@ So, we can design the following conditions for our MySQL and Active Directory au
 
 ```properties
 ...
-# cas.authn.jdbc.search[0].credentialCriteria=.+@tenantA\.org
+cas.authn.jdbc.search[0].credentialCriteria=.+@tenantA\.org
 ...
-# cas.authn.ldap[0].credentialCriteria=.+@tenantB\.org
+cas.authn.ldap[0].credentialCriteria=.+@tenantB\.org
 ...
 ```
 
@@ -80,9 +80,9 @@ A number of authentication strategies in CAS have the ability to fetch attribute
 
 ```properties
 ...
-# cas.authn.jdbc.search[0].principalAttributeList=firstName,lastName
+cas.authn.jdbc.search[0].principalAttributeList=firstName,lastName
 ...
-# cas.authn.ldap[0].principalAttributeList=cn,givenName
+cas.authn.ldap[0].principalAttributeList=cn,givenName
 ...
 ```
 
