@@ -126,7 +126,7 @@ You may also want to get even fancier by assigning [arbitrary tags to each servi
 
 Based on the [CAS documentation for dynamic themes](https://apereo.github.io/cas/development/installation/User-Interface-Customization-Themes.html),
 
-> CAS can also utilize a service’s associated theme to selectively choose which set of UI views will be used to generate the standard views. This is especially useful in cases where the set of pages for a theme that is targeted for a different type of audience are entirely different structurally that simply using a simple theme is not practical to augment the default views. In such cases, new view pages may be required.
+> CAS can also utilize a service’s associated theme to selectively choose which set of UI views will be used to generate the standard views. This is especially useful in cases where the set of pages for a theme that is targeted for a different type of audience are entirely different structurally that simply using a simple theme is not practical to augment the default views.
 
 Sounds exactly like what we might want to use for our tenants. In my example, I am simply going to customize the CAS login view fragment for each tenant and then assign the special theme identifier to all tenant A members. Let's say I am going to call the theme identifier `tenantATheme`:
 
