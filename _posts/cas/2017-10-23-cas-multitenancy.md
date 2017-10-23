@@ -152,6 +152,14 @@ cd src/main/resources/templates/tenantATheme
 touch casLoginView.html
 ```
 
+My theme may also contain its own CSS and Javascript variants under a `src/main/resources/tenantATheme.properties`:
+
+```properties
+standard.custom.css.file=/themes/[theme_name]/css/cas.css
+cas.javascript.file=/themes/[theme_name]/js/cas.js
+admin.custom.css.file=/themes/[theme-name]/css/admin.css
+```
+
 The `casLoginView.html` found at `src/main/resources/templates/tenantATheme` will now always be used for applications that are members of tenant A and carry the assigned theme in their definition.
 
 # Summary
