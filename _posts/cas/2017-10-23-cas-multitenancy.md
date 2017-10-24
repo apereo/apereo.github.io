@@ -139,7 +139,7 @@ Sounds exactly like what we might want to use for our tenants. In my example, I 
   "theme": "tenantATheme",
   "attributeReleasePolicy" : {
     "@class" : "org.apereo.cas.services.GroovyScriptAttributeReleasePolicy",
-    "groovyScript" : "classpath:/tenantA-attr-release-policy.groovy"
+    "groovyScript" : "tenantATheme"
   }
 }
 ```
