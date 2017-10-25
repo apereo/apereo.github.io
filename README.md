@@ -1,4 +1,4 @@
-# Apereo Foundation Blog
+# Apereo Community Blog
 
 ## Building and running locally
 

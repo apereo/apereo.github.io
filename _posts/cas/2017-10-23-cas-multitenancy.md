@@ -28,11 +28,11 @@ I have been asked on and off about multitenancy capabilities of CAS and whether 
 - Feature management, such as tickets, security, access strategy, flow customizations, etc.
 - ...
 
-In addition to the problem of isolating configuration per tenant, there also needs to be a mechanism by which CAS may shake hands with each tenant to recognize and activate their connected configuration. Furthermore, any design needs to also carefully weigh and evaluate possibilities of *feature imbalance* which is the problem of introducing capabilities requested by the tenant without impact and side-effects to others and doing so in such a way to ensure all tenants can get their fair share of system capabilities if and when asked.
+In addition to the problem of isolating configuration per tenant, there also needs to be a mechanism by which CAS may shake hands with each tenant to recognize and activate their connected configuration. Furthermore, any design needs to also carefully weigh and evaluate possibilities of *feature imbalance* which is the problem of introducing capabilities requested by a tenant without impact and side-effects to others and doing so in such a way to ensure all tenants can get their fair share of system capabilities if and when asked.
 
 If all of this sounds complex and seems like a lot of work, it is simply because it is. If this is something you desire to see in your deployment, please [reach out](https://twitter.com/misagh84).
 
-While support for multi-tenancy in the above terms and conditions in absent in CAS today, in this tutorial I wish to uncover *a few* aspects of the CAS software that may prove as viable alternatives or shortcuts for the time being to handle multitenancy-like features.
+While support for multi-tenancy in the above terms and conditions is absent in CAS today, in this tutorial I wish to uncover *a few* aspects of the CAS software that may prove as viable alternatives or shortcuts for the time being to handle multitenancy-like features.
 
 # Scenario
 
@@ -46,7 +46,7 @@ It is important to treat these tenants as generic as possible and not make any a
 
 One possible solution is to turn the problem from one of software into one of deployment topology. Rather than having *a single* CAS deployment serving many tenants, you would simply have many smaller deployments serving each tenant and you would assign each tenant a specific endpoint that handles their needs exclusively. For our tenants, we could have `https://sso.example.org/tenantA/cas/` and `https://sso.example.org/tenantB/cas` endpoint and so on. (If you care, rewrite the URLs prettier at some level to hide details) All CAS functionality is scoped to the specific endpoints that are shared with each tenant and the software itself cares not how it is contacted and by whom so long as requests are well-formed. 
 
-While arguably, this is the simplest of all options and grants the most flexibility, it goes without saying that managing many small deployments, upgrades and maintenance efforts across the platform does incur cost and risk and requires quite a bit of automation, technique and infrastructure support to let all play nice.
+While arguably this is the simplest of all options and grants the most flexibility, it goes without saying that managing many small deployments, upgrades and maintenance efforts across the platform does incur cost and risk and requires quite a bit of automation, technique and infrastructure support to let all play nice.
 
 # Authentication
 
