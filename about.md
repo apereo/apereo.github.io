@@ -15,4 +15,4 @@ This is a blog managed and edited by the Apereo project participants and communi
 
 ### Disclaimer
 
-This blog is **BY NO MEANS** an official voice of the Apereo Foundation. All official statements on behalf of the Apereo Foundation are made by the Chair, ED, or other authorized individuals. All opinions, views, notes, anecdotes, stories and comments expressed via this blog solely, purely and exclusively belong to individual authors and do not express or reflect the official policy, position, views or opinions of the Apereo Foundation itself.
+Unless otherwise noted, all authors post here wearing their individual Apereo participant [hats](https://www.apache.org/foundation/how-it-works.html#hats). Opinions, statements, and comments expressed via this blog do not necessarily reflect those of the Apereo Foundation.
