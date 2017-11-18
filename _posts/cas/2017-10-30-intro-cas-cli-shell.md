@@ -132,7 +132,7 @@ cas>list-undocumented
 Identical to its CLI equivalent:
 
 ```bash
-cas>generate-jwt --sub Misagh
+cas>generate-jwt --subject Misagh
 ```
 
 ### Generate Crypto Keys
