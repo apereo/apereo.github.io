@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Deploying Apereo CAS Behind a Proxy
-summary:    A short tutorial how to get Apereo CAS deployed behind proxies and load balancers that aim to terminate SSL.
+summary:    A short tutorial on how to get Apereo CAS deployed behind proxies and load balancers that aim to terminate SSL.
 tags:       [CAS]
 ---
 
