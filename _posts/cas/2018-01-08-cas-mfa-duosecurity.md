@@ -23,7 +23,7 @@ Our task list is rather short:
 
 # Configuring Authentication
 
-Prior to configuring *multiple* factors of authentication, we need to first establish a primary mode of validating credentials. To kill two birds with one stone [1] and to address yet another common use case, we are going to stick with [LDAP authentication](https://apereo.github.io/cas/development/installation/LDAP-Authentication.html). The strategy here, as indicated by the CAS documentation, is to declare the intention/module in the build script and then configure the relevant `cas.authn.ldap[x]` settings for the directory server in use. Most commonly, that would translate into the following settings:
+Prior to configuring *multiple* factors of authentication, we need to first establish a primary mode of validating credentials. To kill two birds with one stone [1], we are going to o address yet another common use case and keep things simple by sticking with [LDAP authentication](https://apereo.github.io/cas/development/installation/LDAP-Authentication.html). The strategy here, as indicated by the CAS documentation, is to declare the intention/module in the build script and then configure the relevant `cas.authn.ldap[x]` settings for the directory server in use. Most commonly, that would translate into the following settings:
 
 ```properties
 cas.authn.ldap[0].type=AUTHENTICATED
