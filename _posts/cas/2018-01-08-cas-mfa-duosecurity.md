@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Multifactor Authentication with Apereo CAS and Duo Security 
+title:      CAS Multifactor Authentication with  Duo Security 
 summary:    A short walkthrough to demonstrate how one might turn on multifactor authentication with CAS using Duo Security, leveraging a variety of triggers.
 tags:       [CAS]
 ---
