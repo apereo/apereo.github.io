@@ -5,6 +5,11 @@ summary:    In which we show to link OIDC id to LDAP database user.
 tags:       [CAS]
 ---
 
+
+<div class="alert alert-info">
+  <strong>Contributed Content</strong><br/>Francis Le Coq was kind enough to share this guide.
+</div>
+
 <div class="alert alert-success">
   <strong>Collaborate</strong><br/>This blog is managed and hosted on GitHub. If you wish to update the contents of this post or if you have found an inaccuracy and wish to make corrections, we recommend that you please submit a pull request to <a href="https://github.com/apereo/apereo.github.io">this repository</a>.
 </div>
@@ -326,19 +331,3 @@ Find here our [Example source code](https://github.com/EsupPortail/cas-server-su
 Plus our simple [Standalone LDAP linking server](https://github.com/EsupPortail/claExternalID/tree/5.2.x)
 
 [Francis Le Coq](https://github.com/cifren)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
