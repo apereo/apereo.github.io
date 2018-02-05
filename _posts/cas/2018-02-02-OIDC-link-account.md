@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Link OIDC user to existing Database user 
-summary:    In which we show to link OIDC id to LDAP database user
+title:      Link CAS OIDC user to existing Database user 
+summary:    In which we show to link OIDC id to LDAP database user.
 tags:       [CAS]
 ---
 
