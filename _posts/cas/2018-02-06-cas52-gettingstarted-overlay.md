@@ -13,7 +13,7 @@ This tutorial specifically requires and focuses on:
 - Java 8
 
 <div class="alert alert-info">
-  <strong>Need Help?</strong><br/>If you ever get stuck and are in need of additional assistance, start by reviewing the suggestions <a href="https://apereo.github.io/cas/5.2.x/installation/Troubleshooting-Guide.html">provided here</a>. You may also look at available support options <a href="https://apereo.github.io/cas/Support.html">provided here</a>
+  <strong>Need Help?</strong><br/>If you ever get stuck and are in need of additional assistance, start by reviewing the suggestions <a href="https://apereo.github.io/cas/5.2.x/installation/Troubleshooting-Guide.html">provided here</a>. You may also look at available support options <a href="https://apereo.github.io/cas/Support.html">provided here</a>.
 </div>
 
 <!--
@@ -216,10 +216,10 @@ First, ensure you have declared the appropriate module/intention in the build:
 
 ```xml
 <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-support-ldap-service-registry</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
+      <groupId>org.apereo.cas</groupId>
+      <artifactId>cas-server-support-ldap-service-registry</artifactId>
+      <version>${cas.version}</version>
+</dependency>
 ```
 
 Next, you must teach CAS how to contact the LDAP server to read and write registration records. This is done in the `cas.properties` file:
@@ -281,7 +281,7 @@ cas.ticket.registry.hazelcast.cluster.discovery.aws.securityGroupName=...
 # cas.ticket.registry.hazelcast.cluster.discovery.aws.tagValue=
 ```
 
-That should do it. 
+That should do it.
 
 Of course, if you are working on a more modest CAS deployment in an environment that is more or less owned by you and you prefer more explicit control over CAS node registrations in your cluster, the following settings would be more odeal:
 
@@ -289,7 +289,7 @@ Of course, if you are working on a more modest CAS deployment in an environment 
 # cas.ticket.registry.hazelcast.cluster.instanceName=localhost
 # cas.ticket.registry.hazelcast.cluster.port=5701
 # cas.ticket.registry.hazelcast.cluster.portAutoIncrement=true
-# cas.ticket.registry.hazelcast.cluster.members=123.321.123.321,223.621.123.521,...
+cas.ticket.registry.hazelcast.cluster.members=123.321.123.321,223.621.123.521,...
 ```
 
 # Overlay Customization
