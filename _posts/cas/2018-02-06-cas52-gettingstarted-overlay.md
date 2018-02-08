@@ -204,7 +204,7 @@ logging.config=file:/etc/cas/config/log4j2.xml
 
 It is **VERY IMPORTANT** that you contain and commit the entire overlay directory (save the obvious exclusions such as the `target` directory) into some sort of source control system, such as `git`. Treat your deployment just like any other project with tags, releases, and functional baselines.
 
-#Registering Applications
+# Registering Applications
 
 Client applications that wish to use the CAS server for authentication must be registered with the server apriori. CAS provides a number of [facilities to keep track of the registration records](https://apereo.github.io/cas/5.2.x/installation/Service-Management.html#storage) and you may choose any that fits your needs best. In more technical terms, CAS deals with service management using two specific components: Individual implementations that support a form of a database are referred to as *Service Registry* components and they are many. There is also a parent component that sits on top of the configured service registry as more of an orchestrator that provides a generic facade and entry point for the rest of CAS without entangling all other operations and subsystems with the specifics and particulars of a storage technology.
 
@@ -283,7 +283,7 @@ cas.ticket.registry.hazelcast.cluster.discovery.aws.securityGroupName=...
 
 That should do it.
 
-Of course, if you are working on a more modest CAS deployment in an environment that is more or less owned by you and you prefer more explicit control over CAS node registrations in your cluster, the following settings would be more odeal:
+Of course, if you are working on a more modest CAS deployment in an environment that is more or less owned by you and you prefer more explicit control over CAS node registrations in your cluster, the following settings would be more ideal:
 
 ```properties
 # cas.ticket.registry.hazelcast.cluster.instanceName=localhost
