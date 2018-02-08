@@ -24,7 +24,7 @@ Furthermore, this tutorial assumes that you are running CAS in its `standalone` 
 
 Overlays are a strategy to combat repetitive code and/or resources. Rather than downloading the CAS codebase and building it from source, overlays allow you to download a pre-built vanilla CAS web application server provided by the project itself, override/insert specific behavior into it and then merge it all back together to produce the final (web application) artifact. You can find a lot more about how overlays work [here](https://apereo.github.io/cas/5.2.x/installation/Maven-Overlay-Installation.html).
 
-The concept of the WAR Overlay is NOT a CAS invention. It's specifically an Apache Maven eature and of course there are techniques and plugins available to apply the same concept to Gradle-based builds as well.You are free to choose between Maven or Gradle. For this tutorial I opted into the [Maven WAR overlay](https://github.com/apereo/cas-overlay-template).
+The concept of the WAR Overlay is NOT a CAS invention. It's specifically an Apache Maven feature and of course, there are techniques and plugins available to apply the same concept to Gradle-based builds as well.You are free to choose between Maven or Gradle. For this tutorial, I opted into the [Maven WAR overlay](https://github.com/apereo/cas-overlay-template).
 
 Once you have forked and cloned the repository locally, you're ready to begin.
 
@@ -55,13 +55,13 @@ The `pom.xml` is composed of several sections. The ones you need to worry about 
 </properties>
 ```
 
-This is the bit that describes build settings, and specifically here, what versions of CAS, Spring Boot and Java are required for the deployment. You are in practice mostly concerned with the `<cas.version>` setting and as new (maintenance) releases come out, it would be sufficient to simply update that version and re-run the build.
+This is the bit that describes build settings, and specifically, here, what versions of CAS, Spring Boot, and Java are required for the deployment. You are in practice mostly concerned with the `<cas.version>` setting and as new (maintenance) releases come out, it would be sufficient to simply update that version and re-run the build.
 
 This might be a good time to review the CAS project's [Release Policy](https://apereo.github.io/cas/developer/Release-Policy.html) as well as [Maintenance Policy](https://apereo.github.io/cas/developer/Maintenance-Policy.html).
 
 ## Dependencies
 
-The next piece describes the *dependencies* of the overlay build. These are the set of components almost always provided by the CAS project that will be packaged up and put into the final web application artifact. At a minimum, you need to have the `cas-server-webapp-${app.server}` module available because that is the web application into which you intend to inject your settings and customizations, if any. Also, note that the module declarations are typically configured to download the CAS version instructed by the property `${cas.version}`.
+The next piece describes the *dependencies* of the overlay build. These are the set of components almost always provided by the CAS project that will be packaged up and put into the final web application artifact. At a minimum, you need to have the `cas-server-webapp-${app.server}` module available because that is the web application into which you intend to inject your settings and customizations if any. Also, note that the module declarations are typically configured to download the CAS version instructed by the property `${cas.version}`.
 
 Here is an example:
 
@@ -89,7 +89,7 @@ There are many other pieces in the `pom.xml`, such as repositories, profiles, pl
 
 # The Build
 
-Now that you have a basic understanding of the build descriptor, it's time to actually run the build. An Apache Maven build is often executed by passing specific goals/commands to Apache Maven itself, aka `mvn`. So for instance in the the terminal and once inside the project directory you could execute things like:
+Now that you have a basic understanding of the build descriptor, it's time to actually run the build. An Apache Maven build is often executed by passing specific goals/commands to Apache Maven itself, aka `mvn`. So for instance in the terminal and once inside the project directory you could execute things like:
 
 ```bash
 cd cas-overlay-template
@@ -118,7 +118,7 @@ What do these commands do?
 | `copy`                  | Copies the configuration from the local `etc/cas/config` directory to `/etc/cas/config`. [See this guide](https://apereo.github.io/cas/5.2.x/installation/Configuration-Server-Management.html) to learn more.
 | `clean`                 | Deletes any previously-built and leftover artifacts from the `target` directory.
 | `package`               | Runs `clean` and `copy`. Then packages the CAS web application artifact and run through the overlay to inject local customizations. The outcome is a `target/cas.war` file which is ready to be deployed.
-| `run`                   | Invokves `package` and then deploys and runs the CAS web application via its own embedded server container.
+| `run`                   | Involves `package` and then deploys and runs the CAS web application via its own embedded server container.
 | `debug`                 | Same thing as `run`, except that you can remote-debug the CAS web application over port `5000`.
 | `bootrun`               | Same thing as `run`, except the deployment is managed by the [Spring Boot Maven plugin](http://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html). This command has very specialized and limited use cases. Please [review this issue](https://github.com/apereo/cas/issues/2334) to learn more.
 
@@ -178,7 +178,7 @@ etc/cas/config/log4j2.xml -> /etc/cas/config/log4j2.xml
 ...
 ```
 
-You can see that the build attempts to download, clean, compile and package all artifacts, and finally it produces a `/cas-overlay-template/target/cas.war` which you can then use for actual deployments.
+You can see that the build attempts to download, clean, compile and package all artifacts, and finally, it produces a `/cas-overlay-template/target/cas.war` which you can then use for actual deployments.
 
 <div class="alert alert-info">
   <strong>Remember</strong><br/>You are allowed to pass any of Maven's native command-line arguments to the <code>build.sh</code> file. Things like <code>-U</code> or <code>-X</code> might be useful to have handy.
@@ -186,9 +186,9 @@ You can see that the build attempts to download, clean, compile and package all 
 
 # Configuration
 
-I am going to skip over the configuartion of `/etc/cas/config` and all that it deals with. If you need the reference, you may always [use this guide](https://apereo.github.io/cas/5.2.x/installation/Configuration-Management.html) to study various aspects of CAS configuration.
+I am going to skip over the configuration of `/etc/cas/config` and all that it deals with. If you need the reference, you may always [use this guide](https://apereo.github.io/cas/5.2.x/installation/Configuration-Management.html) to study various aspects of CAS configuration.
 
-Suffice it to say that, quite simply, CAS deployment expects *the main* configuration file to be found under `/etc/cas/config/cas.properties`. This is a key-value store that is able to dictate and alter behavior of the running CAS software.
+Suffice it to say that, quite simply, CAS deployment expects *the main* configuration file to be found under `/etc/cas/config/cas.properties`. This is a key-value store that is able to dictate and alter the behavior of the running CAS software.
 
 As an example, you might encouter something like:
 
@@ -198,15 +198,15 @@ cas.server.prefix=https://cas.example.org:8443/cas
 logging.config=file:/etc/cas/config/log4j2.xml
 ```
 
-...which at a minimum, identifies the CAS server's url and prefix and instructs the running server to locate the logging configuration at `file:/etc/cas/config/log4j2.xml`. The overlay by default ships with a `log4j2.xml` that you can use to customize logging locations, levels, etc. Note that the presense of all that is contained inside `/etc/cas/config/` is optional. CAS will continue to fall back onto defaults if the directory and the files within are not found.
+...which at a minimum, identifies the CAS server's URL and prefix and instructs the running server to locate the logging configuration at `file:/etc/cas/config/log4j2.xml`. The overlay by default ships with a `log4j2.xml` that you can use to customize logging locations, levels, etc. Note that the presence of all that is contained inside `/etc/cas/config/` is optional. CAS will continue to fall back onto defaults if the directory and the files within are not found.
 
 ## Keep Track
 
-It is **VERY IMPORTANT** that you contain and commit the entire overlay directory (save the obvious exclusions such as the `target` directory) into some sort of source control system, such as `git`. Treat your deployment just like any other project with tags, releases and functional baselines.
+It is **VERY IMPORTANT** that you contain and commit the entire overlay directory (save the obvious exclusions such as the `target` directory) into some sort of source control system, such as `git`. Treat your deployment just like any other project with tags, releases, and functional baselines.
 
 #Registering Applications
 
-Client applications that wish to use the CAS server for authentication must be registered with the server apriori. CAS provides a number of [facilities to keep track of the registration records](https://apereo.github.io/cas/5.2.x/installation/Service-Management.html#storage) and you may choose any that fits your needs best. In more technical terms, CAS deals with service management using two specific components: Indivdual implementations that support a form of database are referred to as *Service Registry* components and they are many. There is also a parent component that sits on top of the configured service registry as more of an orchestrator that provides a generic facade and entry point for the rest of CAS without entangling all other operations and subsystems with the specifics and particulars of a storage technology.
+Client applications that wish to use the CAS server for authentication must be registered with the server apriori. CAS provides a number of [facilities to keep track of the registration records](https://apereo.github.io/cas/5.2.x/installation/Service-Management.html#storage) and you may choose any that fits your needs best. In more technical terms, CAS deals with service management using two specific components: Individual implementations that support a form of a database are referred to as *Service Registry* components and they are many. There is also a parent component that sits on top of the configured service registry as more of an orchestrator that provides a generic facade and entry point for the rest of CAS without entangling all other operations and subsystems with the specifics and particulars of a storage technology.
 
 In this tutorial, we are going to try to configure CAS with [the LDAP service regitry](https://apereo.github.io/cas/5.2.x/installation/LDAP-Service-Management.html).
 
@@ -239,7 +239,7 @@ cas.serviceRegistry.ldap.bindCredential=Password
 
 That's all. Next, you will need to pre-populate the LDAP server with registration records manually, or better yet, use the [CAS Management web application](https://apereo.github.io/cas/5.2.x/installation/Installing-ServicesMgmt-Webapp.html)'s user interface to do so in more interactive terms.
 
-To populate the LDAP server manually, remember that there is no pre-defined fancy schema where a registration record in CAS would be broken apart and mapped to individual attributes one by one. The body of the registration record, sampled below, is stored in LDAP under the desginated attribute:
+To populate the LDAP server manually, remember that there is no pre-defined fancy schema where a registration record in CAS would be broken apart and mapped to individual attributes one by one. The body of the registration record, sampled below, is stored in LDAP under the designated attribute:
 
 ```json
 {
@@ -253,7 +253,7 @@ To populate the LDAP server manually, remember that there is no pre-defined fanc
 
 # Ticketing
 
-A robust CAS deployment requires the presense and configuration of an *internal* database that is responsible for [keeping track of tickets](https://apereo.github.io/cas/5.2.x/installation/Configuring-Ticketing-Components.html) issued by CAS. CAS itself comes by default with a memory-based node-specific cache that is often more then sufficient for smaller deployments or certain variations of a [clustered deployment](https://apereo.github.io/cas/5.2.x/planning/High-Availability-Guide.html). Just like the service management facility, large variety of databases and storage options are supposed by CAS under the facade of a *Ticket Registry*. 
+A robust CAS deployment requires the presence and configuration of an *internal* database that is responsible for [keeping track of tickets](https://apereo.github.io/cas/5.2.x/installation/Configuring-Ticketing-Components.html) issued by CAS. CAS itself comes by default with a memory-based node-specific cache that is often more than sufficient for smaller deployments or certain variations of a [clustered deployment](https://apereo.github.io/cas/5.2.x/planning/High-Availability-Guide.html). Just like the service management facility, large variety of databases and storage options are supposed by CAS under the facade of a *Ticket Registry*. 
 
 In this tutorial, we are going to configure CAS to use a [Hazelcast Ticket Registry](https://apereo.github.io/cas/5.2.x/installation/Hazelcast-Ticket-Registry.html) with the assumption that our deployment is going to be deployed in an AWS-sponsored environment. Hazelcast Ticket Registry is often a decent choice when deploying CAS in a cluster and can take advantage of AWS's native support for Hazelcast in order to read node metadata properly and locate other CAS nodes in the same cluster in order to present a common, global and shared ticket registry. This is an ideal choice that requires very little manual work and/or troubleshoot, comparing to using options such as Multicast or manually noting down the address and location of each CAS server in the cluster.
 
@@ -296,7 +296,7 @@ cas.ticket.registry.hazelcast.cluster.members=123.321.123.321,223.621.123.521,..
 
 If I `cd` into the `target/cas` directory, I can see an *exploded* version of the `cas.war` file. This is the directory that contains the results of the overlay process. Since I have not actually customized and overlaid anything yet, all configuration files simply match their default and are packaged as such. So as an example, let's change something.
 
-Digging further down, I notice there exists a `/target/cas/WEB-INF/classes/messages.properties` file, which is [the default message bundle](https://apereo.github.io/cas/5.2.x/installation/User-Interface-Customization-Localization.html). I decide that I am going to change the text associated with `screen.welcome.instructions`.
+Digging further down, I notice there exists a `/target/cas/WEB-INF/classes/messages.properties` file, which is [the default message bundle](https://apereo.github.io/cas/5.2.x/installation/User-Interface-Customization-Localization.html). I decided that I am going to change the text associated with `screen.welcome.instructions`.
 
 <div class="alert alert-warning">
   <strong>Remember</strong><br/>Do NOT ever make changes in the <code>target</code> directory. The changesets will be cleaned out and set back to defaults every time you do a build. Follow the overlay process to avoid surprises.
@@ -343,7 +343,7 @@ Then I'll package things up as usual.
 If I look at `target/cas/WEB-INF/classes/messages.properties` after the build, I should see that the overlay process has picked and overlaid onto the default *my version* of the file.
 
 <div class="alert alert-info">
-  <strong>Remember</strong><br/>Only overlay and modify files you actually need, and try to use externalized resources and configuration as much as possible. Just because you CAN override something in the default package, it doesn't mean that you should.
+  <strong>Remember</strong><br/>Only overlay and modify files you actually need and try to use externalized resources and configuration as much as possible. Just because you CAN override something in the default package, it doesn't mean that you should.
 </div>
 
 # Deploy
