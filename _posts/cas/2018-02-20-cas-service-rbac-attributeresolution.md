@@ -64,7 +64,7 @@ The  table `table_users` in our HyperSQL database contains the user attributes w
 | `casuser`                  |       `role`                            |  `Supervisor`
 | `user2`                        |       `role`                             |  `Engineer`
 
-The above schema is what's referred to as a *Multi-Row* setup in the Person Directory configuration. In other words, this is the sort of setup that has more than one row dedicated to a user entry and quite possibly similar to above, multiple rows carry out multiple values for a single attribute definition (i.e. `role`. In order to teach CAS about this setup, we could start with the following settings:
+The above schema is what's referred to as a *Multi-Row* setup in the Person Directory configuration. In other words, this is the sort of setup that has more than one row dedicated to a user entry and quite possibly similar to above, multiple rows carry out multiple values for a single attribute definition (i.e. `role`). In order to teach CAS about this setup, we could start with the following settings:
 
 ```properties
 cas.authn.attributeRepository.jdbc[0].attributes.role=personRole
