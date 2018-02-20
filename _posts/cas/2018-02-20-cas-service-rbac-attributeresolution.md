@@ -9,7 +9,7 @@ tags:       [CAS]
 <strong>Collaborate</strong><br/>This blog is managed and hosted on GitHub. If you wish to update the contents of this post or if you have found an inaccuracy and wish to make corrections, we recommend that you please submit a pull request to <a href="https://github.com/apereo/apereo.github.io">this repository</a>.
 </div>
 
-A fairly common CAS deployment use case is to enforce access to a particular set of applications via user attributes and roles. One the authentication/authorization server passed on the required attributes and entitlements to the application, each service might individually be tasked with controlling entry access and once authorized, enforcement a set of specific functions inside the application which the user may be allowed to carry out. The purpose of this tutorial is to present an alternative to the first scenario, by providing options to centrally control and manage that ruleset that allows the user to enter an application that is integrated with Apereo CAS.
+A fairly common CAS deployment use case is to enforce access to a particular set of applications via user attributes and roles. Once the authentication/authorization server passed on the required attributes and entitlements to the application, each service might individually be tasked with controlling entry access, and once authorized, enforcement of a set of specific functions inside the application which the user may be allowed to carry out. The purpose of this tutorial is to present an alternative to the first scenario, by providing options to centrally control and manage that ruleset that allows the user to enter an application that is integrated with Apereo CAS.
 
 Our task list is rather short:
 
@@ -77,6 +77,7 @@ cas.authn.attributeRepository.jdbc[0].username=uid
 cas.authn.attributeRepository.jdbc[0].driverClass=...
 cas.authn.attributeRepository.jdbc[0].user=...
 cas.authn.attributeRepository.jdbc[0].password=...
+cas.authn.attributeRepository.jdbc[0].url=...
 ```
 
 Pay attention to how the `columnMappings` setting defines a set of 1-1 mappings between columns that contain the attribute name vs the attribute value. Furthermore and similar to the LDAP setup, we are teaching CAS to fetch the attribute `role` (again, determined based on the mappings defined) and virtually *rename* the attribute to `personRole`. Just like the LDAP setup and from this point on, CAS only knows of the user's role under the `personRole` attribute and needles to say, this is the attribute name that should be used everywhere else in the CAS configuration.
