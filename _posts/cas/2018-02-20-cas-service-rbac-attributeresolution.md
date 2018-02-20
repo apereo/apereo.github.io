@@ -98,7 +98,7 @@ The CAS service management facility allows CAS server administrators to declare 
 
 To keep this tutorial simple, we are going to use the [JSON Service Registry](https://apereo.github.io/cas/development/installation/JSON-Service-Management.html). This registry reads services definitions from JSON configuration files on startup. JSON files are expected to be found inside a configured directory location and this registry will recursively look through the directory structure to find relevant JSON files.
 
-For this turorial, we expect CAS to find our JSON registration record files using the following setting:
+For this tutorial, we expect CAS to find our JSON registration record files using the following setting:
 
 ```properties
 cas.serviceRegistry.initFromJson=false
