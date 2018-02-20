@@ -86,7 +86,8 @@ Pay attention to how the `columnMappings` setting defines a set of 1-1 mappings 
 At this point, you should be able to authenticate into CAS and observe in the logs that the constructed authenticated principal contains the following attributes:
 
 ```bash
-... <Authenticated principal [casuser] with attributes [{role=[Manager, Supervisor], displayName=Test User, givenName=CAS, email=casuser@example.org}] ...>
+... <Authenticated principal [casuser] with attributes [{role=[Manager, Supervisor], 
+displayName=Test User, givenName=CAS, email=casuser@example.org}] ...>
 ```
 
 If you [need to troubleshoot](https://apereo.github.io/cas/development/installation/Troubleshooting-Guide.html), the best course of action would be to adjust logs to produce `DEBUG` information.
