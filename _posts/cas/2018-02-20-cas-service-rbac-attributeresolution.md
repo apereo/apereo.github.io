@@ -140,7 +140,7 @@ Our JSON registration record could be modified as such:
     "@class" : "org.apereo.cas.services.DefaultRegisteredServiceAccessStrategy",
     "requiredAttributes" : {
       "@class" : "java.util.HashMap",
-      "role" : [ "java.util.HashSet", [ "Manager" ] ]
+      "personRole" : [ "java.util.HashSet", [ "Manager" ] ]
     }
   }
 }
