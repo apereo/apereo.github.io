@@ -27,7 +27,7 @@ Follow the instructions provided by the `README` file to produce a functional bu
 
 # Attribute Retrieval
 
-Attribute resolution strategies in CAS are controlled by the [Person Directory project](https://github.com/apereo/person-directory). The Person Directory dependency is automatically bundled with the CAS server and provides a number of options to fetch attributes and user data from sources such as LDAP, JDBC, etc. Since we do have multiple sources of attributes, the Person Directory component is also able to aggregate and merge the results and has options to decide how to deal with disagreements in case two sources produce conflicting data.
+[Attribute resolution strategies](https://apereo.github.io/cas/development/integration/Attribute-Resolution.html) in CAS are controlled by the [Person Directory project](https://github.com/apereo/person-directory). The Person Directory dependency is automatically bundled with the CAS server and provides a number of options to fetch attributes and user data from sources such as LDAP, JDBC, etc. Since we do have multiple sources of attributes, the Person Directory component is also able to aggregate and merge the results and has options to decide how to deal with disagreements in case two sources produce conflicting data.
 
 There is very little left for us to do other than to teach CAS about our specific data sources.
 
@@ -121,7 +121,7 @@ All that remains for us is to decorate the registration record with the authoriz
 
 # Application Authorization Rules
 
-The access strategy of a registered service provides fine-grained control over the application authorization rules. It describes whether the service is allowed to use the CAS server, allowed to participate in single sign-on authentication, and (as it's relevant for our use case here) it may also be configured to require a certain set of attributes that must exist before access can be granted to the service.
+The [access strategy of a registered service](https://apereo.github.io/cas/development/installation/Configuring-Service-Access-Strategy.html) provides fine-grained control over the application authorization rules. It describes whether the service is allowed to use the CAS server, allowed to participate in single sign-on authentication, and (as it's relevant for our use case here) it may also be configured to require a certain set of attributes that must exist before access can be granted to the service.
 
 <div class="alert alert-info">
 <strong>Remember</strong><br/>CAS is only gatekeeping here, deciding whether entrance is allowed to the given application. Once the user is allowed to enter, the extent of capabilities and functions available to the user are and must be decided by the application itself where CAS at that point would completely step aside.
