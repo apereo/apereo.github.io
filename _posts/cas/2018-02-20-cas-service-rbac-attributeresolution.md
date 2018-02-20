@@ -86,7 +86,7 @@ Pay attention to how the `columnMappings` setting defines a set of 1-1 mappings 
 At this point, you should be able to authenticate into CAS and observe in the logs that the constructed authenticated principal contains the following attributes:
 
 ```bash
-... <Authenticated principal [casuser] with attributes [{role=[Manager, Supervisor], 
+... <Authenticated principal [casuser] with attributes [{personRole=[Manager, Supervisor], 
 displayName=Test User, givenName=CAS, email=casuser@example.org}] ...>
 ```
 
