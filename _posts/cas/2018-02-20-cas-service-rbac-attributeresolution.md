@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      CAS: Attribute-based Application Authorization
+title:      Apereo CAS - Attribute-based Application Authorization
 summary:    A walkthrough to demonstrate how one might fetch attributes from a number of data sources, turning them into roles that could then be used to enforce application access and authorization.
 tags:       [CAS]
 ---
