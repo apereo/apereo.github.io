@@ -49,7 +49,7 @@ This is a bit of a complicated scenario since you have about three protocols dan
 - The SAML2 module receives the service ticket, validates it and understands the user profile via the provided assertion. It then produces the SAML2 response for the original client application.
 
 <div class="alert alert-warning">
-<strong>Possible Gotcha</strong><br/>The above flow <i>may</i> prove to be somewhat dysfunctional, if the delegated/proxied identity provider happens to be ADFS. If your deployment today requires the above flow with ADFS acting as the identity provider, please suspect and verify.</a>.
+<strong>Possible Gotcha</strong><br/>The above flow <i>may</i> prove to be somewhat dysfunctional, if the delegated/proxied identity provider happens to be ADFS. If your deployment today requires the above flow with ADFS acting as the identity provider, please suspect and verify.
 </div>
 
 # So...
