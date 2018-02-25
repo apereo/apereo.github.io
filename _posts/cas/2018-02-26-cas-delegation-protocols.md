@@ -11,11 +11,11 @@ tags:       [CAS]
 
 I have been consulting on variations of a deployment strategy and use case that involved CAS acting as an identity provider while also presenting the ability to [delegate authentication requests](https://apereo.github.io/cas/development/integration/Delegate-Authentication.html) to an external identity provider and act as a *proxy* in between. I had the erroneous assumption that client applications integrating with CAS in proxy mode must be those that speak the CAS protocol. This meant that while CAS itself may delegate authentication requests to a variety of identity providers that speak SAML2, OAuth2 and CAS protocols, etc the client application that ultimately would receive a response from the proxying CAS server can only understand a service ticket and the particular validation payload compliant with the CAS protocol semantics.
 
-This post is my attempt at explaining my rationale with a follow-up explanation of why I was wrong.
+This post is an attempt at explaining my rationale with a follow-up explanation of why I was wrong.
 
 # Delegated Authentication Flow
 
-The *normal* flow for delegated authentication goes is something like this:
+The *normal* flow for delegated authentication is something like this:
 
 ![cas](https://user-images.githubusercontent.com/1205228/36640612-b53abbd2-1a37-11e8-8f95-0179983c4c3e.jpg)
 
@@ -47,6 +47,10 @@ This is a bit of a complicated scenario since you have about three protocols dan
 - Just like before, CAS Server routes the request to an external identity provider (Facebook in our case), whether manually or automatically, and processes the (OAuth2) response.
 - When successful, CAS Server establishes an SSO session, creates a  service ticket and redirects back to the SAML2 module (a complicated yet humble corner of itself effectively) that now is tasked to produce a SAML2 response.
 - The SAML2 module receives the service ticket, validates it and understands the user profile via the provided assertion. It then produces the SAML2 response for the original client application.
+
+<div class="alert alert-warning">
+<strong>Possible Gotcha</strong><br/>The above flow <i>may</i> prove to be somewhat dysfunctional, if the delegated/proxied identity provider happens to be ADFS. If your deployment today requires the above flow with ADFS acting as the identity provider, please suspect and verify.</a>.
+</div>
 
 # So...
 
