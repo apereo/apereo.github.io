@@ -17,7 +17,7 @@ This post is my attempt at explaining my rationale with a follow-up explanation 
 
 The *normal* flow for delegated authentication goes is something like this:
 
-![cas](https://user-images.githubusercontent.com/1205228/36640395-dbb3e5d6-1a32-11e8-84a3-540b07f9004c.png)
+![cas](https://user-images.githubusercontent.com/1205228/36640612-b53abbd2-1a37-11e8-8f95-0179983c4c3e.jpg)
 
 - Client application submits a *CAS Protocol* authentication request to the CAS server.
 - CAS Server routes the request to an external identity provider, whether manually or automatically, and processes the response.
