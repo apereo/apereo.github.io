@@ -32,9 +32,9 @@ If the client application were to submit an authentication request using a proto
 
 # Explanation
 
-It turns out that given the CAS design today, client applications can speak any type of protocol that CAS itself supports today regardless of the authentication flow. For better or worse, this feature has to do with how *secondary* protocols (those other than CAS itself) are implemented.  
+It turns out that given the CAS design today, client applications can speak any type of protocol that CAS itself supports today regardless of the authentication flow. For better or worse, this feature has to do with how *secondary* protocols (those other than CAS itself) are implemented.
 
-All *other* [authentication protocols supported by the CAS server](https://apereo.github.io/cas/development/protocol/Protocol-Overview.html) happen to be *clients* of the CAS server itself. The SAML2 module, OAuth2 module and anything else supported in CAS accept the original authentication request at the relevant endpoint, then route that request to the CAS server turning themselves into individual tiny CAS clients. At the end of the day and just like before, the CAS server creates a service ticket and issues a request back to the calling application, which in this case happens to be itself and the relevant endpoint inside itself that is to going to pick up the request and resume. 
+All *other* [authentication protocols supported by the CAS server](https://apereo.github.io/cas/development/protocol/Protocol-Overview.html) happen to be *clients* of the CAS server itself. The SAML2 module, OAuth2 module and anything else supported in CAS accept the original authentication request at the relevant endpoint, then route that request to the CAS server turning themselves into individual tiny CAS clients. At the end of the day and just like before, the CAS server creates a service ticket and issues a request back to the calling application, which in this case happens to be itself and the relevant endpoint inside itself that is to going to pick up the request and resume.
 
 # The Protocol Dance
 
@@ -43,7 +43,7 @@ Let's start with a client application that speaks SAML2. This client is configur
 This is a bit of a complicated scenario since you have about three protocols dancing together. The effective flow would be:
 
 - The SAML2 client sends an authentication request to the CAS server.
-- The SAML2 module in CAS processes the authentication request, sees the need for authentication and routes the request to the CAS server's login endpoint. Very importantly, it indicates in that request that the calling *service* is SAML2 module and the endpoint expected to do follow-up processing.
+- The SAML2 module in CAS processes the authentication request, sees the need for authentication and routes the request to the CAS server's login endpoint. Very importantly, it indicates in that request that the calling *service* is the SAML2 module and the endpoint expected to do follow-up processing.
 - Just like before, CAS Server routes the request to an external identity provider (Facebook in our case), whether manually or automatically, and processes the (OAuth2) response.
 - When successful, CAS Server establishes an SSO session, creates a  service ticket and redirects back to the SAML2 module (a complicated yet humble corner of itself effectively) that now is tasked to produce a SAML2 response.
 - The SAML2 module receives the service ticket, validates it and understands the user profile via the provided assertion. It then produces the SAML2 response for the original client application.
@@ -54,7 +54,7 @@ This is a bit of a complicated scenario since you have about three protocols dan
 
 # So...
 
-The trick, if I could re-emphasize, is noting that all protocols are clients of the CAS server that interact with it using the CAS protocol. This is done at the request/browser level, as opposed to doing things internally via custom webflows and such. The protocol modules that exist in CAS make zero assumptions about the internal inner workings of the CAS authentication flow/engine. They treat it just like they would an external CAS server; the only difference is, they sit and live inside the CAS server directly and yet they remain completely agnostic of that fact. Simply put in our example, the SAML2 module basically says: "this incoming request needs to be authenticated. So I'll route it to a CAS server for authentication and when it comes back, I'll do my bit".
+The trick, if I could re-emphasize, is noting that all protocols are clients of the CAS server that interact with it using the CAS protocol. This is done at the request/browser level, as opposed to doing things internally via heavily customized webflows and such that would be entangled with one another. The protocol modules that exist in CAS make zero assumptions about the internal inner workings of the CAS authentication flow/engine. They treat it just like they would an external CAS server; the only difference is, they sit and live inside the CAS server directly and yet they remain completely agnostic of that fact. Simply put in our example, the SAML2 module basically says: "this incoming request needs to be authenticated. So I'll route it to a CAS server for authentication and when it comes back, I'll do my bit".
 
 This surely continues to maintain SSO sessions as well for all follow-up requests, because the CAS server does not care about the calling party; whether external or internal, the SSO session will be established and available for everything else. 
 
