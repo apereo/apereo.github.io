@@ -147,7 +147,7 @@ Our JSON registration record could be modified as such:
 }
 ```
 
-In simpler terms, the above configuration is saying: *Access to applications that interact with CAS whose URL matches the pattern defined by the `serviceId` is only granted if authenticating the user has an attribute `personRole` that contains the value `Manager`*.
+In simpler terms, the above configuration is saying: *Access to applications that interact with CAS whose URL matches the pattern defined by the `serviceId` is only granted if the authenticating user has an attribute `personRole` that contains the value `Manager`*.
 
 # Summary
 
