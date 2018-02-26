@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Apereo CAS - Dances With Protocols
+title:      Apereo CAS - Dances with Protocols
 summary:    A short overview of how Apereo CAS may support multiple authentication protocols simultaneously while acting as both the primary identity provider or proxying another. Two Socks could not be reached for comments.
 tags:       [CAS]
 ---
