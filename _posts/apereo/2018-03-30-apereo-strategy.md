@@ -22,7 +22,7 @@ As often: I am speaking here wearing only my individual contributor hat.
 
 **Higher education will collaboratively develop, maintain, and locally implement free and open source software solutions meeting the needs of higher education.** These will be directly valuable (delivering effective user experiences to higher education constituents is awesome) and will be indirectly valuable in the pitfalls they avoid, the choices they afford, and the effect they have on the proprietary software offered to higher education through inspiration and through competition.
 
-Higher education will do this **at all scales**, for example both at the handly little WordPress plug in end of things and the comprehensive lecture capture solution or learning management system end of things.
+Higher education will do this **at all scales**, for example both at the handly little WordPress plug in end of things and the comprehensive lecture capture solution or learning management system or ERP end of things.
 
 Higher education will do this **in all ways**, and notably, **not just through coding.** The activities of collaboration and maintenance of effective free and open source software solutions meeting the needs of higher education are so very much more than just coding or even of developing novel software solutions. There's value in communities of practice, in context for understanding higher education specific perspectives on more general open source software solutions, in exerting higher-education-serving influences on open source software projects with wider contexts beyond higher education.
 
