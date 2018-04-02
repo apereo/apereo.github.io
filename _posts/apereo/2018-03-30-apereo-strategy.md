@@ -5,7 +5,8 @@ summary:    Focus on revenue to achieve sustainability. Defer everything else.
 tags:       [Apereo]
 ---
 
-In which I comment on [the draft strategic plan Apereo articulated for 2018][draft strategic plan].
+In which I comment on
+[the draft strategic plan Apereo articulated for 2018][draft strategic plan].
 
 As often: I am speaking here wearing only my individual contributor hat.
 
@@ -48,7 +49,9 @@ higher-education-specific perspectives on more general open source software
 solutions, in exerting higher-education-serving influences on open source
 software projects with wider contexts beyond higher education.
 
-To give an example: apparently [WordPress powers more than 30% of the Web][WordPress features], including a great many sites in and around higher education. Higher education
+To give an example: apparently
+[WordPress powers more than 30% of the Web][WordPress features],
+including a great many sites in and around higher education. Higher education
 doesn't need its own WordPress-like thing. But higher education may very well
 have particular needs for plugins for WordPress, for ways of using WordPress,
 for problems to solve with WordPress, for experiences to share. There's a there
