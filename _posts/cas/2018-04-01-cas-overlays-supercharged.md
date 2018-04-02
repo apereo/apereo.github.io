@@ -51,9 +51,9 @@ Though put in somewhat extreme terms, consider this a best malpractice that if y
 
 Let's consider a quick hypothetical use case with CAS `5.2.x` and its support for [Google reCAPTCHA](https://apereo.github.io/cas/5.2.x/integration/Configuring-Google-reCAPTCHA.html). Suppose that you have an overlay that is adequately prepped with relevant intention modules and properties to make reCAPTCHA work. Things have been running just fine. Then comes a change in protocol from Google that changes the validation response to include the now-renamed field `successful` instead of the old `success`. The reCAPTCHA module in CAS obviously has not had a chance to catch up to this change and is still looking out for `success` in the validation response and begins to error out. What to do?
 
-Step #1: Identify the need to tap into the source code.
-Step #2: Rename the flag in the right `.java` component.
-Step #3: Build and test the behavior.
+- Step #1: Identify the need to tap into the source code.
+- Step #2: Rename the flag in the right `.java` component.
+- Step #3: Build and test the behavior.
 
 A quick analysis of the reCAPTCHA module in CAS reveals `src/main/java/org/apereo/cas/web/flow/ValidateCaptchaAction.java` that in fact handles the validation by checking for the value of the `success` field in the response. Here is the relevant code snippet:
 
