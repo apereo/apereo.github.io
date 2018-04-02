@@ -251,7 +251,8 @@ Cut this down to only the communication efforts that will attract and retain
 members. That probably means focusing on helping CIOs to see value and urgency
 in Apereo membership, maybe targeting institutions that have already adopted
 Apereo software significantly (so, most likely to care) and in regions likely to
-be able to afford an Apereo membership.
+be able to afford an Apereo membership (so, more likely to impact overall
+revenue more).
 
 It's not that other kinds of communication aren't valuable. It's that Apereo
 can't afford it until it can.
