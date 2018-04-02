@@ -52,7 +52,7 @@ Then, I simply execute the following in the terminal:
 To understand the meaning and function behind various command-line arguments, please see [instructions posted here](https://apereo.github.io/cas/developer/Build-Process-5X.html). You may optionally decide to tweak each setting if you are interested in a particular build variant, such as generating javadocs, running tests, etc. One particular flag of interest is the addition of `enableRemoteDebugging`, which allows you, later on, to connect a remote debugger to CAS on a specific port (i.e. `5000`) and step into the code.
 
 <div class="alert alert-info">
-<strong>Keep Up</strong><br/>At this time, the availability of the <code>bootRun</code> task running from inside IntelliJ IDEA is not possible.</div>
+<strong>Bootiful CAS</strong><br/>At this time, the availability of the <code>bootRun</code> task running from inside IntelliJ IDEA is not possible.</div>
 
 # Testing Modules
 
