@@ -11,7 +11,7 @@ tags:       [CAS]
 
 # Overview
 
-Following up on my previous blog post on [changing CAS source code in an overlay](https://apereo.github.io/2018/04/01/2018-04-01-cas-overlays-supercharged), in this exercise we are going to more or less repeat the same experience except that this time, we will be addressing the changes and workload from the perspective of the CAS codebase. This quick walkthrough effectively aims for the following objectives:
+Following up on my previous blog post on [changing CAS source code in an overlay](https://apereo.github.io/2018/04/01/cas-overlays-supercharged/), in this exercise we are going to more or less repeat the same experience except that this time, we will be addressing the changes and workload from the perspective of the CAS codebase. This quick walkthrough effectively aims for the following objectives:
 
 - A quick development environment setup using IntelliJ IDEA.
 - Building and running the CAS web application using Gradle.
