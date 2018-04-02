@@ -109,11 +109,10 @@ essential.
 So here's the strategy:
 
 1. Increase revenue
-2. Use all available resources, including revenue, to do things that increase
-   revenue more.
+2. Use all available resources, including revenue, to further increase revenue.
 3. Increase revenue
 4. Apply staff and other efforts to do things that result in members realizing a
-   positive return on their membership investment in that Apereo is delivering
+   positive return on their membership investment. Apereo must deliver
    recognizable value to the members, value enough that the members are saying
    "Sure am happy to be paying for that membership, because we're clearly
    getting more out of Apereo than we're paying into it." This will stabilize
