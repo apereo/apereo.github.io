@@ -21,6 +21,10 @@ As often: I am speaking here wearing only my individual contributor hat.
 (what future state are we trying to bring about?)
 
 **Higher education will collaboratively develop, maintain, and locally implement
+free and open source software solutions meeting its needs, at all scales, and in
+all ways.**
+
+**Higher education will collaboratively develop, maintain, and locally implement
 free and open source software solutions meeting the needs of higher education.**
 These will be directly valuable (delivering effective user experiences to higher
 education constituents is awesome) and will be indirectly valuable in the
