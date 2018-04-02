@@ -20,9 +20,12 @@ As often: I am speaking here wearing only my individual contributor hat.
 
 (what future state are we trying to bring about?)
 
-**Higher education will collaboratively develop, maintain, and locally implement
-free and open source software solutions meeting its needs, at all scales, and in
-all ways.**
+TL;DR: **Most higher education institutions will collaboratively develop,
+maintain, and locally implement free and open source software solutions meeting
+its needs, at all scales, and in all ways, doing this through and facilitated by
+Apereo.**
+
+Unpacking this:
 
 **Higher education will collaboratively develop, maintain, and locally implement
 free and open source software solutions meeting the needs of higher education.**
