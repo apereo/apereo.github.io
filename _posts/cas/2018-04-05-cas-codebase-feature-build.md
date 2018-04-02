@@ -37,7 +37,7 @@ I use the following alias in my bash profile to spin up CAS using an embedded Ap
 
 ```bash
 alias bc='clear; cd ~/Workspace/cas/webapp/cas-server-webapp-tomcat; \
-    gradle build install bootRun --configure-on-demand --build-cache --parallel \
+    ../../gradlew build install bootRun --configure-on-demand --build-cache --parallel \
     -x test -x javadoc -x check -DenableRemoteDebugging=true --stacktrace \
     -DskipNestedConfigMetadataGen=true -DskipGradleLint=true -DskipSass=true \
     -DskipNodeModulesCleanUp=true -DskipNpmCache=true -DskipNpmLint=true'
