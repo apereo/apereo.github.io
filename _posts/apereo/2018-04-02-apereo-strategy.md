@@ -330,7 +330,7 @@ because of an Apereo fellowship or an ATLAS award. (The Fellowship program in
 particular seems to have an interesting track record of fellows exiting Apereo
 contexts soon after their fellowship).
 
-Andrew Petro
+by Andrew Petro
 as individual contributor
 
 [draft strategic plan]: https://www.apereo.org/content/apereo-foundation-strategic-planning
