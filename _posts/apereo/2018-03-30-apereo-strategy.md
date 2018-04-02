@@ -103,7 +103,7 @@ in higher education. But to meaningfully pursue these, to meaningfully impact
 the world over the longer term, Apereo needs to exist with enough substance to
 be able to, well, do things. The thing about unsustainable things is that
 they're really hard to sustain. Working towards the vision will require
-sustained effort for many years (forever?) and so achieving escape velocity is
+sustained effort for many years (forever?) and so achieving sustainability is
 essential.
 
 So here's the strategy:
