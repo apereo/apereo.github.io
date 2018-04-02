@@ -166,22 +166,21 @@ Go for it. It won't? It's a distraction, defer it.
 
 Apereo cannot afford to do anything that isn't increasing recurring revenue.
 Doing anything that isn't increasing recurring revenue has the opportunity cost
-of *not* doing something more likely to increase revenue, and Apereo just cannot
-afford that.
+of *not* doing something more likely to increase revenue. Intentionally
+navigating these tradeoffs is essential to maximizing Apereo's odds of having
+a meaningful influence a decade from now.
 
-**This is painful. Opportunities that by other measures would be quite
-worthwhile must be foregone. But this is how to get to sustainability, and
-without sustainability, nothing else Apereo does is going to matter much over
-the long term.**
-
+**This is painful. Opportunities that by other measures would be worthwhile must
+be foregone. But this is how to get to sustainability, and without
+sustainability, nothing else Apereo does is going to matter much over the long
+term.**
 
 ## Feedback on Apereo draft
 
 With this vision (higher education succeeding wildly by collaboratively meeting
 its needs through free and open source software) and strategy (achieve critical
-mass to enable sustainably adding value to higher education collaboration in
-free and open source software) in mind, here's my feedback on Apereo's draft
-strategic themes:
+mass to enable Apereo adding value and doing so sustainably) in mind, here's my
+feedback on Apereo's draft strategic themes:
 
 ### 1. Membership, Financial Health and Fundraising
 
