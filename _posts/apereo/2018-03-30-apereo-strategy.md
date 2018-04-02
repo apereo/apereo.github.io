@@ -91,7 +91,7 @@ First and foremost, **Apereo must achieve critical mass of recurring revenues
 There are all sorts of opportunities to add value to collaborative open source
 in higher education. But to meaningfully pursue these, to meaningfully impact
 the world over the longer term, Apereo needs to exist with enough substance to
-sbe able to, well, do things. The thing about unsustainable things is that
+be able to, well, do things. The thing about unsustainable things is that
 they're really hard to sustain. Working towards the vision will require
 sustained effort for many years (forever?) and so achieving escape velocity is
 essential.
