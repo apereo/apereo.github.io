@@ -36,23 +36,22 @@ Higher education will do this **in all ways**, and notably, **not just through
 coding.** The activities of collaboration and maintenance of effective free and
 open source software solutions meeting the needs of higher education are so very
 much more than just coding or even of developing novel software solutions.
-There's value in communities of practice, in context for understanding higher
-education specific perspectives on more general open source software solutions,
-in exerting higher-education-serving influences on open source software projects
-with wider contexts beyond higher education.
+There's value in communities of practice, in context for understanding
+higher-education-specific perspectives on more general open source software
+solutions, in exerting higher-education-serving influences on open source
+software projects with wider contexts beyond higher education.
 
-To give an example: apparently WordPress powers around 20% of the Web, including
-a great many sites in and around higher education. Higher Education doesn't need
-its own WordPress-like thing. But higher education may very well have particular
-needs for plugins for WordPress, for ways of using WordPress, for problems to
-solve with WordPress, for experiences to share. There's a there there in the "in
-higher education" part of "Using WordPress in higher education". Higher
-Education might particularly need WordPress plugins to fulfill accessibility and
-usability expectations, and might particularly need clarity about what WordPress
-implementation choices are and are not consistent with Higher Education's
-especial needs to provide accessibility. There's worthwhile work to be done and
-insights to share to facilitate Higher Education success in leveraging
-WordPress.
+To give an example: apparently [WordPress powers more than 30% of the Web][WordPress features], including a great many sites in and around higher education. Higher Education
+doesn't need its own WordPress-like thing. But higher education may very well
+have particular needs for plugins for WordPress, for ways of using WordPress,
+for problems to solve with WordPress, for experiences to share. There's a there
+there in the "in higher education" part of "Using WordPress in higher
+education". Higher Education might particularly need WordPress plugins to
+fulfill accessibility and usability expectations, and might particularly need
+clarity about what WordPress implementation choices are and are not consistent
+with Higher Education's especial needs to provide accessibility. There's
+worthwhile work to be done and insights to share to facilitate Higher Education
+success in leveraging WordPress.
 
 **Apereo will be the organization that enables higher education to succeed at
 this collaborative development, maintenance, and local implementation**. Apereo
@@ -292,3 +291,4 @@ as individual contributor
 
 [draft strategic plan]: https://www.apereo.org/content/apereo-foundation-strategic-planning
 [sakai-pmc 2018-03-09]: https://groups.google.com/a/apereo.org/d/msg/sakai-pmc/gta0LD1phrg/E0-diMLeAAAJ
+[WordPress features]: https://wordpress.org/about/features/
