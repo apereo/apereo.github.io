@@ -120,7 +120,7 @@ So here's the strategy:
 5. Increase revenue through the increased memberships as more and more of higher
    education sees Apereo as a source of value very much worth sustaining.
 6. Use the increased revenue to add more value to higher education. Use the
-   sincreased value to higher education to secure more revenue. Repeat until the
+   increased value to higher education to secure more revenue. Repeat until the
    vision is achieved (in practice, forever).
 
 That is, the most important challenge here is that at the early end of this
