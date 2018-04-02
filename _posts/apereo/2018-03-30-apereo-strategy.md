@@ -11,8 +11,10 @@ As often: I am speaking here wearing only my individual contributor hat.
 
 ## Context
 
-+ Apereo strategic plan
-+ Apereo failed to secure enough recurring revenue to retain a full-time position supporting Sakai
++ [Apereo strategic plan][draft strategic plan]
++ Apereo [failed to secure enough recurring revenue][sakai-pmc 2018-03-09] to
+  retain a full-time position supporting Sakai (Sakai-specific funding) and more
+  generally roughly broke even on recurring membership revenue.
 
 ## Vision
 
@@ -150,3 +152,4 @@ Andrew Petro
 as individual contributor
 
 [draft strategic plan]: https://www.apereo.org/content/apereo-foundation-strategic-planning
+[sakai-pmc 2018-03-09]: https://groups.google.com/a/apereo.org/d/msg/sakai-pmc/gta0LD1phrg/E0-diMLeAAAJ
