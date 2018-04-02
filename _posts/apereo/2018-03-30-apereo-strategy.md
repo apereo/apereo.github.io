@@ -224,6 +224,16 @@ post opportunities (presumably, about working with open source for the
 institution) to a context that reaches IT professionals likely to have
 experience with higher education and with open source?
 
+Speakers or consultants directory? Maybe members would value more ready leads on
+expertise about open source in higher education.
+
+Institutional project matching service? Maybe members would value leads on what
+others have experienced with specific open source technologies or attempting to
+leverage open source for specific kinds of projects.
+
+*These may be terrible ideas.* The lens for evaluating them is whether they will
+retain and increase membership revenue.
+
 ### 3. Software Community Health
 
 > Apereo will explore the potential for a light-touch framework for expressing
