@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Feedback on draft Apereo strategy
-summary:    The strategy should be to increase revenue to achieve sustainability. Focus on this; defer everything else.
+summary:    Increase revenue to achieve sustainability. Focus on this; defer everything else.
 tags:       [Apereo]
 ---
 
