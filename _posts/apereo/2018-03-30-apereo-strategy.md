@@ -159,6 +159,9 @@ Is re-licensing a project from a New BSD license to an Apache2 license going to
 bring in more members, or is it necessary to retain existing members? Yes?
 Great, undertake that hassle. No? Defer it.
 
+Considering a partnership? Neat. Will it increase recurring membership revenue?
+Go for it. It won't? It's a distraction, defer it.
+
 Apereo cannot afford to do anything that isn't increasing recurring revenue.
 Doing anything that isn't increasing recurring revenue has the opportunity cost
 of *not* doing something more likely to increase revenue, and Apereo just cannot
