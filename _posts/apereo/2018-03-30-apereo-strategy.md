@@ -298,7 +298,7 @@ order to make the open source software ESUP relies upon more sustainable.
  > France.
 
 Only do this if it's going to increase membership. Investing in LAMP and ESUP
-really should be through the lens of expected membership returns on that
+should be through the lens of expected recurring revenue returns on that
 investment.
 
 ### 6. Development Opportunities and Recognition Programs
