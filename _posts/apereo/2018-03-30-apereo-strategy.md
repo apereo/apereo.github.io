@@ -236,8 +236,9 @@ members, defer it.
 
 Apereo just can't afford this. The constituent software communities are however
 healthy they are. They'll do what they can do, or not, to determine and
-communicate health. There are some badging, checklisting, health assessing
-efforts afoot more generally in open source. That'll have to be good enough.
+communicate health. There are
+[some badging, checklisting, health assessing efforts afoot][open 2018-03-08]
+more generally in open source. That'll have to be good enough.
 
 ### 4. Communications, Outreach and Engagement
 
@@ -321,3 +322,4 @@ as individual contributor
 [draft strategic plan]: https://www.apereo.org/content/apereo-foundation-strategic-planning
 [sakai-pmc 2018-03-09]: https://groups.google.com/a/apereo.org/d/msg/sakai-pmc/gta0LD1phrg/E0-diMLeAAAJ
 [WordPress features]: https://wordpress.org/about/features/
+[open 2018-03-08]: https://groups.google.com/a/apereo.org/d/msg/open/PWWF0xtz480/GwWd3sE5AgAJ
