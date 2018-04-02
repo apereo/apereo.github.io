@@ -82,7 +82,14 @@ adding lots of value to this.
 education institutions will be (already are) making significant use of free and
 open source software solutions** and that use will be more effective and more
 confident because of the value Apereo is adding to it. If they're not using
-Sakai as a learning management system or OpenCast for lecture capture or
+Sakai as a learning management system or OpenCast for lecture capture or an open
+source ERP, they're most certainly using WordPress or Drupal somewhere or are
+generating and transforming CSV files representing institutional data or
+integrating across SaaS vendor products or educators are using open source text
+editors to author lesson plans or... There's tremendous breadth of
+opportortunity for higher education to benefit from open source, so there's
+tremendous breadth of opportunity for Apereo to add value to higher education's
+benefiting from open source.
 
 **Strategy:**
 
