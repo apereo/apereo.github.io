@@ -27,7 +27,7 @@ To understand what branches are available, [see this link](https://github.com/ap
 <div class="alert alert-info">
 <strong>Keep Up</strong><br/>It is <b>STRONGLY</b> recommended that you keep up with the patch releases as they come out. Test early and have the environment on hand for when the time comes to dabble into the source. Postponing patch upgrades in the interest of time will eventually depreciate your lifespan.</div>
 
-To set up the project in IntelliJ IDEA, it might be preferable to run `./gradlew idea` at the root of the project. This will attempt to generate the needed project files beforehand, allowing the development environment setup to proceed with many delays. Note that similar tasks are available for eclipse, etc.
+To set up the project in IntelliJ IDEA, it might be preferable to run `./gradlew idea` at the root of the project. This will attempt to generate the needed project files beforehand, allowing the development environment setup to proceed without many delays. Note that similar tasks are available for eclipse, etc.
 
 # Running CAS
 
