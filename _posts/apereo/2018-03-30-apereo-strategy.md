@@ -189,6 +189,8 @@ towards that to achieve sustainability.
 
 Consider reviving the individual membership program.
 
+Consider ways to price discriminate so that institutions that can pay more do.
+
 ### 2. Foundation Services & New Ideas
 
 > 2018 will see a review of key Apereo services to support the community,
