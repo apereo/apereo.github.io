@@ -125,11 +125,11 @@ So here's the strategy:
    increased value to higher education to secure more revenue. Repeat until the
    vision is achieved (in practice, forever).
 
-That is, the most important challenge here is that at the early end of this
-strategy Apereo is adding less value to higher education and so revenue, in the
-form of memberships, are harder to secure, whereas at the later end of this
-strategy Apereo is adding more value to higher education and so revnue, in the
-form of memberships, is easier to secure.
+The most important challenge here is that at the early end of this strategy
+Apereo is adding less value to higher education and so revenue, in the form of
+memberships, are harder to secure, whereas at the later end of this strategy
+Apereo is adding more value to higher education and so revnue, in the form of
+memberships, is easier to secure.
 
 **The most existential risk is in the early phases.**
 
