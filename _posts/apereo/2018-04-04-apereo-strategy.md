@@ -151,13 +151,6 @@ to bring in more membership revenue? Yes? Pull it in. No? Hold off.
 Having a presence anywhere? Is that presence going to bring in more members, or
 is it necessary to retain existing members? No? Don't go.
 
-Considering helping a big corporation unload some intellectual property as free
-and open source software? Okay, is this going to retain or gain that corporation
-as a member? Is this going to add a bunch of the adopters of the software as
-members? If this is an investment where some up front effort is going to land
-significant increased recurring membership revenue, by all means, go for it. If
-it's not, decline the opportunity.
-
 Is securing ICLAs going to bring in new or retain members? Great, do it, more
 members are absolutely essential to sustainability. It's not going to impact
 membership? Suspend the whole program.
