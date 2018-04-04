@@ -41,7 +41,7 @@ pitfalls they avoid, the choices they afford, and the effect they have on the
 proprietary software offered to higher education through inspiration and through
 competition.
 
-Higher education will do this **at all scales**, for example both at the handly
+Higher education will do this **at all scales**, for example both at the handy
 little WordPress plug in end of things and the comprehensive lecture capture
 solution or learning management system or ERP end of things.
 
@@ -92,7 +92,7 @@ source ERP, they're most certainly using WordPress or Drupal somewhere or are
 generating and transforming CSV files representing institutional data or
 integrating across SaaS vendor products or educators are using open source text
 editors to author lesson plans or... There's tremendous breadth of
-opportortunity for higher education to benefit from open source, so there's
+opportunity for higher education to benefit from open source, so there's
 tremendous breadth of opportunity for Apereo to add value to higher education's
 benefiting from open source.
 
@@ -133,7 +133,7 @@ So here's the strategy:
 The most important challenge here is that at the early end of this strategy
 Apereo is adding less value to higher education and so revenue, in the form of
 memberships, are harder to secure, whereas at the later end of this strategy
-Apereo is adding more value to higher education and so revnue, in the form of
+Apereo is adding more value to higher education and so revenue, in the form of
 memberships, is easier to secure.
 
 **The most existential risk is in the early phases.**
