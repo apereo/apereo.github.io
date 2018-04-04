@@ -180,6 +180,11 @@ be foregone. But this is how to get to sustainability, and without
 sustainability, nothing else Apereo does is going to matter much over the long
 term.**
 
+**The idea isn't to *never* do anything other than pursue recurring revenue. The
+idea is prioritize pursuing recurring revenue until recurring revenue is
+sufficient to afford the luxury of applying resources to pursue the
+organizational mission.**
+
 ## Feedback on Apereo draft
 
 With this vision (higher education succeeding wildly by collaboratively meeting
