@@ -10,6 +10,8 @@ In which I comment on
 
 As often: I am speaking here wearing only my individual contributor hat.
 
+# Feedback on Apereo strategy: focus on revenue to achieve sustainability
+
 TL;DR: **Emphatically focus on recurring revenue to achieve sustainability.
 Aggressively defer everything not focused upon this.**
 
