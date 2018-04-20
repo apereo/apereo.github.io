@@ -10,7 +10,7 @@ Are you a
 contemplating whom to nominate for the
 [available Apereo board of directors seats][call for nominees]?
 
-Here are some ideas. Until 4pm Eastern on April 20th 2018, it's not too late to
+Here are some ideas. Until 1700 Eastern on April 20th 2018, it's not too late to
 widen the pool.
 
 (I haven't checked with most people listed here to see if they'd actually be
