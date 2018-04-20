@@ -147,11 +147,11 @@ This combination of executive, governance, and
 working-in-the-open-source-project perspectives could be highly valuable on the
 board.
 
-## Brian Ollendyke
+## Bryan Ollendyke
 
-[Brian](https://www.drupal.org/u/btopro) is tremendously passionate about this,
+[Bryan](https://www.drupal.org/u/btopro) is tremendously passionate about this,
 about openness and about improving higher education and about the quality of
-community interactions. Brian's work is well-regarded.
+community interactions. Bryan's work is well-regarded.
 
 The energy, passion, sense of urgency, and bias for action he brings might in
 itself make his board term very worthwhile.
