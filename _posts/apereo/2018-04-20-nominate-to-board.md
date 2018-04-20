@@ -149,9 +149,9 @@ board.
 
 ## Bryan Ollendyke
 
-[Bryan](https://www.drupal.org/u/btopro) is tremendously passionate about this,
-about openness and about improving higher education and about the quality of
-community interactions. Bryan's work is well-regarded.
+[Bryan](https://www.drupal.org/u/btopro) is tremendously passionate about
+Apereo-incubating ELMS:LN, about openness and about improving higher education
+and about the quality of community interactions. Bryan's work is well-regarded.
 
 The energy, passion, sense of urgency, and bias for action he brings might in
 itself make his board term very worthwhile.
