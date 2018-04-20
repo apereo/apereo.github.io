@@ -10,7 +10,7 @@ Are you a
 contemplating whom to nominate for the
 [available Apereo board of directors seats][call for nominees]?
 
-Here are some ideas. Until 4pm Eastern on April 20th 2018, it's not too late to
+Here are some ideas. Until 1700 Eastern on April 20th 2018, it's not too late to
 widen the pool.
 
 (I haven't checked with most people listed here to see if they'd actually be
@@ -147,11 +147,11 @@ This combination of executive, governance, and
 working-in-the-open-source-project perspectives could be highly valuable on the
 board.
 
-## Brian Ollendyke
+## Bryan Ollendyke
 
-[Brian](https://www.drupal.org/u/btopro) is tremendously passionate about this,
-about openness and about improving higher education and about the quality of
-community interactions. Brian's work is well-regarded.
+[Bryan](https://www.drupal.org/u/btopro) is tremendously passionate about
+Apereo-incubating ELMS:LN, about openness and about improving higher education
+and about the quality of community interactions. Bryan's work is well-regarded.
 
 The energy, passion, sense of urgency, and bias for action he brings might in
 itself make his board term very worthwhile.
