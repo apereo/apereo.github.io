@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Apereo CAS - Access Strategy External URL Redirects
-summary:    A quick use case walkthrough where the authentication flows in CAS is to be redirected to a customized external URL if service access is denied.
+summary:    A quick use case walkthrough where the authentication flow in CAS is to be redirected to a customized external URL if service access is denied.
 tags:       [CAS]
 ---
 
