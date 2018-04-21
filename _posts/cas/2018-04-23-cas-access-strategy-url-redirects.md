@@ -109,7 +109,8 @@ public class MyRedirectUnauthorizedServiceUrlAction extends RedirectUnauthorized
 
         final PrincipalException error = (PrincipalException)
             eventAttributes.get("error", PrincipalException.class);
-        final UnauthorizedServiceForPrincipalException serviceError = (UnauthorizedServiceForPrincipalException)
+        final UnauthorizedServiceForPrincipalException serviceError =
+            (UnauthorizedServiceForPrincipalException)
             error.getHandlerErrors().get(UnauthorizedServiceForPrincipalException.class.getSimpleName());
 
         LOGGER.info("Calculating URL for service {} & principal {} with attributes {}",
