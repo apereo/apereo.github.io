@@ -17,7 +17,7 @@ This tutorial specifically focuses on:
 
 - CAS `5.3.0-RC4`
 - Java 8
-- [Maven WAR Overlay](https://github.com/apereo/cas-overlay-template)
+- [Maven](https://github.com/apereo/cas-overlay-template) Or [Gradle](https://github.com/apereo/cas-gradle-overlay-template) WAR Overlays
 - [Delegated Authentication](https://apereo.github.io/cas/development/integration/Delegate-Authentication.html)
 
 You may also be interested in this related blog post, detailing [attribute-based access control](https://apereo.github.io/2018/02/20/cas-service-rbac-attributeresolution/) in CAS.
