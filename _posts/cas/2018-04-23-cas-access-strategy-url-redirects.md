@@ -64,7 +64,7 @@ It should be obvious that the `unauthorizedRedirectUrl` field of the configured 
 }
 ```
 
-With the above changes, CAS will present access to our example application if the authenticated user does *not* have a claim `userAccessLevel` with a possible value of `system`. If that condition holds true, CAS should try to redirect the flow back to `https://billboard.example.org`. Fairly simple.
+With the above changes, CAS will present access to our example application if the authenticated user does *not* have a claim `userAccessLevel` with a possible value of `system`. If that condition does not hold true, CAS should try to redirect the flow back to `https://billboard.example.org`. Fairly simple.
 
 However, one issue remains which is the ability to customize the redirect URL in more dynamic ways, depending on the properties of the service definition, etc. The URL might need special query parameters, or different encoding semantics, etc. How could that be done?
 
