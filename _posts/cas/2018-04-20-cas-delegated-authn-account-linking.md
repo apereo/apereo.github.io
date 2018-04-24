@@ -86,7 +86,7 @@ def run(Object[] args) {
 
 Now when CAS begins to construct the final authenticated principal, this Groovy script will be invoked to receive the identifier of the received response from the identity provider, any attributes that were submitted and extracted by CAS as a `Map` as well as a convenient logger object. Next, you can code in additional logic to contact the necessary systems and execute queries based on the id to collect the *real* record linked to that id or any of the provided attributes and ultimately, return an object of type `SimplePrincipal` that would carry the authenticated subject and its claims.
 
-# Summary
+# So...
 
 I hope this review was of some help to you and I am sure that both this post as well as the functionality it attempts to explain can be improved in any number of ways. Please feel free to [engage and contribute](https://apereo.github.io/cas/developer/Contributor-Guidelines.html) as best as you can.
 

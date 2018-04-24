@@ -78,7 +78,7 @@ The remaining tasks are super similar to the earlier post; we locate the `Valida
 
 One of the very useful things you can include in your build is the ability to allow for remote debugging via `-DenableRemoteDebugging=true`. Both [IntelliJ IDEA](https://www.jetbrains.com/help/idea/run-debug-configuration-remote-debug.html) and eclipse allow you ways to connect to this port remotely and activate a debugger in order to step into the code and troubleshoot. This is hugely useful, especially in cases where you can make a change to a source file and *rebuild* the component live and hot, reloading the `.class` file and allowing the changes to kick in the very next time execution passes through without restarting Tomcat. Depending on how significant the change is, this should save you quite a bit of time.
 
-# Summary
+# So...
 
 I hope this review was of some help to you and I am sure that both this post as well as the functionality it attempts to explain can be improved in any number of ways. Please feel free to [engage and contribute](https://apereo.github.io/cas/developer/Contributor-Guidelines.html) as best as you can.
 

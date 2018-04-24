@@ -72,7 +72,6 @@ However, one issue remains which is the ability to customize the redirect URL in
 
 We can start by preparing CAS with a [customized configuration component](https://apereo.github.io/cas/development/installation/Configuration-Management-Extensions.html) that would house our customizations for this use case. Once that is done, take note of the following bean definition posted in `CasSupportActionsConfiguration.java` today:
 
-
 ```java
 @RefreshScope
 @Bean
@@ -128,7 +127,7 @@ public class MyRedirectUnauthorizedServiceUrlAction extends RedirectUnauthorized
 
 That should do it. The very next time you build and deploy the changes, CAS should pick up our own bean definition and accompanying implementation class. It should be obvious that inside the class above, you have options to calculate the unauthorized redirect URL as you wish while having access to the underlying service definition object, the authenticated principal, and any retrieved attributes.
 
-# Summary
+# So...
 
 I hope this review was of some help to you and I am sure that both this post as well as the functionality it attempts to explain can be improved in any number of ways. Please feel free to [engage and contribute](https://apereo.github.io/cas/developer/Contributor-Guidelines.html) as best as you can.
 
