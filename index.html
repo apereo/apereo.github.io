@@ -1,10 +1,9 @@
 ---
 layout: default
 ---
-{% assign posts_count = (paginator.posts | size) %}
 
 <div class="home">
-  {% if posts_count > 0 %}
+  {% if paginator.posts.size > 0 %}
     <div class="posts">
       {% for post in paginator.posts %}
         <div class="post py3">
