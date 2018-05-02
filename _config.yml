@@ -3,7 +3,7 @@ title:       Apereo Community Blog
 email:       info@apereo.org
 author:      Apereo Project Participants
 description: "This is a blog managed and edited by the Apereo project participants. It is typically used to post project updates, announce news, etc."
-baseurl:     "https://apereo.github.io"
+baseurl:     ""
 date_format: "%b %-d, %Y"
 url:         "https://apereo.github.io"
 
@@ -124,7 +124,7 @@ paginate:     8
 start_line: 1
 sass:
   compressed: true
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
