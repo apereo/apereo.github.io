@@ -5,6 +5,10 @@ summary:    Learn and master custom MFA triggers in CAS 5.
 tags:       [CAS]
 ---
 
+<div class="alert alert-success">
+  <strong>Collaborate</strong><br/>The blog is managed and hosted on GitHub. If you wish to update the contents of this post or if you have found an inaccuracy and wish to make corrections, we recommend that you please submit a pull request to <a href="https://github.com/apereo/apereo.github.io">this repository</a>.
+</div>
+
 Perhaps one of the more attractive features of [CAS 5](https://apereo.github.io/cas/development) is the ability to support [multifactor authentication](https://apereo.github.io/cas/development/installation/Configuring-Multifactor-Authentication.html)
 via a number of providers/vendors that can be triggered in many ways. While support for triggers may seem extensive, there is always
 that edge use case that would have you trigger MFA based on a special set of requirements.

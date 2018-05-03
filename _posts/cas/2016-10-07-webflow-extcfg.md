@@ -5,6 +5,10 @@ summary:    Learn and master extending CAS 5 Spring Webflow definitions.
 tags:       [CAS]
 ---
 
+<div class="alert alert-success">
+  <strong>Collaborate</strong><br/>The blog is managed and hosted on GitHub. If you wish to update the contents of this post or if you have found an inaccuracy and wish to make corrections, we recommend that you please submit a pull request to <a href="https://github.com/apereo/apereo.github.io">this repository</a>.
+</div>
+
 Unlike previous versions, CAS 5 attempts to automate all required Spring Webflow changes on a per-module basis. This aligns well with the new `IDD` (Intention-Driven Development) model where all one should have to do is, declare the appropriate module in the build script...and viola. CAS will take care of the rest.
 
 You may ask: Wait! What's really happening? How can it accomplish everything that we had to apply manually before? Why am I being asked to do less work? What exactly do the CAS internals look like? Did machines finally take over? Most importantly, Turkey's [tombili](http://ind.pn/2dsJ0iV) died?!

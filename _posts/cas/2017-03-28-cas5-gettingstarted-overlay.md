@@ -109,7 +109,7 @@ Usage: build.sh [copy|clean|package|run|debug|bootrun]
 What do these commands do?
 
 | Type                    | Description
-|-------------------------|----------------------------------------------------------------------------------------------------
+|-------------------------|-------------------------------------------------------------------------
 | `copy`                  | Copies the configuration from the local `etc/cas/config` directory to `/etc/cas/config`. [See this guide](https://apereo.github.io/cas/5.0.x/installation/Configuration-Server-Management.html) to learn more.
 | `clean`                 | Deletes any previously-built and leftover artifacts from the `target` directory.
 | `package`               | Runs `clean` and `copy`. Then packages the CAS web application artifact and run through the overlay to inject local customizations. The outcome is a `target/cas.war` file which is ready to be deployed.

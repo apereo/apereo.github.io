@@ -3,3 +3,4 @@ _site/
 .history
 .vscode
 \.ruby-version
+.gradle

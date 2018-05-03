@@ -1,9 +1,9 @@
 # Site settings
-title:       Apereo Foundation Github Blog
+title:       Apereo Community Blog 
 email:       info@apereo.org
-author:      Apereo Foundation
-description: "This is a blog managed and edited by the Apereo Foundation members. It is typically used to post project updates, announce news, etc."
-baseurl:     "https://apereo.github.io"
+author:      Apereo Project Participants
+description: "This is a blog managed and edited by the Apereo project participants. It is typically used to post project updates, announce news, etc."
+baseurl:     ""
 date_format: "%b %-d, %Y"
 url:         "https://apereo.github.io"
 
@@ -45,7 +45,7 @@ facebook_comments_number: 10
 github_username: apereo
 bitbucket_username:
 stackoverflow_id:
-twitter_username: ApereoOrg
+twitter_username: Apereo
 skype_username:
 steam_nickname:
 google_plus_id:
@@ -124,7 +124,7 @@ paginate:     8
 start_line: 1
 sass:
   compressed: true
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
