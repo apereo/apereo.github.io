@@ -59,7 +59,7 @@ Our handling of [impersonated authentication attempts](https://apereo.github.io/
 Furthermore, we will need to establish a special sort of syntax instructing CAS to display a list of potential impersonatee accounts authorized for our use as well as one that simply bypasses that menu list and executes the requested impersonation attempt. Per CAS, we may be able to use the *plus syntax* which sort of goes like this:
 
 - `jsmith+casuser` would mean: *Authenticate myself, the primary user as `casuser`, using my own credentials. Then switch my identity and adopt that of `jsmith`*.
-- `+casuser` would mean: "*Authenticate myself, the primary user as `casuser`, using my own credentials. Then present a list of accounts authorized for impersonation attempts by me*.
+- `+casuser` would mean: *Authenticate myself, the primary user as `casuser`, using my own credentials. Then present a list of accounts authorized for impersonation attempts by me*.
 
 # The Setup
 
@@ -83,7 +83,7 @@ First, let's ensure that CAS is prepped with the baseline impersonation function
 </dependency>
 ```
 
-Surely, we need to instruct CAS on how to connect to LDAP for impersonation attempts too:
+Surely, we need to instruct CAS on how to connect to LDAP for impersonation attempts:
 
 ```properties
 cas.authn.surrogate.ldap.ldapUrl=ldap://...
@@ -97,7 +97,7 @@ cas.authn.surrogate.ldap.useStartTls=false
 
 # Impersonation Configuration
 
-We have to teach CAS to hit LDAP and fetch a list of accounts authorized for impersonation, if and when CAS is instructed by the above special syntax. This can be done using the following settings:
+We have to teach CAS to hit LDAP and fetch a list of accounts authorized for impersonation, if and when instructed by the above special syntax. This can be done using the following settings:
 
 ```properties
 cas.authn.surrogate.ldap.surrogateSearchFilter=(&(uid={user})(memberOf=cn=edu:example:app:{surrogate}))
@@ -114,7 +114,7 @@ These basically tell CAS to execute an LDAP search query where `uid` attribute e
 
 What about the `+casuser` syntax? That's where the two other settings come in. Once CAS finds the primary user (i.e. `casuser`) in LDAP via the specified search query `uid={0}`, it then begins to look at all values of the `memberOf` attribute and will pick out those that match the attribute value specified. Note that the value is a regular expression pattern and once matched, CAS will attempt to extract the first group in the pattern for display purposes in the final menu where `casuser` will get to choose an impersonate account and proceed.
 
-# But, Our LDAP is...
+# But, Our LDAP...
 
 If the above scenario does not exactly match your environment word for word, do not worry. You can always [extend the CAS configuration](https://apereo.github.io/cas/development/installation/Configuration-Management-Extensions.html) and define the scaffolding of your own business logic inside the following bean:
 
