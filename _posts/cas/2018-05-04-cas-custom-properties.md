@@ -31,7 +31,7 @@ public class CustomConfigurationProperties {
     private String settingName;
 
     public String getSettingName() {
-        return cohortNotifyAttributeValue;
+        return settingName;
     }
 
     public void setSettingName(final String value) {
