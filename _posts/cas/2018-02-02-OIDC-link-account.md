@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Link CAS OIDC user to existing Database user 
+title:      Link CAS OIDC user to existing Database user
 summary:    In which we show to link OIDC id to LDAP database user.
 tags:       [CAS]
 ---
@@ -18,7 +18,7 @@ This example is here to show an example of our try to use CAS in order to authen
 
 # What we want
 
-The first thing is that the user register only internally via our own services, not via a public page but via our private system. That means that the user on first usage already has an account and can log into CAS via the Login Form. 
+The first thing is that the user register only internally via our own services, not via a public page but via our private system. That means that the user on first usage already has an account and can log into CAS via the Login Form.
 
 The second thing is that we want to give the possibility for the user to connect an OIDC, in our example it would be France Connect, but only if the user has already access to our website via Login Form.
 
@@ -35,7 +35,7 @@ Form Login is the basic, login and password form from CAS.
 
 We use an LDAP server and an OIDC CAS configuration. Not more than that. The user has two choices when on the CAS interface, the Login Form and the France Connect button.
 
-We will use "cas.authn.pac4j.oidc" for configuring our OIDC to authenticate our user using France Connect. 
+We will use "cas.authn.pac4j.oidc" for configuring our OIDC to authenticate our user using France Connect.
 We will use "cas.authn.ldap" to authenticate our user using LDAP database.
 We will use "cas.authn.attributeRepository.ldap" to retrieve some attributes after user authentication.
 
@@ -113,18 +113,18 @@ This is when your standalone server send back to the second login Form, you need
 
 ## Force CAS to give OIDC ID
 
-When CAS check "requiredAttributes", if an attribute is missing it will throw an Exception and a handler will catch this exception in order to redirect to the URL we added inside our service configuration. 
+When CAS check "requiredAttributes", if an attribute is missing it will throw an Exception and a handler will catch this exception in order to redirect to the URL we added inside our service configuration.
 
 So we will add a new Exception inside the StrategyAccess and the ExceptionHandler will customize the Url.
 
-For that part we need to add our new `ClaExternalIDPrincipalException` that will store the attributes coming  from our `ClaExternalIDRegisteredServiceAccessStrategy`. Second part, we need to override the handler `AuthenticationExceptionHandlerAction` and replace it by our own `ClaExternalIDAuthenticationExceptionHandlerAction`. 
+For that part we need to add our new `ClaExternalIDPrincipalException` that will store the attributes coming  from our `ClaExternalIDRegisteredServiceAccessStrategy`. Second part, we need to override the handler `AuthenticationExceptionHandlerAction` and replace it by our own `ClaExternalIDAuthenticationExceptionHandlerAction`.
 
 First our `ClaExternalIDRegisteredServiceAccessStrategy`, this class is used into service configuration. It allows us to throw the exception, it needs as well to store the attributes needed later on.
 ```java
 public class ClaExternalIDRegisteredServiceAccessStrategy extends DefaultClaExternalIDRegisteredServiceAccessStrategy {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ClaExternalIDRegisteredServiceAccessStrategy.class);
-    
+
     //this function is used to check "requiredAttributes"
     public boolean doPrincipalAttributesAllowServiceAccess(final String principal, final Map<String, Object> principalAttributes) {
         if (!enoughAttributesAvailableToProcess(principal, principalAttributes)) {
@@ -136,14 +136,14 @@ public class ClaExternalIDRegisteredServiceAccessStrategy extends DefaultClaExte
             LOGGER.debug("Access is denied. doRejectedAttributesRefusePrincipalAccess");
             return false;
         }
-        
+
         if (!doRequiredAttributesAllowPrincipalAccess(principalAttributes, this.requiredAttributes)) {
             LOGGER.debug("Access is denied. doRequiredAttributesAllowPrincipalAccess");
             principalAttributes.put("principal", principal);
             //We throw our exception, it will be intercepted by the Handler inside the Webflow
             throw new ClaExternalIDPrincipalException("ClaExternalIDPrincipalException", new HashMap<>(), new HashMap<>(), principalAttributes);
-        }        
-        LOGGER.debug("Access is authorized");        
+        }
+        LOGGER.debug("Access is authorized");
         return true;
     }
 }
@@ -160,11 +160,11 @@ public class ClaExternalIDPrincipalException extends PrincipalException {
         super(message, handlerErrors, handlerSuccesses);
         setPrincipalAttributes(principalAttributes);
     }
-    
+
     public void setPrincipalAttributes(Map<String, Object> principalAttributes){
         this.principalAttributes = principalAttributes;
     }
-    
+
     public Map<String, Object> getPrincipalAttributes(){
         return this.principalAttributes;
     }
@@ -177,7 +177,7 @@ public class ClaExternalIDAuthenticationExceptionHandlerAction extends Authentic
 
     protected String handleAuthenticationException(final AuthenticationException e,
                                                    final RequestContext requestContext) {
-                                                       
+
         final URI url = WebUtils.getUnauthorizedRedirectUrlIntoFlowScope(requestContext);
         if (e.getHandlerErrors().containsKey(UnauthorizedServiceForPrincipalException.class.getSimpleName())) {
             if (url != null) {
@@ -185,14 +185,14 @@ public class ClaExternalIDAuthenticationExceptionHandlerAction extends Authentic
                 return CasWebflowConstants.STATE_ID_SERVICE_UNAUTHZ_CHECK;
             }
         }
-        //We add this part to catch the exception thrown and we customize the url, 
+        //We add this part to catch the exception thrown and we customize the url,
         // adding the attributes from OIDC and the url service asked
         if (e instanceof ClaExternalIDPrincipalException) {
             if (url != null) {
                 final ClaExternalIDPrincipalException eClaExternalID = (ClaExternalIDPrincipalException) e;
                 final URI url2 = getUrl(url, eClaExternalID.getPrincipalAttributes(), WebUtils.getService(requestContext).getOriginalUrl());
                 WebUtils.putUnauthorizedRedirectUrlIntoFlowScope(requestContext, url2);
-                
+
                 LOGGER.warn("Unauthorized service access for principal; CAS will be redirecting to [{}]", url2);
                 return CasWebflowConstants.STATE_ID_SERVICE_UNAUTHZ_CHECK;
             }
@@ -213,13 +213,13 @@ public class ClaExternalIDAuthenticationExceptionHandlerAction extends Authentic
         messageContext.addMessage(new MessageBuilder().error().code(messageCode).build());
         return handlerErrorName;
     }
-    
+
     /**
      * Create an URI object with attributes as paramaters in it
      */
     protected URI getUrl(final URI uri, final Map<String, Object> principalAttributes, final String target){
         MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
-        
+
         principalAttributes.forEach((key, i) -> {
             if(i instanceof Iterable){
                 for (Object y : (Iterable) i) {
@@ -230,16 +230,16 @@ public class ClaExternalIDAuthenticationExceptionHandlerAction extends Authentic
             }
         });
         queryParams.add("target", target);
-        
+
         UriComponents uriComponents = UriComponentsBuilder.newInstance()
             .fromUri(uri).queryParams(queryParams).build();
-            
+
         try {
             return uriComponents.toUri();
         } catch(Exception e) {
             LOGGER.debug(e.toString());
         }
-        
+
         throw new RuntimeException("Failed to create the URL");
     }
 }
@@ -249,25 +249,25 @@ At this moment, everything is good but our handler is not registered to be used 
 
 ## Register the newly created handler
 
-It is pretty simple, we will override the Bean `authenticationExceptionHandler` by creating our own customized configuration class. 
+It is pretty simple, we will override the Bean `authenticationExceptionHandler` by creating our own customized configuration class.
 ```java
 @Configuration("ClaExternalIDConfiguration")
 @EnableConfigurationProperties(CasConfigurationProperties.class)
-public class ClaExternalIDConfiguration {    
+public class ClaExternalIDConfiguration {
     @Autowired
     private CasConfigurationProperties casProperties;
-    
+
     @RefreshScope
     @Bean
     /**
      * This bean has the same name that the CAS "CasCoreWebflowConfiguration", so it will
-     *  overwrite that class, it will work only because it is implemeted inside 
+     *  overwrite that class, it will work only because it is implemeted inside
      *  the gradle overlay in our example
      */
     public Action authenticationExceptionHandler() {
         return new ClaExternalIDAuthenticationExceptionHandlerAction(handledAuthenticationExceptions());
     }
-    
+
     public Set<Class<? extends Exception>> handledAuthenticationExceptions() {
         /*
          * Order is important here; We want the account policy exceptions to be handled
@@ -309,7 +309,7 @@ This part can be manage by a simple jetty server. Or with some work a spring Web
 
 In our side we choose the first case. As explained above, the server will need to receive the first call with the url we constructed and store the OIDC id into the session for example.
 
-Next it will send back to a new page implementing a CAS client, that will ask for a new login form authentication. When that authentication is done and granted, it will send back to this page and receive the UID. 
+Next it will send back to a new page implementing a CAS client, that will ask for a new login form authentication. When that authentication is done and granted, it will send back to this page and receive the UID.
 
 At this moment, the server link both OIDC id and UID together into the database.
 
