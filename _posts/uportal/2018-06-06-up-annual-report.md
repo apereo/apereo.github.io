@@ -18,7 +18,7 @@ and for higher education.
 
 ## Calls to action
 
-+ Join uPortal's Supporting Subscription program.
++ Join [uPortal's Supporting Subscription program][uportal-supporting-subscription-model].
 + Propose projects into the new uPortal Ecosystem Intake Process.
 + Directly participate in uPortal.
 + Engage in Apereo.
@@ -153,8 +153,9 @@ uPortal handled one security vulnerability this year:
 
 ## Financials
 
-Institutions can sustain the project through the uPortal Supporting Subscription
-program, a rider to the institutional Apereo membership.
+Institutions can sustain the project through the
+[uPortal Supporting Subscription program][uportal-supporting-subscription-model],
+a rider to the institutional Apereo membership.
 
 uPortal added 1 subscriber to a total of 3 with annual revenue of $26,000 and a
 fund balance of $51,000.
@@ -224,7 +225,7 @@ practices within project siloes.
 ## Calls to action, reprise
 
 + uPortal adopting institutions, please
-  **join uPortal's Supporting Subscription program**.
+  **join [uPortal's Supporting Subscription program][[uportal-supporting-subscription-model]**.
   This rider to an institutional Apereo membership will build modest but
   essential recurring revenue for resourcing the uPortal project for confident
   sustainability. Begin this as modestly as your institution may need;
@@ -266,4 +267,5 @@ wearing individual contributor [hat][ASF hats].
 [Apereo's 2017-2018 annual report]: https://www.apereo.org/sites/default/files/content/pdfs/Annual%20Report%203June18.pdf
 [notes for uPortal section of annual report]: https://docs.google.com/document/d/1hkn9E-Ke9hROSOlCe957p0Z5BRBlykmw7vKvtzA5ClA/edit?usp=sharing
 [thread soliciting uPortal report inputs]: https://groups.google.com/a/apereo.org/d/topic/uportal-user/6bSRQjvpY8I/discussion
+[uportal-supporting-subscription-model]: https://www.apereo.org/projects/uportal/uportal-supporting-subscription-model
 [ASF hats]: https://www.apache.org/foundation/how-it-works.html#hats
