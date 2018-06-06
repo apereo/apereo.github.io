@@ -109,7 +109,8 @@ neighborhood but not formally part of the ecosystem: **97 total releases**.
 The core uPortal platform project added 1 new committer (Jim Helwig 2017-07-19)
 and 7 new contributors,
 with 18 total contributors. This year saw an increase in direct participation by
-commmunity members in France, through submissions to the new Intake Process and
+commmunity members in France, through submissions to the new
+[Intake Process][uPortal Ecosystem Intake Process] and
 translations of documentation.
 
 Contributors this year to core uPortal, new in bold:
