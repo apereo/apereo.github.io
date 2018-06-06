@@ -19,7 +19,7 @@ and for higher education.
 ## Calls to action
 
 + Join [uPortal's Supporting Subscription program][uportal-supporting-subscription-model].
-+ Propose projects into the new uPortal Ecosystem Intake Process.
++ Propose projects into the new [uPortal Ecosystem Intake Process][].
 + Directly participate in uPortal.
 + Engage in Apereo.
 + Become an individual Apereo member.
@@ -48,8 +48,8 @@ and for higher education.
 
 A variety of software products complement the core platform to make up the
 greater uPortal ecosystem. uPortal further developed the ecosystem idiom this
-year, introducing a more formal uPortal Ecosystem Intake Process clarifying how
-to recognize projects as part of the ecosystem, ideally starting
+year, introducing a more formal [uPortal Ecosystem Intake Process][] clarifying
+how to recognize projects as part of the ecosystem, ideally starting
 collaboration and openness at a very early stage in these ancillary software
 product initiatives.
 
@@ -234,8 +234,9 @@ practices within project siloes.
   source project forward. If your institution is already subscribing,
   find a way to dig deep and increase your commitment.
   **The opportunities for a more confident uPortal future are real.**
-+ **Propose ancillary projects** (software products) into uPortal's new
-  Ecosystem Intake Process. It has never been easier or clearer how to approach
++ **Propose ancillary projects** (software products) into
+  [uPortal's new Ecosystem Intake Process][uPortal Ecosystem Intake Process]. It
+  has never been easier or clearer how to approach
   a tight, modular plug-in for use with uPortal (whether user-facing content,
   back-end service, or otherwise). The best time to begin openness and welcome
   involvement of the wider community is the moment you start. If you locally see
@@ -268,4 +269,5 @@ wearing individual contributor [hat][ASF hats].
 [notes for uPortal section of annual report]: https://docs.google.com/document/d/1hkn9E-Ke9hROSOlCe957p0Z5BRBlykmw7vKvtzA5ClA/edit?usp=sharing
 [thread soliciting uPortal report inputs]: https://groups.google.com/a/apereo.org/d/topic/uportal-user/6bSRQjvpY8I/discussion
 [uportal-supporting-subscription-model]: https://www.apereo.org/projects/uportal/uportal-supporting-subscription-model
+[uPortal Ecosystem Intake Process]: https://uportal-contrib.github.io/intake-process.html
 [ASF hats]: https://www.apache.org/foundation/how-it-works.html#hats
