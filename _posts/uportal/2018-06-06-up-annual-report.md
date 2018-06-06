@@ -14,7 +14,7 @@ the uPortal community
 This post works from that content, evolving towards a more free-standing yet
 hyperlinked read.
 
-uPortal continues to lead as an open source enterprise portal solution built by
+uPortal continues to lead as an open source enterprise portal solution by
 and for higher education.
 
 ## Calls to action
@@ -41,7 +41,7 @@ and for higher education.
   presentations, and list discussions, oh my.
 + Financial responsibility: $26,000 recurring revenue with a $51,000 fund
   balance.
-+ Hope: to increase recurring revenue to sustainably fund a stream of effort
++ Hope: to increase recurring revenue to sustainably fund effort
   transforming individual and institutional return-on-investment on uPortal
   participation and thereby encouraging a virtuous cycle towards more
   investment with better ROI encouraging more investment yielding better returns
@@ -167,14 +167,12 @@ Current uPortal Supporting Subscribers:
 + Brigham Young University (uPortal Friend)
 
 Thusfar the project's strategy has been to avoid spending these funds in ad-hoc
-ways, preferring to accumulate an asset balance and work towards a level of
-recurring revenue that will enable this sustainable application of funds -- a
-program with the recurring revenue to say fund and FTE and with a healthy asset
-balance to cushion bumps might prove stable and stabilizing.
+ways, preferring to accumulate a stabilizing asset balance and work towards a
+level of recurring revenue that will enable a sustainable application of funds.
 
-In the year to come, the project hopes to achieve reach a threshold level of
-recurring revenue to enable the project to responsibly, sustainably convert
-those funds into efforts advancing the project, driving down barriers to
+In the year to come, the project hopes to reach a threshold level of
+recurring revenue to afford funding a full-time Foundation position charged with
+driving down barriers to
 adoption and participation and improving the institutional return-on-investment
 in that participation.
 
@@ -215,7 +213,7 @@ additional investment, a virtuous and sustainable cycle ensuing.
 Discourse has been adopted elsewhere to positive effect and might do a lot of
 good in uPortal and Apereo as well.
 
-### Socialized and collaborate with other Apereo projects
+### Collaborate with other Apereo projects
 
 uPortal and other Apereo projects might practice more and better collaboratively
 rather than locally developing and maintaining project lifecycle, security
@@ -224,35 +222,34 @@ practices within project siloes.
 
 ## Calls to action, reprise
 
-+ uPortal adopting institutions, please
++ uPortal adopting institutions,
   **join [uPortal's Supporting Subscription program][[uportal-supporting-subscription-model]**.
-  This rider to an institutional Apereo membership will build modest but
+  This rider to an institutional Apereo membership builds
   essential recurring revenue for resourcing the uPortal project for confident
   sustainability. Begin this as modestly as your institution may need;
   every little bit will help this program hit the transformative threshold
   of potentially adding a full time staffer focused on carrying uPortal qua open
   source project forward. If your institution is already subscribing,
-  find a way to dig deep and increase your commitment.
+  increase your commitment.
   **The opportunities for a more confident uPortal future are real.**
 + **Propose ancillary projects** (software products) into
   [uPortal's new Ecosystem Intake Process][uPortal Ecosystem Intake Process]. It
-  has never been easier or clearer how to approach
-  a tight, modular plug-in for use with uPortal (whether user-facing content,
-  back-end service, or otherwise). The best time to begin openness and welcome
+  has never been easier to approach
+  developing a plug-in for use with uPortal (whether user-facing content,
+  back-end service, or otherwise). The best time to share code and welcome
   involvement of the wider community is the moment you start. If you locally see
   a need, it's very likely that another adopter could learn from this, could
-  collaborate with you upon it, or could adopt the add-on and likewise has
-  locally developed add-ons that you could be adopting too to the advantage of
-  all.
+  collaborate upon it, or could adopt the add-on and likewise has
+  locally developed add-ons that you could be adopting too.
   **The opportunities for more and better collaboration are real.**
 + **Directly participate in uPortal.** It has never been easier to collaborate
-  upon and
-  contribute to uPortal, to its documentation, and to its ancillary projects.
+  on uPortal, its documentation, and its ancillary projects.
   Suggesting an edit to even this "marketing-flavored" post is feasible via
-  GitHub's tooling, directly in your Web browser.
+  GitHub's tooling, without leaving your Web browser.
   **The opportunities for collaboration are real, and are beyond code.**
-+ **Engage in Apereo.** Ensure your institution is an institutional member of
-  Apereo and have an active relationship with your institutional representative.
++ **Engage in Apereo.** Ensure your institution is a member of
+  Apereo. Maintain an active relationship with your institutional
+  representative.
   **The opportunities for participation in all things Apereo are real.**
 + **Become an [individual Apereo member][Apereo individual membership].**
   Apereo's membership model is no longer
