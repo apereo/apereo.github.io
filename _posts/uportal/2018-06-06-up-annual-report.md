@@ -22,7 +22,7 @@ and for higher education.
 + Propose projects into the new [uPortal Ecosystem Intake Process][].
 + Directly participate in uPortal.
 + Engage in Apereo.
-+ Become an individual Apereo member.
++ Become an [individual Apereo member][Apereo individual membership].
 
 (These calls to action are re-stated with supporting detail in the conclusion.)
 
@@ -253,7 +253,8 @@ practices within project siloes.
 + **Engage in Apereo.** Ensure your institution is an institutional member of
   Apereo and have an active relationship with your institutional representative.
   **The opportunities for participation in all things Apereo are real.**
-+ **Become an individual Apereo member.** Apereo's membership model is no longer
++ **Become an [individual Apereo member][Apereo individual membership].**
+  Apereo's membership model is no longer
   solely that of higher education institutions as members -- you as an
   individual human being can be a member and will gain a vote for a Foundation
   Board seat.
@@ -270,3 +271,4 @@ wearing individual contributor [hat][ASF hats].
 [uPortal Ecosystem Intake Process]: https://uportal-contrib.github.io/intake-process.html
 [ASF hats]: https://www.apache.org/foundation/how-it-works.html#hats
 [uPortal-home]: https://github.com/uPortal-Project/uportal-home
+[Apereo individual membership]: https://www.apereo.org/friends
