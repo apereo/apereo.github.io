@@ -31,8 +31,8 @@ and for higher education.
 (The year described herein is 2017-05-01 through 2018-04-30).
 
 + Growth: Growth of the uPortal-as-ecosystem idiom, with a clarified
-  [Intake Process][uPortal Ecosystem Intake Process], a software product
-  successfully graduating from Apereo Incubation,
+  [Intake Process][uPortal Ecosystem Intake Process], the `uPortal-home`
+  software product successfully graduating from Apereo Incubation,
   and 4 new software products entering the ecosystem.
 + Life: Almost 100 versioned releases of uPortal ecosystem software products.
 + Particpation: 7 new core contributors, 1 new core committer, calls, meetups,
