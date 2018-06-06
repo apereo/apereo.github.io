@@ -58,7 +58,7 @@ product initiatives.
 
 The ecosystem grew with 1 project successfully exiting Apereo Incubation
 ([`uPortal-home`][uPortal-home]) and 4 new projects entering the ecosystem via
-the new Intake Process:
+the new [Intake Process][uPortal Ecosystem Intake Process]:
 
 + `ESUP-filemanager`
 + `Soffit-kotlin-example`
