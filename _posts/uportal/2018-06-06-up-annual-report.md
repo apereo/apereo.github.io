@@ -24,7 +24,7 @@ and for higher education.
 + Engage in Apereo.
 + Become an individual Apereo member.
 
-(These calls to action are re-started with supporting detail in the conclusion.)
+(These calls to action are re-stated with supporting detail in the conclusion.)
 
 ## Summary
 
