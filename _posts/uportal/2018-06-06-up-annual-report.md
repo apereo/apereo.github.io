@@ -31,7 +31,8 @@ and for higher education.
 (The year described herein is 2017-05-01 through 2018-04-30).
 
 + Growth: Growth of the uPortal-as-ecosystem idiom, with a clarified
-  [Intake Process][uPortal Ecosystem Intake Process], the `uPortal-home`
+  [Intake Process][uPortal Ecosystem Intake Process], the
+  [`uPortal-home`][uPortal-home]
   software product successfully graduating from Apereo Incubation,
   and 4 new software products entering the ecosystem.
 + Life: Almost 100 versioned releases of uPortal ecosystem software products.
@@ -55,8 +56,8 @@ collaboration and openness at a very early stage in these ancillary software
 product initiatives.
 
 The ecosystem grew with 1 project successfully exiting Apereo Incubation
-(`uPortal-home`) and 4 new projects entering the ecosystem via the new Intake
-Process:
+([`uPortal-home`][uPortal-home]) and 4 new projects entering the ecosystem via
+the new Intake Process:
 
 + `ESUP-filemanager`
 + `Soffit-kotlin-example`
@@ -81,7 +82,7 @@ neighborhood but not formally part of the ecosystem: **97 total releases**.
 
 ### Alternative user interfaces
 
-+ `uPortal-home`: 13 releases (2 major, 6 minor, 5 patch)
++ [`uPortal-home`][uPortal-home]: 13 releases (2 major, 6 minor, 5 patch)
 + `uPortal-app-framework`: 16 releases (5 major, 5 minor, 6 patch)
 
 
@@ -272,3 +273,4 @@ wearing individual contributor [hat][ASF hats].
 [uportal-supporting-subscription-model]: https://www.apereo.org/projects/uportal/uportal-supporting-subscription-model
 [uPortal Ecosystem Intake Process]: https://uportal-contrib.github.io/intake-process.html
 [ASF hats]: https://www.apache.org/foundation/how-it-works.html#hats
+[uPortal-home]: https://github.com/uPortal-Project/uportal-home
