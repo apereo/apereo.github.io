@@ -104,9 +104,6 @@ neighborhood but not formally part of the ecosystem: **97 total releases**.
 
 + Resource-server: 5 releases (2 minor, 3 patch)
 
-
-
-
 ## Participation
 
 The core uPortal platform project added 1 new committer (Jim Helwig 2017-07-19)
@@ -265,7 +262,6 @@ practices within project siloes.
 \- Andrew Petro
 
 wearing individual contributor [hat][ASF hats].
-
 
 [Apereo's 2017-2018 annual report]: https://www.apereo.org/sites/default/files/content/pdfs/Annual%20Report%203June18.pdf
 [notes for uPortal section of annual report]: https://docs.google.com/document/d/1hkn9E-Ke9hROSOlCe957p0Z5BRBlykmw7vKvtzA5ClA/edit?usp=sharing
