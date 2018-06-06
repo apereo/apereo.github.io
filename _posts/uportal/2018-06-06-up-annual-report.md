@@ -223,7 +223,7 @@ practices within project siloes.
 ## Calls to action, reprise
 
 + uPortal adopting institutions,
-  **join [uPortal's Supporting Subscription program][[uportal-supporting-subscription-model]**.
+  **join [uPortal's Supporting Subscription program][uportal-supporting-subscription-model]**.
   This rider to an institutional Apereo membership builds
   essential recurring revenue for resourcing the uPortal project for confident
   sustainability. Begin this as modestly as your institution may need;
