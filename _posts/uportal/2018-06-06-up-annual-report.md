@@ -11,7 +11,8 @@ includes a section on uPortal, based on
 the uPortal community
 [put together][thread soliciting uPortal report inputs].
 
-This post works from that content with an additional style and edit pass.
+This post works from that content, evolving towards a more free-standing yet
+hyperlinked read.
 
 uPortal continues to lead as an open source enterprise portal solution built by
 and for higher education.
