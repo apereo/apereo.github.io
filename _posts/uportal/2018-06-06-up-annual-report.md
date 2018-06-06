@@ -86,7 +86,6 @@ neighborhood but not formally part of the ecosystem: **97 total releases**.
 + [`uPortal-home`][uPortal-home]: 13 releases (2 major, 6 minor, 5 patch)
 + `uPortal-app-framework`: 16 releases (5 major, 5 minor, 6 patch)
 
-
 ### Portlet releases
 
 9 Portlet software products saw at least one release, with 36 total releases.
