@@ -37,7 +37,7 @@ and for higher education.
   and 4 new software products entering the ecosystem via a clarified
   [Intake Process][uPortal Ecosystem Intake Process].
 + Life: Almost 100 versioned releases of uPortal ecosystem software products.
-+ Particpation: 7 new core contributors, 1 new core committer, calls, meetups,
++ Participation: 7 new core contributors, 1 new core committer, calls, meetups,
   presentations, and list discussions, oh my.
 + Financial responsibility: $26,000 recurring revenue with a $51,000 fund
   balance.
