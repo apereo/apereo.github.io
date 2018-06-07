@@ -187,9 +187,10 @@ virtuous cycle ensues.
 ### Apereo as CVE numbering authority
 
 Formal vulnerability identifiers (CVE IDs) are prohibitively difficult to
-acquire. This limits effectiveness of communication about security. Apereo
-becoming a CVE Numbering Authority could reduce friction in and increase
-effectiveness of communication about security vulnerabilities.
+acquire. This limits effectiveness of communication about security.
+[Apereo becoming a CVE Numbering Authority][open@ re Apereo as CVE issuer] could
+reduce friction in and increase effectiveness of communication about security
+vulnerabilities.
 
 ### Measuring and recruiting adopters
 
@@ -284,3 +285,4 @@ wearing individual contributor [hat][ASF hats].
 [Unizin uses Discourse]: https://community.unizin.org/
 [Discourse]: https://www.discourse.org/
 [listing of Apereo member institutions]: https://www.apereo.org/content/apereo-member-organizations
+[open@ re Apereo as CVE issuer]: https://groups.google.com/a/apereo.org/d/topic/open/WBTjhIaoJj8/discussion
