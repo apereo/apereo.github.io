@@ -210,7 +210,8 @@ additional investment, a virtuous and sustainable cycle ensuing.
 
 ### Discourse as superior discussion forums solution
 
-Discourse has been adopted elsewhere to positive effect and might do a lot of
+Discourse has been adopted
+[elsewhere][Unizin uses Discourse] to positive effect and might do a lot of
 good in uPortal and Apereo as well as a next step beyond
 [the exising Google Groups forums solution][uPortal Google Groups].
 
@@ -272,3 +273,4 @@ wearing individual contributor [hat][ASF hats].
 [uPortal-home]: https://github.com/uPortal-Project/uportal-home
 [Apereo individual membership]: https://www.apereo.org/friends
 [uPortal Google Groups]: https://groups.google.com/a/apereo.org/forum/#!search/uportal
+[Unizin uses Discourse]: https://community.unizin.org/
