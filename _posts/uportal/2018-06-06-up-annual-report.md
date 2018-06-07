@@ -266,7 +266,7 @@ isolated project siloes.
   solely that of higher education institutions as members -- you as an
   individual human being can join, gaining a vote for a Foundation
   Board seat.
-  **The opportunities to engge in more interesting ways are real.**
+  **The opportunities to engage in more interesting ways are real.**
 
 \- Andrew Petro
 
