@@ -167,11 +167,11 @@ Current uPortal Supporting Subscribers:
 + Oakland University (uPortal Booster)
 + Brigham Young University (uPortal Friend)
 
-Thusfar the project's strategy has been to avoid spending these funds in ad-hoc
+Thusfar the project has avoided spending these funds in ad-hoc
 ways, preferring to accumulate a stabilizing asset balance and work towards a
 level of recurring revenue that will enable a sustainable application of funds.
 
-In the year to come, the project hopes to reach a threshold level of
+In the year to come, the project hopes to reach a threshold of
 recurring revenue to afford funding a full-time Foundation position charged with
 driving down barriers to
 adoption and participation and improving the institutional return-on-investment
@@ -214,15 +214,20 @@ additional investment, a virtuous and sustainable cycle ensuing.
 
 [Discourse][] has been adopted
 [elsewhere][Unizin uses Discourse] to positive effect and might do a lot of
-good in uPortal and Apereo as well as a next step beyond
+good in Apereo as a next step beyond
 [the exising Google Groups forums solution][uPortal Google Groups].
 
 ### Collaborate with other Apereo projects
 
-uPortal and other Apereo projects might practice more and better collaboratively
-rather than locally developing and maintaining project lifecycle, security
-incident handling, communications, release engineering, and other processes and
-practices within project siloes.
+uPortal and other Apereo projects might collaborate more on shared concerns like
+
++ project lifecycle process
++ security incident handling
++ communications
++ release engineering
+
+doing these and other things better in collaboration than they can be done in
+isolated project siloes.
 
 ## Calls to action, reprise
 
@@ -258,9 +263,9 @@ practices within project siloes.
 + **Become an [individual Apereo member][Apereo individual membership].**
   Apereo's membership model is no longer
   solely that of higher education institutions as members -- you as an
-  individual human being can be a member and will gain a vote for a Foundation
+  individual human being can join, gaining a vote for a Foundation
   Board seat.
-  **The opportunities to be at the table in more interesting ways are real.**
+  **The opportunities to engge in more interesting ways are real.**
 
 \- Andrew Petro
 
