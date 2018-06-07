@@ -155,7 +155,8 @@ uPortal handled one security vulnerability this year:
 
 Institutions can sustain the project through the
 [uPortal Supporting Subscription program][uportal-supporting-subscription-model],
-a rider to the institutional Apereo membership.
+a rider to the
+[institutional Apereo membership][listing of Apereo member institutions].
 
 uPortal added 1 subscriber to a total of 3 with annual revenue of $26,000 and a
 fund balance of $51,000.
@@ -192,7 +193,8 @@ vulnerabilities.
 ### Measuring and recruiting adopters
 
 We do not have an effective way to measure adopters. There are doubtless
-unrealized opportunities to draw in adopters as Apereo institutional members,
+unrealized opportunities to draw in adopters as
+[Apereo institutional members][listing of Apereo member institutions],
 uPortal sustaining subscription subscribers, and most importantly as
 collaborators in the uPortal ecosystem.
 
@@ -249,9 +251,9 @@ practices within project siloes.
   Suggesting an edit to even this "marketing-flavored" post is feasible via
   GitHub's tooling, without leaving your Web browser.
   **The opportunities for collaboration are real, and are beyond code.**
-+ **Engage in Apereo.** Ensure your institution is a member of
-  Apereo. Maintain an active relationship with your institutional
-  representative.
++ **Engage in Apereo.** Ensure your institution is a
+  [member of Apereo][listing of Apereo member institutions]. Maintain an active
+  relationship with your institutional representative.
   **The opportunities for participation in all things Apereo are real.**
 + **Become an [individual Apereo member][Apereo individual membership].**
   Apereo's membership model is no longer
@@ -275,3 +277,4 @@ wearing individual contributor [hat][ASF hats].
 [uPortal Google Groups]: https://groups.google.com/a/apereo.org/forum/#!search/uportal
 [Unizin uses Discourse]: https://community.unizin.org/
 [Discourse]: https://www.discourse.org/
+[listing of Apereo member institutions]: https://www.apereo.org/content/apereo-member-organizations
