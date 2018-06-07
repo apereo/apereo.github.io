@@ -195,8 +195,8 @@ vulnerabilities.
 We do not have an effective way to measure adopters. There are doubtless
 unrealized opportunities to draw in adopters as
 [Apereo institutional members][listing of Apereo member institutions],
-uPortal sustaining subscription subscribers, and most importantly as
-collaborators in the uPortal ecosystem.
+[uPortal supporting subscription subscribers][uportal-supporting-subscription-model],
+and most importantly as collaborators in the uPortal ecosystem.
 
 ### Growing the uPortal ecosystem
 
