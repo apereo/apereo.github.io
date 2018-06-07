@@ -260,7 +260,9 @@ isolated project siloes.
   **The opportunities for collaboration are real, and are beyond code.**
 + **Engage in Apereo.** Ensure your institution is a
   [member of Apereo][listing of Apereo member institutions]. Maintain an active
-  relationship with your institutional representative.
+  relationship with your institutional representative. Engage directly on the
+  [open@][] list and ensure you're subscribed to the
+  [announcements@][] list.
   **The opportunities for participation in all things Apereo are real.**
 + **Become an [individual Apereo member][Apereo individual membership].**
   Apereo's membership model is no longer
@@ -286,3 +288,5 @@ wearing individual contributor [hat][ASF hats].
 [Discourse]: https://www.discourse.org/
 [listing of Apereo member institutions]: https://www.apereo.org/content/apereo-member-organizations
 [open@ re Apereo as CVE issuer]: https://groups.google.com/a/apereo.org/d/topic/open/WBTjhIaoJj8/discussion
+[open@]: https://groups.google.com/a/apereo.org/forum/#!forum/open
+[announcements@]: https://groups.google.com/a/apereo.org/forum/#!forum/announcements
