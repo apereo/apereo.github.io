@@ -173,22 +173,23 @@ level of recurring revenue that will enable a sustainable application of funds.
 
 In the year to come, the project hopes to reach a threshold of
 recurring revenue to afford funding a full-time Foundation position charged with
-driving down barriers to
-adoption and participation and improving the institutional return-on-investment
-in that participation.
 
-Improve the return-on-investment and thereby attract more investment which will
-create more opportunities to improve the return-on-investment and a virtuous
-cycle ensues.
++ driving down barriers to adoption and participation
++ improving the institutional and individual return-on-investment in that
+  participation.
+
+Improving the return-on-investment on adoption and participation will make
+adoption and participation more rewarding which will encourage more of it. More investment will create more opportunities to improve the return-on-investment. A
+virtuous cycle ensues.
 
 ## Challenges and opportunities
 
 ### Apereo as CVE numbering authority
 
-CVEs are prohibitively difficult to acquire. This limits effectiveness of
-communication about security. Apereo becoming a CVE Numbering Authority could
-reduce friction in and increase effectiveness of communication about security
-vulnerabilities.
+Formal vulnerability identifiers (CVE IDs) are prohibitively difficult to
+acquire. This limits effectiveness of communication about security. Apereo
+becoming a CVE Numbering Authority could reduce friction in and increase
+effectiveness of communication about security vulnerabilities.
 
 ### Measuring and recruiting adopters
 
