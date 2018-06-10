@@ -211,7 +211,7 @@ It is **VERY IMPORTANT** that you contain and commit the entire overlay director
 
 Client applications that wish to use the CAS server for authentication must be registered with the server a-priori. CAS provides a number of [facilities to keep track of the registration records](https://apereo.github.io/cas/5.3.x/installation/Service-Management.html#storage) and you may choose any that fits your needs best. In more technical terms, CAS deals with service management using two specific components: Individual implementations that support a form of a database are referred to as *Service Registry* components and they are many. There is also a parent component that sits on top of the configured service registry as more of an orchestrator that provides a generic facade and entry point for the rest of CAS without entangling all other operations and subsystems with the specifics and particulars of a storage technology.
 
-In this tutorial, we are going to try to configure CAS with [the LDAP service registry](https://apereo.github.io/cas/5.3.x/installation/LDAP-Service-Management.html).
+In this tutorial, we are going to try to configure CAS with [the JSON service registry](https://apereo.github.io/cas/5.3.x/installation/JSON-Service-Management.html).
 
 ## Configuration
 
@@ -225,7 +225,7 @@ First, ensure you have declared the appropriate module/intention in the build:
 </dependency>
 ```
 
-Next, you must teach CAS how to contact the LDAP server to read and write registration records. This is done in the `cas.properties` file:
+Next, you must teach CAS how to look up JSON files to read and write registration records. This is done in the `cas.properties` file:
 
 ```properties
 cas.serviceRegistry.initFromJson=false
