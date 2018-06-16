@@ -232,7 +232,7 @@ So we need to be fully authenticated. Let's present credentials:
 $ curl -u wade:de@dp00L https://login.example.org/cas/status/health | jq
 ```
 
-...and the full output shall then be something as follows with CAS presents some additional health information regarding `session` and `memory` which correspond to its own health indicators monitoring the runtime memory status as well as the ticket registry repository:
+...and the full output shall then be something as follows where CAS presents some additional health information regarding `session` and `memory` which correspond to its own health indicators monitoring the runtime memory status as well as the ticket registry repository:
 
 ```json
 {
@@ -260,7 +260,7 @@ $ curl -u wade:de@dp00L https://login.example.org/cas/status/health | jq
 }
 ```
 
-...and if you happen to be wrong, you might be presented with:
+...and if you happen to submit an incorrect authentication request with bad credentials, you might be presented with:
 
 ```json
 {
@@ -274,13 +274,114 @@ $ curl -u wade:de@dp00L https://login.example.org/cas/status/health | jq
 
 Of course, this is just basic authentication with a pre-defined pair of credentials. You can get the endpoints secured with a CAS server as well, or you can try basic authentication with an underlying account store backed by LDAP or JDBC...or as always, you can take full advantage of Spring Security in all its glory and design your authentication scheme for the win.
 
+# Looking Ahead
+
+As an FYI, as of this writing, the CAS version at hand depends on Spring Boot `1.5.x` to deliver endpoints and get them secured. Starting with Spring Boot v2, there is no separate auto-configuration for user-defined endpoints and actuator endpoints. Security is strictly controlled and provided by Spring Security if the library is included in CAS and found on the classpath whereby the auto-configuration secures all endpoints by default. Spring Boot then relies on Spring Security’s content-negotiation strategy to determine whether to use a basic authentication mode or form-based login and just like before, a user with a default username and generated password is added, which can be used to log in.
+
+All of that is to say, endpoint security is one area that might get heavily refactored and redesigned in the future once CAS upgrades to Spring Boot v2. This would basically affect CAs configuration in the way that `enabled` or `sensitive` properties are defined; they might get removed or renamed, etc. There will be follow-up announcements and notes on the subject once the upgrade is available in due time and for now.
+
 # What About...?
 
+- [CAS WAR Overlays](https://apereo.github.io/2018/06/09/cas53-gettingstarted-overlay/)
 - [CAS Multifactor Authentication with Duo Security](https://apereo.github.io/2018/01/08/cas-mfa-duosecurity/)
 - [CAS 5 LDAP AuthN and Jasypt Configuration](https://apereo.github.io/2017/03/24/cas51-ldapauthnjasypt-tutorial/)
 - [CAS 5 SAML2 Delegated AuthN Tutorial](https://apereo.github.io/2017/03/22/cas51-delauthn-tutorial/)
 - [CAS User Interface Customizations](http://localhost:4000/2018/06/10/cas-userinterface-customizations/)
 - [CAS Multifactor Authentication with Google Authenticator](https://apereo.github.io/2018/06/10/cas-mfa-google-authenticator/)
+
+# Monitors
+
+CAS monitors may be defined to report back the health status of the ticket registry and other underlying connections to systems that are in use by CAS. Spring Boot offers a number of monitors known as `HealthIndicator`s that are activated given the presence of specific settings (i.e. `spring.mail.*`). CAS itself provides a number of other monitors based on the same component whose action may require a combination of a particular dependency module and its relevant settings.
+
+As you saw in the output of the `health` endpoint, the default monitors report back brief memory and ticket stats. As an exercise, we shall configure CAS to monitor and report health information on the status of a mail server (the monitor is provided by Spring Boot natively) and we may also let CAS monitor the status of an LDAP server provided where the monitor is this time brought to you by CAS.
+
+## Mail Server Monitor
+
+First, let's get the mail server configured in CAS:
+
+```properties
+spring.mail.host=localhost
+spring.mail.port=25000
+spring.mail.testConnection=true
+```
+
+With the above settings, at runtime CAS begins to create and bootstrap components that need to deal with a mail server and just as well, a special health monitor will get auto-configured to watch the server status and report back results via the `health` endpoint.
+
+<div class="alert alert-info">
+<strong>Saving Lives</strong><br/>This is the power of auto-configuration, saving you time and energy and abstracting you away from all the confusing internal details. Talk about improving productivity and saving lives, the entire configuration of a mail server connector as well as its relevant monitor is done using just a few simple settings!</div>
+
+So, let's get us a health report:
+
+```bash
+$ curl -u wade:de@dp00L https://login.example.org/cas/status/health | jq
+```
+
+...and we shall receive the same sort of report except for this time we have a small blob for `mail`:
+
+```json
+...
+"mail": {
+    "status": "UP",
+    "location": "localhost:25000"
+},
+...
+```
+
+..and if you shut the server down, you might receive:
+
+```json
+...
+"mail": {
+    "status": "DOWN",
+    "location": "localhost:25000",
+    "error": "com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25000; timeout -1"
+  },
+  ...
+```
+
+## LDAP Monitor
+
+First, let's add the following dependency to ensure CAS can connect to an LDAP server:
+
+```xml
+<dependency>
+    <groupId>org.apereo.cas</groupId>
+    <artifactId>cas-server-support-ldap-monitor</artifactId>
+    <version>${cas.version}</version>
+</dependency>
+```
+
+...and let's teach CAS where our LDAP server lives:
+
+```properties
+cas.monitor.ldap.ldapUrl=ldap://localhost:389
+cas.monitor.ldap.useSsl=false
+```
+
+<div class="alert alert-info">
+<strong>Use What You Need</strong><br/>Do <b>NOT</b> copy/paste the entire collection of LDAP settings, etc into your CAS configuration; rather pick only the properties that you need. If you do not know what a setting does or means, it's generally safe to ignore it and trust the defaults. This is similar to ordering food; if you have never tried jellyfish, it would be fairly adventurous or dangerous to put that in your burger! Go with what you know and adjust as necessary.</div>
+
+
+So, once again let's get us a health report:
+
+```bash
+$ curl -u wade:de@dp00L https://login.example.org/cas/status/health | jq
+```
+
+...and we shall receive the same sort of report except for this time we have a small blob for `pooledLdapConnectionFactory`:
+
+```json
+...
+"pooledLdapConnectionFactory": {
+  "status": "UP",
+  "message": "OK",
+  "activeCount": 0,
+  "idleCount": 3
+},
+...
+```
+
+Additional monitors and health indicators may get added in future version of CAS. Consult the CAS documentation for more info.
 
 # So...
 

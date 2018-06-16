@@ -134,3 +134,7 @@ exclude: [vendor]
 tipue_search:
   include:
     pages: true
+
+exclude: [
+  ".history", ".vscode", ".sass-cache"
+]
