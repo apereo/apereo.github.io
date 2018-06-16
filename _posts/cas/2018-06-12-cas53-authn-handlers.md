@@ -194,7 +194,7 @@ public IPersonAttributeDao fancyPersonAttributeDao() {
 
 Note that each attribute repository implementation may be assigned a specific *order* which is a numeric weight that determines its execution position once attribute resolution kicks into action. This is a bit you can usually ignore, but it becomes rather important if you decide to design multiple repository implementations whose execution depends on one another's results. (i.e one repository might need an attribute value from another before it can run its own query).
 
-So, once defined we can to register it with CAS inside the same configuration class:
+So, once defined we can register it with CAS inside the same configuration class:
 
 ```java
 @ConditionalOnMissingBean(name = "fancyAttributeRepositoryPlanConfigurer")
