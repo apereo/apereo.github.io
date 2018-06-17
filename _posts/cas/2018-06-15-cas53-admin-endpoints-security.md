@@ -280,15 +280,6 @@ As an FYI, as of this writing, the CAS version at hand depends on Spring Boot `1
 
 All of that is to say, endpoint security is one area that might get heavily refactored and redesigned in the future once CAS upgrades to Spring Boot v2. This would basically affect CAs configuration in the way that `enabled` or `sensitive` properties are defined; they might get removed or renamed, etc. There will be follow-up announcements and notes on the subject once the upgrade is available in due time and for now.
 
-# What About...?
-
-- [CAS WAR Overlays](https://apereo.github.io/2018/06/09/cas53-gettingstarted-overlay/)
-- [CAS Multifactor Authentication with Duo Security](https://apereo.github.io/2018/01/08/cas-mfa-duosecurity/)
-- [CAS 5 LDAP AuthN and Jasypt Configuration](https://apereo.github.io/2017/03/24/cas51-ldapauthnjasypt-tutorial/)
-- [CAS 5 SAML2 Delegated AuthN Tutorial](https://apereo.github.io/2017/03/22/cas51-delauthn-tutorial/)
-- [CAS User Interface Customizations](http://localhost:4000/2018/06/10/cas-userinterface-customizations/)
-- [CAS Multifactor Authentication with Google Authenticator](https://apereo.github.io/2018/06/10/cas-mfa-google-authenticator/)
-
 # Monitors
 
 CAS monitors may be defined to report back the health status of the ticket registry and other underlying connections to systems that are in use by CAS. Spring Boot offers a number of monitors known as `HealthIndicator`s that are activated given the presence of specific settings (i.e. `spring.mail.*`). CAS itself provides a number of other monitors based on the same component whose action may require a combination of a particular dependency module and its relevant settings.
@@ -382,6 +373,16 @@ $ curl -u wade:de@dp00L https://login.example.org/cas/status/health | jq
 ```
 
 Additional monitors and health indicators may get added in future version of CAS. Consult the CAS documentation for more info.
+
+
+# What About...?
+
+- [CAS WAR Overlays](https://apereo.github.io/2018/06/09/cas53-gettingstarted-overlay/)
+- [CAS Multifactor Authentication with Duo Security](https://apereo.github.io/2018/01/08/cas-mfa-duosecurity/)
+- [CAS 5 LDAP AuthN and Jasypt Configuration](https://apereo.github.io/2017/03/24/cas51-ldapauthnjasypt-tutorial/)
+- [CAS 5 SAML2 Delegated AuthN Tutorial](https://apereo.github.io/2017/03/22/cas51-delauthn-tutorial/)
+- [CAS User Interface Customizations](http://localhost:4000/2018/06/10/cas-userinterface-customizations/)
+- [CAS Multifactor Authentication with Google Authenticator](https://apereo.github.io/2018/06/10/cas-mfa-google-authenticator/)
 
 # So...
 
