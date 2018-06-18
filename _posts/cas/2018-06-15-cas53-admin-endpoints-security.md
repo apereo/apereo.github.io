@@ -318,7 +318,7 @@ $ curl -u wade:de@dp00L https://login.example.org/cas/status/health | jq
 ...
 ```
 
-..and if you shut the server down, you might receive:
+...and if you shut the server down, you might receive:
 
 ```json
 ...
@@ -326,8 +326,8 @@ $ curl -u wade:de@dp00L https://login.example.org/cas/status/health | jq
     "status": "DOWN",
     "location": "localhost:25000",
     "error": "com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25000; timeout -1"
-  },
-  ...
+},
+...
 ```
 
 ## LDAP Monitor
