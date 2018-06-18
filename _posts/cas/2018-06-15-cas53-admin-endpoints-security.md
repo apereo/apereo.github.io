@@ -278,7 +278,7 @@ Of course, this is just basic authentication with a pre-defined pair of credenti
 
 As an FYI, as of this writing, the CAS version at hand depends on Spring Boot `1.5.x` to deliver endpoints and get them secured. Starting with Spring Boot v2, there is no separate auto-configuration for user-defined endpoints and actuator endpoints. Security is strictly controlled and provided by Spring Security if the library is included in CAS and found on the classpath whereby the auto-configuration secures all endpoints by default. Spring Boot then relies on Spring Security’s content-negotiation strategy to determine whether to use a basic authentication mode or form-based login and just like before, a user with a default username and generated password is added, which can be used to log in.
 
-All of that is to say, endpoint security is one area that might get heavily refactored and redesigned in the future once CAS upgrades to Spring Boot v2. This would basically affect CAs configuration in the way that `enabled` or `sensitive` properties are defined; they might get removed or renamed, etc. There will be follow-up announcements and notes on the subject once the upgrade is available in due time and for now.
+All of that is to say, endpoint security is one area that might get heavily refactored and redesigned in the future once CAS upgrades to Spring Boot v2. This would basically affect CAS configuration in the way that `enabled` or `sensitive` properties are defined; they might get removed or renamed, etc. There will be follow-up announcements and notes on the subject once the upgrade is available in due time and for now.
 
 # Monitors
 
