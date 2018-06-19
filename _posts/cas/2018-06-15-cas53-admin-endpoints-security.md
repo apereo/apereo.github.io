@@ -372,7 +372,7 @@ $ curl -u wade:de@dp00L https://login.example.org/cas/status/health | jq
 ...
 ```
 
-Additional monitors and health indicators may get added in future version of CAS. Consult the CAS documentation for more info.
+Additional monitors and health indicators may get added in future CAS versions. Consult the CAS documentation for more info.
 
 
 # What About...?
