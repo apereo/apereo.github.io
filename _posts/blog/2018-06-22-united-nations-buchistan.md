@@ -21,4 +21,6 @@ tags:       [Blog]
 - Ah, that is so wonderful to hear. When?
 - Some time.
 
+#HappyFriday
+
 [Misagh Moayyed](https://twitter.com/misagh84)
