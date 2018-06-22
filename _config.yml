@@ -4,7 +4,7 @@ email:       info@apereo.org
 author:      Apereo Project Participants
 description: "This is a blog managed and edited by the Apereo project participants. It is typically used to post project updates, announce news, etc."
 baseurl:     ""
-date_format: "%b %-d, %Y"
+date_format: "%A, %b %-d, %Y"
 url:         "https://apereo.github.io"
 
 # Google services
