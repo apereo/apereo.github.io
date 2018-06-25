@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      uPortal annual report, June 2016 edition
+title:      uPortal annual report, June 2018 edition
 summary:    Ecoysystem. Releases.  Community. Fiscal responsibility.
 tags:       [uPortal, Apereo]
 ---
