@@ -5,6 +5,11 @@ summary:    A short and sweet CAS 5 guide on how to get CAS Protocol v2 to act a
 tags:       [CAS]
 ---
 
+<div class="alert alert-success">
+  <strong>Collaborate</strong><br/>The blog is managed and hosted on GitHub. If you wish to update the contents of this post or if you have found an inaccuracy and wish to make corrections, we recommend that you please submit a pull request to <a href="https://github.com/apereo/apereo.github.io">this repository</a>.
+</div>
+
+
 The [third specification of the CAS protocol](https://apereo.github.io/cas/5.1.x/protocol/CAS-Protocol.html) was released around the time CAS `v4.0.0` came into existence. The primary objective of the revision was to bring the spec up to speed with common community practices and extensions, one of which most significantly was the ability to let CAS release attributes to authorized relying parties and applications.
 
 In order to preserve protocol backward-compatibility, a new `/p3/serviceVaildate` endpoint was added whose only job was to release attributes to be consumed by clients. This way, existing CAS clients unable to parse the new `<cas:attributes>` block in the validation response could continue to function as they did. Newer clients could simply hit the new endpoint to receive attributes.
@@ -75,7 +80,7 @@ public class CustomConfiguration
 
 Same exact strategy as `5.0.x`, except that now you're given the freedom to put the Java component anywhere inside any package in the overlay project, provided it's [correctly registered](https://apereo.github.io/cas/development/installation/Configuration-Management-Extensions.html) with the CAS auto configuration engine.
 
-## CAS 5.2.x
+## CAS 5.2.x, 5.3.x
 
 All that is still way too much work,  right? So starting with CAS `5.2.x` all one should have to do is to introduce the following setting in the `cas.properties`:
 
