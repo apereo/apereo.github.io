@@ -70,7 +70,7 @@ public class SomethingConfiguration implements CasWebflowExecutionPlanConfigurer
     @Bean
     @DependsOn("defaultWebflowConfigurer")
     public CasWebflowConfigurer somethingWebflowConfigurer() {
-        return new ConsentWebflowConfigurer(flowBuilderServices, loginFlowDefinitionRegistry,
+        return new SomethingWebflowConfigurer(flowBuilderServices, loginFlowDefinitionRegistry,
             applicationContext, casProperties);
     }
 }
