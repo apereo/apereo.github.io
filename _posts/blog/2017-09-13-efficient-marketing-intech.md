@@ -5,7 +5,9 @@ summary:    A short and sweet reminder and explanation of how marketing in tech 
 tags:       [Blog]
 ---
 
+<center>
 ![](http://assets.amuniversal.com/2d9dac40554801363c91005056a9545d)
+</center>
 
 If you are into open source and a bit of a neophiliac when it comes to discovering new software, chances are you have read something akin to the following statements etched proudly at the top of some project's README on GitHub:
 
