@@ -68,11 +68,16 @@ public class SomethingConfiguration implements CasWebflowExecutionPlanConfigurer
 
     @ConditionalOnMissingBean(name = "somethingWebflowConfigurer")
     @Bean
-    @DependsOn("defaultWebflowConfigurer")
     public CasWebflowConfigurer somethingWebflowConfigurer() {
         return new SomethingWebflowConfigurer(flowBuilderServices, loginFlowDefinitionRegistry,
             applicationContext, casProperties);
     }
+    
+    @Override
+    public void configureWebflowExecutionPlan(final CasWebflowExecutionPlan plan) {
+        plan.registerWebflowConfigurer(somethingWebflowConfigurer());
+    }
+    
 }
 ```
 
