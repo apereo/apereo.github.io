@@ -152,7 +152,7 @@ to a naive reader what meaning that `!` is trying to convey.
 Question: how would a screen reader or other accessibility tool treat that
 sigil?
 
-### The ALL-CAPS idea
+### The [ALL-CAPS idea][]
 
 ```
 FIX: correct spelling of referrer in header
