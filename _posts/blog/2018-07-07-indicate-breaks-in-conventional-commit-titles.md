@@ -208,6 +208,8 @@ However you think this ought to play out, engage
 
 + [Bookmarks about Conventional Commits][Conventional Commits Pinboard tag]
 
+Author: [Andrew Petro](https://twitter.com/awpetro)
+
 [ALL-CAPS idea]: https://github.com/conventional-changelog/conventionalcommits.org/pull/63
 [BREAK prefix idea]: https://github.com/conventional-changelog/conventionalcommits.org/pull/64
 [Conventional Commits]: https://conventionalcommits.org/
