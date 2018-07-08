@@ -31,7 +31,7 @@ Better:
 
 or
 
-[`!feat: split ROLE_VIEW_ABSENCE_HISTORIES`][glyph idea]
+[`!feat: split ROLE_VIEW_ABSENCE_HISTORIES`][sigil idea]
 
 or
 
@@ -150,7 +150,7 @@ A sigil is delightfully succinct. However, it might not be immediately apparent
 to a naive reader what meaning that `!` is trying to convey.
 
 Question: how would a screen reader or other accessibility tool treat that
-glyph?
+sigil?
 
 ### The ALL-CAPS idea
 
@@ -162,7 +162,7 @@ This solution consumes zero characters. It's also relatable in that ALL-CAPS ON
 THE INTERNET IS SHOUTING and that's just the idea, to shout out the most
 important changes so that adopters can more readily identify the changes that
 are breaking their usages. I think it's likely as readable and self-evident as
-a glyph, and it's elegant that it consumes zero characters.
+a sigil, and it's elegant that it consumes zero characters.
 
 However, Conventional Commits has not to date specified the capitalization of
 _type_. Some have argued for specifying the capitalization, or specifying that
