@@ -79,7 +79,7 @@ Per the CAS documentation, you need to decide the type of registry that would ho
 
 # Multifactor Authentication Bypass
 
-Once the above conditions determine that Google Authenticator may be activated as the next step in the authentication flow, CAs presents bypass rules are then consulted to calculate whether the provider should ignore the request and skip MFA conditionally. There are a variety of strategies you may choose to bypass multifactor authentication, one of which is a more static strategy of defining the ignore rule at the service policy level:
+Once the above conditions determine that Google Authenticator may be activated as the next step in the authentication flow, CAS presents bypass rules are then consulted to calculate whether the provider should ignore the request and skip MFA conditionally. There are a variety of strategies you may choose to bypass multifactor authentication, one of which is a more static strategy of defining the ignore rule at the service policy level:
 
 ```json
 {
