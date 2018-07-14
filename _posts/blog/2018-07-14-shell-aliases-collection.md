@@ -147,7 +147,7 @@ setjdk 11
 
 ```bash
 function mysql() {
-    docker run --name midpoint -p3306:3306 --env="MYSQL_ROOT_PASSWORD=password" --env="MYSQL_DATABASE=test" -d mysql
+    docker run --name mysql -p3306:3306 --env="MYSQL_ROOT_PASSWORD=password" --env="MYSQL_DATABASE=test" -d mysql
 }
 
 function sqlserver() {
@@ -155,7 +155,7 @@ function sqlserver() {
 }
 ```
 
-## Gradle 
+## Gradle
 
 ### Dependency Insight
 
