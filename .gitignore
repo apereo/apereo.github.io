@@ -4,3 +4,4 @@ _site/
 .vscode
 \.ruby-version
 .gradle
+.jekyll-metadata
