@@ -15,9 +15,9 @@ tags:       [Apereo]
   handling, and demonstrating preparedness to handle harassment is the right
   thing to do.
 + Achieving diversity and inclusion is the **competitive thing to do**. Goodness
-  knows Apereo needs more and more active participants. Achieving the full
-  potential for drawing in participation will necessarily involve drawing from
-  a diverse pool and being especially inclusive.
+  knows Apereo and its projects need more and more active participants.
+  Achieving the full potential for drawing in participation will necessarily
+  involve drawing from a diverse pool and being especially inclusive.
 + There's **domain expertise** to be brought to bear. (There's opportunity for a
   consultant to make a difference).
 + It's easy to get codes of conduct wrong. (There's **risk** to mitigate).
