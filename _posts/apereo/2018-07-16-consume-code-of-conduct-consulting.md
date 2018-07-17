@@ -52,8 +52,9 @@ The [welcoming policy][] itself:
 
 + How and why does it differ from other organizations' and projects' codes of
   conduct?
-+ Why isn't it literally the [Contributor Covenant][], and what tradeoffs are
-  navigated in that difference?
++ Why isn't it literally the [Contributor Covenant][] or the
+  [Citizen Code of Conduct][], and what tradeoffs are navigated in that
+  difference?
 
 ### The resources available to Apereo around diversity and inclusion
 
@@ -129,7 +130,8 @@ as individual contributor
 [audrey prix fix]: http://lifeofaudrey.com/2018/07/16/coc-consult.html
 [Board working fast as can]: https://groups.google.com/a/apereo.org/d/msg/open/PU2vtcsJmCs/LcnXSa9oCQAJ
 [bylaws]: https://www.apereo.org/content/bylaws
-[Contrbutor Covenant]: https://www.contributor-covenant.org/
+[Citizen Code of Conduct]: http://citizencodeofconduct.org/
+[Contributor Covenant]: https://www.contributor-covenant.org/
 [coraline no oscon]: https://where.coraline.codes/blog/oscon/
 [otter tech d and i consulting]: https://otter.technology/
 [otter tech response training]: https://otter.technology/code-of-conduct-training/
