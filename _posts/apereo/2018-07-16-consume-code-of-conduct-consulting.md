@@ -29,7 +29,7 @@ tags:       [Apereo]
 ## Who might consult
 
 + Audrey Eschright, who
-  [might be offering a fixed price code of conduct checkeup][audrey prix fix]
+  [offers a fixed price ($200) code of conduct checkup][audrey prix fix]
   that might be a good fit for Apereo getting started. I expect her
   [deeper consulting offerings][audrey deeper] would be necessary, but maybe the
   most important thing about getting help is to start getting it and the fixed
@@ -126,7 +126,7 @@ on this point of political affiliations and beliefs as protected class.
 as individual contributor
 
 [audrey deeper]: http://lifeofaudrey.com/consulting.html
-[audrey prix fix]: https://twitter.com/ameschright/status/1018573987947864064
+[audrey prix fix]: http://lifeofaudrey.com/2018/07/16/coc-consult.html
 [Board working fast as can]: https://groups.google.com/a/apereo.org/d/msg/open/PU2vtcsJmCs/LcnXSa9oCQAJ
 [bylaws]: https://www.apereo.org/content/bylaws
 [Contrbutor Covenant]: https://www.contributor-covenant.org/
