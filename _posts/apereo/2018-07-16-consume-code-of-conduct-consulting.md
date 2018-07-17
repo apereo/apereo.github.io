@@ -28,7 +28,7 @@ tags:       [Apereo]
 
 ## Who might consult
 
-+ [Audrey Eschright], who
++ Audrey Eschright, who
   [might be offering a fixed price code of conduct checkeup][audrey prix fix]
   that might be a good fit for Apereo getting started. I expect her
   [deeper consulting offerings][audrey deeper] would be necessary, but maybe the
