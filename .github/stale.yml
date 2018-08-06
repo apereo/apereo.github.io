@@ -31,7 +31,7 @@ markComment: >
 
 # Comment to post when closing a stale Issue or Pull Request.
 closeComment: >
-  This patch/patch has been automatically closed because it has not had
+  This issue/patch has been automatically closed because it has not had
   recent activity. If you wish to resume work, please re-open the pull request
   and continue as usual. Thank you for your contributions.
 
