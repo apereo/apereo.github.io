@@ -107,7 +107,7 @@ After all authentication flows have completed, the interrupt webflow kicks in an
 
 That's it. 
 
-_I should note however that our requirement later on changed to present the same sort of warning **before** any of the authentication flows have commenced. An interesting nuance indeed, as the user must face the warning page before CAS presents the login screen and family in the browser, and one we might cover in a separate blog post._
+_I should note that our requirement later on changed to present the same sort of warning **before** any of the authentication flows have commenced. An interesting nuance indeed, as the user must face the warning page before CAS presents the login screen and family in the browser, and one we might cover in a separate blog post._
 
 
 ## Finale
