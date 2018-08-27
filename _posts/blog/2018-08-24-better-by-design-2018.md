@@ -144,7 +144,7 @@ action (what do you currently do).
 "What would have gotten you to stay?" -->
 "What did you hope this product would have done for you?"
 
-## Sharing findings with stakeholders
+### Sharing findings with stakeholders
 
 Your findings must live on without you.
 
