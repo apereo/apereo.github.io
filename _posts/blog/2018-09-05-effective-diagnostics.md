@@ -101,32 +101,40 @@ With enough collected data, you should, of course, ask for help and guidance as 
 A very good discipline is to use a starting template for sharing such reports. A template is basically a stubbed out application, categorized with a series of questions relevant for diagnostics where you fill in the gaps and state the problem description. Again, whether or not the project or community asks this of you, try to provide the following data points:
 
 - *Problem Statement*
+
 State the problem description. *What* are you trying to do? *Why* are you doing it at all? This is where you behind to explain the use case at hand, and circumstances that led you to it.
 
 Be brief but precise:
 
-- Avoid statements such as *We have X and it doesn't work*. That statement simply doesn't work.
-- Reformulate statements such as *Is it possible to do X?* to explain the why, the what and the how.
+1. Avoid statements such as *We have X and it doesn't work*. That statement simply doesn't work.
+2. Reformulate statements such as *Is it possible to do X?* to explain the why, the what and the how.
 
 - *Expected Outcome*
+
 As the title suggests, what do you expect to happen? What should be the end result in your view?
 
 - *Current Outcome*
+
 As the title suggests, what do you see happening today?
 
 - *Reproduce*
+
 How exactly should one go about reproducing the current outcome? Do you have a series of test cases that demonstrate some faulty behavior? Do you have a sample, a test application to exhibit the issue at hand?
 
 - *Diagnostics*
+
 What steps have you taken to identify and diagnose what you consider to be an issue? How far down the rabbit hole have you traveled to debug the code, analyze the logs, find comparable solutions and track breaking change and incompatibility across software releases?
 
 - *Workarounds*
+
 Do you have a solution at hand today that does the job? Have you experimented with code and configuration to determine the root cause and come up with a suggestion on how X may be improved, fixed, etc?
 
 - *Logs*
+
 It is important that you provide the full story given to you by log data. You may either attach a clean log file that shows the faulty sequence of operations from start to finish, or (and you should avoid this where you can) you may decide to paste relevant sections of the log although this option is usually risky since the portions you think are relevant may not, in fact, be the entire story. If you do decide to share snippets of logs, remember to *not* paste the entire log output into a forum or description field, and learn to format and organize the data so it can be easily and readily understood by others quickly.
 
 - *Environment*
+
 Describe the environment you have today. What are the key components at play here? What precise version of the software do you run? Where did you download it? How old is it and have you considered upgrading? How did you install it? What changes have been applied to the software or its surrounding ecosystem, etc?
 
 Stick to a template. Less guesswork leads to quicker responses and better outcomes. Practice.
