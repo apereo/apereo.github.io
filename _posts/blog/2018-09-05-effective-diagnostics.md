@@ -157,4 +157,6 @@ Believe me, it works. (The technique, not the dubstep).
 
 I hope this review was of some help to you. This is by no means a comprehensive list; a lot of is subjective and could be entirely inapplicable to you, your personality and work etiquette. Either way, if you have other tactics and strategies to share please feel free to edit this post as best you can.
 
+Also, many thanks to [@jtgasper3](https://github.com/jtgasper3) for reviewing this post and providing feedback.
+
 [Misagh Moayyed](https://twitter.com/misagh84)
