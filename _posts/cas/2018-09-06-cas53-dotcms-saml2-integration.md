@@ -10,7 +10,7 @@ tags:       [CAS]
 </div>
 
 <div class="alert alert-info">
-  <strong>Contributed Content</strong><br/>Keith Conger of Colorado College, an active member of the CAS community, was kind contribute this guide.
+  <strong>Contributed Content</strong><br/>Keith Conger of Colorado College, an active member of the CAS community, was kind enough to contribute this guide.
 </div>
 
 dotCMS is an open source content management system (CMS) written in Java for managing content and content-driven sites and applications. As a SAML2 service provider, dotCMS can be integrated with CAS running as a SAML identity provider and this blog post provides a quick walkthrough of how to make that integration possible.
@@ -73,6 +73,6 @@ A few things to point out:
 
 # Finale
 
-Thanks to Keith Conger of Colorado College who was kind enough share the above integration notes. If you too have an integration with a well-known SAML2 service provider, please consider sharing that guide in form of a blog post here as well.
+Thanks to Keith Conger of Colorado College who was kind enough to share the above integration notes. If you too have an integration with a well-known SAML2 service provider, please consider sharing that guide in form of a blog post here as well.
 
 [Misagh Moayyed](https://twitter.com/misagh84)
