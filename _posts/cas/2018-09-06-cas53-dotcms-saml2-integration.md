@@ -67,7 +67,7 @@ The JSON file to contain the dotCMS registration record would be as follows:
 A few things to point out:
 
 - You will of course need to adjust the `serviceId` and `metadataLocation` to match your data and dotCMS instance.
-- Make sure the `AssertionConsumerService` endpoint in the dotCMS metadata contains the ` urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect` binding.
+- Make sure the `AssertionConsumerService` endpoint in the dotCMS metadata contains the `urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect` binding.
 - Make sure CAS has retrieved the allowed attributes (i.e. `mail`, `givenName`, etc) listed in the JSON definition file.
 - Regarding the `memberOf` attribute, the values fetched from the directory are typically in the format of `CN=WebAdmin,OU=something,OU=something,DC=somewhere,DC=edu`. The service provider requires only the `CN` portion of the attribute value where CAS would need to produce `<saml2:AttributeValue>WebAdmin</saml2:AttributeValue>` instead of `<saml2:AttributeValue>CN=WebAdmin,OU=something,OU=something,DC=somewhere,DC=edu</saml2:AttributeValue>`. This bit is handled via the `RegisteredServiceMutantRegexAttributeFilter` element in the JSON file.
 
