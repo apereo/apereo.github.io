@@ -102,7 +102,7 @@ A very good discipline is to use a starting template for sharing such reports. A
 
 - *Problem Statement*
 
-State the problem description. *What* are you trying to do? *Why* are you doing it at all? This is where you behind to explain the use case at hand, and circumstances that led you to it.
+State the problem description. *What* are you trying to do? *Why* are you doing it at all? This is where you begin to explain the use case at hand, and circumstances that led you to it.
 
 Be brief but precise:
 
@@ -141,7 +141,7 @@ Stick to a template. Less guesswork leads to quicker responses and better outcom
 
 # Eat, Sleep, Think
 
-This particular item may not be all too relevant when it comes to troubleshooting software, as issue resolution is usually time-sensitive and a task with a fair amount of pressure and stress, but I personally find this to be very valuable during design or coding session. At times, where you are stumped for a solution and have been staring at the screen and logs for a long time, unsure of how to connect certain pieces together and pigeonholed into a particular line of thinking, it is very useful to leave it all behind for a period of time and switch to a more *physical activity*. Go for a walk around the neighborhood's park, take a nap, shoot a few free throws, etc and allow your brain to reset itself and subconsciously work on the problem in the background. Once you come back, you would have the equivalent of a second pair of eyes and a fresh perspective on how to attack the problem.
+This particular item may not be all too relevant when it comes to troubleshooting software, as issue resolution is usually time-sensitive and a task with a fair amount of pressure and stress, but I personally find this to be very valuable during design or coding sessions. At times, where you are stumped for a solution and have been staring at the screen and logs for a long time, unsure of how to connect certain pieces together and pigeonholed into a particular line of thinking, it is very useful to leave it all behind for a period of time and switch to a more *physical activity*. Go for a walk around the neighborhood's park, take a nap, shoot a few free throws, etc and allow your brain to reset itself and subconsciously work on the problem in the background. Once you come back, you would have the equivalent of a second pair of eyes and a fresh perspective on how to attack the problem.
 
 In the same category, I find that re-iterating the problem and insofar solutions using a whiteboard, pen/pencil, chatting with a colleague or just about any other type of physical activity outside the use of electronics has the same effect. This effectively tickles your brain to get moving on a solution without you actively realizing it, and of course, a short break every once in a while can do a lot of good. My personal best is around 40-minute mark where I get up, walk around and try to do something totally different and silly, like attempting to train the pigeons outside to dubstep. 
 
@@ -155,7 +155,7 @@ Believe me, it works. (The technique, not the dubstep).
 
 # So...
 
-I hope this review was of some help to you. This is by no means a comprehensive list; a lot of is subjective and could be entirely inapplicable to you, your personality and work etiquette. Either way, if you have other tactics and strategies to share please feel free to edit this post as best you can.
+I hope this review was of some help to you. This is by no means a comprehensive list; a lot of it is subjective and could be entirely inapplicable to you, your personality and work etiquette. Either way, if you have other tactics and strategies to share please feel free to edit this post as best you can.
 
 Also, many thanks to [@jtgasper3](https://github.com/jtgasper3) for reviewing this post and providing feedback.
 
