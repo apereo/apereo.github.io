@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Apereo CAS - MaxMind Geo2IP ISP Integration
-summary:    Learn how you may determine the Internet Service Provider, organization name, and autonomous system organization and number associated with the user's IP address in CAS using MaxMind services and present warnings in the authentication flow for the end-user if an IP address is matched
+summary:    Learn how you may determine the Internet Service Provider, organization name, and autonomous system organization and number associated with the user's IP address in CAS using MaxMind services and present warnings in the authentication flow for the end-user if an IP address is matched.
 tags:       [CAS]
 ---
 
@@ -79,7 +79,7 @@ public class MaxmindInterruptInquirer implements InterruptInquirer {
 
     public MaxmindInterruptInquirer(final Resource ispResource) {
         try {
-            final File ispFile = ispResource.getFile();
+            File ispFile = ispResource.getFile();
             ispDatabaseReader = new DatabaseReader.Builder(ispFile).build();
         } catch (final Exception e) {
             throw new RuntimeException(e);
@@ -87,12 +87,12 @@ public class MaxmindInterruptInquirer implements InterruptInquirer {
     }
 
     @Override
-    public InterruptResponse inquire(final Authentication authentication,
-                                     final RegisteredService registeredService,
-                                     final Service service,
-                                     final Credential credential) {
-        final HttpServletRequest request = WebUtils.getHttpServletRequestFromExternalWebflowContext();
-        final String address = request.getRemoteAddr();
+    public InterruptResponse inquire(Authentication authentication,
+                                     RegisteredService registeredService,
+                                     Service service,
+                                     Credential credential) {
+        HttpServletRequest request = WebUtils.getHttpServletRequestFromExternalWebflowContext();
+        String address = request.getRemoteAddr();
         /*
             Check the address in Maxmind database and return back the proper response
         */
