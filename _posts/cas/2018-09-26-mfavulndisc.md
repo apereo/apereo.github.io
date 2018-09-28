@@ -75,3 +75,5 @@ please contact `security@apereo.org` or `cas-appsec-public@apereo.org`.
 
 * [Original Announcement](https://groups.google.com/a/apereo.org/forum/#!topic/cas-appsec-public/zXqxDN9rB8A)
 * [CAS Security Vulnerability Response Model](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html)
+
+[Jérôme LELEU](https://github.com/leleuj)
