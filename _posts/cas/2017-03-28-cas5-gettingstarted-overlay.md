@@ -113,7 +113,7 @@ What do these commands do?
 | `copy`                  | Copies the configuration from the local `etc/cas/config` directory to `/etc/cas/config`. [See this guide](https://apereo.github.io/cas/5.0.x/installation/Configuration-Server-Management.html) to learn more.
 | `clean`                 | Deletes any previously-built and leftover artifacts from the `target` directory.
 | `package`               | Runs `clean` and `copy`. Then packages the CAS web application artifact and run through the overlay to inject local customizations. The outcome is a `target/cas.war` file which is ready to be deployed.
-| `run`                   | Invokves `package` and then deploys and runs the CAS web application via its own embedded server container.
+| `run`                   | Invokes `package` and then deploys and runs the CAS web application via its own embedded server container.
 | `debug`                 | Same thing as `run`, except that you can remote-debug the CAS web application over port `5000`.
 | `bootrun`               | Same thing as `run`, except the deployment is managed by the [Spring Boot Maven plugin](http://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html). This command has very specialized and limited use cases. Please [review this issue](https://github.com/apereo/cas/issues/2334) to learn more.
 
