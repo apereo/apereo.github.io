@@ -28,6 +28,8 @@ Our starting position is based on the following:
 
 ## Configuration
 
+### RADIUS Setup
+
 The setup is fairly simple, given CAS does all of the heavy-lifting. First, we need to prepare the CAS overlay with the right set of dependencies to enable RADIUS functionality:
 
 ```xml
@@ -63,6 +65,8 @@ cas.authn.mfa.radius.id=mfa-radius
 
 That should do it. When credentials are validated via RADIUS as part of primary authentication, the user is routed to the next screen to enter the code provided by the RADIUS server via SMS, etc. Once entered, CAS will submit the code as well as any previous session state back to the RADIUS server which would have it validate the request and produce a successful response that allows CAS to collect attributes and establish a single sign-on session.
 
+### Test RADIUS
+
 To test the basic tenants of this scenario using CAS APIs, the following code snippet may be used as an example:
 
 ```java
@@ -85,6 +89,31 @@ Optional<Serializable> state = Optional.of(response.getAttributes()
 RadiusResponse mfaResponse = server.authenticate("username", code, state);
 System.out.println(mfaResponse);
 ```
+
+### LDAP Attributes
+
+Since RADIUS is used to handle primary authentication, we are going to try to switch to LDAP in order to fetch for user attributes. The following configuration should do the job:
+
+```
+cas.authn.attributeRepository.ldap[0].attributes.uid=uid
+cas.authn.attributeRepository.ldap[0].attributes.displayName=displayName
+cas.authn.attributeRepository.ldap[0].attributes.cn=commonName
+cas.authn.attributeRepository.ldap[0].attributes.memberOf=memberOf
+
+cas.authn.attributeRepository.ldap[0].ldapUrl=ldap://...
+cas.authn.attributeRepository.ldap[0].useSsl=false
+cas.authn.attributeRepository.ldap[0].useStartTls=false
+cas.authn.attributeRepository.ldap[0].baseDn=dc=example,dc=edu
+cas.authn.attributeRepository.ldap[0].searchFilter=uid={0}
+cas.authn.attributeRepository.ldap[0].bindDn=...
+cas.authn.attributeRepository.ldap[0].bindCredential=...
+
+cas.personDirectory.principalAttribute=uid
+```
+
+We are instructing CAS to build the final authenticated Principal identified by the `uid` attribute (instead of whatever the user types into the login form as the credential id). We have some settings for the LDAP attribute repository that describe the LDAP server, and of course we have a section of settings for attribute mapping where we fetch `uid` and virtually rename/remap it to `uid` or we fetch `cn` and remap it to `commonName`, etc.
+
+After the primary authentication event, the attribute repository kicks in to determine the needed attributes for the user by running the query `searchFilter=uid={0}` against the LDAP server  where `{0}` is replaced with the authenticated user id (typically the credential id). Once the user entry is located, attributes are fetched and mapped and the authnticated `Principal` from the CAS perspective has an identifier determined by the uid` attribute as well as at most four extra person attributes attached to it, which can then be used for attribute release.
 
 ## Credits
 
