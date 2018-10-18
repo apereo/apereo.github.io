@@ -18,7 +18,7 @@ The ability to authenticate credentials using the RADIUS protocol and a complian
 - Submit the code and the previous `State` to the RADIUS server.
 - Validate the final response which should be an `Access-Accept` type, if all goes well.
 
-A patch [was submitted](https://github.com/apereo/cas/pull/3201/files) was submitted to the CAS project a while back to handle this exact scenario. This brief tutorial incorporates this patch into the CAS software and outlines the necessary configuration steps required to deliver multifactor authentication via RADIUS as noted above.
+A patch [was submitted](https://github.com/apereo/cas/pull/3201/files) to the CAS project a while back to handle this exact scenario. This brief tutorial incorporates this patch into the CAS software and outlines the necessary configuration steps required to deliver multifactor authentication via RADIUS as noted above.
 
 Our starting position is based on the following:
 
