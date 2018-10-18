@@ -113,7 +113,7 @@ cas.personDirectory.principalAttribute=uid
 
 We are instructing CAS to build the final authenticated Principal identified by the `uid` attribute (instead of whatever the user types into the login form as the credential id). We have some settings for the LDAP attribute repository that describe the LDAP server, and of course we have a section of settings for attribute mapping where we fetch `uid` and virtually rename/remap it to `uid` or we fetch `cn` and remap it to `commonName`, etc.
 
-After the primary authentication event, the attribute repository kicks in to determine the needed attributes for the user by running the query `searchFilter=uid={0}` against the LDAP server  where `{0}` is replaced with the authenticated user id (typically the credential id). Once the user entry is located, attributes are fetched and mapped and the authnticated `Principal` from the CAS perspective has an identifier determined by the uid` attribute as well as at most four extra person attributes attached to it, which can then be used for attribute release.
+After the primary authentication event, the attribute repository kicks in to determine the needed attributes for the user by running the query `uid={0}` against the LDAP server  where `{0}` is replaced with the authenticated user id (typically the credential id). Once the user entry is located, attributes are fetched and mapped and the authnticated `Principal` from the CAS perspective has an identifier determined by the uid` attribute as well as at most four extra person attributes attached to it, which can then be used for attribute release.
 
 ## Credits
 
