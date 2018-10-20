@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Apereo CAS - Spring Boot Admin Integration
-summary:    Learn to manage and monitor your Apereo CAS deployment using the Spring Boot Admin server using Spring Boot Actuator endpoints.
+summary:    Learn to manage and monitor your Apereo CAS deployment using the Spring Boot Admin server and Spring Boot Actuator endpoints.
 tags:       [CAS]
 ---
 
@@ -96,7 +96,7 @@ These settings are primarily offered and controlled by Spring Boot and accomplis
 - Secure all actuator endpoints using basic authentication where the master credentials are `casuser` and `Mellon`.
 
 <div class="alert alert-warning">
-  <strong>WATCH OUT!</strong><br/>The above collection of settings <strong>MUST</strong> only be used for demo purposes and serve as an <strong>EXAMPLE</strong>. It is not wise to enable and expose all actuator endpoints to the web and certainly, the security of the exposed endpoints should be taken into account very seriously. None of the CAS or Spring Boot actuator endpoints are enabled by default. For production you should carefully choose which endpoints to expose.</a>.
+  <strong>WATCH OUT!</strong><br/>The above collection of settings <strong>MUST</strong> only be used for demo purposes and serve as an <strong>EXAMPLE</strong>. It is not wise to enable and expose all actuator endpoints to the web and certainly, the security of the exposed endpoints should be taken into account very seriously. None of the CAS or Spring Boot actuator endpoints are enabled by default. For production you should carefully choose which endpoints to expose.
 </div>
 
 To verify, you can try to hit a few of the endpoints to see the behavior in action:
@@ -147,7 +147,7 @@ When you build and deploy CAS next, the Admin server should properly recognize t
 
 ![image](https://user-images.githubusercontent.com/1205228/47254710-ca49e200-d472-11e8-94e8-7cb5a711f5a7.png)
 
-There is a lot more you can do with the Admin server to add security, custom notification, etc. Please see the [Spring Boot Admin documentation](https://codecentric.github.io/spring-boot-admin/current).
+There is a lot more you can do with the Admin server to add security, custom notifications, etc. Please see the [Spring Boot Admin documentation](https://codecentric.github.io/spring-boot-admin/current).
 
 ## Finale
 
