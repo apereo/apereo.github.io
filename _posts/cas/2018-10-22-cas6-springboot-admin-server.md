@@ -62,7 +62,6 @@ There is nothing registered with the Admin server yet. As the next step, we will
 
 ## CAS Server Configuration
 
-
 Each individual CAS server is given the ability to auto-register itself with the Admin server. This is done using the following module that should go into the CAS overlay:
 
 ```gradle
