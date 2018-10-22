@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Apereo CAS - Fun with HashiCorp Consul
-summary:    Learn to register your CAS server deployment with HashiCorp Consul discovery server while also taking advantage of other advanced features such as the Consul Key Value Store for storing configuration and other metadata.
+summary:    Learn to register your CAS server deployment with HashiCorp Consul discovery server and take advantage of advanced features such as the Consul Key Value Store for storing configuration.
 tags:       [CAS]
 ---
 
