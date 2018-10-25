@@ -20,7 +20,7 @@ Our task list is rather short:
 # Environment
 
 - CAS `5.3.x`
-- [CAS Maven WAR Overlay](https://github.com/apereo/cas-overlay-template)
+- [CAS Maven WAR Overlay](https://github.com/apereo/cas-overlay-template) (The `5.3` branch specifically)
 
 # Configuring Authentication
 

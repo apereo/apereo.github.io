@@ -46,8 +46,8 @@ The `pom.xml` is composed of several sections. The ones you need to worry about 
 
 ```xml
 <properties>
-    <cas.version>5.3.0</cas.version>
-    <springboot.version>1.5.13.RELEASE</springboot.version>
+    <cas.version>5.3.5</cas.version>
+    <springboot.version>1.5.16.RELEASE</springboot.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <app.server>-tomcat</app.server>
@@ -206,6 +206,35 @@ logging.config=file:/etc/cas/config/log4j2.xml
 ## Keep Track
 
 It is **VERY IMPORTANT** that you contain and commit the entire overlay directory (save the obvious exclusions such as the `target` directory) into some sort of source control system, such as `git`. Treat your deployment just like any other project with tags, releases, and functional baselines.
+
+# LDAP Authentication
+
+We need to first establish a primary mode of validating credentials by sticking with [LDAP authentication](https://apereo.github.io/cas/development/installation/LDAP-Authentication.html). The strategy here, as indicated by the CAS documentation, is to declare the intention/module in the build script:
+
+```xml
+<dependency>
+     <groupId>org.apereo.cas</groupId>
+     <artifactId>cas-server-support-ldap</artifactId>
+     <version>${cas.version}</version>
+</dependency>
+```
+
+...and then configure the relevant `cas.authn.ldap[x]` settings for the directory server in use. Most commonly, that would translate into the following settings:
+
+```properties
+cas.authn.ldap[0].type=AUTHENTICATED
+cas.authn.ldap[0].ldapUrl=ldaps://ldap1.example.org
+cas.authn.ldap[0].baseDn=dc=example,dc=org
+cas.authn.ldap[0].searchFilter=cn={user}
+cas.authn.ldap[0].bindDn=cn=Directory Manager,dc=example,dc=org
+cas.authn.ldap[0].bindCredential=...
+```
+
+To resolve and fetch the needed attributes which will be used later by CAS for release, the simplest way would be to let LDAP authentication retrieve the attributes directly from the directory server.  The following setting allows us to do just that:
+
+```properties
+cas.authn.ldap[0].principalAttributeList=memberOf,cn,givenName,mail
+```
 
 # Registering Applications
 
