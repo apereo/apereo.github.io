@@ -34,6 +34,10 @@ server.port=8444
 server.ssl.key-store=file:/etc/cas/thekeystore
 server.ssl.key-store-password=changeit
 server.ssl.key-password=changeit
+
+# Protect the boot-admin endpoints for basic/form authn
+spring.security.user.name=casuser
+spring.security.user.password=e3f98098-edb5-4217-9dcb-ad04999a8794
 ```
 
 Given the Admin server itself is based on top of Spring Boot, all relevant Spring Boot settings here do also apply to control the general behavior of the web application. There are also many other settings available to tweak the behavior of the Admin server functionality itself. For a more comprehensive list, please see the [Spring Boot Admin documentation](https://codecentric.github.io/spring-boot-admin/current).
@@ -125,9 +129,9 @@ Now that are endpoints are enabled and secured, we need to configure CAS to use 
 spring.boot.admin.client.instance.metadata.user.name=casuser
 spring.boot.admin.client.instance.metadata.user.password=Mellon
 
-## In case Spring Boot Admin endpoints are protected via basic authn
-# spring.boot.admin.client.username=
-# spring.boot.admin.client.password=
+# In case Spring Boot Admin endpoints are protected via basic authn
+spring.boot.admin.client.username=casuser
+spring.boot.admin.client.password=e3f98098-edb5-4217-9dcb-ad04999a8794
 ```
 
 <div class="alert alert-warning">
