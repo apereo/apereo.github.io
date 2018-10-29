@@ -69,7 +69,7 @@ There is nothing registered with the Admin server yet. As the next step, we will
 Each individual CAS server is given the ability to auto-register itself with the Admin server. This is done using the following module that should go into the CAS overlay:
 
 ```gradle
-compile "org.apereo.cas:cas-server-support-bootadmin-client:${project.'cas.version'}"
+compile "org.apereo.cas:cas-server-support-bootadmin-client:${project.casVersion}"
 ```
 
 Of course, we need to teach CAS about our Admin server using the `cas.properties` file:
