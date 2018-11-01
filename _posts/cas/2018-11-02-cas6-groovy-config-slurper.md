@@ -18,8 +18,6 @@ Starting with CAS `6`, Groovy can also serve as a strategy for loading configura
 - CAS `6.0.0-RC4`
 - Java 11
 - [CAS Overlay](https://github.com/apereo/cas-overlay-template) (The `master` branch specifically)
-- [Docker](https://www.docker.com/get-started)
-- [CLI JSON Processor `jq`](https://stedolan.github.io/jq/)
 
 ## Groovy `ConfigSlurper`
 
