@@ -22,8 +22,8 @@ A patch [was submitted](https://github.com/apereo/cas/pull/3201/files) to the CA
 
 Our starting position is based on the following:
 
-- CAS `5.3.5`
-- Java 8
+- CAS `5.3.6`
+- Java `8`
 - [Maven Overlay](https://github.com/apereo/cas-overlay-template) (The `5.3` branch specifically)
 
 ## Configuration
@@ -61,9 +61,13 @@ cas.authn.mfa.radius.client.inetAddress=1.2.3.4
 
 # Signal webflow to handle MFA via RADIUS
 cas.authn.mfa.radius.id=mfa-radius
+
+cas.authn.mfa.radius.allowedAuthenticationAttempts=1
 ```
 
 That should do it. When credentials are validated via RADIUS as part of primary authentication, the user is routed to the next screen to enter the code provided by the RADIUS server via SMS, etc. Once entered, CAS will submit the code as well as any previous session state back to the RADIUS server which would have it validate the request and produce a successful response that allows CAS to collect attributes and establish a single sign-on session.
+
+Note that we are also configuring CAS to limit the number of authentication attempts to `1`, meaning after the first failed attempt at providing a valid token CAS would reject MFA and should route back to the login screen to restart the flow.
 
 ### Test RADIUS
 
