@@ -90,7 +90,7 @@ To keep things simple, we could use the [JSON service registry](https://apereo.g
 ```json
 {
   "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
-  "serviceId" : "<your-sp-entity-id></your-sp-entity-id>",
+  "serviceId" : "<your-sp-entity-id>",
   "name" : "SAML",
   "id" : 1,
   "description" : "This SP has its metadata in MongoDB somewhere.",
@@ -151,7 +151,7 @@ Here is the drill:
 - The metadata, signing and encryption *certificates* may be base64-encoded.
 - The signing and encryption *keys* **MUST** be signed and encrypted using CAS crypto settings and keys.
 
-The signing key and the encryption key are both JWKs of size 512 and 256. We can use the [command-line shell](https://apereo.github.io/cas/development/installation/Configuring-Commandline-Shell.html) to create the two keys:
+The signing secret key and the encryption secret key are both JWKs of size 512 and 256. We can use the [command-line shell](https://apereo.github.io/cas/development/installation/Configuring-Commandline-Shell.html) to create the two keys:
 
 ```bash
 cas> generate-key key-size 512
