@@ -35,7 +35,7 @@ Assuming you have completed the first two steps, let's move on to the build step
 
 ## Docker Image
 
-If execute the build shell script, you should be greeted with a new `docker` command as such:
+If you execute the build shell script, you should be greeted with a new `docker` command as such:
 
 ```bash
 ./build.sh help
