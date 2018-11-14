@@ -102,7 +102,7 @@ The WAR Overlay project provides you with an embedded Gradle *wrapper* whose job
 So, how are you supposed to know what commands/goals can be passed to the build? You can hit the Gradle guides and docs to study these for sure, but the Overlay project also provides you with a shell script that wraps itself around the Gradle wrapper and provides an easy facade for you to remember commands and their use.
 
 <div class="alert alert-info">
-  <strong>Note</strong><br/>When in doubt, <code>gradlew tasks</code> is a good starting positions to learn what tasks are available in the project.
+  <strong>Note</strong><br/>When in doubt, <code>gradlew tasks</code> is a good starting position to learn what tasks are available in the project.
 </div>
 
 This is the `build.sh` file, which you can run as such:
@@ -191,9 +191,9 @@ cas.authn.ldap[0].principalAttributeList=memberOf,cn,givenName,mail
 
 # Registering Applications
 
-Client applications that wish to use the CAS server for authentication must be registered with the server apriori. CAS provides a number of [facilities to keep track of the registration records](https://apereo.github.io/cas/6.0.x/installation/Service-Management.html#storage) and you may choose any that fits your needs best. In more technical terms, CAS deals with service management using two specific components: Individual implementations that support a form of a database are referred to as *Service Registry* components and they are many. There is also a parent component that sits on top of the configured service registry as more of an orchestrator that provides a generic facade and entry point for the rest of CAS without entangling all other operations and subsystems with the specifics and particulars of a storage technology.
+Client applications that wish to use the CAS server for authentication must be registered with the server apriori. CAS provides a number of [facilities to keep track of the registration records](https://apereo.github.io/cas/6.0.x/services/Service-Management.html#storage) and you may choose any that fits your needs best. In more technical terms, CAS deals with service management using two specific components: Individual implementations that support a form of a database are referred to as *Service Registry* components and they are many. There is also a parent component that sits on top of the configured service registry as more of an orchestrator that provides a generic facade and entry point for the rest of CAS without entangling all other operations and subsystems with the specifics and particulars of a storage technology.
 
-In this tutorial, we are going to try to configure CAS with [the JSON service registry](https://apereo.github.io/cas/6.0.x/installation/JSON-Service-Management.html).
+In this tutorial, we are going to try to configure CAS with [the JSON service registry](https://apereo.github.io/cas/6.0.x/services/JSON-Service-Management.html).
 
 ## Configuration
 
@@ -289,6 +289,25 @@ cas.authn.mfa.globalPrincipalAttributeValueRegex=mfa-eligible
 ```
 
 If the above condition holds true and CAS is to route to a multifactor authentication flow, that would obviously be one supported and provided by Duo Security since that’s the only provider that is currently configured to CAS.
+
+# Monitoring & Status
+
+Many CAS deployments rely on the `/status` endpoint for monitoring the health and activity of the CAS deployment. This endpoint is typically secured via an IP address, allowing external monitoring tools and load balancers to reach the endpoint and parse the output. In this quick exercise, we are going to accomplish that task, allowing the `status` endpoint to be available over HTTP to `localhost`.
+
+## Configuration
+
+To enable and expose the `status` endpoint, the following settings should come in handy:
+
+```properties
+management.endpoints.web.base-path=/actuator
+management.endpoints.web.exposure.include=status
+management.endpoint.status.enabled=true
+
+cas.monitor.endpoints.endpoint.status.access=IP_ADDRESS
+cas.monitor.endpoints.endpoint.status.requiredIpAddresses=127.0.0.1
+```
+
+Remember that the default path for endpoints exposed over the web is at `/actuator`, such as `/actuator/status`.
 
 # Overlay Customization
 
