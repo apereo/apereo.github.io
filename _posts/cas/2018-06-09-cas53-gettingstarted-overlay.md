@@ -209,7 +209,7 @@ It is **VERY IMPORTANT** that you contain and commit the entire overlay director
 
 # LDAP Authentication
 
-We need to first establish a primary mode of validating credentials by sticking with [LDAP authentication](https://apereo.github.io/cas/development/installation/LDAP-Authentication.html). The strategy here, as indicated by the CAS documentation, is to declare the intention/module in the build script:
+We need to first establish a primary mode of validating credentials by sticking with [LDAP authentication](https://apereo.github.io/cas/5.3.x/installation/LDAP-Authentication.html). The strategy here, as indicated by the CAS documentation, is to declare the intention/module in the build script:
 
 ```xml
 <dependency>
