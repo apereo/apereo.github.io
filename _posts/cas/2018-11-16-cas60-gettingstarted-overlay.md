@@ -32,7 +32,7 @@ The concept of the WAR Overlay is NOT a CAS invention. It's specifically an *Apa
 Once you have forked and cloned the repository locally, you're ready to begin.
 
 <div class="alert alert-info">
-  <strong>Note</strong><br/>Remember to switch to the appropriate branch. Today, the <code>master</code> branch of the repository applies to CAS <code>5.3.x</code> deployments. That may not necessarily remain true when you start your own deployment. So examine the branches and make sure you <code>checkout</code> the one matching your intended CAS version.
+  <strong>Note</strong><br/>Remember to switch to the appropriate branch. Today, the <code>master</code> branch of the repository applies to CAS <code>6.0.x</code> deployments. That may not necessarily remain true when you start your own deployment. So examine the branches and make sure you <code>checkout</code> the one matching your intended CAS version.
 </div>
 
 # Overlay's Anatomy
