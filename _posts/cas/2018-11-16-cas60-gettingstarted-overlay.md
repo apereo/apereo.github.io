@@ -16,6 +16,9 @@ This tutorial specifically requires and focuses on:
   <strong>Need Help?</strong><br/>If you ever get stuck and are in need of additional assistance, start by reviewing the suggestions <a href="https://apereo.github.io/cas/6.0.x/installation/Troubleshooting-Guide.html">provided here</a>. You may also look at available support options <a href="https://apereo.github.io/cas/Support.html">provided here</a>.
 </div>
 
+* A markdown unordered list which will be replaced with the ToC
+{:toc}
+
 # Overlay...What?
 
 Overlays are a strategy to combat repetitive code and/or resources. Rather than downloading the CAS codebase and building it from source, overlays allow you to download a pre-built vanilla CAS web application server provided by the project itself, override/insert specific behavior into it and then merge it all back together to produce the final (web application) artifact. You can find a lot more about how overlays work [here](https://apereo.github.io/cas/6.0.x/installation/WAR-Overlay-Installation.html).
