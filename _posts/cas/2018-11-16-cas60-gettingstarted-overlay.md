@@ -389,10 +389,10 @@ The above tasklist translates to the following properties expected to be found i
 ```properties
 server.port=8080
 server.ssl.enabled=false
-cas.server.http.enabled=false
-cas.server.httpProxy.enabled=true
-cas.server.httpProxy.secure=true
-cas.server.httpProxy.scheme=https
+cas.server.tomcat.http.enabled=false
+cas.server.tomcat.httpProxy.enabled=true
+cas.server.tomcat.httpProxy.secure=true
+cas.server.tomcat.httpProxy.scheme=https
 ```
 
 # What About...?
