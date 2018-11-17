@@ -69,6 +69,8 @@ Then, I simply execute the following in the terminal:
 > bc
 ```
 
+Since you're running `bootRun` under the `cas-server-webapp-tomcat` module, the servlet container used will be based on Apache Tomcat. You can navigate to a different module that bases itself on top of a different servlet container such as Jetty.
+
 <div class="alert alert-info">
 <strong>On Windows</strong><br/>You can apply the same strategy on Windows by creating a <code>bc.bat</code> file and making sure it's available on the <code>PATH</code>. The syntax of course needs to be adjusted to account for file paths and commands.</div>
 
@@ -76,7 +78,7 @@ To understand the meaning and function behind various command-line arguments, pl
 
 # Testing Modules
 
-Per [instructions posted here][buildprocess], the inclusion of a particular build module in the Gradle build script of the CAS web application should allow the build process to automatically allow the module to be packaged and become available. You may include the module reference in the [`webapp.gradle`][webappgradlefile] file, which is the common parent to build descriptors that do stuff with CAS web applications. Making changes in this file will ensure that it will be included *by default* in the generic CAS web application, regardless of how it is configured to run using a servlet container, which means you need to be extra careful about the sort of changes you make, what is kept and what is checked in here.
+Per [instructions posted here][buildprocess], the inclusion of a particular build module in the Gradle build script of the CAS web application should allow the build process to automatically allow the module to be packaged and become available to the runtime. You may include the module reference in the [`webapp.gradle`][webappgradlefile] file, which is the common parent to build descriptors that do stuff with CAS web applications. Making changes in this file will ensure that it will be included *by default* in the generic CAS web application, regardless of how it is configured to run using a servlet container, which means you need to be extra careful about the sort of changes you make here and what is kept and what is checked in for follow-up pull requests and reviews.
 
 So for reference and our task at hand, the file would look like the following:
 
@@ -88,7 +90,7 @@ dependencies {
 }
 ```
 
-Note the reference locates the module using its full path. The next time you run `bc`, the final CAS web application will have enabled reCAPTCHA functionality when it's booting up inside Apache Tomcat allowing you to make changes to said module and begin testing. The same command, `bc`, can be used over and over again to run CAS locally and test the change until the desired functionality is there.
+Note the reference locates the module using its full path. The next time you run `bc`, the final CAS web application will have enabled `some-module` functionality when it's booting up inside Apache Tomcat allowing you to make changes to said module and begin testing. The same command, `bc`, can be used over and over again to run CAS locally and test the change until the desired functionality is there.
 
 Once done, you may then commit the change to a relevant branch (of your fork, which is something you should have done earlier when you cloned the codebase) and push upstream (again, to your fork) in order to prepare a pull request and send in the change targetted at the right destination branch. More info on that workflow [is available here][contribguide].
 
@@ -118,7 +120,7 @@ To publish and *install* CAS artifacts locally, you may try the following:
 ```bash
 # Build CAS and install...
 alias bci='clear; cd ~/Workspace/cas \
-    ../../gradlew clean build install --configure-on-demand --build-cache --parallel \
+    ./gradlew clean build install --configure-on-demand --build-cache --parallel \
     -x test -x javadoc -x check -DenableRemoteDebugging=true --stacktrace \
     -DskipNestedConfigMetadataGen=true -DskipGradleLint=true -DskipSass=true \
     -DskipNodeModulesCleanUp=true -DskipNpmCache=true \
@@ -131,7 +133,111 @@ A rather important flag in the above build is `-DskipBootifulArtifact=true`. Thi
 
 Once the artifacts are successfully installed, you can pick up the `-SNAPSHOT` artifacts in overlay by changing the CAS version and resume testing.
 
+# Writing Tests
+
+Ideally, changes that are introduced need to be tested using either simple unit tests or integration tests.
+
+## Unit Tests
+
+Writing unit tests is rather easy. If you have added a few changes to `src/main/java/org/apereo/cas/SomeCasComponent.java`, you will need to create the corresponding test component under `src/test/java/org/apereo/cas/SomeCasComponentTests.java` for the build to identify and execute it. The outline of `SomeCasComponentTests` would look something like this:
+
+```java
+import static org.junit.Assert.*;
+
+@SpringBootTest(classes = {
+    SomeCasComponentConfiguration.class
+})
+@TestPropertySource(properties = {"cas.some.property=value"})
+@EnableConfigurationProperties(CasConfigurationProperties.class)
+public class SomeCasComponentTests {
+    @ClassRule
+    public static final SpringClassRule SPRING_CLASS_RULE = new SpringClassRule();
+
+    @Rule
+    public final ConditionalIgnoreRule conditionalIgnoreRule = new ConditionalIgnoreRule();
+
+    @Rule
+    public final SpringMethodRule springMethodRule = new SpringMethodRule();
+
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
+    /*
+        Injected via SomeCasComponentConfiguration...
+    */
+    @Autowired
+    @Qualifier("someCasComponent")
+    private SomeCasComponent someCasComponent;
+
+    @Before
+    public void initialize() {
+
+    }
+
+    @Test
+    public void verifyStuffHappens() throws Exception {
+        // Invoke someCasComponent.someMethod() and examine/assert the output
+    }
+}
+```
+
+In short, you need to make sure all the correct *Configuration* classes are included to bootstrap the build so that the required objects can be injected into the test class at runtime. You may also need to include additional modules and dependencies in the `build.gradle` file of the project to make sure the test runner has access to all required classes:
+
+```groovy
+dependencies {
+    testImplementation project(":support:cas-server-support-xyz")
+    testImplementation project(path: ":support:cas-server-support-xyz", configuration: "tests")
+}
+```
+
+For best examples, scan the codebase to find similar test classes and try to follow the same pattern and structure as others to keep things as consistent as possible.
+
+## Integration Tests
+
+If the change you are working on has a dependency on an external system such as a REST API or SQL database, you will need to make sure the test class is categorized appropriately. For example, let's assume that `SomeCasComponentTests` requires an external Redis NoSQL database which means that your test class should indicate this as such:
+
+```java
+@Category(RedisCategory.class)
+@ConditionalIgnore(condition = RunningContinuousIntegrationCondition.class)
+public class SomeCasComponentTests {
+    ...
+}
+```
+
+Note that the test execution would always fail if the Redis database isn't installed, running and configured correctly for everyone else working on the same CAS codebase. To work around this, we have also added a condition for the test runner to only execute the test when the [CAS CI environment][castravisci] is handling the test execution. The CI environment, given the appropriate category, will bootstrap and initialize the required dependencies and systems (typically via Docker) for the tests to execute which allows you to run the tests locally with a (Redis) database of your own while allowing the CI process to handle the test execution all the same, automatically and with the needed external dependencies.
+
+Again, for better examples simply scan the codebase to find similar test classes.
+
 # Running Tests
+
+Our Gradle test commands need to be slightly modified to only run the tests that need to run based on the category of interest. For example, to run all Redis-related tests our test command would look like this:
+
+```bash
+clear
+cd ~/Workspace/cas
+./gradlew clean testRedis -x test -x javadoc \
+    --build-cache --configure-on-demand -DtestCategoryType=REDIS
+    -x check --parallel -DskipNestedConfigMetadataGen=true \
+    -DskipNestedConfigMetadataGen=true -DskipSass=true \
+    -DskipNodeModulesCleanUp=true -DskipNpmCache=true'
+```
+
+Or, to run simple unit tests our test command would look like this:
+
+```bash
+clear
+cd ~/Workspace/cas
+./gradlew clean test -x javadoc \
+    --build-cache --configure-on-demand -DtestCategoryType=SIMPLE
+    -x check --parallel -DskipNestedConfigMetadataGen=true \
+    -DskipNestedConfigMetadataGen=true -DskipSass=true \
+    -DskipNodeModulesCleanUp=true -DskipNpmCache=true'
+```
+
+Note the use of the `testCategoryType` parameter as well as the actual task that runs the tests (`test` vs `testRedis`). To learn more about other available categories and how they are executed, please [take a look here][cascitests].
+
+<div class="alert alert-info">
+<strong>But it works on my machine...</strong><br/>Ultimately, all tests need to execute and pass on the CAS CI environment. There are the occasional phantom and unrelated failures which can usually be safely ignored but the canonical reference for tests and verifications is always the CI environment. When you write tests, try not to make assumptions that would later fail when the test is examined by CI.</div>
 
 # So...
 
@@ -143,6 +249,8 @@ Happy Coding,
 
 [1] There are ways to get around this *limitation*, by specifically downloading the source code for the exact CAS version at hand. I am skipping over those since they only lead to complications, suffering and further evil in most cases.
 
+[castravisci]: https://travis-ci.org/apereo/cas/builds
+[cascitests]: https://github.com/apereo/cas/tree/6.0.x/ci/tests
 [overlay]: https://github.com/apereo/cas-overlay-template
 [contribguide]: https://apereo.github.io/cas/developer/Contributor-Guidelines.html
 [webappgradlefile]: https://github.com/apereo/cas/blob/6.0.x/gradle/webapp.gradle
