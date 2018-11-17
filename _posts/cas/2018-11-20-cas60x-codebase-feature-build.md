@@ -127,7 +127,7 @@ alias bci='clear; cd ~/Workspace/cas \
 
 Be patient. This might take some time.
 
-A rather important flag in the above build is `-DskipBootifulArtifact=true`. This stops the Gradle build from applying the Spring Boot plugin to bootify application components, mainly the various CAS web application artifacts. This is required because the [CAS Overlay][overlay] needs to operate on a *vanilla* web application untouched by Spring Boot plugins (a.k.a *non-bootiful*) before it can explode and repackage it with Spring Boot. Note that the CAS build and release processes automatically take this flag into account when snapshots or releases are published.
+A rather important flag in the above build is `-DskipBootifulArtifact=true`. This stops the Gradle build from applying the Spring Boot plugin to bootify application components, mainly the various CAS web application artifacts. This is required because the [CAS Overlay][overlay] needs to operate on a *vanilla* web application untouched by Spring Boot plugins (a.k.a *non-bootiful*) before it can explode and repackage it with Spring Boot. Note that the CAS build and release processes automatically take this flag into account when snapshots or releases are published and more conveniently, whether you are working on the CAS codebase or overlay, you get to work with the same bootiful web application without any extra hassle.
 
 Once the artifacts are successfully installed, you can pick up the `-SNAPSHOT` artifacts in overlay by changing the CAS version and resume testing.
 
