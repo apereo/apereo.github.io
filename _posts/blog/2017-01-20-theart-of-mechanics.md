@@ -25,7 +25,7 @@ A guy walks into an auto shop, calls over a mechanic and says:
 - Well, I think [The Piano Guys](https://thepianoguys.com/) are terrific. You should check them out.
 - Pardon me?
 
-Mechanic walks away. Camera slowly fades away into the horrizon with smooth piano music playing in the background.
+Mechanic walks away. Camera slowly fades away into the horizon with smooth piano music playing in the background.
 
 ![c54650b7278f88a3eeaa7aa7d5fce4f7](https://cloud.githubusercontent.com/assets/1205228/22529773/00372422-e8d9-11e6-868f-5a70e27f5074.jpg)
 

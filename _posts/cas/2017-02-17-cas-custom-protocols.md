@@ -45,7 +45,7 @@ If you understand the above strategy, then you would be glad to learn that almos
 
 There are some internal technical and architectural advantages to this approach. Namely:
 
-1. The core of the CAS authentication engine, flow and components need not be modified at all. After all, we are just integrating yet another client even if it’s embedded directly in CAS itself. (If you recall and are familiar, the orignial Clearpass integration via authentication proxying worked in very similar terms).
+1. The core of the CAS authentication engine, flow and components need not be modified at all. After all, we are just integrating yet another client even if it’s embedded directly in CAS itself. (If you recall and are familiar, the original Clearpass integration via authentication proxying worked in very similar terms).
 2. ...and because of that, support for that protocol can be very easily removed, if needed. After all, protocols come and go every day. That’s why you’re reading this blog post, right?!
 3. ...and because of that and just like any other CAS client, all features of the CAS server are readily available and translated to the relevant client removing the need to duplicate and re-create protocol-specific configuration as much as  possible. Things like access strategies, attribute release, username providers, etc.
 

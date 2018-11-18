@@ -184,7 +184,7 @@ You can see that the build attempts to download, clean, compile and package all 
 
 # Configuration
 
-I am going to skip over the configuartion of `/etc/cas/config` and all that it deals with. If you need the reference, you may always [use this guide](https://apereo.github.io/cas/5.0.x/installation/Configuration-Management.html) to study various aspects of CAS configuration.
+I am going to skip over the configuration of `/etc/cas/config` and all that it deals with. If you need the reference, you may always [use this guide](https://apereo.github.io/cas/5.0.x/installation/Configuration-Management.html) to study various aspects of CAS configuration.
 
 Suffice it to say that, quite simply, CAS deployment expects *the main* configuration file to be found under `/etc/cas/config/cas.properties`. This is a key-value store that is able to dictate and alter behavior of the running CAS software.
 
@@ -196,7 +196,7 @@ cas.server.prefix=https://cas.example.org:8443/cas
 logging.config=file:/etc/cas/config/log4j2.xml
 ```
 
-...which at a minimum, identifies the CAS server's url and prefix and instructs the running server to locate the logging configuration at `file:/etc/cas/config/log4j2.xml`. The overlay by default ships with a `log4j2.xml` that you can use to customize logging locations, levels, etc. Note that the presense of all that is contained inside `/etc/cas/config/` is optional. CAS will continue to fall back onto defaults if the directory and the files within are not found.
+...which at a minimum, identifies the CAS server's url and prefix and instructs the running server to locate the logging configuration at `file:/etc/cas/config/log4j2.xml`. The overlay by default ships with a `log4j2.xml` that you can use to customize logging locations, levels, etc. Note that the presence of all that is contained inside `/etc/cas/config/` is optional. CAS will continue to fall back onto defaults if the directory and the files within are not found.
 
 ## Keep Track
 
