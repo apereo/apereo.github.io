@@ -1,11 +1,16 @@
 # Site settings
-title:       Apereo Community Blog 
+title:       Apereo Community Blog
 email:       info@apereo.org
 author:      Apereo Project Participants
 description: "This is a blog managed and edited by the Apereo project participants. It is typically used to post project updates, announce news, etc."
 baseurl:     ""
-date_format: "%A, %b %-d, %Y"
 url:         "https://apereo.github.io"
+date_format: "%A, %b %-d, %Y"
+header_pages:
+ - about.md
+ - contact.html
+ - tags.html
+ - search.html
 
 # Google services
 google_verification:
@@ -25,6 +30,8 @@ ajaxify_contact_form: true
 enable_mathjax: true
 extended_fonts: true
 enable_anchorjs: true
+# Preview image for social media aka og:image and twitter:image
+post_preview_image: true
 
 # Facebook Page integration
 # (for instant articles and other stuff)
@@ -35,6 +42,10 @@ fb_page_id:
 # (leave blank to disable Disqus)
 disqus_shortname:
 
+# txtpen post comments
+# (leave blank to disable txtpen)
+txtpen_sitename:
+
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
 facebook_comments:
@@ -43,6 +54,7 @@ facebook_comments_number: 10
 
 # Social icons
 github_username: apereo
+reddit_username:
 bitbucket_username:
 stackoverflow_id:
 twitter_username: Apereo
@@ -55,6 +67,8 @@ medium_id:
 bitcoin_url:
 paypal_url:
 flattr_button:
+telegram_username:
+vk_id:
 
 # Post sharing icons
 show_sharing_icons: true
@@ -121,20 +135,17 @@ redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
 paginate:     8
-start_line: 1
 sass:
-  compressed: true
+  style: compressed
 plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
-# https://github.com/jekyll/jekyll/issues/2938
-exclude: [vendor]
 
 tipue_search:
   include:
     pages: true
 
 exclude: [
-  ".history", ".vscode", ".sass-cache"
+  ".history", ".vscode", ".sass-cache", "Gemfile", "Gemfile.lock", "vendor"
 ]
