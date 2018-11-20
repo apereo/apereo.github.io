@@ -2,7 +2,7 @@
 layout:     post
 title:      Why you should choose CAS as your SSO system
 summary:    Discover the true reasons to use CAS
-tags:       [CAS]
+tags:       [Blog, CAS]
 ---
 
 <div class="alert alert-success">
