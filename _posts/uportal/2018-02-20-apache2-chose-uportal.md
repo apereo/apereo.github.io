@@ -2,7 +2,7 @@
 layout:     post
 title:      Why does uPortal use Apache 2 license?
 summary:    Apache2 chose uPortal.
-tags:       [uPortal, licensing]
+tags:       [uPortal, Licensing]
 ---
 
 > [I’d be interested to hear what licenses other projects were using, and 
