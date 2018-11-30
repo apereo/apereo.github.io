@@ -2,7 +2,7 @@
 layout:     post
 title:      Apereo CAS - Scripting Multifactor Authentication Triggers
 summary:    Learn how Apereo CAS may be configured to trigger multifactor authentication using Groovy conditionally decide whether MFA should be triggered for internal vs. external access, taking into account IP ranges, LDAP groups, etc.
-tags:       [CAS]
+tags:       [CAS,MFA]
 ---
 
 <div class="alert alert-success">

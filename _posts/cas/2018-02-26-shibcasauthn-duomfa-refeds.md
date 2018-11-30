@@ -2,7 +2,7 @@
 layout:     post
 title:      Apereo CAS - REFEDS MFA Profile with shib-cas-authn3
 summary:    An overview of the shib-cas-authn3 project and its support for the REFEDS MFA profile with both the Shibboleth Identity Provider and Apereo CAS lending a hand.
-tags:       [CAS]
+tags:       [CAS,MFA]
 ---
 
 <div class="alert alert-success">

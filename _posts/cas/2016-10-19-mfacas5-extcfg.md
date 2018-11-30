@@ -2,7 +2,7 @@
 layout:     post
 title:      Activating MFA in CAS 5
 summary:    Learn and master custom MFA triggers in CAS 5.
-tags:       [CAS]
+tags:       [CAS,MFA]
 ---
 
 <div class="alert alert-success">

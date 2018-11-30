@@ -2,7 +2,7 @@
 layout:     post
 title:      CAS Multifactor Authentication with  Duo Security 
 summary:    A short walkthrough to demonstrate how one might turn on multifactor authentication with CAS using Duo Security, leveraging a variety of triggers.
-tags:       [CAS]
+tags:       [CAS,MFA]
 ---
 
 <div class="alert alert-success">

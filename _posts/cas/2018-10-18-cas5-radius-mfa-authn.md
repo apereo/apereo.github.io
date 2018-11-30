@@ -2,7 +2,7 @@
 layout:     post
 title:      Apereo CAS - Multifactor Authentication with RADIUS
 summary:    Learn how Apereo CAS may be configured to trigger multifactor authentication using a RADIUS server and its support for the Access-Challenge response type.
-tags:       [CAS]
+tags:       [CAS,MFA]
 ---
 
 <div class="alert alert-success">
