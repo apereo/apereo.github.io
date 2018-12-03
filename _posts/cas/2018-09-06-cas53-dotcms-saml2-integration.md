@@ -2,7 +2,7 @@
 layout:     post
 title:      Apereo CAS - dotCMS SAML2 Integration
 summary:    Learn how to integrate dotCMS, a Content Management System and Headless CMS, with Apereo CAS running as a SAML2 identity provider.
-tags:       [CAS]
+tags:       [CAS,SAML]
 ---
 
 <div class="alert alert-success">

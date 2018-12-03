@@ -2,7 +2,7 @@
 layout:     post
 title:      Apereo CAS SAML Integration With ADFS
 summary:    A short tutorial on how to integrate CAS, acting as a SAML identity provider, with ADFS.
-tags:       [CAS]
+tags:       [CAS,SAML]
 ---
 
 <div class="alert alert-success">

@@ -2,7 +2,7 @@
 layout:     post
 title:      Apereo CAS - VMware Identity Manager SAML2 Integration
 summary:    Learn how to integrate VMware Identity Manager with Apereo CAS running as a SAML2 identity provider.
-tags:       [CAS]
+tags:       [CAS,SAML]
 ---
 
 <div class="alert alert-success">
@@ -27,7 +27,7 @@ Our starting position is based on the following:
 
 <img width="1100" src="https://user-images.githubusercontent.com/1205228/49401590-d9c07a00-f704-11e8-9f65-3813a078d924.png">
 
-- Configure authentication methods:
+- Configure authentication methods
 
 <img width="1000" alt="screen shot 2018-11-27 at 3 01 55 pm" src="https://user-images.githubusercontent.com/1205228/49401739-49cf0000-f705-11e8-8c7b-c862f69f7d63.png">
 
