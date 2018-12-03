@@ -21,7 +21,17 @@ Our starting position is based on the following:
 - Java 8
 - [Maven Overlay](https://github.com/apereo/cas-overlay-template) (The `5.3` branch specifically)
 
-# Configuration
+# VMware Identity Manager Configuration
+
+- Register CAS as an identity provider
+
+<img width="1100" src="https://user-images.githubusercontent.com/1205228/49401590-d9c07a00-f704-11e8-9f65-3813a078d924.png">
+
+- Configure authentication methods:
+
+<img width="1000" alt="screen shot 2018-11-27 at 3 01 55 pm" src="https://user-images.githubusercontent.com/1205228/49401739-49cf0000-f705-11e8-8c7b-c862f69f7d63.png">
+
+# CAS Configuration
 
 First, ensure that your CAS deployment is equipped to act as a [SAML2 identity provider](https://apereo.github.io/cas/5.3.x/installation/Configuring-SAML2-Authentication.html). Next, you may also use the [JSON Service Registry](https://apereo.github.io/cas/5.3.x/installation/JSON-Service-Management.html) to keep track of the VMware Identity Manager relying-party registration record in JSON definition files.
 
