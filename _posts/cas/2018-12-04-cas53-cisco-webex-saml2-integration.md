@@ -38,6 +38,11 @@ The JSON file to contain the Cisco Webex record would be as follows:
   name: Cisco Webex
   id: 1
   description: Cisco Webex
+  usernameAttributeProvider:
+  {
+    @class: org.apereo.cas.services.PrincipalAttributeRegisteredServiceUsernameProvider
+    usernameAttribute: mail
+  }
   attributeReleasePolicy:
   {
     @class: org.apereo.cas.services.ReturnMappedAttributeReleasePolicy
