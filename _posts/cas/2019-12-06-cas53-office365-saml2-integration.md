@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Apereo CAS - Office 365 SAML2 Integration
-summary:    Learn how to integrate HappyFox with Apereo CAS running as a SAML2 identity provider.
+title:      Apereo CAS - Microsoft Office 365 SAML2 Integration
+summary:    Learn how to integrate Microsoft Office 365 with Apereo CAS running as a SAML2 identity provider.
 tags:       [CAS,SAML]
 ---
 
