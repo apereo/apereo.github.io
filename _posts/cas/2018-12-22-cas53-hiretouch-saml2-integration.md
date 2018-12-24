@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Apereo CAS - Rave SAML2 Integration
-summary:    Learn how to integrate Rave with Apereo CAS running as a SAML2 identity provider.
+title:      Apereo CAS - HireTouch SAML2 Integration
+summary:    Learn how to integrate HireTouch with Apereo CAS running as a SAML2 identity provider.
 tags:       [CAS,SAML]
 ---
 
@@ -13,7 +13,7 @@ tags:       [CAS,SAML]
   <strong>Contributed Content</strong><br/>Paul Spaude of Unicon, Inc was kind enough to contribute this guide.
 </div>
 
-Rave is a mass notification system designed to deliver fast and effective messaging for routine and emergency communications. As a SAML2 service provider, Rave can be integrated with CAS running as a SAML identity provider and this blog post provides a quick walkthrough of how to make that integration possible.
+[HireTouch](http://hiretouch.com) offers talent management solutions and is built specifically for human resources departments and hiring managers. As a SAML2 service provider, HireTouch can be integrated with CAS running as a SAML identity provider and this blog post provides a quick walkthrough of how to make that integration possible.
 
 Our starting position is based on the following:
 
@@ -30,21 +30,16 @@ The JSON file to contain the service provider relying-party record would be as f
 ```json
 {
   "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
-  "serviceId" : "https://www.getrave.com/shibboleth-sp",
-  "name" : "Rave",
+  "serviceId" : "https://[instance].hiretouch.com/admin/saml/consume",
+  "name" : "HireTouch",
   "id" : 1,
   "metadataLocation" : "/path/to/metadata.xml",
   "encryptAssertions" : false,
   "signAssertions" : false,
   "signResponses" : true,
-  "requiredNameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
-  "attributeReleasePolicy": {
-    "@class": "org.apereo.cas.services.ReturnMappedAttributeReleasePolicy",
-    "allowedAttributes": {
-      "@class": "java.util.TreeMap",
-      "employeeNumber": "urn:oid:1.2.840.113556.1.2.610",
-      "eduPersonPrincipalName": "groovy { return attributes['eduPersonPrincipalName'].get(0) + '@example.org' }"
-    }
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
+    "allowedAttributes" : [ "java.util.ArrayList", ["uid"]]
   }
 }
 ```
@@ -52,8 +47,8 @@ The JSON file to contain the service provider relying-party record would be as f
 A few things to point out:
 
 - You will need to adjust the `metadataLocation` to match your instance.
-- Make sure CAS has retrieved the allowed attributes (i.e. `employeeNumber`, `eduPersonPrincipalName` etc) listed in the JSON definition file.
-- Make sure the SP metadata has the correct entity id, matching the Rave instance.
+- Make sure CAS has retrieved the allowed attributes (i.e. `uid` etc) listed in the JSON definition file.
+- Make sure the SP metadata has the correct entity id, matching the HireTouch instance.
 
 # Finale
 
