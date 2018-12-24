@@ -43,7 +43,7 @@ The JSON file to contain the service provider relying-party record would be as f
     "allowedAttributes": {
       "@class": "java.util.TreeMap",
       "uid": "uid",
-      "eduPersonPrincipalName": "groovy { return attributes['eduPersonPrincipalName'].get(0) + '@ltcc.edu' }"
+      "eduPersonPrincipalName": "groovy { return attributes['eduPersonPrincipalName'].get(0) + '@exampl.org' }"
     }
   }
 }
