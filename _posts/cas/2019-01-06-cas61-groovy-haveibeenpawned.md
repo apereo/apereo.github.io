@@ -10,12 +10,12 @@ tags:       [CAS]
 </div>
 
 [Have I been pwned](https://haveibeenpwned.com/) is an online service that tracks security breaches and other datalogs on the internet, 
-allowing you to check if your passwords linked to an email have been compromised. This is a very simple method, and does not guarantee that your stuff is safe, 
+allowing you to check if your passwords linked to an email have been compromised. This is a very simple method and does not guarantee that your stuff is safe, 
 or will continue to be safe. It does, however, allow you to have an idea of when data linked to your accounts might have been exposed, 
 and whether you changed (or not) your passwords since that point.
 
 A CAS deployment, as an entity that can support username/password credentials, can be integrated with this service such that after the user logs 
-in with a valid password, CAS may check it against the [service API](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange) and present a page to the user notifying them if there password has been pwned suggesting they should change it, but allow them to continue.
+in with a valid password, CAS may check it against the [service API](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange) and present a page to the user notifying them if their password has been pwned suggesting they should change it, but allow them to continue.
 
 This sort of thing is fairly simple to do in CAS and while there are a variety of ways to tap into the authentication flow, in this post we shall take advantage of
 the CAS authenticator post-processors supported by a Groovy script. Our starting position is based on the following:
@@ -26,7 +26,7 @@ the CAS authenticator post-processors supported by a Groovy script. Our starting
 
 ## Configuration
 
-First, we are going to teach CAS about the Groovy script that is to contact the relevant APIs and check for a pwned password:
+First, we are going to teach CAS about the Groovy script that is to contact the relevant APIs and check for a pawned password:
 
 ```properties
 cas.authn.engine.groovyPostProcessor.location=file:/etc/cas/config/GroovyPostProcessor.groovy
