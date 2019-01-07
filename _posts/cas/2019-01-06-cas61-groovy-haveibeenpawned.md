@@ -14,7 +14,7 @@ allowing you to check if your passwords linked to an email have been compromised
 or will continue to be safe. It does, however, allow you to have an idea of when data linked to your accounts might have been exposed, 
 and whether you changed (or not) your passwords since that point.
 
-A CAS deployment, as an entity that can support username/password credentials can certainly be integrated with this service. The idea is that after the user logs 
+A CAS deployment, as an entity that can support username/password credentials, can be integrated with this service such that after the user logs 
 in with a valid password, CAS may check it against the [service API](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange) and present a page to the user notifying them if there password has been pwned suggesting they should change it, but allow them to continue.
 
 This sort of thing is fairly simple to do in CAS and while there are a variety of ways to tap into the authentication flow, in this post we shall take advantage of
@@ -26,7 +26,7 @@ the CAS authenticator post-processors supported by a Groovy script. Our starting
 
 ## Configuration
 
-First, we are going to teach CAS about how Groovy script that essentially should contact the relevant APIs and check for a pwned password:
+First, we are going to teach CAS about the Groovy script that is to contact the relevant APIs and check for a pwned password:
 
 ```properties
 cas.authn.engine.groovyPostProcessor.location=file:/etc/cas/config/GroovyPostProcessor.groovy
@@ -70,10 +70,10 @@ def supports(Object[] args) {
 Of course, the CAS message/language bundle (typically `custom_messages.properties` file) should also contain the text for the warning code `password.pawned`:
 
 ```properties
-password.pawned=Your current password is commonly used. Go <a href="https://example.org">here</a> to change it.
+password.pawned=Your password is commonly used. Go <a href="https://example.org">here</a> to change it.
 ```
 
-That's it. Note that the script itself is automatically monitored and cached for changes, so feel free to tweak and update as often as needed to test
+Note that the script itself is automatically monitored and cached for changes, so feel free to tweak and update as often as needed to test
 your changes without restarting the CAS server environment.
 
 ## Finale
