@@ -98,7 +98,7 @@ To keep things simple, we could use the [JSON service registry](https://apereo.g
 }
 ```
 
-The metadata location in the registration record above simply needs to be specified as `mongodb://` to signal to CAS that SAML metadata for our service provider must be fetched from MongoDB data sources defined in CAS configuration. As the next step, let's [teach CAS]((https://apereo.github.io/cas/development/installation/Configuring-SAML2-DynamicMetadata.html#mongodb)) about our MongoDB setup. Just like before, you'd need this module in your CAS build:
+The metadata location in the registration record above simply needs to be specified as `mongodb://` to signal to CAS that SAML metadata for our service provider must be fetched from MongoDB data sources defined in CAS configuration. As the next step, let's [teach CAS](https://apereo.github.io/cas/development/installation/Configuring-SAML2-DynamicMetadata.html#mongodb)) about our MongoDB setup. Just like before, you'd need this module in your CAS build:
 
 ```gradle
 compile "org.apereo.cas:cas-server-support-saml-idp-metadata-mongo:${project.'cas.version'}"
