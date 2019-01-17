@@ -124,7 +124,7 @@ There is also the ability to observe and manage the service provider metadata ca
 - Retrieve the current state of the service provider metadata cache for `coconut`:
 
 ```bash
-curl -k -X GET https://sso.example.org/cas/actuator/samlIdPRegisteredServiceMetadataCache?serviceId=All'&'entityId=coconut
+curl -k -X GET https://sso.example.org/cas/actuator/samlIdPRegisteredServiceMetadataCache?serviceId=All'&'entityId=coconut.example.org
 ```
 
 Likewise, the following command may do just as well:
