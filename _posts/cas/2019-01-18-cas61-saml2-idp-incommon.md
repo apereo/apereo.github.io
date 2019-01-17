@@ -145,7 +145,7 @@ curl -X DELETE https://sso.example.org/cas/actuator/samlIdPRegisteredServiceMeta
 curl -X DELETE https://sso.example.org/cas/actuator/samlIdPRegisteredServiceMetadataCache
 ```
 
-Better details [may be found here](https://apereo.github.io/cas/development/installation/Configuring-SAML2-DynamicMetadata.html#administrative-endpoints)
+Better details [may be found here](https://apereo.github.io/cas/development/installation/Configuring-SAML2-DynamicMetadata.html#administrative-endpoints).
 
 ## Finale
 
