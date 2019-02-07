@@ -11,8 +11,6 @@ tags:       [CAS]
 
 CAS, being a Spring-Boot application at heart, includes a number of endpoints to help you monitor and manage the server when it’s pushed to production. You can choose to manage and monitor the deployment using HTTP endpoints, referred to as *actuators*. This tutorial provides a basic overview of the endpoints provided by both Spring Boot and CAS and also provides instructions on how such endpoints can be secured for access and win.
 
-This tutorial specifically requires and focuses on:
-
 Our starting position is based on the following:
 
 - CAS `6.0.0-RC4`
