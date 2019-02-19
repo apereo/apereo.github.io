@@ -18,7 +18,7 @@ In this blog post we are going describe how to configure CAS server to act as Oa
 The starting position is based on the following:
 - CAS `6.1.0-RC1` overlay
 - CAS Oauth2 sample client web app
-- [Java 11] for CAS server (https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot)
+- [Java 11 for CAS server](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot)
 - Java 8 to run client app
 - Edit `/etc/hosts` with:
 
@@ -37,7 +37,7 @@ compile "org.apereo.cas:cas-server-support-oauth-webflow:${project.'cas.version'
 
 Add OAuth2 registered service representing out client application to CAS' service registry (we're using JSON one with hjson syntax flavor):
 
-```
+```json
 {
   @class : org.apereo.cas.support.oauth.services.OAuthRegisteredService
   clientId: exampleOauthClient
