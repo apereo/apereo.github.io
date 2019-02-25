@@ -149,7 +149,7 @@ Our application policy would look similar to this:
 }
 ```
 
-Now, if you try the same sequence again, (don't forget to start with application), you'd be greeted at the end of the flow with:
+Now, if you try the same sequence again, (don't forget to start with the application), you'd be greeted at the end of the flow with:
 
 ![image](https://user-images.githubusercontent.com/1205228/53349255-f7534900-38d9-11e9-84b4-ca80072d6927.png)
 
