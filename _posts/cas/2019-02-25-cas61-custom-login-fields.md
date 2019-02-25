@@ -66,8 +66,8 @@ Next, let's say you have registered the following authentication handler with CA
 ```java
 public class MyAuthenticationHandler extends AbstractUsernamePasswordAuthenticationHandler {
     ...
-    protected HandlerResult authenticateUsernamePasswordInternal(final UsernamePasswordCredential credential,
-                                                                 final String originalPassword) {
+    protected AuthenticationHandlerExecutionResult authenticateUsernamePasswordInternal(
+        final UsernamePasswordCredential credential, final String originalPassword) {
         ...
     }
     ...
@@ -78,8 +78,8 @@ public class MyAuthenticationHandler extends AbstractUsernamePasswordAuthenticat
 To receive and process the new `phone` field in your custom authentication handler, you would do something like:
 
 ```java
-protected HandlerResult authenticateUsernamePasswordInternal(final UsernamePasswordCredential credential,
-                                                             final String originalPassword) {
+protected AuthenticationHandlerExecutionResult authenticateUsernamePasswordInternal(
+    final UsernamePasswordCredential credential, final String originalPassword) {
     Object phone = credential.getCustomFields().get("phone");
     ...
 }
