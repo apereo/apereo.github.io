@@ -73,7 +73,8 @@ public class MyAuthenticationHandler extends AbstractUsernamePasswordAuthenticat
     ...
 }
 ```
-                                                             A
+
+
 To receive and process the new `phone` field in your custom authentication handler, you would do something like:
 
 ```java
