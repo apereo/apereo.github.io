@@ -42,7 +42,7 @@ cas.authn.pac4j.saml[0].keystorePath=/etc/cas/config/samlKeystore.jks
 cas.authn.pac4j.saml[0].serviceProviderEntityId=urn:mace:saml:pac4j.org
 cas.authn.pac4j.saml[0].serviceProviderMetadataPath=/etc/cas/config/sp-metadata.xml
 
-cas.authn.pac4j.saml[0].identityProviderMetadataPath=https://dev-968370.oktapreview.com/app/exk9xexqanqWBEjsg0h7/sso/saml/metadata
+cas.authn.pac4j.saml[0].identityProviderMetadataPath=https://dev.oktapreview.com/app/.../sso/saml/metadata
 cas.authn.pac4j.saml[0].clientName=SAML2Client
 
 # cas.authn.pac4j.saml[0].destinationBinding=urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST
