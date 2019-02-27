@@ -59,6 +59,71 @@ CAS running as SAML2 identity provider, releasing the R&E bundle of attributes t
 }
 ```
 
+### Remapping Attributes Virtually
+
+Release `employeeId` as `UDC_IDENTIFIER` typically done for Ellucian Banner SSO Manager.
+
+```json
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "https://example.banner.edu",
+  "name" : "banner",
+  "id" : 1,
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnMappedAttributeReleasePolicy",
+    "allowedAttributes" : {
+      "@class" : "java.util.TreeMap",
+      "employeeId" : "UDC_IDENTIFIER"
+    }
+  }
+}
+```
+
+### SAML2 Service Provider w/ Transient NameID
+
+CAS running a SAML2 identity provider is set to release all attributes to the SAML2 service provider, while generating a transient name identifier.
+
+```json
+{
+  "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
+  "serviceId" : "service-provider-entity-id",
+  "name" : "SAML",
+  "id" : 1,
+  "metadataLocation" : "/path/to/metadata.xml",
+  "requiredNameIdFormat": "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+  },
+  "usernameAttributeProvider" : {
+    "@class" : "org.apereo.cas.services.AnonymousRegisteredServiceUsernameAttributeProvider",
+  }
+}
+```
+
+### SAML2 Service Provider w/ Persistent NameID
+
+CAS running a SAML2 identity provider is set to release all attributes to the SAML2 service provider, while generating a persistent name identifier using a pre-defined salt.
+
+```json
+{
+  "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
+  "serviceId" : "service-provider-entity-id",
+  "name" : "SAML",
+  "id" : 1,
+  "metadataLocation" : "/path/to/metadata.xml",
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+  },
+  "usernameAttributeProvider" : {
+    "@class" : "org.apereo.cas.services.AnonymousRegisteredServiceUsernameAttributeProvider",
+    "persistentIdGenerator" : {
+      "@class" : "org.apereo.cas.authentication.principal.ShibbolethCompatiblePersistentIdGenerator",
+      "salt" : "aGVsbG93b3JsZA==",
+    }
+  }
+}
+```
+
 ### OAuth Simple Relying Party
 
 CAS running as OAuth identity provider, releasing a number of attributes.
@@ -78,7 +143,7 @@ CAS running as OAuth identity provider, releasing a number of attributes.
 }
 ```
 
-### OpenID Connect Relying Party
+### OpenID Connect Chained Relying Party
 
 CAS running as an OpenID Connect identity provider, releasing the dynamically-built attribute `user-x` off of `uid` as well as all other attributes (i.e. *claims*) defined by the standard `email` scope.
 
