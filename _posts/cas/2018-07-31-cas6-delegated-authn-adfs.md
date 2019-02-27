@@ -48,7 +48,7 @@ The initial setup is in fact super simple; as the [documentation describes](http
 ```properties
 # cas.authn.wsfed[0].identityProviderUrl=https://sample.adfs.org/adfs/ls/
 # cas.authn.wsfed[0].identityProviderIdentifier=http://sample.adfs.org/adfs/services/trust
-# cas.authn.wsfed[0].relyingPartyIdentifier=urn:cas:sample
+# cas.authn.wsfed[0].relyingPartyIdentifier=urn:cas:mmoayyed
 # cas.authn.wsfed[0].name=ADFS Server
 # cas.authn.wsfed[0].identityAttribute=upn
 # cas.authn.wsfed[0].signingCertificateResources=file:/etc/cas/adfs-signing.cer
@@ -93,6 +93,36 @@ def Map run(final Object... args) {
 So, we are getting a bunch of claims or attributes from ADFS and are tasked to simply return a map of keys and values. In my example above and regardless of what ADFS delivers to CAS, I decided to only stuff the `upn` attribute into that final map with a single value that is `Wolverine`. Of course, since `upn` is designated to act the username claim, the ultimate CAS principal will be established under the username `Wolverine`.
 
 ...without the claws, certainly, though [that is possible too](https://apereo.github.io/2017/02/18/onthe-theoryof-possibility/).
+
+## ADFS Configuration
+
+### Relying Party Trust
+
+A relying party trust needs to be created in ADFS for `urn:cas:mmoayyed`:
+
+![image](https://user-images.githubusercontent.com/1205228/53475690-cdab3680-3a2d-11e9-875b-97e2003d8f67.png)
+
+Make sure you set the relying party identifier(s) correctly:
+
+![image](https://user-images.githubusercontent.com/1205228/53475715-dbf95280-3a2d-11e9-9973-499c6bafe3a1.png)
+
+Make sure endpoints are defined:
+
+![image](https://user-images.githubusercontent.com/1205228/53475744-f2071300-3a2d-11e9-8d20-a535639374d5.png)
+
+![image](https://user-images.githubusercontent.com/1205228/53475750-f7fcf400-3a2d-11e9-91bd-edc8f1e87d40.png)
+
+Verify the secure hash algorithm setting:
+
+![image](https://user-images.githubusercontent.com/1205228/53475770-06e3a680-3a2e-11e9-9784-cb098eccbe99.png)
+
+### Claim Rules
+
+Edit claim rules to let ADFS release attributes to CAS:
+
+![image](https://user-images.githubusercontent.com/1205228/53475819-2bd81980-3a2e-11e9-83f5-2bf11fff2eef.png)
+
+![image](https://user-images.githubusercontent.com/1205228/53475841-3692ae80-3a2e-11e9-8393-ec09f1a04fb5.png)
 
 ## Finale
 

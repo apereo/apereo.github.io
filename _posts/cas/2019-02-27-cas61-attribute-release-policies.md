@@ -14,7 +14,7 @@ The process of dealing with attributes in Apereo CAS is twofold. First, CAS begi
 In this blog post, I attempt to collect a number of attribute release policy samples and snippets that demonstrate the capabilities of the CAS attribute release engine to some degree. Some are rather modest and hopefully self-explanatory, and some are more advanced tapping into the particulars of a given authentication protocol to take advantage of fancier features such as *scopes*, *chains*, etc.
 
 <div class="alert alert-info">
-  <strong>Docs Grow Old</strong><br/>This is a partial list and is expected to grow over time with more examples. Keep an eye out for future updates.</a>.
+  <strong>Docs Grow Old</strong><br/>This is a partial list and is expected to grow over time with more examples. Keep an eye out for future updates.
 </div>
 
 In all such examples, the underlying assumptions are:
