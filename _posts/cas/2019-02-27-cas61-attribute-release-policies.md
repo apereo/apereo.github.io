@@ -28,7 +28,11 @@ Let's begin. Our starting position is based on:
 - Java `11`
 - [CAS WAR Overlay](https://github.com/apereo/cas-overlay-template)
 
+* A markdown unordered list which will be replaced with the ToC
+{:toc}
+
 ## Scenarios
+{:.no_toc}
 
 ### SAML2 Metadata R&E Bundle
 
