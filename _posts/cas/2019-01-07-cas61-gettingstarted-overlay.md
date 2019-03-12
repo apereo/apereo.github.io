@@ -51,13 +51,13 @@ In `gradle.properties` file, project settings and versions are specified:
 
 ```properties
 cas.version=6.1.0
-springBootVersion=2.1.1.RELEASE
+springBootVersion=2.2.0.RELEASE
 
 appServer=-tomcat
 
-gradleVersion=5.1
+gradleVersion=5.3
 tomcatVersion=9
-tomcatFullVersion=9.0.14
+tomcatFullVersion=9.0.16
 
 group=org.apereo.cas
 sourceCompatibility=11
