@@ -29,9 +29,6 @@ Our starting position is based on:
 - [JSON Service Registry](https://apereo.github.io/cas/development/services/JSON-Service-Management.html)
 - Using CAS default credentials, `casuser` and `Mellon` via static authentication.
 
-* A markdown unordered list which will be replaced with the ToC
-{:toc}
-
 ## Baseline Configuration
 
 Our JSON attribute repository source, separate from the CAS authentication store is fairly simple:
