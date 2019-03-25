@@ -14,7 +14,7 @@ tags:       [CAS]
 
 Authentication attributes in CAS are defined separately from principal attributes. They capture and convey additional information, or *metadata* if you prefer, about the authentication transaction itself. Examples would include attributes such as *What time did this authentication attempt occur?*, or *What type of credentials were used for authentication?*, etc. This collection of attributes may also be enhanced via each authentication protocol such as CAS, OpenID Connect, SAML, etc to include even more protocol-specific details.
 
-<div class="alert alert-success">
+<div class="alert alert-info">
 <strong>Hey!</strong><br/>Again, remember that authentication attributes are different from principal attributes. The former describes authentication metadata, while the latter is related to person identity and identifying information.
 </div>
 
