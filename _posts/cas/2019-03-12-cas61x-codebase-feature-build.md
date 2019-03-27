@@ -266,6 +266,10 @@ function testcas() {
     task="testMongoDb"
     category="MONGODB"
     ;;
+  couchdb)
+    task="testCouchDb"
+    category="COUCHDB"
+    ;;
   rest|restful)
     task="testRestful"
     category="RESTFULAPI"
@@ -281,6 +285,10 @@ function testcas() {
   mail|email)
     task="testMail"
     category="MAIL"
+    ;;
+  dynamodb|dynamo)
+    task="testDynamoDb"
+    category="DYNAMODB"
     ;;
   redis)
     task="testRedis"
