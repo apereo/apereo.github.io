@@ -59,8 +59,7 @@ I use the following alias in my bash profile to spin up CAS using an embedded Ap
 alias bc='clear; cd ~/Workspace/cas/webapp/cas-server-webapp-tomcat; \
     ../../gradlew build bootRun --configure-on-demand --build-cache --parallel \
     -x test -x javadoc -x check -DenableRemoteDebugging=true --stacktrace \
-    -DskipNestedConfigMetadataGen=true -DskipGradleLint=true -DskipSass=true \
-    -DskipNodeModulesCleanUp=true -DskipNpmCache=true -DskipNpmLint=true'
+    -DskipNestedConfigMetadataGen=true -DskipGradleLint=true'
 ```
 
 Then, I simply execute the following in the terminal:
@@ -122,9 +121,8 @@ To publish and *install* CAS artifacts locally, you may try the following:
 alias bci='clear; cd ~/Workspace/cas \
     ./gradlew clean build install --configure-on-demand --build-cache --parallel \
     -x test -x javadoc -x check --stacktrace \
-    -DskipNestedConfigMetadataGen=true -DskipGradleLint=true -DskipSass=true \
-    -DskipNodeModulesCleanUp=true -DskipNpmCache=true \
-    -DskipNpmLint=true -DskipBootifulArtifact=true'
+    -DskipNestedConfigMetadataGen=true -DskipGradleLint=true \
+    -DskipBootifulArtifact=true'
 ```
 
 Be patient. This might take some time.
@@ -215,8 +213,7 @@ cd ~/Workspace/cas
 ./gradlew clean testRedis -x test -x javadoc \
     --build-cache --configure-on-demand -DtestCategoryType=REDIS
     -x check --parallel -DskipNestedConfigMetadataGen=true \
-    -DskipNestedConfigMetadataGen=true -DskipSass=true \
-    -DskipNodeModulesCleanUp=true -DskipNpmCache=true'
+    -DskipNestedConfigMetadataGen=true'
 ```
 
 Or, to run simple unit tests our test command would look like this:
@@ -227,8 +224,7 @@ cd ~/Workspace/cas
 ./gradlew clean test -x javadoc \
     --build-cache --configure-on-demand -DtestCategoryType=SIMPLE
     -x check --parallel -DskipNestedConfigMetadataGen=true \
-    -DskipNestedConfigMetadataGen=true -DskipSass=true \
-    -DskipNodeModulesCleanUp=true -DskipNpmCache=true'
+    -DskipNestedConfigMetadataGen=true'
 ```
 
 Note the use of the `testCategoryType` parameter as well as the actual task that runs the tests (`test` vs `testRedis`). To learn more about other available categories and how they are executed, please [take a look here][cascitests].
@@ -311,8 +307,8 @@ function testcas() {
 ${BLUE}including ${CYAN}[$tests]${NORMAL}${BLUE} with debug ${CYAN}[$debug]${NORMAL}"
 
   cmd="gradle $task $debug -DtestCategoryType=$category $tests \
---build-cache --parallel -x javadoc -x check -DignoreTestFailures=false -DskipSass=true -DskipNestedConfigMetadataGen=true \
--DskipGradleLint=true -DskipNpmCache=true -DskipNpmLint=true -DskipNodeModulesCleanUp=true -DshowStandardStreams=true \
+--build-cache --parallel -x javadoc -x check -DignoreTestFailures=false -DskipNestedConfigMetadataGen=true \
+-DskipGradleLint=true -DshowStandardStreams=true \
 --no-daemon --configure-on-demand "
 
   echo -e "$cmd\n"
