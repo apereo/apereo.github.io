@@ -11,7 +11,7 @@ tags: [Blog]
 - Startup Times Hotline where trying is the first step to failure. How may I help you?
 - I am an enterprise application developer, working for an enterprise business aiming to urgently improve the state of our enterprise...and maybe yours. Not sure. I'll have to check with the enterprise.
 - What is this inquiry about?
-- I have excellent news. After many many months of trial and error and an unbelievable demonstration of human perseverance, we have managed to urgently reduce the start-up time of our enterprise application significantly. Isn't this the sort of thing your institutions writes articles about?
+- I have excellent news. After many many months of trial and error and an unbelievable demonstration of human perseverance, we have managed to urgently reduce the start-up time of our enterprise application significantly. Isn't this the sort of thing your institution writes articles about?
 - Absolutely! How significant of a significance are we talking about here?
 - The startup-time of the old version was around `35` seconds, and now through hulkish feats of solid engineering, we are looking at a startup-time of about `30` seconds.
 - So, `5` seconds?
