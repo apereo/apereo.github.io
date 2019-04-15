@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Apereo CAS 6.1.x - SAML2 Metadata Query Protocol
+title:      Apereo CAS - SAML2 Metadata Query Protocol
 summary:    Learn how you may configure Apereo CAS to fetch and validate SAML2 metadata for service providers from InCommon's MDQ server using the metadata query protocol.
 
 tags:       [CAS]
