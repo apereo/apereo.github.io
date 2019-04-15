@@ -16,7 +16,7 @@ Per-entity metadata allows CAS acting as a SAML2 identity provider to consume on
 
 In this blog post, we will take a look at [InCommon MDQ server](https://spaces.at.internet2.edu/display/MDQ/The+Guide) and how Apereo CAS may be configured to fetch and validate service provider metadata on demand using MDQ and family.
 
-<div class="alert alert-warn">
+<div class="alert alert-warning">
 <strong>Preview Phase</strong><br/>The signing certificate (public key) for the Technology Preview version of this service may be changed with little notice. The production public key and its certificate will be stable and long-lived.
 </div>
 
