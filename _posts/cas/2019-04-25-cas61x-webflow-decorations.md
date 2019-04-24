@@ -86,7 +86,7 @@ class Decoration implements Serializable {
 The above script simply attempts to stuff a `Decoration` object into the webflow using the lookup key `decoration`. Our object carries two fields for `title` and `description` that point to keys in our language bundles. The webflow will be decorated based on the incoming service and our condition therein, exposing access to our data object under the key `decoration`, which can then be used in CAS views to display data, etc. Mainly, etc.
 
 <div class="alert alert-success">
-<strong>Groovy Script</strong><br/>The script is cached and watched for changes. As you adjust the logic and update the script, CAS may detect changes to the file and auto-refresh its cached version of it after a small delay</a>.
+<strong>Groovy Script</strong><br/>The script is cached and watched for changes. As you adjust the logic and update the script, CAS may detect changes to the file and auto-refresh its cached version of it after a small delay.
 </div>
 
 
