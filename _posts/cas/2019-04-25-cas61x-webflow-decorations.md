@@ -77,9 +77,9 @@ def run(Object[] args) {
 }
 
 class Decoration implements Serializable {
-    private static final long serialVersionUID = 8517547235465666978L;
-    String title;
-    String description;
+    private static final long serialVersionUID = 8517547235465666978L
+    String title
+    String description
 }
 ```
 
