@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Apereo CAS - Webflow Decorations
-summary:    Learn how you may configure Apereo CAS to 
+summary:    Learn how you may decorate the Apereo CAS login webflow to inject data pieces and objects into the processing engine for display purposes, peace on earth and properspty of all mankind, etc. Mainly, etc.
 
 tags:       [CAS]
 ---
