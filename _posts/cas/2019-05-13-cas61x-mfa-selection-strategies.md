@@ -70,7 +70,7 @@ cas.authn.mfa.provider-selection-enabled=true
 
 ## Selection Script
 
-Sometimes, you need more control over the selection process; to account for external system behavior, other variables, etc. in situations like this, CAs allows you to *script* the selection logic via the magic of Groovy:
+Sometimes, you need more control over the selection process; to account for external system behavior, other variables, etc. In situations like this, CAS allows you to *script* the selection logic via the magic of Groovy:
 
 ```properties
 cas.authn.mfa.provider-selector-groovy-script=file:/etc/cas/config/mfaGroovySelector.groovy
