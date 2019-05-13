@@ -23,7 +23,7 @@ Our starting position is based on:
 - [CAS WAR Overlay](https://github.com/apereo/cas-overlay-template)
 - [Hazlcast Ticket Registry](https://apereo.github.io/cas/development/ticketing/Hazelcast-Ticket-Registry.html)
 
-# CAS Hazelcas Ticket Registry
+# CAS Hazelcast Ticket Registry
 
 Running CAS with Hazelcast, in general and without Docker, is simply as simple as including [Hazlcast Ticket Registry](https://apereo.github.io/cas/development/ticketing/Hazelcast-Ticket-Registry.html) in the overlay with the following *starter* settings:
 
