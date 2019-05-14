@@ -78,9 +78,10 @@ cas.ticket.registry.hazelcast.management-center.enabled=true
 cas.ticket.registry.hazelcast.management-center.url=http://host.docker.internal:8080/hazelcast-mancenter/
 ```
 
-`public-address` overrides the public address of a member. By default, a member selects its socket address as its public address. In this case, their public addresses are not an address of a local network interface but an address defined by the host. It is optional to set and useful when you have a private cloud. Note that, the value for this element should be given in the format of `IP address:port`.
+`public-address` overrides the public address of a member. By default, a member selects its socket address as its public address. In this case, the public addresses of the members are not an address of the container's local network but an address defined by the host. This setting is optional to set and useful when you have a private cloud. Note that, the value for this element should be given in the format of `IP address:port`.
 
-Also, from Docker `18.03` onwards the recommendation is to connect to the special DNS name `host.docker.internal` which resolves to the internal IP address used by the host. This is for development purpose and will not work in a production environment outside of Docker Desktop for Mac. You will need to adjust the url if you're using a different OS.
+Also, from Docker `18.03` onwards the recommendation is to connect to the special DNS name `host.docker.internal` which resolves to the internal IP address used by the host. This is for development purpose and will not work in a production environment
+ outside of Docker Desktop for Mac. You will need to adjust the url if you're using a different OS.
 
 Now, we should be ready to build the Docker image via `jib`:
 
