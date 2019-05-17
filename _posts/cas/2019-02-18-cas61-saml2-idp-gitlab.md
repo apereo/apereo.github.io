@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Apereo CAS - SAML2 Identity Provider Integration w/ Gitlab (also staring HAProxy and LDAP)
+title:      Apereo CAS - SAML2 Identity Provider Integration w/ Gitlab (also starting HAProxy and LDAP)
 summary:    Learn how Apereo CAS may act as a SAML2 identity provider for Gitlab and run everything locally on a workstation with Docker and Java.
 tags:       [CAS,SAML,Gitlab,HAProxy,LDAP]
 ---

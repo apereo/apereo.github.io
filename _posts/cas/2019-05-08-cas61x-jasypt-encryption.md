@@ -15,7 +15,7 @@ If you are running CAS in standalone mode without the presence of the Spring Clo
 
 Jasypt is a java library which allows the deployer to add basic encryption capabilities to CAS. Jasypt supplies command-line tools useful for performing encryption, decryption, etc. In order to use the tools, you may download the Jasypt distribution. Once unzipped, you will find a `jasypt-$VERSION/bin` directory a number of `bat|sh` scripts that you can use for encryption/decryption operations `(encrypt|decrypt).(bat|sh)`.
 
-However, an easier approach might be to use the native [CAS commandline shell](https://apereo.github.io/cas/development/installation/Configuring-Commandline-Shell.html). The CAS command-line shell provides the ability to query the CAS server for help on available settings/modules and various other utility functions one of which is the ability to encrypt and/or decrypt settings via Jasypt. We'll use the shell to encrypt a few settings and place them in your CAS configuration file, expecting the server to decrypt and use them as needed.
+However, an easier approach might be to use the native [CAS command-line shell](https://apereo.github.io/cas/development/installation/Configuring-Commandline-Shell.html). The CAS command-line shell provides the ability to query the CAS server for help on available settings/modules and various other utility functions one of which is the ability to encrypt and/or decrypt settings via Jasypt. We'll use the shell to encrypt a few settings and place them in your CAS configuration file, expecting the server to decrypt and use them as needed.
 
 Our starting position is based on:
 
@@ -60,7 +60,7 @@ Next, let's use our typical `cas.properties` file with the encrypted value:
 cas.authn.accept.users={cas-cipher}mMcg02NysblAcwYI+bFRpEcHBQaVQ51J
 ```
 
-Almost there...the last task is to instruct CAS to use the proper algorithm, decryption key and other relevant parameters when attempting to decrypt settings.
+Almost there...the last task is to instruct CAS to use the proper algorithm, decryption key, and other relevant parameters when attempting to decrypt settings.
 
 ```properties
 # cas.standalone.configurationSecurity.alg=PBEWithMD5AndTripleDES
@@ -70,7 +70,7 @@ Almost there...the last task is to instruct CAS to use the proper algorithm, dec
 ```
 
 The above settings may be passed to CAS at runtime using either OS environment variables,
-system properties or normal commandline arguments.
+system properties or normal command-line arguments.
 
 # More...
 

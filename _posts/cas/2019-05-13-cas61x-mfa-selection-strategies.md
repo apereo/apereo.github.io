@@ -11,7 +11,7 @@ tags:       [CAS]
 
 # Overview
 
-Sometimes, it takes more than one multifactor providers to change a lightbulb. With CAS, it is certainly possible to configure more than one provider integration at the same time. The trick, however, is to decide the appropriate provider, should more than one qualify for the same transaction. Imagine you have an application registered with CAS whose multifactor authentication policy is equally deserving of, let's say, Duo Security as well as Google Authenticator. How would you go about choosing one that makes the most sense? 
+Sometimes, it takes more than one multifactor provider to change a lightbulb. With CAS, it is certainly possible to configure more than one provider integration at the same time. The trick, however, is to decide the appropriate provider, should more than one qualify for the same transaction. Imagine you have an application registered with CAS whose multifactor authentication policy is equally deserving of, let's say, Duo Security as well as Google Authenticator. How would you go about choosing one that makes the most sense? 
 
 Our starting position is based on:
 
