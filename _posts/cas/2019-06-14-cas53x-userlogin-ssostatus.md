@@ -108,7 +108,7 @@ Finally, to invoke the script a client application would invoke the equivalent o
 curl https://sso.example.org/cas/isloggedin?tgc=[ticket-granting cookie value]
 ```
 
-Remember that the caller should be able to reach the CAS cookie. Its only job is to pass it onto CAS, as the cookie content is entirely meaningless and the CAS server is the only authority who can decrypt and parse its contents.
+Remember that the caller should be able to read the CAS cookie. Its only job is to pass it onto CAS, as the cookie content is entirely meaningless and the CAS server is the only authority who can decrypt and parse its contents.
 
 # So...
 
