@@ -23,10 +23,10 @@ A more traditional approach would be to try to take advantage of the `gateway` f
 
 The basic premise is receiving a `ticket` back from CAS indicates a valid SSO session and its absence indicates otherwise. In this scenario, CAS does attempt to validate and verify the SSO session tied to the CAS cookie to determine whether or not a ticket should be issued.
 
-While this works for certain scenarios, it is quite chatty and does involve quite of bit of back and forth. As an alternative, another approach would be to build a special endpoint inside CAS that would be more *REST* friendly to check on the status of SSO without involving a lot of the browser as much with ‍`302` redirects and without the implicit assumption of the CAS protocol as the mediator. Note that one caveat with this new approach would be that the caller, our application, would need to have access to the CAS special cookie to pass it onto our endpoint for follow-up processing and reporting on the SSO session status.
+While this works for certain scenarios, it is quite chatty and does involve quite of bit of back and forth. As an alternative, another approach would be to build a special endpoint inside CAS that would be more *REST* friendly to check on the status of SSO without involving the browser as much with ‍`302` redirects and without the implicit assumption of the CAS protocol as the mediator. Note that one caveat with this new approach would be that the caller, our application, would need to have access to the CAS special cookie to pass it onto our endpoint for follow-up processing and reporting on the SSO session status.
 
 <div class="alert alert-info">
-<strong>Collaborate</strong><br/>Note that an <code>sso</code> endpoint does exist in CAS already that is modeled as a Spring Boot Actuator endpoint which more or less delivers this functionality. Our use case here is slightly more custom, thus the need for a new special endpoint that is in concept similar to the <code>sso</code> endpoint.
+<strong>Existing Functionality</strong><br/>Note that an <code>sso</code> endpoint does exist in CAS already that is modeled as a Spring Boot Actuator endpoint which more or less delivers this functionality. Our use case here is slightly more custom, thus the need for a new special endpoint that is in concept similar to the <code>sso</code> endpoint.
 </div>
 
 Let's get started with a prototype. Our starting position is based on:
@@ -34,11 +34,11 @@ Let's get started with a prototype. Our starting position is based on:
 - CAS `5.3.x`
 - Java `8`
 - [CLI JSON Processor `jq`](https://stedolan.github.io/jq/)
-- [CAS WAR Overlay](https://github.com/apereo/cas-overlay-template)
+- [CAS WAR Overlay](https://github.com/apereo/cas-overlay-template/tree/5.3)
 
 # Configuration
 
-Let's [extend our CAS configuration](https://apereo.github.io/cas/development/configuration/Configuration-Management-Extensions.html) to include a special endpoint to report back on SSO status:
+Let's [extend our CAS configuration](https://apereo.github.io/cas/5.3.x/installation/Configuration-Management-Extensions.html) to include a special endpoint to report back on SSO status:
 
 ```java
 @Configuration("SomeConfiguration")
