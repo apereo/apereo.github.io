@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Apereo CAS - Handling Errors with Grace
+title:      Apereo CAS - Handling Authentication Webflow Errors with Grace
 summary:    Learn how to modify Apereo CAS to customize exception handling and produce localized error messages for your deployment.
 tags:       [CAS]
 ---
