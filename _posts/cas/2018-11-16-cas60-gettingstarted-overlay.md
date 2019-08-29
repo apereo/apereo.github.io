@@ -236,7 +236,7 @@ In this tutorial, we are going to configure CAS to use a [Hazelcast Ticket Regis
 First, ensure you have declared the appropriate module/intention in the build:
 
 ```groovy
-compile "org.apereo.cas:cas-server-support-hazlcast-ticket-registry:${casServerVersion}"
+compile "org.apereo.cas:cas-server-support-hazelcast-ticket-registry:${casServerVersion}"
 ```
 
 Next, the AWS-specific configuration of Hazelcast would go into our `cas.properties`:
