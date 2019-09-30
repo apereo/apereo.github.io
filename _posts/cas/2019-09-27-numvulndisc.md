@@ -86,4 +86,5 @@ CAS is Apache v2 open source software under the sponsorship of the Apereo Founda
 * [CAS Security Vulnerability Response Model](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html)
 
 On behalf of the CAS Application Security working group,
+
 [Misagh Moayyed](https://twitter.com/misagh84)
