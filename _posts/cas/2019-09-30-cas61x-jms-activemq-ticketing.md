@@ -56,7 +56,7 @@ java -jar build/libs/cas.war --server.port=8444
 java -jar build/libs/cas.war --server.port=8445
 ```
 
-In the CAS logs, you should be abl to notice the following statements:
+In the CAS logs, you should be able to notice the following statements:
 
 ```bash
 <Established shared JMS Connection: ActiveMQConnection {id=ID:misaghmoayyed.local-65269-1569759674508-1:1,clientId=null,started=false}>
