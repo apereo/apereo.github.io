@@ -75,8 +75,6 @@ Modify your CAS overlay to point to the version `6.1.0-RC6`, once released. A sn
 cas.version=6.1.0-RC6
 ```
 
-**As of this writing, CAS `6.1` still is in development**. The patch will be available and released per the [CAS release schedule](https://github.com/apereo/cas/milestones). For the time being, you may be able to switch your overlay to point to `6.1.0-RC6-SNAPSHOT` instead.
-
 # Support
 
 CAS is Apache v2 open source software under the sponsorship of the Apereo Foundation, supported by community volunteers and enthusiasts. Support options may be [found here](https://apereo.github.io/cas/Support.html).
