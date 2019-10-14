@@ -87,6 +87,7 @@ The screen should ask for the token:
 ![image](https://user-images.githubusercontent.com/1205228/66712549-4d182b00-edaf-11e9-8ab8-2ce916577eac.png)
 
 If you check your email, you should have received a token:
+
 ![image](https://user-images.githubusercontent.com/1205228/66712619-78e7e080-edb0-11e9-97bc-0d908d1052d8.png)
 
 Submit the generated token `CASMFA-004291` back to CAS and you should be allowed to proceed.
