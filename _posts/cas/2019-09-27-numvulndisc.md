@@ -43,7 +43,7 @@ Most if not all references to `RandomStringUtils` in CAS are purely used interna
 
 - contains a compromised token that is identical to the one tracked and created by CAS.
 - is still valid within the configured expiration timeframe.
-- is signed and encrypted using the same keypair shared by CAS.
+- is signed and encrypted using the same keypair used by CAS.
 
 The significant of this issue is considered low for CAS, though it is recommended that upgrades be carried out to removes any chances of security breaches.
 
