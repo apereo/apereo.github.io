@@ -9,10 +9,9 @@ tags:       [CAS]
 
 This is an [Apereo CAS project vulnerability disclosure](https://groups.google.com/a/apereo.org/forum/#!topic/cas-appsec-public/zXqxDN9rB8A), describing an issue in CAS that affects random number generation.
 
-Apereo CAS is using an insecure source of randomness to generate it's password reset URL among other things. This is because Apereo CAS relies upon apache commons lang3 `RandomStringUtils`. From the documentation:
+Apereo CAS is using an insecure source of randomness to generate it's password reset URL among other things. This is because Apereo CAS relies upon apache commons lang3 `RandomStringUtils`. [From the documentation](https://commons.apache.org/proper/commons-lang/javadocs/api-3.9/org/apache/commons/lang3/RandomStringUtils.html):
 
 > Caveat: Instances of Random, upon which the implementation of this class relies, are not cryptographically secure.
-> https://commons.apache.org/proper/commons-lang/javadocs/api-3.9/org/apache/commons/lang3/RandomStringUtils.html
 
 The following areas and components in CAS make use of `RandomStringUtils` to generate a random number:
 
