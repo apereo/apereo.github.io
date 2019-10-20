@@ -136,7 +136,7 @@ Once the artifacts are successfully installed, you can pick up the `-SNAPSHOT` a
 Ideally, changes that are introduced need to be tested using either simple unit tests or integration tests.
 
 <div class="alert alert-info">
-<strong>JUnit Tests</strong><br/>CAS uses the JUnit framework <code>5.4</code> to design and execute tests. All test cases need to be aligned with the specific requirements of the JUnit framework properly before they can pass. This means the correct use of package imports, assertions, method lifecycle annotations, etc.</div>
+<strong>JUnit Tests</strong><br/>As of this writing, CAS uses the JUnit framework <code>5.5</code> to design and execute tests. All test cases need to be aligned with the specific requirements of the JUnit framework properly before they can pass. This means the correct use of package imports, assertions, method lifecycle annotations, etc.</div>
 
 ## Unit Tests
 

@@ -55,9 +55,9 @@ springBootVersion=2.2.0.RELEASE
 
 appServer=-tomcat
 
-gradleVersion=5.3
+gradleVersion=5.6.3
 tomcatVersion=9
-tomcatFullVersion=9.0.16
+tomcatFullVersion=9.0.27
 
 group=org.apereo.cas
 sourceCompatibility=11
@@ -350,6 +350,23 @@ cas.server.tomcat.http.enabled=false
 cas.server.tomcat.httpProxy.enabled=true
 cas.server.tomcat.httpProxy.secure=true
 cas.server.tomcat.httpProxy.scheme=https
+```
+
+## Deploy via Docker
+
+The overlay embraces the Jib Gradle Plugin to provide easy-to-use out-of-the-box tooling for building CAS docker images. Jib is an open-source Java containerizer from Google that handles all the steps of packaging CAS into a container image. It does not require you to write a Dockerfile and it is directly integrated into the overlay.
+
+Building a CAS docker image via jib is as simple as:
+
+```bash
+./gradlew build jibDockerBuild
+```
+
+If you prefer a more traditional approach, there is always:
+
+```bash
+./gradlew build
+docker-compose build
 ```
 
 # What About...?
