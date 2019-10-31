@@ -1,19 +1,19 @@
 ---
 layout:     post
-title:      CAS 6.1.x Deployment - WAR Overlays
+title:      CAS 6.2.x Deployment - WAR Overlays
 summary:    Learn how to configure and build your own CAS deployment via the WAR overlay method, get rich quickly, stay healthy indefinitely and respect family and friends in a few very easy steps.
 tags:       [CAS]
 ---
 
-This is a short and sweet tutorial on how to deploy CAS via [the WAR Overlay method](https://apereo.github.io/cas/6.1.x/installation/WAR-Overlay-Installation.html).
+This is a short and sweet tutorial on how to deploy CAS via [the WAR Overlay method][overlaysetup].
 
 This tutorial specifically requires and focuses on:
 
-- CAS `6.1.x`
+- CAS `6.2.x`
 - Java 11
 
 <div class="alert alert-info">
-  <strong>Need Help?</strong><br/>If you ever get stuck and are in need of additional assistance, start by reviewing the suggestions <a href="https://apereo.github.io/cas/6.1.x/installation/Troubleshooting-Guide.html">provided here</a>. You may also look at available support options <a href="https://apereo.github.io/cas/Support.html">provided here</a>.
+  <strong>Need Help?</strong><br/>If you ever get stuck and are in need of additional assistance, start by reviewing the suggestions <a href="https://apereo.github.io/cas/6.2.x/installation/Troubleshooting-Guide.html">provided here</a>. You may also look at available support options <a href="https://apereo.github.io/cas/Support.html">provided here</a>.
 </div>
 
 * A markdown unordered list which will be replaced with the ToC
@@ -21,9 +21,9 @@ This tutorial specifically requires and focuses on:
 
 # Overlay...What?
 
-Overlays are a strategy to combat repetitive code and/or resources. Rather than downloading the CAS codebase and building it from source, overlays allow you to download a pre-built vanilla CAS web application server provided by the project itself, override/insert specific behavior into it and then merge it all back together to produce the final (web application) artifact. You can find a lot more about how overlays work [here](https://apereo.github.io/cas/6.1.x/installation/WAR-Overlay-Installation.html).
+Overlays are a strategy to combat repetitive code and/or resources. Rather than downloading the CAS codebase and building it from source, overlays allow you to download a pre-built vanilla CAS web application server provided by the project itself, override/insert specific behavior into it and then merge it all back together to produce the final (web application) artifact. You can find a lot more about how overlays work [here][overlaysetup].
 
-The concept of the WAR Overlay is NOT a CAS invention. It's specifically an *Apache Maven* feature and of course, there are techniques and plugins available to apply the same concept to Gradle-based builds as well. For this tutorial, the Gradle overlay we will be working with is [available here](https://github.com/apereo/cas-overlay-template). Be sure to check out the appropriate branch, that is `6.1`.
+The concept of the WAR Overlay is NOT a CAS invention. It's specifically an *Apache Maven* feature and of course, there are techniques and plugins available to apply the same concept to Gradle-based builds as well. For this tutorial, the Gradle overlay we will be working with is [available here][overlay]. Be sure to check out the appropriate branch, that is `6.2`.
 
 <div class="alert alert-info">
   <strong>Gradle WAR Overlay</strong><br/>The Maven WAR overlay template is now deprecated and moved aside. The reference overlay project simply resides here and is transformed to use the Gradle build tool instead. This is done to reduce maintenance overhead and simplify the deployment strategy while allowing future attempts to make auto-generation of the overlay as comfortable as possible.
@@ -32,7 +32,7 @@ The concept of the WAR Overlay is NOT a CAS invention. It's specifically an *Apa
 Once you have forked and cloned the repository locally, you're ready to begin.
 
 <div class="alert alert-info">
-  <strong>Note</strong><br/>Remember to switch to the appropriate branch. Today, the <code>master</code> branch of the repository applies to CAS <code>6.1.x</code> deployments. That may not necessarily remain true when you start your own deployment. So examine the branches and make sure you <code>checkout</code> the one matching your intended CAS version.
+  <strong>Note</strong><br/>Remember to switch to the appropriate branch. Today, the <code>master</code> branch of the repository applies to CAS <code>6.2.x</code> deployments. That may not necessarily remain true when you start your own deployment. So examine the branches and make sure you <code>checkout</code> the one matching your intended CAS version.
 </div>
 
 # Overlay's Anatomy
@@ -50,7 +50,7 @@ The CAS Gradle Overlay is composed of several sections. The ones you need to wor
 In `gradle.properties` file, project settings and versions are specified:
 
 ```properties
-cas.version=6.1.0
+cas.version=6.2.0
 springBootVersion=2.2.0.RELEASE
 
 appServer=-tomcat
@@ -66,7 +66,7 @@ targetCompatibility=11
 
 The `gradle.properties` file describes what versions of CAS, Spring Boot, and Java are required for the deployment. You are in practice mostly concerned with the `cas.version` setting and as new (maintenance) releases come out, it would be sufficient to simply update that version and re-run the build.
 
-This might be a good time to review the CAS project's [Release Policy](https://apereo.github.io/cas/developer/Release-Policy.html) as well as [Maintenance Policy](https://apereo.github.io/cas/developer/Maintenance-Policy.html).
+This might be a good time to review the CAS project's [Release Policy][releasepolicy] as well as [Maintenance Policy][maintenancepolicy].
 
 ## Dependencies
 
@@ -124,7 +124,7 @@ You can see that the build attempts to download, clean, compile and package all 
 
 # Configuration
 
-I am going to skip over the configuration of `/etc/cas/config` and all that it deals with. If you need the reference, you may always [use this guide](https://apereo.github.io/cas/6.1.x/configuration/Configuration-Management.html) to study various aspects of CAS configuration.
+I am going to skip over the configuration of `/etc/cas/config` and all that it deals with. If you need the reference, you may always [use this guide][configmgmt] to study various aspects of CAS configuration.
 
 Suffice it to say that, quite simply, CAS deployment expects *the main* configuration file to be found under `/etc/cas/config/cas.properties`. This is a key-value store that is able to dictate and alter the behavior of the running CAS software.
 
@@ -144,7 +144,7 @@ It is **VERY IMPORTANT** that you contain and commit the entire overlay director
 
 # LDAP Authentication
 
-We need to first establish a primary mode of validating credentials by sticking with [LDAP authentication](https://apereo.github.io/cas/6.1.x/installation/LDAP-Authentication.html). The strategy here, as indicated by the CAS documentation, is to declare the intention/module in the build script:
+We need to first establish a primary mode of validating credentials by sticking with [LDAP authentication][ldapauthn]. The strategy here, as indicated by the CAS documentation, is to declare the intention/module in the build script:
 
 ```groovy
 compile "org.apereo.cas:cas-server-support-ldap:${casServerVersion}"
@@ -169,9 +169,9 @@ cas.authn.ldap[0].principalAttributeList=memberOf,cn,givenName,mail
 
 # Registering Applications
 
-Client applications that wish to use the CAS server for authentication must be registered with the server apriori. CAS provides a number of [facilities to keep track of the registration records](https://apereo.github.io/cas/6.1.x/services/Service-Management.html#storage) and you may choose any that fits your needs best. In more technical terms, CAS deals with service management using two specific components: Individual implementations that support a form of a database are referred to as *Service Registry* components and they are many. There is also a parent component that sits on top of the configured service registry as more of an orchestrator that provides a generic facade and entry point for the rest of CAS without entangling all other operations and subsystems with the specifics and particulars of a storage technology.
+Client applications that wish to use the CAS server for authentication must be registered with the server apriori. CAS provides a number of [facilities to keep track of the registration records][servicemgmt] and you may choose any that fits your needs best. In more technical terms, CAS deals with service management using two specific components: Individual implementations that support a form of a database are referred to as *Service Registry* components and they are many. There is also a parent component that sits on top of the configured service registry as more of an orchestrator that provides a generic facade and entry point for the rest of CAS without entangling all other operations and subsystems with the specifics and particulars of a storage technology.
 
-In this tutorial, we are going to try to configure CAS with [the JSON service registry](https://apereo.github.io/cas/6.1.x/services/JSON-Service-Management.html).
+In this tutorial, we are going to try to configure CAS with [the JSON service registry][jsonservicemgmt].
 
 ## Configuration
 
@@ -202,9 +202,9 @@ cas.serviceRegistry.json.location=file:/etc/cas/services
 
 # Ticketing
 
-A robust CAS deployment requires the presence and configuration of an *internal* database that is responsible for [keeping track of tickets](https://apereo.github.io/cas/6.1.x/ticketing/Configuring-Ticketing-Components.html) issued by CAS. CAS itself comes by default with a memory-based node-specific cache that is often more than sufficient for smaller deployments or certain variations of a [clustered deployment](https://apereo.github.io/cas/6.1.x/planning/High-Availability-Guide.html). Just like the service management facility, large variety of databases and storage options are supposed by CAS under the facade of a *Ticket Registry*.
+A robust CAS deployment requires the presence and configuration of an *internal* database that is responsible for [keeping track of tickets][ticketing] issued by CAS. CAS itself comes by default with a memory-based node-specific cache that is often more than sufficient for smaller deployments or certain variations of a [clustered deployment][haguide]. Just like the service management facility, large variety of databases and storage options are supposed by CAS under the facade of a *Ticket Registry*.
 
-In this tutorial, we are going to configure CAS to use a [Hazelcast Ticket Registry](https://apereo.github.io/cas/6.1.x/ticketing/Hazelcast-Ticket-Registry.html) with the assumption that our deployment is going to be deployed in an AWS-sponsored environment. Hazelcast Ticket Registry is often a decent choice when deploying CAS in a cluster and can take advantage of AWS's native support for Hazelcast in order to read node metadata properly and locate other CAS nodes in the same cluster in order to present a common, global and shared ticket registry. This is an ideal choice that requires very little manual work and/or troubleshooting, comparing to using options such as Multicast or manually noting down the address and location of each CAS server in the cluster.
+In this tutorial, we are going to configure CAS to use a [Hazelcast Ticket Registry][hazelcasttickets] with the assumption that our deployment is going to be deployed in an AWS-sponsored environment. Hazelcast Ticket Registry is often a decent choice when deploying CAS in a cluster and can take advantage of AWS's native support for Hazelcast in order to read node metadata properly and locate other CAS nodes in the same cluster in order to present a common, global and shared ticket registry. This is an ideal choice that requires very little manual work and/or troubleshooting, comparing to using options such as Multicast or manually noting down the address and location of each CAS server in the cluster.
 
 ## Configuration
 
@@ -239,7 +239,7 @@ cas.ticket.registry.hazelcast.cluster.members=123.321.123.321,223.621.123.521,..
 
 # Multifactor Authentication via Duo Security
 
-As a rather common use case, the majority of CAS deployments that intend to turn on multifactor authentication support tend to do so via [Duo Security](https://apereo.github.io/cas/6.1.x/installation/DuoSecurity-Authentication.html). We will be going through the same exercise here where we let CAS trigger Duo Security for users who belong to the `mfa-eligible` group, indicated by the `memberOf` attribute on the LDAP user account.
+As a rather common use case, the majority of CAS deployments that intend to turn on multifactor authentication support tend to do so via [Duo Security][duo]. We will be going through the same exercise here where we let CAS trigger Duo Security for users who belong to the `mfa-eligible` group, indicated by the `memberOf` attribute on the LDAP user account.
 
 
 ## Configuration
@@ -289,7 +289,7 @@ Remember that the default path for endpoints exposed over the web is at `/actuat
 
 # Overlay Customization
 
-The `build/libs` directory contains the results of the overlay process. Since I have not actually customized and overlaid anything yet, all configuration files simply match their default and are packaged as such. As an example, let's grab [the default message bundle](https://apereo.github.io/cas/6.1.x/ux/User-Interface-Customization-Localization.html) and change the text associated with `screen.welcome.instructions`.
+The `build/libs` directory contains the results of the overlay process. Since I have not actually customized and overlaid anything yet, all configuration files simply match their default and are packaged as such. As an example, let's grab [the default message bundle][localization] and change the text associated with `screen.welcome.instructions`.
 
 <div class="alert alert-warning">
   <strong>Remember</strong><br/>Do NOT ever make changes in the <code>build</code> directory. The changesets will be cleaned out and set back to defaults every time you do a build. Follow the overlay process to avoid surprises.
@@ -377,6 +377,21 @@ For more content, [please see this link](https://apereo.github.io/tags/#CAS).
 
 It's important that you start off simple and make changes one step at a time. Once you have a functional environment, you can gradually and slowly add customizations to move files around.
 
-I hope this review was of some help to you and I am sure that both this post as well as the functionality it attempts to explain can be improved in any number of ways. Please feel free to [engage and contribute](https://apereo.github.io/cas/developer/Contributor-Guidelines.html) as best as you can.
+I hope this review was of some help to you and I am sure that both this post as well as the functionality it attempts to explain can be improved in any number of ways. Please feel free to [engage and contribute][contribute] as best as you can.
 
 [Misagh Moayyed](https://twitter.com/misagh84)
+
+[duo]: https://apereo.github.io/cas/6.2.x/installation/DuoSecurity-Authentication.html
+[hazelcasttickets]: https://apereo.github.io/cas/6.2.x/ticketing/Hazelcast-Ticket-Registry.html
+[contribute]: https://apereo.github.io/cas/developer/Contributor-Guidelines.html
+[localization]: https://apereo.github.io/cas/6.2.x/ux/User-Interface-Customization-Localization.html
+[haguide]: https://apereo.github.io/cas/6.2.x/planning/High-Availability-Guide.html
+[ticketing]: https://apereo.github.io/cas/6.2.x/ticketing/Configuring-Ticketing-Components.html
+[jsonservicemgmt]: https://apereo.github.io/cas/6.2.x/services/JSON-Service-Management.html
+[servicemgmt]: https://apereo.github.io/cas/6.2.x/services/Service-Management.html#storage
+[ldapauthn]: https://apereo.github.io/cas/6.2.x/installation/LDAP-Authentication.html
+[configmgmt]: https://apereo.github.io/cas/6.2.x/configuration/Configuration-Management.html
+[overlay]: https://github.com/apereo/cas-overlay-template
+[releasepolicy]: https://apereo.github.io/cas/developer/Release-Policy.html
+[maintenancepolicy]: https://apereo.github.io/cas/developer/Maintenance-Policy.html
+[overlaysetup]: https://apereo.github.io/cas/6.2.x/installation/WAR-Overlay-Installation.html
