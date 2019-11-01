@@ -34,8 +34,8 @@ management.endpoints.web.exposure.include=status,health
 management.endpoint.status.enabled=true
 management.endpoint.health.enabled=true
 
-cas.monitor.endpoints.endpoint.defaults.access=IP_ADDRESS
-cas.monitor.endpoints.endpoint.defaults.requiredIpAddresses=131.107.+
+cas.monitor.endpoints.endpoint.defaults.access[0]=IP_ADDRESS
+cas.monitor.endpoints.endpoint.defaults.requiredIpAddresses[0]=127\\.0\\.0\\.1
 
 management.endpoint.health.show-details=always
 ```
