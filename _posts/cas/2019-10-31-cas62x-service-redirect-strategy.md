@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Apereo CAS - Service Rediection Strategies
+title:      Apereo CAS - Service Redirection Strategies
 summary:    Learn to customize Apereo CAS to modify the default strategy used for redirecting the authentication flow back to relying parties.
 tags:       [CAS]
 ---

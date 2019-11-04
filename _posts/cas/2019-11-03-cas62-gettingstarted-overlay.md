@@ -274,6 +274,12 @@ Many CAS deployments rely on the `/status` endpoint for monitoring the health an
 
 ## Configuration
 
+First, ensure you have declared the appropriate module/intention in the build:
+
+```groovy
+compile "org.apereo.cas:cas-server-support-monitor:${casServerVersion}"
+```
+
 To enable and expose the `status` endpoint, the following settings should come in handy:
 
 ```properties
