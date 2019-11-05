@@ -289,7 +289,7 @@ cas.authn.oauth.crypto.encryption-enabled=true
 
 <div class="alert alert-info">
 <strong>Configuration Namespaces</strong><br/>Note the similarities of the above configuration block
-and that of access tokens when it comes to th <code>crypto</code> namespace. This is not by chance,
+and that of access tokens when it comes to the <code>crypto</code> namespace. This is not by chance,
 as configuration namespaces in CAS are internally reused everywhere to streamline the specification
 and validation process as much as possible for maximum code re-use. In <i>most cases</i>, such namespaces
 in CAS configuration settings are transferable to other areas that declare support for the same feature
