@@ -26,7 +26,7 @@ Our starting position is:
 - [JMeter - Latest Version](http://jmeter.apache.org/download_jmeter.cgi)
 - [CAS Online Manual - JMeter Performance Scripts](https://apereo.github.io/cas/6.1.x/high_availability/Performance-Testing-JMeter.html)
 
-Note: I am assuming you already have a non-Prod working version of CAS running or at least have the knowledge of setting up a new CAS instance. Also, I will not be going over the process of getting CAS working with SAML2, since that has been covered in several other blog postings on the [Apereo CAS blog](https://apereo.github.io/) site. Finally, I will not be going over the installation of JMeter since there are a ton of online tutorials to install JMeter on any flavor of an operating system.
+Note: I am assuming you already have a non-Prod working version of CAS running or at least have the knowledge of setting up a new CAS instance. Also, I will not be going over the process of getting CAS working with SAML2, since that has been covered in several other blog postings on the [Apereo CAS blog](https://apereo.github.io/) site. Finally, I will not be going over the installation of JMeter since there are a ton of online tutorials to install JMeter on any flavor of operating systems.
 
 # CAS Performance Testing
 
