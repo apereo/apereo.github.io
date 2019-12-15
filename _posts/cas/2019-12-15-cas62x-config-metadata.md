@@ -106,7 +106,7 @@ whether the setting requires a particular module in the build and whether that m
 whether the setting is required and one that is expected to be defined and tweaked by you, or optional with a default value.
 
 <div class="alert alert-success">
-<strong>Collaborate</strong><br/>If you really wanted to be creative, you could examine the <code>exportConfigMetadata</code> and observe how it builds the final
+<strong>Note</strong><br/>If you really wanted to be creative, you could examine the <code>exportConfigMetadata</code> and observe how it builds the final
 report. Then, use the same strategy to dynamically build a web page, a PDF file or a markdown template of all settings.
 </div>
 
@@ -158,7 +158,7 @@ Please refer to the migration guide or reference guide for potential alternative
 ```                                                                               
 
 <div class="alert alert-success">
-<strong>Collaborate</strong><br/>It does not matter where the properties come from. As long as the CAS runtime receives a setting,
+<strong>Note</strong><br/>It does not matter where the properties come from. As long as the CAS runtime receives a setting,
 the validation rules and migration assistance will kick into apply. This assistant is also not limited to CAS-specific properties,
 but to <i>every single setting</i> that the CAS runtime can use, regardless of ownership.
 </div>
