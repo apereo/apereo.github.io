@@ -131,28 +131,41 @@ and provide guidance on replacements. In certain cases, the replacement setting 
 if a replacement is indeed available. In other cases, a warning will show up in the logs instructing you to take action and update your configuration
 with notes and explanations.
 
+Note that automatic replacements of properties may only take place if they are type-compatible.
+
 Let's say we have the following two settings in our CAS configuration:
 
 ```properties     
 # This setting can be replaced with its compatible alternative
 # automatically, with a warning in the logs
-cas.service-registry.config.location=file:/etc/cas/config/services  
+server.context-path=/cas
 
 # There is no compatible replacement property for this setting
-cas.admin-pages-security.ip=123.456.789.198
+cas.service-registry.config.location=file:/etc/cas/config/services  
 ```      
 
 If you run CAS, the following report in the logs will guide you with instructions:
 
 ```bash
+WARN [o.s.b.c.p.m.PropertiesMigrationListener] - <
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'bootstrapProperties':
+    Key: server.context-path
+            Replacement: server.servlet.context-path
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. \
+To silence this warning, please update your configuration to use the new keys.
+>
+
 ERROR [o.s.b.c.p.m.PropertiesMigrationListener] - <
 The use of configuration keys that are no longer supported was found in the environment:
 
 Property source 'bootstrapProperties':
-        Key: cas.admin-pages-security.ip
-                Reason: management endpoints security under cas.monitor.endpoints.endpoint.*. e.g. cas.monitor.endpoints.endpoint.defaults.access[0].
-        Key: cas.service-registry.config.location
-                Reason: Property renamed due to cas.service-registry.json.location instead.
+    Key: cas.service-registry.config.location
+            Reason: Property renamed due to cas.service-registry.json.location instead.
+
 
 Please refer to the migration guide or reference guide for potential alternatives.
 ```                                                                               
