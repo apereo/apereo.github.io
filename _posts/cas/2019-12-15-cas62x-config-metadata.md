@@ -181,6 +181,14 @@ and allows for a more comfortable maintenance and adoption experience. No longer
 release notes and guides to observe and apply changes. The software takes care of all, if possible, and otherwise issues
 appropriate warnings for one to take action.
 
+## Limitations
+
+Configuration metadata, when it comes to migration reports, does not supported collected-based settings. For example,
+if the original version of a CAS setting is at `cas.something.blah=blah` and its new replacement is transformed
+to support multiple `something`s with `cas.something[0].blah=blah`, then this change is usually ignored by the reporter facility
+that is provided by Spring Boot. In such scenarios, you will have check with the project documentation, release notes
+or source code to note the correct syntax. 
+
 # Epilogue
 
 The strategies and ideas outlined in this post go as far as back 
