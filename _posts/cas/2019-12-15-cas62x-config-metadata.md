@@ -113,6 +113,61 @@ report. Then, use the same strategy to dynamically build a web page, a PDF file 
 Note the report does **NOT** only include settings that are owned and used by CAS but also, others that are controlled and used by other frameworks and libraries
 such as Spring Boot, Spring Cloud, etc. Of course, just as before, this *documentation* is too automatically provided to you and is available in the overlay.
 
+# Developer Tooling
+
+Configuration metadata has very good support for most modern integrated development environments, such as eclipse or Intellij IDEA. The environment can
+recognize the presence of configuration metadata and assist with tooltips, auto-completion of settings, values and many other related features:
+
+![image](https://user-images.githubusercontent.com/1205228/70863349-ba3b6e80-1f60-11ea-907c-c75008d48d4a.png)
+
+For those who contribute to CAS or build extensions on top of the CAS platform, this is a great tool to assist with fine-tuning of the configuration
+compared to chasing settings and notes in docs spread around on the web. The documentation ships with the code and the tooling that supports and recognizes
+its schema is readily available.
+
+# Property Migration Reports
+
+Configuration properties that are removed, renamed, etc can always be tracked by the configuration metadata to advertise the change
+and provide guidance on replacements. In certain cases, the replacement setting can be automatically applied by CAS with a simple warning to follow-up
+if a replacement is indeed available. In other cases, a warning will show up in the logs instructing you to take action and update your configuration
+with notes and explanations.
+
+Let's say we have the following two settings in our CAS configuration:
+
+```properties     
+# This setting can be replaced with its compatible alternative
+# automatically, with a warning in the logs
+cas.service-registry.config.location=file:/etc/cas/config/services  
+
+# There is no compatible replacement property for this setting
+cas.admin-pages-security.ip=123.456.789.198
+```      
+
+If you run CAS, the following report in the logs will guide you with instructions:
+
+```bash
+ERROR [o.s.b.c.p.m.PropertiesMigrationListener] - <
+The use of configuration keys that are no longer supported was found in the environment:
+
+Property source 'bootstrapProperties':
+        Key: cas.admin-pages-security.ip
+                Reason: management endpoints security under cas.monitor.endpoints.endpoint.*. e.g. cas.monitor.endpoints.endpoint.defaults.access[0].
+        Key: cas.service-registry.config.location
+                Reason: Property renamed due to cas.service-registry.json.location instead.
+
+Please refer to the migration guide or reference guide for potential alternatives.
+```                                                                               
+
+<div class="alert alert-success">
+<strong>Collaborate</strong><br/>It does not matter where the properties come from. As long as the CAS runtime receives a setting,
+the validation rules and migration assistance will kick into apply. This assistant is also not limited to CAS-specific properties,
+but to <i>every single setting</i> that the CAS runtime can use, regardless of ownership.
+</div>
+
+This is a much easier and much more automated version of a transition strategy from one CAS version to the next
+and allows for a more comfortable maintenance and adoption experience. No longer should one have to track down detailed
+release notes and guides to observe and apply changes. The software takes care of all, if possible, and otherwise issues
+appropriate warnings for one to take action.
+
 # Epilogue
 
 The strategies and ideas outlined in this post go as far as back 
