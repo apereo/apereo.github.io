@@ -152,19 +152,21 @@ The use of configuration keys that have been renamed was found in the environmen
 
 Property source 'bootstrapProperties':
     Key: server.context-path
-            Replacement: server.servlet.context-path
-
-
+        Replacement: server.servlet.context-path
+        
 Each configuration key has been temporarily mapped to its replacement for your convenience. \
 To silence this warning, please update your configuration to use the new keys.
->
+```
 
+...and:
+
+```bash
 ERROR [o.s.b.c.p.m.PropertiesMigrationListener] - <
 The use of configuration keys that are no longer supported was found in the environment:
 
 Property source 'bootstrapProperties':
     Key: cas.service-registry.config.location
-            Reason: Property renamed due to cas.service-registry.json.location instead.
+        Reason: Property renamed due to cas.service-registry.json.location instead.
 
 
 Please refer to the migration guide or reference guide for potential alternatives.
@@ -183,17 +185,17 @@ appropriate warnings for one to take action.
 
 ## Limitations
 
-Configuration metadata, when it comes to migration reports, does not supported collected-based settings. For example,
-if the original version of a CAS setting is at `cas.something.blah=blah` and its new replacement is transformed
-to support multiple `something`s with `cas.something[0].blah=blah`, then this change is usually ignored by the reporter facility
+Configuration metadata, when it comes to migration reports, does not supported collection-based settings. For example,
+if the original version of a CAS setting is at `cas.something.blah=blah` in one version and its new replacement is transformed
+to support multiple `something`s with `cas.something[0].blah=blah` in another version, then this change is usually ignored by the reporter facility
 that is provided by Spring Boot. In such scenarios, you will have check with the project documentation, release notes
 or source code to note the correct syntax. 
 
 # Epilogue
 
-The strategies and ideas outlined in this post go as far as back 
+The strategies and ideas outlined in this post go as far back 
 as CAS [`5.2.x`](https://apereo.github.io/cas/5.2.x/installation/Configuration-Metadata-Repository.html). We have had to carefully 
-tune and modify the *configuration metadata* generation process over time and the years to make sure such metadata about settings 
+tune and modify the *configuration metadata generation process* over time and the years to make sure such metadata about settings 
 can be recognized, parsed and packed for wider use. We have added on layers and constructs to make sure settings be understood and picked up regardless of their physical 
 placement (i.e. inner classes) or complication of type (i.e. enums, collections, etc). In short, while the result is still far from perfect, it is a large improvement
 over the manual maintenance tasks previously discussed, given project's availability of resources and funding. 
