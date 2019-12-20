@@ -185,10 +185,10 @@ appropriate warnings for one to take action.
 
 ## Limitations
 
-Configuration metadata, when it comes to migration reports, does not supported collection-based settings. For example,
+Configuration metadata, when it comes to migration reports, does not support collection-based settings. For example,
 if the original version of a CAS setting is at `cas.something.blah=blah` in one version and its new replacement is transformed
 to support multiple `something`s with `cas.something[0].blah=blah` in another version, then this change is usually ignored by the reporter facility
-that is provided by Spring Boot. In such scenarios, you will have check with the project documentation, release notes
+provided by Spring Boot. In such scenarios, you will have check with the project documentation, release notes
 or source code to note the correct syntax. 
 
 # Epilogue
