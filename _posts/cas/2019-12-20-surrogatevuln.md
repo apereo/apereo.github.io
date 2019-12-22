@@ -66,7 +66,7 @@ cas.version=6.1.3
 
 ### 6.2.x
 
-Modify your CAS overlay to point to the version `6.2.0-RC1`, *when released*. A snippet of a `gradle.properties` for a CAS overlay follows:
+Modify your CAS overlay to point to the version `6.2.0-RC2`, *when released*. A snippet of a `gradle.properties` for a CAS overlay follows:
 
 ```properties
 cas.version=6.2.0-RC2
