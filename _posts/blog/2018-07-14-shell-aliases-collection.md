@@ -306,4 +306,4 @@ alias blogthis="blog; this"
 
 That's it. I hope you find these useful.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

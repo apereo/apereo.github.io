@@ -139,4 +139,4 @@ If the policy sees the need, it will collect messages and warnings that would be
 
 I hope this review was of some help to you and I am sure that both this post as well as the functionality it attempts to explain can be improved in any number of ways. Please feel free to [engage and contribute](https://apereo.github.io/cas/developer/Contributor-Guidelines.html) as best as you can.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

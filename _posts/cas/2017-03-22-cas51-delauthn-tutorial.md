@@ -72,4 +72,4 @@ When you deploy CAS, your default logs (though you could certainly turn on `DEBU
 
 The same strategy simply applies to all other forms of delegated authentication, such as social identity providers or other CAS servers.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

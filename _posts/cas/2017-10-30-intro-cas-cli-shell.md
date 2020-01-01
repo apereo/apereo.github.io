@@ -192,4 +192,4 @@ If you are interested in adding new and fancier commands, by all means create yo
 
 I hope this review was of some help to you. As you have been reading, I can guess that you have come up with a number of missing bits and pieces that would satisfy your use cases more comprehensively with CAS. In a way, that is exactly what this tutorial intends to inspire. Please feel free to [engage and contribute](https://apereo.github.io/cas/developer/Contributor-Guidelines.html) as best as you can.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

@@ -30,7 +30,7 @@ I don't know about you, dear reader, but I posit that there is virtually nothing
 Some things, however, are improbable [1]. 
 
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)
 
 *[1]There is no such thing as a 'plan'. Just a pending pull request.*
 

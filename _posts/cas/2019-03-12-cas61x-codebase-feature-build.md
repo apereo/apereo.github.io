@@ -354,7 +354,7 @@ I hope this review was of some help to you and I am sure that both this post as 
 
 Happy Coding,
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)
 
 [1] There are ways to get around this *limitation*, by specifically downloading the source code for the exact CAS version at hand. I am skipping over those since they only lead to complications, suffering and further evil in most cases.
 

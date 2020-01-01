@@ -24,4 +24,4 @@ I don’t know. You figure it out. All I know is that my new motto is:
 > Ask what X should do for you. Then ask what you can do with X.
 
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

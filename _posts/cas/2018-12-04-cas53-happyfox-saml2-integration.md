@@ -71,4 +71,4 @@ A few things to point out:
 
 If you too have an integration with a well-known SAML2 service provider, please consider sharing that guide in form of a blog post here as well.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

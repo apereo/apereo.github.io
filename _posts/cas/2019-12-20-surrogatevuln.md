@@ -84,4 +84,4 @@ volunteers and enthusiasts. Support options may be [found here](https://apereo.g
 
 On behalf of the CAS Application Security working group,
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

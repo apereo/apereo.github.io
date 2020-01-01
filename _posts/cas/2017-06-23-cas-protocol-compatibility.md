@@ -94,4 +94,4 @@ That's it.
 
 Special thanks to [@jtgasper3](https://github.com/jtgasper3) for sharing this neat trick and letting me brag about it. 
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

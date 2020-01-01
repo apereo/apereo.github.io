@@ -39,4 +39,4 @@ Prior to the cleanup process, we plan to store the existing CAS repository in a 
 The cleanup process takes a while to complete, somewhere between 2-4 hours. Announcements will follow on the [CAS mailing lists](https://apereo.github.io/cas/Mailing-Lists.html) to give developers a headsup on the individual milestones within the cleanup task. Keep an eye out.
 
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

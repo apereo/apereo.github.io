@@ -110,4 +110,4 @@ Indeed, these are questions you ought to be thinking about as a *developer*. Wit
 
 That's all.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

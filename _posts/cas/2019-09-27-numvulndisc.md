@@ -110,4 +110,4 @@ CAS is Apache v2 open source software under the sponsorship of the Apereo Founda
 
 On behalf of the CAS Application Security working group,
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

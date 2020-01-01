@@ -385,7 +385,7 @@ It's important that you start off simple and make changes one step at a time. On
 
 I hope this review was of some help to you and I am sure that both this post as well as the functionality it attempts to explain can be improved in any number of ways. Please feel free to [engage and contribute][contribute] as best as you can.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)
 
 [duo]: https://apereo.github.io/cas/6.2.x/installation/DuoSecurity-Authentication.html
 [hazelcasttickets]: https://apereo.github.io/cas/6.2.x/ticketing/Hazelcast-Ticket-Registry.html

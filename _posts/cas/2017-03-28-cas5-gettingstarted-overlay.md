@@ -265,4 +265,4 @@ You have a number of options when it comes to deploying the final `cas.war` file
 
 I hope this brief tutorial was of some assistance to you. It's important that you start off simple and make changes one step at a time. Once you have a functional environment, you can gradually and slowly add customizations to move files around.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

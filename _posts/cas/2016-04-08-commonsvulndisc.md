@@ -430,4 +430,4 @@ If you have questions on the details this vulnerability and how it might be repr
 * [Apache Commons statement to widespread Java object de-serialisation vulnerability](https://blogs.apache.org/foundation/entry/apache_commons_statement_to_widespread)
 * [Apache Commons Collections security reports](https://commons.apache.org/proper/commons-collections/security-reports.html)
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

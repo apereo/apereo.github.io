@@ -30,7 +30,7 @@ I have been asked on and off about multitenancy capabilities of CAS and whether 
 
 In addition to the problem of isolating configuration per tenant, there also needs to be a mechanism by which CAS may shake hands with each tenant to recognize and activate their connected configuration. Furthermore, any design needs to also carefully weigh and evaluate possibilities of *feature imbalance* which is the problem of introducing capabilities requested by a tenant without impact and side-effects to others and doing so in such a way to ensure all tenants can get their fair share of system capabilities if and when asked.
 
-If all of this sounds complex and seems like a lot of work, it is simply because it is. If this is something you desire to see in your deployment, please [reach out](https://twitter.com/misagh84).
+If all of this sounds complex and seems like a lot of work, it is simply because it is. If this is something you desire to see in your deployment, please [reach out](https://fawnoos.com).
 
 While support for multi-tenancy in the above terms and conditions is absent in CAS today, in this tutorial I wish to uncover *a few* aspects of the CAS software that may prove as viable alternatives or shortcuts for the time being to handle multitenancy-like features.
 
@@ -166,4 +166,4 @@ The `casLoginView.html` found at `src/main/resources/templates/tenantATheme` wil
 
 I hope this review was of some help to you. As you have been reading, I can guess that you have come up with a number of missing bits and pieces that would satisfy your use cases more comprehensively with CAS. In a way, that is exactly what this tutorial intends to inspire. Please feel free to [engage and contribute](https://apereo.github.io/cas/developer/Contributor-Guidelines.html) as best as you can.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

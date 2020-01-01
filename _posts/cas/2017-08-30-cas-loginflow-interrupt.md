@@ -65,4 +65,4 @@ For more advanced and production-quality interruptions you likely need to write 
 
 Given this is very new today, I am sure you will find plenty of opportunities to improve the functionality with more cowbell. Laundry doesn't fold itself so [please do](https://apereo.github.io/cas/developer/Contributor-Guidelines.html).
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

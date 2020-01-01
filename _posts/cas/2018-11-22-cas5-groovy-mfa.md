@@ -90,4 +90,4 @@ If all of those conditions are true, then MFA is activated...or else ignored. No
 
 Thanks to Keith Conger of Colorado College who was kind enough to share the above integration notes.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

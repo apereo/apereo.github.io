@@ -84,4 +84,4 @@ What this post is trying to say, if it’s saying anything, is that your goal in
 
 Stop writing code. Write it where it belongs.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

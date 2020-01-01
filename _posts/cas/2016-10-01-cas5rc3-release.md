@@ -82,4 +82,4 @@ So:
 
 A big hearty thanks to all who participated in the development of this release to submit patches, report issues and suggest improvements. Keep'em coming!
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

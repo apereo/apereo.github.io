@@ -60,4 +60,4 @@ Do not put yourself in situations where you have to face the question of the fal
 
 In short, I have learned that early involvement is tremendously valuable. Sure, it is very helpful to rely on others' vote of confidence and make plans. It's immensely better if YOU are that confidence.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

@@ -211,6 +211,6 @@ I hope you enjoyed it!
 
 Finally, if you benefit from Apereo CAS as free and open-source software, we invite you to [join the Apereo Foundation](https://www.apereo.org/content/apereo-membership) and financially support the project at a capacity that best suits your deployment. If you consider your CAS deployment to be a critical part of the identity and access management ecosystem and care about its long-term success and sustainability, this is a viable option to consider.
 
-As [Misagh Moayyed](https://twitter.com/misagh84) says 'Happy Coding'!
+As [Misagh Moayyed](https://fawnoos.com) says 'Happy Coding'!
 
 [Axel Stohn](https://github.com/astohn)

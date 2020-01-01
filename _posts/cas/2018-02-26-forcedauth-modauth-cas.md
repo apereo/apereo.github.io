@@ -142,4 +142,4 @@ I hope this review was of some help to you and I am sure that both this post as 
 
 ...and of course, a very special thanks to all colleagues who took part in this post, exchanged dialogue, verified behavior and generously took the time to share their analysis and findings. Thank you.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)

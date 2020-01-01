@@ -210,4 +210,4 @@ Which shows that CAS has been able to understand the schema and map columns to a
 
 I hope this brief tutorial was of some assistance to you. Remember that the point here is not to enumerate best practices and such. It's just to show the possibilities. It's important that you start off simple and make changes one step at a time. Once you have a functional environment, you can gradually and slowly add customizations to move files, tables and queries around.
 
-[Misagh Moayyed](https://twitter.com/misagh84)
+[Misagh Moayyed](https://fawnoos.com)
