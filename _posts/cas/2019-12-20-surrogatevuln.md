@@ -24,8 +24,6 @@ The attack vector applies to deployments of the CAS server for the following ver
 
 # Severity
 
-Details will be posted here publicly once the [grace period](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html) has passed.
-
 It is recommended that upgrades be carried out to removes any chances of security breaches.
 
 # Patching
