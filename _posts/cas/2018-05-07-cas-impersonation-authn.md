@@ -32,18 +32,18 @@ Once you have a [functional overlay](https://github.com/apereo/cas-overlay-templ
 ```properties
 cas.authn.jaas[0].realm=CAS
 
-cas.authn.attributeRepository.ldap[0].attributes.uid=uid
-cas.authn.attributeRepository.ldap[0].attributes.displayName=displayName
-cas.authn.attributeRepository.ldap[0].attributes.cn=commonName
-cas.authn.attributeRepository.ldap[0].attributes.memberOf=memberOf
+cas.authn.attribute-repository.ldap[0].attributes.uid=uid
+cas.authn.attribute-repository.ldap[0].attributes.displayName=displayName
+cas.authn.attribute-repository.ldap[0].attributes.cn=commonName
+cas.authn.attribute-repository.ldap[0].attributes.memberOf=memberOf
 
-cas.authn.attributeRepository.ldap[0].ldapUrl=ldap://...
-cas.authn.attributeRepository.ldap[0].useSsl=false
-cas.authn.attributeRepository.ldap[0].useStartTls=false
-cas.authn.attributeRepository.ldap[0].baseDn=dc=example,dc=edu
-cas.authn.attributeRepository.ldap[0].searchFilter=uid={0}
-cas.authn.attributeRepository.ldap[0].bindDn=...
-cas.authn.attributeRepository.ldap[0].bindCredential=...
+cas.authn.attribute-repository.ldap[0].ldapUrl=ldap://...
+cas.authn.attribute-repository.ldap[0].useSsl=false
+cas.authn.attribute-repository.ldap[0].useStartTls=false
+cas.authn.attribute-repository.ldap[0].baseDn=dc=example,dc=edu
+cas.authn.attribute-repository.ldap[0].searchFilter=uid={0}
+cas.authn.attribute-repository.ldap[0].bindDn=...
+cas.authn.attribute-repository.ldap[0].bindCredential=...
 
 cas.personDirectory.principalAttribute=uid
 ```
