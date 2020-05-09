@@ -44,7 +44,7 @@ Here is what I did in the `cas.properties` file, along with all the other usual 
 
 ```properties
 cas.authn.ldap[0].type=AUTHENTICATED
-cas.authn.ldap[0].ldapUrl=ldap://localhost:10389
+cas.authn.ldap[0].ldap-url=ldap://localhost:10389
 cas.authn.ldap[0].useSsl=false
 cas.authn.ldap[0].baseDn=ou=People,dc=example,dc=edu
 cas.authn.ldap[0].userFilter=uid={user}

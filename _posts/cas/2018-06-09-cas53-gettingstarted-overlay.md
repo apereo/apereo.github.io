@@ -223,7 +223,7 @@ We need to first establish a primary mode of validating credentials by sticking 
 
 ```properties
 cas.authn.ldap[0].type=AUTHENTICATED
-cas.authn.ldap[0].ldapUrl=ldaps://ldap1.example.org
+cas.authn.ldap[0].ldap-url=ldaps://ldap1.example.org
 cas.authn.ldap[0].baseDn=dc=example,dc=org
 cas.authn.ldap[0].searchFilter=cn={user}
 cas.authn.ldap[0].bindDn=cn=Directory Manager,dc=example,dc=org
@@ -257,8 +257,8 @@ First, ensure you have declared the appropriate module/intention in the build:
 Next, you must teach CAS how to look up JSON files to read and write registration records. This is done in the `cas.properties` file:
 
 ```properties
-cas.serviceRegistry.initFromJson=false
-cas.serviceRegistry.json.location=file:/etc/cas/services
+cas.service-registry.initFromJson=false
+cas.service-registry.json.location=file:/etc/cas/services
 ```
 
 ...where a sample `ApplicationName-1001.json` would then be placed inside `/etc/cas/services`:

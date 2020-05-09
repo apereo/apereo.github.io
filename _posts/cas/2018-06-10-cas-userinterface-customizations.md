@@ -35,8 +35,8 @@ Let's assume that application registration records are going to be managed as [f
 Next, you must teach CAS how to load JSON registration records from disk. This is done in the `cas.properties` file:
 
 ```properties
-cas.serviceRegistry.initFromJson=false
-cas.serviceRegistry.json.location=file:/etc/cas/services
+cas.service-registry.initFromJson=false
+cas.service-registry.json.location=file:/etc/cas/services
 ```
 
 ...where a sample `ApplicationName-1001.json` would then be placed inside `/etc/cas/services`:

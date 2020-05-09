@@ -225,12 +225,12 @@ First, ensure you have declared the appropriate module/intention in the build:
 Next, you must teach CAS how to contact the LDAP server to read and write registration records. This is done in the `cas.properties` file:
 
 ```properties
-cas.serviceRegistry.initFromJson=false
+cas.service-registry.initFromJson=false
 
-cas.serviceRegistry.ldap.ldapUrl=ldaps://ldap1.example.edu ldaps://ldap2.example.edu
-cas.serviceRegistry.ldap.baseDn=dc=example,dc=org
-cas.serviceRegistry.ldap.bindDn=cn=Directory Manager,dc=example,dc=org
-cas.serviceRegistry.ldap.bindCredential=Password
+cas.service-registry.ldap.ldap-url=ldaps://ldap1.example.edu ldaps://ldap2.example.edu
+cas.service-registry.ldap.baseDn=dc=example,dc=org
+cas.service-registry.ldap.bindDn=cn=Directory Manager,dc=example,dc=org
+cas.service-registry.ldap.bindCredential=Password
 ```
 
 <div class="alert alert-info">

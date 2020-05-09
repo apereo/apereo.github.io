@@ -37,7 +37,7 @@ cas.authn.attribute-repository.ldap[0].attributes.displayName=displayName
 cas.authn.attribute-repository.ldap[0].attributes.cn=commonName
 cas.authn.attribute-repository.ldap[0].attributes.memberOf=memberOf
 
-cas.authn.attribute-repository.ldap[0].ldapUrl=ldap://...
+cas.authn.attribute-repository.ldap[0].ldap-url=ldap://...
 cas.authn.attribute-repository.ldap[0].useSsl=false
 cas.authn.attribute-repository.ldap[0].useStartTls=false
 cas.authn.attribute-repository.ldap[0].baseDn=dc=example,dc=edu
@@ -86,7 +86,7 @@ First, let's ensure that CAS is prepped with the baseline impersonation function
 Surely, we need to instruct CAS on how to connect to LDAP for impersonation attempts:
 
 ```properties
-cas.authn.surrogate.ldap.ldapUrl=ldap://...
+cas.authn.surrogate.ldap.ldap-url=ldap://...
 cas.authn.surrogate.ldap.baseDn=dc=example,dc=edu
 cas.authn.surrogate.ldap.searchFilter=uid={0}
 cas.authn.surrogate.ldap.bindDn=...

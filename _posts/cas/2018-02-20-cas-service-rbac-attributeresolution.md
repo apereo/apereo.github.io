@@ -37,7 +37,7 @@ In the given `cas.properties` file, the following settings allow us to fetch att
 
 ```properties
 cas.authn.attributeRepository.ldap[0].baseDn=ou=people,dc=example,dc=org
-cas.authn.attributeRepository.ldap[0].ldapUrl=ldap://localhost:1385
+cas.authn.attributeRepository.ldap[0].ldap-url=ldap://localhost:1385
 cas.authn.attributeRepository.ldap[0].userFilter=uid={0}
 cas.authn.attributeRepository.ldap[0].useSsl=false
 cas.authn.attributeRepository.ldap[0].bindDn=...
@@ -102,8 +102,8 @@ To keep this tutorial simple, we are going to use the [JSON Service Registry](ht
 For this tutorial, we expect CAS to find our JSON registration record files using the following setting:
 
 ```properties
-cas.serviceRegistry.initFromJson=false
-cas.serviceRegistry.json.location=file:/etc/cas/config/services
+cas.service-registry.initFromJson=false
+cas.service-registry.json.location=file:/etc/cas/config/services
 ```
 
 ...and inside the above directory, we are going to create an `ExampleApplication-100.json` file that contains the following:

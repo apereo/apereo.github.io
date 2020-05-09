@@ -154,7 +154,7 @@ compile "org.apereo.cas:cas-server-support-ldap:${casServerVersion}"
 
 ```properties
 cas.authn.ldap[0].type=AUTHENTICATED
-cas.authn.ldap[0].ldapUrl=ldaps://ldap1.example.org
+cas.authn.ldap[0].ldap-url=ldaps://ldap1.example.org
 cas.authn.ldap[0].baseDn=dc=example,dc=org
 cas.authn.ldap[0].searchFilter=cn={user}
 cas.authn.ldap[0].bindDn=cn=Directory Manager,dc=example,dc=org
@@ -184,8 +184,8 @@ compile "org.apereo.cas:cas-server-support-json-service-registry:${casServerVers
 Next, you must teach CAS how to look up JSON files to read and write registration records. This is done in the `cas.properties` file:
 
 ```properties
-cas.serviceRegistry.initFromJson=false
-cas.serviceRegistry.json.location=file:/etc/cas/services
+cas.service-registry.initFromJson=false
+cas.service-registry.json.location=file:/etc/cas/services
 ```
 
 ...where a sample `ApplicationName-1001.json` would then be placed inside `/etc/cas/services`:
@@ -253,10 +253,10 @@ compile "org.apereo.cas:cas-server-support-duo:${casServerVersion}"
 Then, put specific Duo Security settings in `cas.properties. Things such as the secret key, integration key, etc which should be provided by your Duo Security subscription:
 
 ```properties
-cas.authn.mfa.duo[0].duoSecretKey=
-cas.authn.mfa.duo[0].duoApplicationKey=
-cas.authn.mfa.duo[0].duoIntegrationKey=
-cas.authn.mfa.duo[0].duoApiHost=
+cas.authn.mfa.duo[0].duo-secret.key=
+cas.authn.mfa.duo[0].duo-application-key=
+cas.authn.mfa.duo[0].duo-integration-key=
+cas.authn.mfa.duo[0].duo-api-host=
 ```
 
 At this point, we have enabled Duo Security and we just need to find a way to instruct CAS to route the authentication flow over to Duo Security in the appropriate condition. Our task here is to build a special condition that activates multifactor authentication if any of the values assigned to the attribute `memberOf` contain the value `mfa-eligible`. This condition is placed in the `cas.properties` file:

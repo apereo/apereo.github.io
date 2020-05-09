@@ -52,12 +52,12 @@ The setup is fairly simple, given CAS does all of the heavy-lifting. First, we n
 # Handle primary authentication via RADIUS (i.e. username+password)
 cas.authn.radius.server.protocol=MSCHAPv2
 cas.authn.radius.client.sharedSecret=xyz
-cas.authn.radius.client.inetAddress=1.2.3.4
+cas.authn.radius.client.inet-address=1.2.3.4
 
 # Handle MFA via RADIUS (i.e. one-time code)
 cas.authn.mfa.radius.server.protocol=MSCHAPv2
 cas.authn.mfa.radius.client.sharedSecret=xyz
-cas.authn.mfa.radius.client.inetAddress=1.2.3.4
+cas.authn.mfa.radius.client.inet-address=1.2.3.4
 
 # Signal webflow to handle MFA via RADIUS
 cas.authn.mfa.radius.id=mfa-radius
@@ -104,7 +104,7 @@ cas.authn.attribute-repository.ldap[0].attributes.displayName=displayName
 cas.authn.attribute-repository.ldap[0].attributes.cn=commonName
 cas.authn.attribute-repository.ldap[0].attributes.memberOf=memberOf
 
-cas.authn.attribute-repository.ldap[0].ldapUrl=ldap://...
+cas.authn.attribute-repository.ldap[0].ldap-url=ldap://...
 cas.authn.attribute-repository.ldap[0].useSsl=false
 cas.authn.attribute-repository.ldap[0].useStartTls=false
 cas.authn.attribute-repository.ldap[0].baseDn=dc=example,dc=edu

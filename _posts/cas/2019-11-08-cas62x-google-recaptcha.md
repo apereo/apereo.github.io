@@ -33,8 +33,8 @@ Let's register our CAS server instance with Google to obtain a few integration k
 Next, once [the reCAPTCHA module](https://apereo.github.io/cas/development/integration/Configuring-Google-reCAPTCHA.html) is included in the WAR Overlay, we can begin to register the integration keys with CAS configuration:
 
 ```properties
-cas.googleRecaptcha.siteKey=6Let...
-cas.googleRecaptcha.secret=6Let...
+cas.google-recaptcha.siteKey=6Let...
+cas.google-recaptcha.secret=6Let...
 ```
 
 That should be all. Build and deploy and the very next time you bring up the CAS login screen, you should automatically be presented with reCAPTCHA:
@@ -47,9 +47,9 @@ Integration with reCAPTCHA v3 is exactly the same; you will need to register CAS
 the reCAPTCHA version needs to be updated to match the integration version:
 
 ```properties
-cas.googleRecaptcha.siteKey=6Ld5...
-cas.googleRecaptcha.secret=6Ld5I...
-cas.googleRecaptcha.version=V3
+cas.google-recaptcha.siteKey=6Ld5...
+cas.google-recaptcha.secret=6Ld5I...
+cas.google-recaptcha.version=V3
 ```                           
 
 ## reCAPTCHA Score
@@ -57,7 +57,7 @@ cas.googleRecaptcha.version=V3
 Google reCAPTCHA returns a score (`1.0` is very likely a good interaction, `0.0` is very likely a bot). Based on the score, one can take variable action in a specific context. By default, CAS allows for a static single score in the configuration that is compared against the reCAPTCHA response. If the returned score is less than what CAS requires, the authentication attempt would be blocked.
 
 ```properties 
-cas.googleRecaptcha.score=0.5
+cas.google-recaptcha.score=0.5
 ```  
 
 ## Bonus

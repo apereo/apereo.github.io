@@ -28,7 +28,7 @@ Prior to configuring *multiple* factors of authentication, we need to first esta
 
 ```properties
 cas.authn.ldap[0].type=AUTHENTICATED
-cas.authn.ldap[0].ldapUrl=ldaps://ldap1.example.org
+cas.authn.ldap[0].ldap-url=ldaps://ldap1.example.org
 cas.authn.ldap[0].baseDn=dc=example,dc=org
 cas.authn.ldap[0].searchFilter=cn={user}
 cas.authn.ldap[0].bindDn=cn=Directory Manager,dc=example,dc=org

@@ -27,20 +27,20 @@ Our starting position is based on:
 Once you have prepped your CAS overlay with the correct [auto-configuration module](https://apereo.github.io/cas/development/services/Git-Service-Management.html), you will need to instruct CAS to try and connect to the repository:
 
 ```properties
-cas.serviceRegistry.initFromJson=false
+cas.service-registry.initFromJson=false
 
-cas.serviceRegistry.git.repositoryUrl=https://github.com/cas-server/sample-data
-cas.serviceRegistry.git.branchesToClone=master
-cas.serviceRegistry.git.activeBranch=master
-cas.serviceRegistry.git.cloneDirectory=file:/tmp/cas-service-registry
-cas.serviceRegistry.git.pushChanges=true
+cas.service-registry.git.repositoryUrl=https://github.com/cas-server/sample-data
+cas.service-registry.git.branchesToClone=master
+cas.service-registry.git.activeBranch=master
+cas.service-registry.git.cloneDirectory=file:/tmp/cas-service-registry
+cas.service-registry.git.pushChanges=true
 ```
 
 I am using a public repository on Github whose `master` branch. If you are working with a private git repository that requires credentials for access, you can specify those as well:
 
 ```properties
-# cas.serviceRegistry.git.username=
-# cas.serviceRegistry.git.password=
+# cas.service-registry.git.username=
+# cas.service-registry.git.password=
 ```
 
 My current contains the following two files. One is a `Test-1.json` file at the root of the repository with the following content:

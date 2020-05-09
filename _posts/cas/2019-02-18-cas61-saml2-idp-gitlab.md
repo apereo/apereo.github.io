@@ -140,7 +140,7 @@ cas.authn.ldap[0].use-ssl=false
 cas.authn.ldap[0].use-start-tls=false
 
 # configure ldap attribute repository
-cas.authn.attributeRepository.ldap[0].ldapUrl=${ldap-url}
+cas.authn.attributeRepository.ldap[0].ldap-url=${ldap-url}
 cas.authn.attributeRepository.ldap[0].order=0
 cas.authn.attributeRepository.ldap[0].useSsl=false
 cas.authn.attributeRepository.ldap[0].useStartTls=false
@@ -205,7 +205,7 @@ mkdir /etc/cas/services
 And add a property to `cas.properties` that references the location:
 ```properties
 # Configure CAS JSON service registry
-cas.serviceRegistry.json.location=file:/etc/cas/services
+cas.service-registry.json.location=file:/etc/cas/services
 ```
 
 ## Gitlab Container Setup

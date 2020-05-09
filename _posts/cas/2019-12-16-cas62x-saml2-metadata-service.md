@@ -27,9 +27,9 @@ Start with the [CAS Overlay](https://github.com/apereo/cas-overlay-template), cl
 down to the following settings:
 
 ```properties
-cas.authn.samlIdp.entityId=https://sso.example.org/idp
-cas.authn.samlIdp.scope=example.org
-cas.authn.samlIdp.metadata.location=file:/etc/cas/config/saml
+cas.authn.saml-idp.entityId=https://sso.example.org/idp
+cas.authn.saml-idp.scope=example.org
+cas.authn.saml-idp.metadata.location=file:/etc/cas/config/saml
 ```
 
 ...and this module in the CAS build:

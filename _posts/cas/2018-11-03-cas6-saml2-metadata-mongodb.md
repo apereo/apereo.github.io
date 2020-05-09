@@ -74,9 +74,9 @@ That should do for now. Let's get CAS running.
 So in order to enable a CAS integration with MongoDB *directly*, you want to start with the [CAS Overlay](https://github.com/apereo/cas-overlay-template), clone the project and follow [the notes here](https://apereo.github.io/cas/development/installation/Configuring-SAML2-Authentication.html) to get CAS acting as SAML2 identity provider. In its simplest form, it comes to down to the following settings:
 
 ```properties
-cas.authn.samlIdp.entityId=https://sso.example.org/idp
-cas.authn.samlIdp.scope=example.org
-cas.authn.samlIdp.metadata.location=file:/etc/cas/config/saml
+cas.authn.saml-idp.entityId=https://sso.example.org/idp
+cas.authn.saml-idp.scope=example.org
+cas.authn.saml-idp.metadata.location=file:/etc/cas/config/saml
 ```
 
 ...and this module in the CAS build:
@@ -107,12 +107,12 @@ compile "org.apereo.cas:cas-server-support-saml-idp-metadata-mongo:${project.'ca
 ...and CAS needs to know how to connect to MongoDB to fetch stuff:
 
 ```properties
-cas.authn.samlIdp.metadata.mongo.host=localhost
-cas.authn.samlIdp.metadata.mongo.port=27017
-cas.authn.samlIdp.metadata.mongo.userId=casuser
-cas.authn.samlIdp.metadata.mongo.password=Mellon
-cas.authn.samlIdp.metadata.mongo.collection=cas-saml-sp-metadata
-cas.authn.samlIdp.metadata.mongo.databaseName=cas
+cas.authn.saml-idp.metadata.mongo.host=localhost
+cas.authn.saml-idp.metadata.mongo.port=27017
+cas.authn.saml-idp.metadata.mongo.userId=casuser
+cas.authn.saml-idp.metadata.mongo.password=Mellon
+cas.authn.saml-idp.metadata.mongo.collection=cas-saml-sp-metadata
+cas.authn.saml-idp.metadata.mongo.databaseName=cas
 ```
 
 That's it. Build and run CAS. At this point, you should be able to log into service provider successfully whose metadata is fetched and processed by CAS from MongoDB.
@@ -129,7 +129,7 @@ If you examine your CAS startup logs, you might notice the following statement:
 ...which matches our setting above:
 
 ```properties
-cas.authn.samlIdp.metadata.location=file:/etc/cas/config/saml
+cas.authn.saml-idp.metadata.location=file:/etc/cas/config/saml
 ```
 
 Metadata artifacts that belong to CAS as a SAML2 identity provider may also be managed and stored via MongoDb. This includes things such as the metadata XML document, signing and encryption keys, etc. While CAS has the ability to generate brand new metadata in MongoDB, let's instead figure out how our existing metadata might be relocated to MongoDB.
@@ -176,10 +176,10 @@ The signing and encryption SAML2 metadata keys plus the base64-encoded versions 
 CAS settings will then take on the following form:
 
 ```properties
-# cas.authn.samlIdp.metadata.location=file:/etc/cas/config/saml
-cas.authn.samlIdp.metadata.mongo.idpMetadataCollection=saml-idp-metadata
-cas.authn.samlIdp.metadata.mongo.crypto.encryption.key=$encryptionKey
-cas.authn.samlIdp.metadata.mongo.crypto.signing.key=$signingKey
+# cas.authn.saml-idp.metadata.location=file:/etc/cas/config/saml
+cas.authn.saml-idp.metadata.mongo.idp-metadata-collection=saml-idp-metadata
+cas.authn.saml-idp.metadata.mongo.crypto.encryption.key=$encryptionKey
+cas.authn.saml-idp.metadata.mongo.crypto.signing.key=$signingKey
 ```
 
 Build and run CAS. At this point, you should be able to log into the service provider successfully with CAS using its own SAML2 metadata from MongoDB to produce a SAML2 response, etc.

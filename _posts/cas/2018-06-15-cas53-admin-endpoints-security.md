@@ -345,7 +345,7 @@ First, let's add the following dependency to ensure CAS can connect to an LDAP s
 ...and let's teach CAS where our LDAP server lives:
 
 ```properties
-cas.monitor.ldap.ldapUrl=ldap://localhost:389
+cas.monitor.ldap.ldap-url=ldap://localhost:389
 cas.monitor.ldap.useSsl=false
 ```
 

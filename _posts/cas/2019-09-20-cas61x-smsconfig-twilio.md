@@ -67,8 +67,8 @@ So, at this point we have CAS set up with Twilio and all that is left to
 configure the system for notifications when services are deemed expired:
 
 ```properties
-cas.serviceRegistry.sms.from=1234567890
-cas.serviceRegistry.sms.text=The service %s is expired and removed from CAS.
+cas.service-registry.sms.from=1234567890
+cas.service-registry.sms.text=The service %s is expired and removed from CAS.
 ```
 
 # Thou Shall Test

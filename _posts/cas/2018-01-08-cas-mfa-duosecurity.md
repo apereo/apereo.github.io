@@ -27,7 +27,7 @@ Prior to configuring *multiple* factors of authentication, we need to first esta
 
 ```properties
 cas.authn.ldap[0].type=AUTHENTICATED
-cas.authn.ldap[0].ldapUrl=ldaps://ldap1.example.org 
+cas.authn.ldap[0].ldap-url=ldaps://ldap1.example.org 
 cas.authn.ldap[0].baseDn=dc=example,dc=org
 cas.authn.ldap[0].userFilter=cn={user}
 cas.authn.ldap[0].bindDn=cn=Directory Manager,dc=example,dc=org
@@ -47,10 +47,10 @@ At this point in the authentication flow, we have established an authenticated s
 Here, our task is to enable [Duo Security](https://apereo.github.io/cas/development/installation/DuoSecurity-Authentication.html) in CAS. Practically, similar to the LDAP authentication configuration, this involves declaring the right module in the build and then providing specific Duo Security settings to CAS properties. Things such as the secret key, integration key, etc which should be provided by your Duo Security subscription. Most commonly, that would translate into the following settings:
 
 ```properties
-cas.authn.mfa.duo[0].duoSecretKey=
-cas.authn.mfa.duo[0].duoApplicationKey=
-cas.authn.mfa.duo[0].duoIntegrationKey=
-cas.authn.mfa.duo[0].duoApiHost=
+cas.authn.mfa.duo[0].duo-secret.key=
+cas.authn.mfa.duo[0].duo-application-key=
+cas.authn.mfa.duo[0].duo-integration-key=
+cas.authn.mfa.duo[0].duo-api-host=
 ```
 
 At this point, we have enabled Duo Security and we just need to find a way to instruct CAS to route the authentication flow over to Duo Security in the appropriate condition. This is where triggers come into place.

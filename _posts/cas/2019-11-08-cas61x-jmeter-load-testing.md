@@ -67,7 +67,7 @@ We have already added the **cas-server-support-json-service-registry** module, a
 
 Add the following to the **cas.properties** file:
 ```properties
-cas.serviceRegistry.json.location=file:/etc/cas/services
+cas.service-registry.json.location=file:/etc/cas/services
 ```
 
 We will also need to create a new JSON Service file for a fictitious SP under the Service Registry location we just added:
@@ -104,8 +104,8 @@ Once you review the **CAS_SAML2.jmx** file, you will notice that the script has 
 
 Update the **cas.properties** file and add:
 ```properties
-cas.authn.samlIdp.metadata.location=file:/etc/cas/saml
-cas.authn.samlIdp.entityId=https://casidp.edu:8443/idp
+cas.authn.saml-idp.metadata.location=file:/etc/cas/saml
+cas.authn.saml-idp.entityId=https://casidp.edu:8443/idp
 ```
 Note: At this point you will need to run CAS to generate the appropriate certs and Idp metadata needed for the SAML2 metadata exchange with the SP.
 

@@ -23,9 +23,9 @@ In order to allow CAS to become a SAML2 identity provider, the overlay needs to 
 The SAML IdP configuration will need to minimally match the following settings:
 
 ```properties
-cas.authn.samlIdp.entityId=https://cas.example.edu/idp
-cas.authn.samlIdp.scope=example.edu
-cas.authn.samlIdp.metadata.location=file:/etc/cas/saml
+cas.authn.saml-idp.entityId=https://cas.example.edu/idp
+cas.authn.saml-idp.scope=example.edu
+cas.authn.saml-idp.metadata.location=file:/etc/cas/saml
 ```
 
 You will, of course, need to adjust your entityId and scope as needed. Upon startup, CAS will attempt to generate the appropriate metadata based on provided settings and produced artifacts will be placed at `/etc/cas/saml`. Of course, the running CAS process will need to have the right permissions in order to create this directory and the contents within it.
