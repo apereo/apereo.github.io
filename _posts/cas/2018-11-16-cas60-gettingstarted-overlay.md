@@ -278,7 +278,7 @@ compile "org.apereo.cas:cas-server-support-duo:${casServerVersion}"
 Then, put specific Duo Security settings in `cas.properties. Things such as the secret key, integration key, etc which should be provided by your Duo Security subscription:
 
 ```properties
-cas.authn.mfa.duo[0].duo-secret.key=
+cas.authn.mfa.duo[0].duo-secret-key=
 cas.authn.mfa.duo[0].duo-application-key=
 cas.authn.mfa.duo[0].duo-integration-key=
 cas.authn.mfa.duo[0].duo-api-host=

@@ -47,7 +47,7 @@ At this point in the authentication flow, we have established an authenticated s
 Here, our task is to enable [Duo Security](https://apereo.github.io/cas/development/installation/DuoSecurity-Authentication.html) in CAS. Practically, similar to the LDAP authentication configuration, this involves declaring the right module in the build and then providing specific Duo Security settings to CAS properties. Things such as the secret key, integration key, etc which should be provided by your Duo Security subscription. Most commonly, that would translate into the following settings:
 
 ```properties
-cas.authn.mfa.duo[0].duo-secret.key=
+cas.authn.mfa.duo[0].duo-secret-key=
 cas.authn.mfa.duo[0].duo-application-key=
 cas.authn.mfa.duo[0].duo-integration-key=
 cas.authn.mfa.duo[0].duo-api-host=
