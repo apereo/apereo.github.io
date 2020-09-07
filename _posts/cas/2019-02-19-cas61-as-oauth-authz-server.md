@@ -35,7 +35,7 @@ In your standard CAS 6 overlay project (we're going to use Gradle-based one), ad
 compile "org.apereo.cas:cas-server-support-oauth-webflow:${project.'cas.version'}"
 ```
 
-Add OAuth2 registered service representing out client application to CAS' service registry (we're using JSON one with hjson syntax flavor):
+Add OAuth2 registered service representing our client application to CAS' service registry (we're using JSON one with hjson syntax flavor):
 
 ```json
 {
