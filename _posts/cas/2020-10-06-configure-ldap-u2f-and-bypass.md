@@ -2,10 +2,10 @@
 layout:     post
 title:      CAS Multifactor Authentication with  U2F and Bypass
 summary:    A short walkthrough to demonstrate how one might turn on multifactor authentication with CAS using U2F and default bypass rule.
-tags:       [CAS,LDAP,MFA,U2F,BYPASS]
+tags:       []
 ---
 
-This post is similar to 
+In some CAS deployments multifactor authentication can be done using U2F keys. Sometimes not all the users have the key, but they want to use the service. On the other hand there are machine to machine users that cannot push the button on USB key. For this two kinds of users U2F bypass is the only way to use CAS in such deployment.
 
 # Environment
 
@@ -60,3 +60,5 @@ cas.authn.mfa.u2f.bypass.principalAttributeName=description
 ```
 
 All users with description attribute present should bypass second factor.
+
+[Egor Ivanov](https://baltinfocom.ru/BigData)
