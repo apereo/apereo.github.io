@@ -66,7 +66,7 @@ Modify your CAS overlay to point to the version `6.3.0-RC4` when released.
 
 Apereo CAS is Apache v2 open source software under the sponsorship of the Apereo Foundation, supported by community volunteers and enthusiasts. Support options may be [found here](https://apereo.github.io/cas/Support.html).
 
-If you or your institution is a member of the Apereo foundation with an active subscription supporting the CAS project, please [contact the CAS application security working group](https://apereo.github.io/cas/Mailing-Lists.html#cas-public-security-list-cas-appsec-publicapereoorg) to learn more about this security vulnerability report.
+If you or your institution is a member of the Apereo foundation with an active subscription supporting the CAS project, please [contact the CAS subs working group](https://apereo.github.io/cas/Mailing-Lists.html) to learn more about this security vulnerability report.
 
 # Resources
 
