@@ -70,12 +70,12 @@ SAML2 service provider in a `SAML-1.json` file:
 # Overrides
 
 Let's say our service provider wanted to use a different set of signing keys, encryption keys or metadata completely separate from the global SAML2 
-artifacts listed above. Since we are using the filesystem, these overriding artifacts are expected to be found at `/etc/cas/config/saml/Example`. The formula is, you should create a directory using the name of your service definition (i.e. `Example`) and this directly should be created inside the canonical global SAML2 metadata directory. 
+artifacts listed above. Since we are using the filesystem, these overriding artifacts are expected to be found at `/etc/cas/config/saml/Example-1`. The formula is, you should create a directory using the name of your service definition and its numerical identifier (i.e. `Example-1`) and this directly should be created inside the canonical global SAML2 metadata directory. 
 
 ```bash
 $ tree /etc/cas/saml/
 /etc/cas/saml/
-├── Example
+├── Example-1
 │   ├── idp-encryption.crt
 │   ├── idp-encryption.key
 │   ├── idp-metadata.xml
