@@ -149,31 +149,14 @@ but it seems to be more reliable than GitHub Package Repository (at this time).
 # Using Published Artifacts in a CAS Overlay 
 
 When building your local CAS overlay project and using your personal tag from your private repository, 
-there are a couple options. 
-If you already use a private Nexus or Artifactory repository, the Azure Artifacts repository can 
-be configured as a proxy repository using the username and personal access token you used to publish
-for basic authentication credentials, but the personal access tokens aren't good forever, they last 1 year 
-at most. The credentials for AWS CodeArtifact are only good for 12 hours so you are better off adding 
-a repository to the overlay's list of repositories. That would look something like adding this to the buildscript
-repositories and global repositories section of the overlay's build.gradle:
+make sure you are using a recent version of the overlay or a recent version of the CAS Initializr 
+which has support for using a private repository if the URL and username properties are set as properties
+and the password is defined in an environment variable. 
 
-```groovy
-        if (Boolean.valueOf(project.usePrivateRepo)) {
-          maven {
-            url project.privateRepoUrl
-            credentials {
-              username = project.privateRepoUsername
-              password = System.env.PRIVATE_REPO_TOKEN
-            }
-          }
-        }
-```
-
-Set the following properties in your ~/.gradle/gradle.properties using the URLs and username for your AWS CodeArtifact or Azure
-Artifacts repositories:
+Set the following properties in your ~/.gradle/gradle.properties using the URLs and username for your AWS CodeArtifact 
+or Azure Artifacts repositories:
 
 ```properties
-usePrivateRepo=true
 privateRepoUrl=https://xxx-000000000000.d.codeartifact.us-east-2.amazonaws.com/maven/yyy/
 privateRepoUsername=aws
 ```
@@ -182,6 +165,18 @@ For the AWS CodeArtifact repository you will need to set the repository password
 
 ```shell
 export PRIVATE_REPO_TOKEN=$(aws codeartifact get-authorization-token --domain yourdomain --domain-owner 000000000000 --query authorizationToken --output text --region us-east-2)
+```
+
+For the Azure Artifacts repository you set PRIVATE_REPO_TOKEN to person access token. 
+
+```shell
+export PRIVATE_REPO_TOKEN="PERSONAL ACCESS TOKEN"
+```
+
+Then run the build referencing the tag used to publish your private CAS build:
+
+```shell
+./gradlew -Pcas.version=6.X.X.X clean build
 ```
 
 The AWS CLI needs to be installed and configured with access keys for a user with sufficient rights to use the repository.
