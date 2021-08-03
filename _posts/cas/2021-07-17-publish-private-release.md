@@ -195,4 +195,19 @@ In the case of Azure Artifacts, the PRIVATE_REPO_TOKEN would be set to a persona
 * [GitHub Packages](https://github.com/features/packages)
 
 
+# Screen Shots
+
+### AWS CodeArtifact
+
+![AWS CodeArtifact Image](./images/awscodeartifact.png)
+
+### Azure Artifacts
+
+![Azure Artifacts Image](./images/azureartifacts.png)
+
+### Github Packages
+
+![GitHub Packages Image](./images/githubpackages.png)
+
+
 [Hal Deadman](https://github.com/hdeadman)
