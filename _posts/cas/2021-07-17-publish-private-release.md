@@ -194,15 +194,15 @@ In the case of Azure Artifacts, the PRIVATE_REPO_TOKEN would be set to a persona
 
 ### AWS CodeArtifact
 
-![AWS CodeArtifact Image](./images/awscodeartifact.png)
+![AWS CodeArtifact Image](https://user-images.githubusercontent.com/apereo/apereo.github.io/master/.github/images/cas/awscodeartifact.png)
 
 ### Azure Artifacts
 
-![Azure Artifacts Image](./images/azureartifacts.png)
+![Azure Artifacts Image](https://user-images.githubusercontent.com/apereo/apereo.github.io/master/.github/images/cas/azureartifacts.png)
 
 ### Github Packages
 
-![GitHub Packages Image](./images/githubpackages.png)
+![GitHub Packages Image](https://user-images.githubusercontent.com/apereo/apereo.github.io/master/.github/images/cas/githubpackages.png)
 
 
 [Hal Deadman](https://github.com/hdeadman)
