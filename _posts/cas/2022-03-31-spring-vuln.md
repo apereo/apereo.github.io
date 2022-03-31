@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      CAS OpenID Connect Vulnerability Disclosure
+title:      CAS Spring Framework RCE Vulnerability Disclosure
 summary:    Disclosure of the Spring framework RCE security issue with the Apereo CAS software.
 tags:       [CAS]
 ---
