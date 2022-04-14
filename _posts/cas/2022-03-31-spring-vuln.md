@@ -30,6 +30,8 @@ If you or your institution is a member of the Apereo foundation with an active s
 
 The specific exploit requires the CAS application to run on Tomcat as a WAR deployment. If CAS is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it.
 
+Follow-up: [see this](https://spring.io/blog/2022/04/13/spring-framework-data-binding-rules-vulnerability-cve-2022-22968)
+
 # Timeline
 
 The issue was originally reported on March 30th, 2022 and upon confirmation, CAS releases were patched on March 31st, 2022 and released on the same day.
@@ -42,11 +44,11 @@ Patch releases are available to address CAS deployments. Upgrades to the next pa
 
 ### 6.4.x
 
-Modify your CAS overlay to point to the version `6.4.6.2`.
+Modify your CAS overlay to point to the version `6.4.6.3`.
 
 ### 6.5.x
 
-Modify your CAS overlay to point to the version `6.5.2`.
+Modify your CAS overlay to point to the version `6.5.3`.
 
 # Support
 
