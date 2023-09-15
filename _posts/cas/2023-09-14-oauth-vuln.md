@@ -14,7 +14,9 @@ For additional details on how security issues, patches and announcements are han
 
 # Credits
 
-This issue was originally reported, researched and tested by [Georgia Tech](https://www.gatech.edu/)'s Enterprise Application and Identity teams. Georgia Tech was kind enough to thoroughly investigate the issue, discuss the problem and their research results in detail, finance the time spent on developing fixes and follow up with additional tests to verify fixes. Thank you!
+This issue was originally reported, researched and tested by Mr. Terry Appleby, who is senior developer at [wicket.io](https://wicket.io/.) Terry was kind enough to thoroughly investigate the issue, discuss the problem in detail, provide steps to reproduce the problem with an actual overlay and puppeteer test and offer insight to diagnose the root cause. 
+
+Thank you!
 
 # Affected Deployments
 
