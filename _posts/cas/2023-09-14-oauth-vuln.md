@@ -14,7 +14,7 @@ For additional details on how security issues, patches and announcements are han
 
 # Credits
 
-This issue was originally reported, researched and tested by Mr. Terry Appleby, who is senior developer at [wicket.io](https://wicket.io/.) Terry was kind enough to thoroughly investigate the issue, discuss the problem in detail, provide steps to reproduce the problem with an actual CAS overlay and puppeteer test and offer insight to diagnose the root cause. 
+This issue was originally reported, researched and tested by Mr. Terry Appleby, who is a senior developer at [wicket.io](https://wicket.io/.) Terry was kind enough to thoroughly investigate the issue, discuss the problem in detail, provide steps to reproduce the problem with an actual CAS overlay and puppeteer test and offer insight to diagnose the root cause. 
 
 Thank you!
 
