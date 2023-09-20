@@ -8,7 +8,7 @@ tags:       [CAS]
 # Overview
 
 This is the initial [Apereo CAS project vulnerability disclosure](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html),
-describing an issue in CAS cting as an OAuth/OpenID Connect provider. If your CAS server is not acting as an OAuth/OpenID Connect provider producing claims and attributes, there is nothing for you to do here. Keep calm and carry on.
+describing an issue in CAS acting as an OAuth/OpenID Connect provider. If your CAS server is not acting as an OAuth/OpenID Connect provider producing claims and attributes, there is nothing for you to do here. Keep calm and carry on.
 
 For additional details on how security issues, patches and announcements are handled, please read the [Apereo CAS project vulnerability disclosure](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html) process.
 
