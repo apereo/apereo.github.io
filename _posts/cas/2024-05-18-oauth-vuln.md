@@ -33,7 +33,18 @@ If you or your institution is a member of the Apereo foundation with an active s
 
 # Severity
 
-Details will be published once the [grace period has passed](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html).
+CAS presnts the ability to pin the single sign-on cookie to an authentication session that typically linked to the user's environment such as the browser user agent or the IP address. This behavior would, for example, prevent the single sign-on session to be recognized and accepted if the user's IP address changes between authentication attempts. However, this behavior was not corrected handled for OpenID Connect authentication requests and cookie session-pinning was effectively bypassed. 
+
+Session pinning is typically controlled via:
+
+```properties
+cas.tgc.pin-to-session=true|false
+```
+
+So,
+
+- If you have cookie session pinning turned off, this vulnerability and the listed patch releases do not apply to you.
+- If you have cookie session pinning turned on, (which usually is the default CAS behavior), you may upgrade to the patch releases listed below.
 
 # Timeline
 
