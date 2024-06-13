@@ -33,7 +33,7 @@ If you or your institution is a member of the Apereo foundation with an active s
 
 # Severity
 
-CAS presnts the ability to pin the single sign-on cookie to an authentication session that typically linked to the user's environment such as the browser user agent or the IP address. This behavior would, for example, prevent the single sign-on session to be recognized and accepted if the user's IP address changes between authentication attempts. However, this behavior was not corrected handled for OpenID Connect authentication requests and cookie session-pinning was effectively bypassed. 
+CAS presnts the ability to pin the single sign-on cookie to an authentication session that typically is linked to the user's environment such as the browser user agent or the IP address. This behavior would, for example, prevent the single sign-on session to be recognized and accepted if the user's IP address changes between authentication attempts. However, this behavior was not correctly handled for OpenID Connect authentication requests and cookie session-pinning was effectively bypassed. 
 
 Session pinning is typically controlled via:
 
