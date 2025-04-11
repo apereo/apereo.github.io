@@ -14,7 +14,7 @@ For additional details on how security issues, patches and announcements are han
 
 # Credits
 
-The problems outlined in this security vulnerability were originally reported, researched and tested by Amossys, a French cybersecurity consulting firm. Amossys was kind enough to investigate the issue, offer insight to diagnose the root cause and took steps to verify the fix for various patch releases.
+The problems outlined in this security vulnerability were originally reported, researched and tested by Lucile RAZÉ and Jean-Léon CUSINATO from AMOSSYS, a cybersecurity consulting firm. They were kind enough to investigate the issue, offer insight to diagnose the root cause and took steps to verify the fix for various patch releases privately.
 
 Thank you!
 
@@ -45,7 +45,7 @@ Details will be made public once the [security grace period](https://apereo.gith
 
 # Timeline
 
-The issue was originally reported on March 17th, 2025 and upon confirmation, CAS releases were patched and eventually published on April 14th, 2025.
+The issue was originally reported on March 17th, 2025 and upon confirmation, CAS releases were patched and eventually published on April 11th, 2025.
 
 # Patching
 
@@ -71,8 +71,6 @@ Modify your CAS overlay to point to the version `7.2.1`.
 - Modify your CAS version to point to the approriate release by updating the `cas.version` property.
 - Follow the instructions in the `README.md` file to build the server.
 
-That is all.
-
 # Support
 
 Apereo CAS is Apache v2 open source software under the sponsorship of the Apereo Foundation. Support options may be [found here](https://apereo.github.io/cas/Support.html).
@@ -83,6 +81,7 @@ If you or your institution is a **member** of the Apereo foundation with an **ac
 
 * [CAS Security Vulnerability Response Model](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html)
 * [CAS Maintenance Policy](https://apereo.github.io/cas/developer/Maintenance-Policy.html)
+* [CAS Mailing Lists](https://apereo.github.io/cas/Mailing-Lists.html)
 
 On behalf of the CAS Application Security working group,
 
