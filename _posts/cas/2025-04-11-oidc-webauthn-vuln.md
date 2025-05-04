@@ -41,7 +41,14 @@ You are effected by this security vulnerability if your CAS deployment passes on
 
 If your deployment does not pass one of the noted conditions above, there is nothing for you to do here. Keep calm and carry on.
 
-Details will be made public once the [security grace period](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html) has passed.
+## Denial of Service via OIDC Webfinger Endpoint
+
+The vulnerability is a denial of service (DoS) attack based on a regular expression vulnerability in the OIDC webfinger endpoint. An attacker can send a specifically crafted request to the endpoint, which causes excessive and uncontrolled CPU usage (CWE-400). With the fix, no more DOS could be triggered manually or through a small fuzzing campain.
+
+## Unauthorized Access to User Account via FIDO2 Authentication
+
+This vulnerability allows an attacker to gain unauthorized access to another user's account on a service that uses CAS for authentication. 
+The attcker can register a FIDO2 device while modifying the username in the request to that of the victim. This can be done by replacing the register function in the javascript. Then the attacker can use a registered FIDO2 device to log in to the victim's account with the compromissed password, directly through the FIDO main connection. With fixes in place, CAS should validate the username in the FIDO2 registration request and ensure that it matches the authenticated user's username. 
 
 # Timeline
 
