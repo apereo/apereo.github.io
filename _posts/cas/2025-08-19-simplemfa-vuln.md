@@ -7,7 +7,7 @@ tags:       [CAS]
 
 # Overview
 
-This is the *initial version* of an [Apereo CAS project vulnerability disclosure](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html),
+This is an [Apereo CAS project vulnerability disclosure](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html),
 describing an issue in CAS acting as a simple multifactor authentication provider.
 
 For additional details on how security issues, patches and announcements are handled, please read the [Apereo CAS project vulnerability disclosure](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html) process.
@@ -33,7 +33,11 @@ If you or your institution is a member of the Apereo foundation with an active s
 
 # Severity
 
-You are effected by this security vulnerability if your CAS deployment is acting as a multifactor authentication provider and is using the CAS Simple MFA module. Additional details about the nature of the vulnerability will be made public once the security grace period has passed.
+You are effected by this security vulnerability if your CAS deployment is acting as a multifactor authentication provider and is using the CAS Simple MFA module. 
+
+Simple MFA in CAS generates its own codes using a secure random strategy to ensure generated IDs cannot collide with previously generated codes. One controlling factor here is the code length (6 by default). In scenarios where the code length is lowered to smaller lengths and typically under high traffic and load, it's quite possible for one to run into code collisions and duplicates. As a result, two separate different users might be sharing the same code and may be able to log in as one another.
+
+Fixes in this area force CAS to never a generate a code that was already generated and remains valid. The generate function should take this rule into account and will attempt to re-generate the code if it runs into a collision.
 
 If your deployment does not pass the noted condition(s) above, there is nothing for you to do here. Keep calm and carry on.
 
