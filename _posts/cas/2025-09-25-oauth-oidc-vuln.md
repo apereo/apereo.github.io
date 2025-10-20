@@ -7,7 +7,7 @@ tags:       [CAS]
 
 # Overview
 
-This is the *initial* [Apereo CAS project vulnerability disclosure](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html),
+This is an [Apereo CAS project vulnerability disclosure](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html),
 describing an issue in CAS acting as an OAuth/OpenID Connect provider.
 
 For additional details on how security issues, patches and announcements are handled, please read the [Apereo CAS project vulnerability disclosure](https://apereo.github.io/cas/developer/Sec-Vuln-Response.html) process.
@@ -33,7 +33,11 @@ If you or your institution is a member of the Apereo foundation with an active s
 
 # Severity
 
-You are effected by this security vulnerability if your CAS deployment is acting as an OAuth/OpenID Connect identity provider. Additional details about the nature of the vulnerability will be made public once the security grace period has passed.
+You are effected by this security vulnerability if your CAS deployment is acting as an OAuth/OpenID Connect identity provider. 
+
+The issue primarily presents itself when CAS receives an OAuth or OpenID Connect authorization request, and in the absense of an SSO session, attempts to route the request to the login endpoint, constructing a special *callback* URL that is passed as the `service` parameter to the login endpoint. This callback URL essentially points back to CAS itself and restarts the flow once the login attempt is completed. The attacker could somehow hijack this callback URL and modify it in such a way that would fool CAS into redirecting to an unauthorized URL. This is caused given the fact that the callback URL is registered with CAS as an internal service whose matching policy is based on regular expressions and pattern matching, and as a result, the attacker could manipulate the `service` parameter such that the pattern enforced is bypassed.
+
+In summary, this is an "Open Redirect" security vulnerability. We believe this is fairly low risk, and does not allow one to cause any major material damage to the CAS server. 
 
 If your deployment does not pass the noted condition(s) above, there is nothing for you to do here. Keep calm and carry on.
 

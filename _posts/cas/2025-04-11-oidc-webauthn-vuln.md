@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      CAS OAuth/OpenID Connect & WebAuthN Vulnerability Disclosure
-summary:    Disclosure of a security issue with the Apereo CAS software acting as an OAuth/OpenID Connect provider, or a as a multifactor authentication provider utilizing FIDO2/WebAuthN.
+summary:    Disclosure of a security issue with the Apereo CAS software acting as an OAuth/OpenID Connect provider, or as a multifactor authentication provider utilizing FIDO2/WebAuthN.
 tags:       [CAS]
 ---
 
