@@ -39,29 +39,29 @@ Also note that, as implied, while the focus here is mainly on MongoDb, you can r
 
 Now, when you build and launch the Palantir admin module, you may be presented with this interface:
 
-![alt text](image.png)
+<img src="{{ site.url }}/images/image.png" />
 
 You can start by creating configuration properties:
 
-![alt text](image-1.png)
+<img src="{{ site.url }}/images/image-1.png" />
 
 Or reload what is already there, delete and clear everything, or import from `.properties` or `.yaml` files. The import functionality might be especially useful if you wish to migrate from one static source, such as a `.properties` file to a dynamic source like MongoDb.
 
 When creating new settings, you can also switch to the `Environment` tab and look at how the CAS application context and environment is formed. 
 
-![alt text](image-2.png)
+<img src="{{ site.url }}/images/image-2.png" />
 
 You can look at the effective value for a property:
 
-![alt text](image-3.png)
+<img src="{{ site.url }}/images/image-3.png" />
 
 Or take something that is available, import it into your dynamic property source (i.e. MongoDb) and override its value:
 
-![alt text](image-4.png)
+<img src="{{ site.url }}/images/image-4.png" />
 
 *Important*: remember that just because a property exists in a configuration source, it does not mean that CAS will be able to immediately notice the change to start using it. The configuration source is mainly kept in isolation and separate from the active runtime context, and can be changed and updated as many times as necessary until you're ready to put changes into effect. When the time is right, you can ask CAS to refresh itself:
 
-![alt text](image-5.png)
+<img src="{{ site.url }}/images/image-5.png" />
 
 Once refreshed, CAS settings that are put into your configuration source should be activated.
 
