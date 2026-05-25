@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Java CAS Cliuent JWT Vulnerability Disclosure
+title:      Java CAS Client JWT Vulnerability Disclosure
 summary:    Disclosure of a security issue with the Java CAS Client validating JWTs.
 tags:       [CAS]
 ---
