@@ -14,7 +14,7 @@ For additional details on how security issues, patches and announcements are han
 
 # Credits
 
-This issue was reported to the project by a third-party researcher and was then further validated tested by Mr. Jérôme Leleu, who is a project member and an active committer.
+This issue was reported to the project by a third-party researcher and was then further validated and tested by Mr. Jérôme Leleu, who is a project member and an active committer.
 
 Thank you everyone!
 
