@@ -4,10 +4,14 @@
 }
 
 .site-header a {
-  // color: #333;
+  color: #333;
   font-size: $h3;
   font-weight: 300;
   background-image: none;
+}
+
+[data-bs-theme="dark"] .site-header a {
+  color: inherit;
 }
 
 .site-header .site-title {
