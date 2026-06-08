@@ -19,6 +19,10 @@
 .post-link .post-title {
   margin-top: 0;
   font-weight: 600;
+  color: #333;
+}
+
+[data-bs-theme="dark"] .post-link .post-title {
   color: whitesmoke;
 }
 
