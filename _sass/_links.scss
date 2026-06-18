@@ -1,28 +1,41 @@
 a {
   color: $link-color;
   text-decoration: none;
-  // background-image: linear-gradient(to top,
-  //   rgba(0,0,0,0) 13%,
-  //   rgba($link-color,.8) 13%,
-  //   rgba($link-color,.8) 18%,
-  //   rgba(0,0,0,0) 17%
-  // );
-  // text-shadow: white 1px 0px 0px, white -1px 0px 0px;
+  background-image: linear-gradient(to top,
+    rgba(0,0,0,0) 13%,
+    rgba($link-color,.8) 13%,
+    rgba($link-color,.8) 18%,
+    rgba(0,0,0,0) 17%
+  );
+  text-shadow: white 1px 0px 0px, white -1px 0px 0px;
 }
 
 a:hover,
 a:focus,
 a:active {
   border: 0;
-  color: $yellow;
+  color: $link-hover-color;
   text-decoration: none;
-  // background-image: linear-gradient(to top,
-  //   rgba(0,0,0,0) 13%,
-  //   rgba($link-hover-color,.8) 13%,
-  //   rgba($link-hover-color,.8) 17%,
-  //   rgba(0,0,0,0) 17%
-  // );
-  // text-shadow: white 1px 0px 0px, white -1px 0px 0px;
+  background-image: linear-gradient(to top,
+    rgba(0,0,0,0) 13%,
+    rgba($link-hover-color,.8) 13%,
+    rgba($link-hover-color,.8) 17%,
+    rgba(0,0,0,0) 17%
+  );
+  text-shadow: white 1px 0px 0px, white -1px 0px 0px;
+}
+
+[data-bs-theme="dark"] a {
+  background-image: none;
+  text-shadow: none;
+}
+
+[data-bs-theme="dark"] a:hover,
+[data-bs-theme="dark"] a:focus,
+[data-bs-theme="dark"] a:active {
+  color: $yellow;
+  background-image: none;
+  text-shadow: none;
 }
 
 // Correct issues with buttons

@@ -8,8 +8,12 @@ abbr {
 }
 
 p {
-  // color: #333;
+  color: #333;
   line-height: 1.5;
+}
+
+[data-bs-theme="dark"] p {
+  color: inherit;
 }
 
 small,
